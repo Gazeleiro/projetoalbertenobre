@@ -13,9 +13,9 @@
 // @grant               GM_setValue
 // @grant               unsafeWindow
 // @require     https://code.jquery.com/jquery-3.6.0.min.js
-// @updateURL    https://dl.dropboxusercontent.com/scl/fi/yf7t191b4i2htxdqr61fs/Recrutamento.js?rlkey=7ktn26h2d5oj8hiqx2tguhxw5&st=0m7mnjek
-// @downloadURL  https://dl.dropboxusercontent.com/scl/fi/yf7t191b4i2htxdqr61fs/Recrutamento.js?rlkey=7ktn26h2d5oj8hiqx2tguhxw5&st=0m7mnjek
-// @require      https://dl.dropboxusercontent.com/scl/fi/yf7t191b4i2htxdqr61fs/Recrutamento.js?rlkey=7ktn26h2d5oj8hiqx2tguhxw5&st=0m7mnjek
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Recrutamento.js?token=GHSAT0AAAAAADAX2JILAATUN7KOQFN7CYC2Z6Z6R2Q
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Recrutamento.js?token=GHSAT0AAAAAADAX2JILAATUN7KOQFN7CYC2Z6Z6R2Q
+// @require      https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Recrutamento.js?token=GHSAT0AAAAAADAX2JILAATUN7KOQFN7CYC2Z6Z6R2Q
 // @grant        none
 // ==/UserScript==
 
