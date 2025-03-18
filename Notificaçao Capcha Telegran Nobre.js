@@ -1,3 +1,16 @@
+// ==UserScript==
+// @name         Notificação Captcha Telegram
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
+// @author       Nobre
+// @match        https://*.tribalwars.com.br/*
+// @grant        none
+// @require      https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Notifica%C3%A7ao%20Capcha%20Telegran%20Nobre.js?token=GHSAT0AAAAAADAX2JILRLXKU73HR4RAJY2MZ6Z6NFQ
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Notifica%C3%A7ao%20Capcha%20Telegran%20Nobre.js?token=GHSAT0AAAAAADAX2JILRLXKU73HR4RAJY2MZ6Z6NFQ
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Notifica%C3%A7ao%20Capcha%20Telegran%20Nobre.js?token=GHSAT0AAAAAADAX2JILRLXKU73HR4RAJY2MZ6Z6NFQ
+// ==/UserScript==
+
 (function() {
     'use strict';
 
