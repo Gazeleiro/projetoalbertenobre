@@ -18,7 +18,7 @@
 // @require      https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Recrutamento.js?token=GHSAT0AAAAAADAX2JILAATUN7KOQFN7CYC2Z6Z6R2Q
 // @grant        none
 // ==/UserScript==
-
+//teste
 (function () {
     'use strict';
 
