@@ -1,4 +1,14 @@
-
+// ==UserScript==
+// @name         Notificação Captcha Telegram
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
+// @author       Nobre
+// @match        https://*.tribalwars.com.br/*
+// @grant        none
+// @updateURL    https://dl.dropboxusercontent.com/scl/fi/dsl7pi4zwmr72ojjqycn2/Notifica-ao-Capcha-Telegran-Nobre.js?rlkey=pn10zssr6d3qw07z0epv32lkg&st=mpe01a0f
+// @downloadURL  https://dl.dropboxusercontent.com/scl/fi/dsl7pi4zwmr72ojjqycn2/Notifica-ao-Capcha-Telegran-Nobre.js?rlkey=pn10zssr6d3qw07z0epv32lkg&st=mpe01a0f
+// ==/UserScript==
 (function() {
     'use strict';
 
