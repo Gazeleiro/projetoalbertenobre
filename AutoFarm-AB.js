@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name         AutoFarm AB
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Executa o AutoFarm automaticamente
+// @author       GazZeleiro & Albert
+// @match        https://*.tribalwars.com.br/*screen=am_farm*
+// @updateURL    
+// @downloadURL  
+// @grant        none
+// ==/UserScript==
+
 const SKIP_WALL = false;
 
 (function () {
