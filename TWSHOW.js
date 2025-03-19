@@ -6,9 +6,9 @@
 // @description Automação para TW
 // @icon https://i.imgur.com/7WgHTT8.gif
 // @require http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
-// @updateURL https://dl.dropboxusercontent.com/scl/fi/e243p82ji7yrx4mt2me5v/TWSHOW.js?rlkey=mri3oyqieibzauqodsoal74zu&st=1awfixrp
-// @downloadURL https://dl.dropboxusercontent.com/scl/fi/e243p82ji7yrx4mt2me5v/TWSHOW.js?rlkey=mri3oyqieibzauqodsoal74zu&st=1awfixrp
-// @require https://dl.dropboxusercontent.com/scl/fi/e243p82ji7yrx4mt2me5v/TWSHOW.js?rlkey=mri3oyqieibzauqodsoal74zu&st=1awfixrp
+// @updateURL https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
+// @downloadURL https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
+// @require https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
 // @grant none
 
 // ==/UserScript==
