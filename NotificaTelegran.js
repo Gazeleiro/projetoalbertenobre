@@ -53,22 +53,16 @@
         beep.play().catch(e => console.log("🔇 Falha ao tocar som:", e));
     }
 
-    function enviarNotificacaoParaTelegram() {
+    function enviarNotificacaoParaTelegram(mensagemAlerta) {
         console.log("📤 Enviando notificação para Telegram...");
 
-        // Pegando dados do jogo
         const jogador = window.TribalWars?.getGameData()?.player || { name: "Desconhecido", id: "N/A" };
         const nomeJogador = jogador.name;
         const idJogador = jogador.id;
         const horarioNotificacao = new Date().toLocaleString();
-        const urlPagina = window.location.href; // URL da página
 
-        // Extrair o prefixo do mundo da URL
-        const mundoMatch = urlPagina.match(/https:\/\/(br\d+)\.tribalwars\.com\.br/);
-        const mundo = mundoMatch ? mundoMatch[1] : 'Desconhecido';
-
-        const titulo = "🚨 CAPTCHA Ativo no Tribal Wars! 🚨";
-        const mensagem = `⚠️ **Atenção!**\n\n🔹 **Verificação de bot detectada!**\n\n👤 **Jogador:** ${nomeJogador} (ID: ${idJogador})\n🌍 **Mundo:** ${mundo}\n🕒 **Horário:** ${horarioNotificacao}\n🔗 **URL da Página:** ${urlPagina}`;
+        const titulo = mensagemAlerta;
+        const mensagem = `👤 CONTA: ${nomeJogador} (ID: ${idJogador})\n🕒 Horário: ${horarioNotificacao}`;
 
         const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(`${titulo}\n\n${mensagem}`)}`;
 
