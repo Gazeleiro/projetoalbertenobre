@@ -13,6 +13,8 @@
 // @grant               GM_setValue
 // @grant               unsafeWindow
 // @require     https://code.jquery.com/jquery-3.6.0.min.js
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Recrutamento.js
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Recrutamento.js
 // ==/UserScript==
 
 (function () {
