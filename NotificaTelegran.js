@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Notificação Captcha Telegram
+// @name         Notificação Captcha albert
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
