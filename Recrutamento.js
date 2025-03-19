@@ -1,3 +1,20 @@
+// ==UserScript==
+// @name         Script de Recrutamento de Tropas
+// @namespace    http://tampermonkey.net/
+// @version      3.3
+// @description  Recruta tropas até um limite total definido pelo usuário.
+// @author       singularidade
+// @include       https://*.tribalwars.com.br/game.php?village=*&screen=barracks*
+// @include       https://*.tribalwars.com.br/game.php?village=*&screen=stable*
+// @include       https://*.tribalwars.com.br/game.php?village=*&screen=train*
+// @grant               GM_getResourceText
+// @grant               GM_addStyle
+// @grant               GM_getValue
+// @grant               GM_setValue
+// @grant               unsafeWindow
+// @require     https://code.jquery.com/jquery-3.6.0.min.js
+// ==/UserScript==
+
 (function () {
     'use strict';
 
@@ -24,14 +41,14 @@
         moveVillage: true,
         currentVillageIndex: 0,
         troops: [
-            { unitName: "spear", recruitDef: 5, cssClassSelector: classEnum.lanca, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "sword", recruitDef: 1, cssClassSelector: classEnum.espada, maxDef: 200 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "axe", recruitDef: 0, cssClassSelector: classEnum.barbaro, maxDef: 0 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "archer", recruitDef: 0, cssClassSelector: classEnum.arqueiro, maxDef: 0 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "spy", recruitDef: 1, cssClassSelector: classEnum.explorador, maxDef: 120 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "spear", recruitDef: 4, cssClassSelector: classEnum.lanca, maxDef: 2000 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "sword", recruitDef: 4, cssClassSelector: classEnum.espada, maxDef: 2000 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "axe", recruitDef: 0, cssClassSelector: classEnum.barbaro, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "archer", recruitDef: 0, cssClassSelector: classEnum.arqueiro, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "spy", recruitDef: 1, cssClassSelector: classEnum.explorador, maxDef: 200 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "light", recruitDef: 0, cssClassSelector: classEnum.cavalariaLeve, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "marcher", recruitDef: 0, cssClassSelector: classEnum.cavalariaArco, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "heavy", recruitDef: 0, cssClassSelector: classEnum.cavalariaPesada, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "heavy", recruitDef: 1, cssClassSelector: classEnum.cavalariaPesada, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "ram", recruitDef: 0, cssClassSelector: classEnum.ariete, maxDef: 100 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "catapult", recruitDef: 0, cssClassSelector: classEnum.catapulta, maxDef: 50 } // Removido recruitAtt, mantido apenas recruitDef
         ]
