@@ -6,7 +6,6 @@
 // @author       Você
 // @match        https://*.tribalwars.com.br/*
 // @grant        none
-// @updateURL    COLOQUE_AQUI_A_URL_RAW_DO_GITHUB_OU_DROPBOX
-// @downloadURL  https://COLOQUE_AQUI_URL_DIRETA_DO_GITHUB_OU_DROPBOX
-// @require      https://code.jquery.com/jquery-3.6.0.min.js
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/code01.js
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/code01.js
 // ==/UserScript==
