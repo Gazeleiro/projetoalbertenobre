@@ -8,7 +8,6 @@
 // @require http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
 // @updateURL https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
 // @downloadURL https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
-// @require https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
 // @grant none
 
 // ==/UserScript==
