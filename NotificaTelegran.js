@@ -6,8 +6,8 @@
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
 // @grant        none
-// @updateURL    https://dl.dropboxusercontent.com/scl/fi/dsl7pi4zwmr72ojjqycn2/Notifica-ao-Capcha-Telegran-Nobre.js?rlkey=pn10zssr6d3qw07z0epv32lkg&st=mpe01a0f
-// @downloadURL  https://dl.dropboxusercontent.com/scl/fi/dsl7pi4zwmr72ojjqycn2/Notifica-ao-Capcha-Telegran-Nobre.js?rlkey=pn10zssr6d3qw07z0epv32lkg&st=mpe01a0f
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/NotificaTelegran.js
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/NotificaTelegran.js
 // ==/UserScript==
 (function() {
     'use strict';
