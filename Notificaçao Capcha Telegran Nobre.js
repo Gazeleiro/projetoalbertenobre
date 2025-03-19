@@ -79,7 +79,7 @@
         const horarioNotificacao = new Date().toLocaleString();
 
         const titulo = mensagemAlerta;
-        const mensagem = `${mensagemAlerta}\n👤 CONTA: ${nomeJogador} (ID: ${idJogador})\n🕒 Horário: ${horarioNotificacao}`;
+        const mensagem = `👤 CONTA: ${nomeJogador} (ID: ${idJogador})\n🕒 Horário: ${horarioNotificacao}`;
 
         const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(`${titulo}\n\n${mensagem}`)}`;
 
