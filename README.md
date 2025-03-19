@@ -1,2 +1,1 @@
-# Tribalwars
-Scripts Tribal wars
+ideias aleatorias
