@@ -5,8 +5,8 @@
 // @description  Executa o AutoFarm automaticamente
 // @author       GazZeleiro & Albert
 // @match        https://*.tribalwars.com.br/*screen=am_farm*
-// @updateURL    
-// @downloadURL  
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/AutoFarm-AB.js
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/AutoFarm-AB.js
 // @grant        none
 // ==/UserScript==
 
