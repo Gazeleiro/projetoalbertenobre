@@ -1,24 +1,3 @@
-// ==UserScript==
-// @name         Script de Recrutamento de Tropas
-// @namespace    http://tampermonkey.net/
-// @version      3.3
-// @description  Recruta tropas até um limite total definido pelo usuário.
-// @author       singularidade
-// @match https://*.tribalwars.com.br/*&screen=train*
-// @match https://*.tribalwars.com.br/*&screen=stable*
-// @match https://*.tribalwars.com.br/*&screen=barracks*
-// @grant               GM_getResourceText
-// @grant               GM_addStyle
-// @grant               GM_getValue
-// @grant               GM_setValue
-// @grant               unsafeWindow
-// @require     https://code.jquery.com/jquery-3.6.0.min.js
-// @updateURL    https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Recrutamento.js?token=GHSAT0AAAAAADAX2JIL6TFCSGBB5TDBQOASZ6Z63EA
-// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Recrutamento.js?token=GHSAT0AAAAAADAX2JIL6TFCSGBB5TDBQOASZ6Z63EA
-// @require      https://raw.githubusercontent.com/Gazeleiro/Tribalwars/refs/heads/main/Recrutamento.js?token=GHSAT0AAAAAADAX2JIL6TFCSGBB5TDBQOASZ6Z63EA
-// @grant        none
-// ==/UserScript==
-//teste
 (function () {
     'use strict';
 
