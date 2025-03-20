@@ -6,8 +6,8 @@
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/NotificaTelegran.js
-// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/NotificaTelegran.js
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/NotificaTelegranalbert.js
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/NotificaTelegranalbert.js
 // ==/UserScript==
 (function() {
     'use strict';
