@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -38,21 +38,26 @@
     }
 
     function verificarExpiracaoPagina() {
-        console.log("🔎 Verificando erro de expiração...");
+    console.log("🔎 Verificando erro de expiração...");
 
-        let paginaExpirou = document.body.innerText.includes("Esta página não está funcionando") &&
-                            document.body.innerText.includes("HTTP ERROR 407");
+    let textoPagina = document.body.innerText.toLowerCase();
 
-        if (paginaExpirou && !paginaExpirada) {
-            paginaExpirada = true;
-            console.log("❌ Página expirada detectada! Enviando alerta...");
-            piscarTitulo("❌ PÁGINA EXPIRADA! ❌");
-            tocarSom();
-            enviarNotificacaoParaTelegram("❌ PÁGINA EXPIRADA! ❌");
-            setTimeout(() => alert("❌ PÁGINA EXPIRADA! Atualize a página."), 1000);
-        }
+    let paginaExpirou = textoPagina.includes("não é possível acessar esse site") ||
+                        textoPagina.includes("err_connection_closed") ||
+                        textoPagina.includes("encerrou a conexão inesperadamente") ||
+                        textoPagina.includes("verificar a conexão") ||
+                        textoPagina.includes("verificar o proxy e o firewall");
+
+    if (paginaExpirou && !paginaExpirada) {
+        paginaExpirada = true;
+        console.log("❌ Página expirada detectada! Enviando alerta...");
+        piscarTitulo("❌ PÁGINA EXPIRADA! ❌");
+        tocarSom();
+        enviarNotificacaoParaTelegram("❌ PÁGINA EXPIRADA! ❌");
+        setTimeout(() => alert("❌ PÁGINA EXPIRADA! Atualize a página."), 1000);
     }
-
+}
+        
     function piscarTitulo(mensagem) {
         let originalTitle = document.title;
         let visivel = true;
