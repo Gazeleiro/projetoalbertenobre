@@ -5,6 +5,8 @@
 // @match        *://*.tribalwars.com.br/game.php*
 // @include      https://*screen=place&try=confirm*
 // @require      https://code.jquery.com/jquery-2.2.4.min.js
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/PlanejadorCalibrado.js
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/PlanejadorCalibrado.js
 // @run-at       document-start
 // ==/UserScript==
 
