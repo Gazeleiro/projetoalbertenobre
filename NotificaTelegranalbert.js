@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha albert
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -21,7 +21,6 @@
     function verificarCaptcha() {
         console.log("🔎 Verificando a presença do CAPTCHA...");
 
-        // Verifica se há referência ao CAPTCHA (Proteção contra Bots)
         let captchaPresente = document.body.innerHTML.toLowerCase().includes("proteção contra bots") ||
                               document.querySelector('[id*="bot-protection"]') ||
                               document.querySelector('[class*="bot-protection-row"]');
@@ -29,20 +28,40 @@
         if (captchaPresente && !captchaAtivo) {
             captchaAtivo = true;
             console.log("🚨 CAPTCHA detectado! Chamando atenção...");
-            piscarTitulo();
+            piscarTitulo("⚠ CAPTCHA DETECTADO! ⚠");
             tocarSom();
-            enviarNotificacaoParaTelegram();
+            enviarNotificacaoParaTelegram("⚠ CAPTCHA DETECTADO! ⚠");
             setTimeout(() => alert("⚠ CAPTCHA DETECTADO! Resolva para continuar."), 1000);
         }
     }
 
-    function piscarTitulo() {
+    function verificarExpiracaoPagina() {
+    console.log("🔎 Verificando erro de expiração...");
+
+    let textoPagina = document.body.innerText.toLowerCase();
+
+    let paginaExpirou = textoPagina.includes("não é possível acessar esse site") ||
+                        textoPagina.includes("err_connection_closed") ||
+                        textoPagina.includes("encerrou a conexão inesperadamente") ||
+                        textoPagina.includes("verificar a conexão") ||
+                        textoPagina.includes("verificar o proxy e o firewall");
+
+    if (paginaExpirou && !paginaExpirada) {
+        paginaExpirada = true;
+        console.log("❌ Página expirada detectada! Enviando alerta...");
+        piscarTitulo("❌ PÁGINA EXPIRADA! ❌");
+        tocarSom();
+        enviarNotificacaoParaTelegram("❌ PÁGINA EXPIRADA! ❌");
+        setTimeout(() => alert("❌ PÁGINA EXPIRADA! Atualize a página."), 1000);
+    }
+}
+        
+    function piscarTitulo(mensagem) {
         let originalTitle = document.title;
-        let alerta = "⚠ CAPTCHA DETECTADO! ⚠";
         let visivel = true;
 
         setInterval(() => {
-            document.title = visivel ? alerta : originalTitle;
+            document.title = visivel ? mensagem : originalTitle;
             visivel = !visivel;
         }, 1000);
     }
@@ -80,10 +99,13 @@
     }
 
     // Observador para detectar mudanças na página
-    new MutationObserver(() => verificarCaptcha())
-        .observe(document.body, { childList: true, subtree: true });
+    new MutationObserver(() => {
+        verificarCaptcha();
+        verificarExpiracaoPagina();
+    }).observe(document.body, { childList: true, subtree: true });
 
-    // Verifica CAPTCHA assim que o script carregar
+    // Verifica CAPTCHA e erro de expiração assim que o script carregar
     verificarCaptcha();
+    verificarExpiracaoPagina();
 
 })();
