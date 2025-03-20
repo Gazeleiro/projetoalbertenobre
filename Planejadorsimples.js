@@ -5,6 +5,8 @@
 // @match        *://*.tribalwars.com.br/game.php*screen=place&try=confirm*
 // @include      https://*screen=place&try=confirm*
 // @require      https://code.jquery.com/jquery-2.2.4.min.js
+// @updateURL   https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Planejadorsimples.js
+// @downloadURL https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Planejadorsimples.js
 // @run-at       document-start
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
