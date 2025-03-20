@@ -18,7 +18,7 @@
 localStorage.setItem('Ctt', 'S'); ///////////// Script Construção para desativar altere para N e ativar alyere para S
 localStorage.setItem('check' + 0, 'true'); // ativar rotação do ed Principal, para ativar altere para true e desativar altere para false
 localStorage.setItem('box0', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
-localStorage.setItem('Redp', 30); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
+localStorage.setItem('Redp', 2); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('ColetaAtiva', 'S'); /////// Script Coleta para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoColeta', 5); ///// tempo q executará o script de Coleta novamente em minutos
@@ -30,18 +30,1227 @@ const unidadesparacoleta = ["spear", "sword", "axe", "archer", "light"]; // mode
 localStorage.setItem("unitsToAvoid", JSON.stringify(unidadesparacoleta));
 localStorage.setItem('MaxsendColeta', 300); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
 
-localStorage.setItem('UparPaladinoAtiva', 'S'); //// Script treinamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('UparPaladinoAtiva', 'N'); //// Script treinamento para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoUparPaladino', 10); // tempo q executará o script de enviar os pala para treinar
-localStorage.setItem('check' + 6, 'true'); ////// ativar rotação no treinamento do paladino, para ativar altere false para true
-localStorage.setItem('box6', 'true'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('check' + 6, 'false'); ////// ativar rotação no treinamento do paladino, para ativar altere false para true
+localStorage.setItem('box6', 'false'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('CupPala', 2); //////////// tempo em que ficará na aba Treino do pala >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('RecruitAtivo', 'N'); //// Script recrutamento para desativar altere para N e ativar alyere para S
-localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
-localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('check' + 8, 'false'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
+localStorage.setItem('box8', 'false'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('Rrecruit', 2); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
+///////////// config recrute inicial ////////////////////
+// Array de objetos com as unidades e seus valores
+const unitsWithValues = [
+    { name: 'lancas', value: 500 },
+    { name: 'espadas', value: 100 },
+    { name: 'barbaros', value: 0 },
+    { name: 'arcos', value: 0 },
+    { name: 'espioes', value: 500 },
+    { name: 'arqueirosmontados', value: 0 },
+    { name: 'cavalosleves', value: 0 },
+    { name: 'cavalospesados', value: 0 },
+    { name: 'arietes', value: 0 },
+    { name: 'catapas', value: 0 }
+];
+////////////////////////////////////////////////// config Up de vila /////////////////////////////////////////////////////////////////////////////////////////////////
+let modelosSalvos = JSON.parse(localStorage.getItem("modelosConstrucao")) || {};
+let modeloCtt = [
+  {
+    "edificio": "main",
+    "nivel": 1
+  },
+  {
+    "edificio": "farm",
+    "nivel": 1
+  },
+  {
+    "edificio": "storage",
+    "nivel": 1
+  },
+  {
+    "edificio": "hide",
+    "nivel": 1
+  },
+  {
+    "edificio": "place",
+    "nivel": 1
+  },
+  {
+    "edificio": "wood",
+    "nivel": 1
+  },
+  {
+    "edificio": "stone",
+    "nivel": 1
+  },
+  {
+    "edificio": "iron",
+    "nivel": 1
+  },
+  {
+    "edificio": "wood",
+    "nivel": 2
+  },
+  {
+    "edificio": "stone",
+    "nivel": 2
+  },
+  {
+    "edificio": "iron",
+    "nivel": 2
+  },
+  {
+    "edificio": "storage",
+    "nivel": 2
+  },
+  {
+    "edificio": "farm",
+    "nivel": 2
+  },
+  {
+    "edificio": "storage",
+    "nivel": 3
+  },
+  {
+    "edificio": "farm",
+    "nivel": 3
+  },
+  {
+    "edificio": "main",
+    "nivel": 2
+  },
+  {
+    "edificio": "main",
+    "nivel": 3
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 1
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 2
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 3
+  },
+  {
+    "edificio": "market",
+    "nivel": 1
+  },
+  {
+    "edificio": "market",
+    "nivel": 2
+  },
+  {
+    "edificio": "hide",
+    "nivel": 2
+  },
+  {
+    "edificio": "hide",
+    "nivel": 3
+  },
+  {
+    "edificio": "wall",
+    "nivel": 1
+  },
+  {
+    "edificio": "wall",
+    "nivel": 2
+  },
+  {
+    "edificio": "wood",
+    "nivel": 3
+  },
+  {
+    "edificio": "stone",
+    "nivel": 3
+  },
+  {
+    "edificio": "iron",
+    "nivel": 3
+  },
+  {
+    "edificio": "main",
+    "nivel": 4
+  },
+  {
+    "edificio": "market",
+    "nivel": 3
+  },
+  {
+    "edificio": "storage",
+    "nivel": 4
+  },
+  {
+    "edificio": "farm",
+    "nivel": 4
+  },
+  {
+    "edificio": "wood",
+    "nivel": 4
+  },
+  {
+    "edificio": "stone",
+    "nivel": 4
+  },
+  {
+    "edificio": "iron",
+    "nivel": 4
+  },
+  {
+    "edificio": "wall",
+    "nivel": 3
+  },
+  {
+    "edificio": "main",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 5
+  },
+  {
+    "edificio": "stone",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 6
+  },
+  {
+    "edificio": "wood",
+    "nivel": 7
+  },
+  {
+    "edificio": "stone",
+    "nivel": 6
+  },
+  {
+    "edificio": "iron",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 8
+  },
+  {
+    "edificio": "storage",
+    "nivel": 5
+  },
+  {
+    "edificio": "storage",
+    "nivel": 6
+  },
+  {
+    "edificio": "farm",
+    "nivel": 5
+  },
+  {
+    "edificio": "market",
+    "nivel": 4
+  },
+  {
+    "edificio": "market",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 9
+  },
+  {
+    "edificio": "iron",
+    "nivel": 6
+  },
+  {
+    "edificio": "stone",
+    "nivel": 7
+  },
+  {
+    "edificio": "wood",
+    "nivel": 10
+  },
+  {
+    "edificio": "stone",
+    "nivel": 8
+  },
+  {
+    "edificio": "iron",
+    "nivel": 7
+  },
+  {
+    "edificio": "storage",
+    "nivel": 7
+  },
+  {
+    "edificio": "farm",
+    "nivel": 6
+  },
+  {
+    "edificio": "storage",
+    "nivel": 8
+  },
+  {
+    "edificio": "main",
+    "nivel": 6
+  },
+  {
+    "edificio": "main",
+    "nivel": 7
+  },
+  {
+    "edificio": "main",
+    "nivel": 8
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 4
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 5
+  },
+  {
+    "edificio": "hide",
+    "nivel": 4
+  },
+  {
+    "edificio": "wall",
+    "nivel": 4
+  },
+  {
+    "edificio": "wall",
+    "nivel": 5
+  },
+  {
+    "edificio": "market",
+    "nivel": 6
+  },
+  {
+    "edificio": "market",
+    "nivel": 7
+  },
+  {
+    "edificio": "wood",
+    "nivel": 11
+  },
+  {
+    "edificio": "stone",
+    "nivel": 9
+  },
+  {
+    "edificio": "iron",
+    "nivel": 8
+  },
+  {
+    "edificio": "smith",
+    "nivel": 1
+  },
+  {
+    "edificio": "smith",
+    "nivel": 2
+  },
+  {
+    "edificio": "stone",
+    "nivel": 10
+  },
+  {
+    "edificio": "wood",
+    "nivel": 12
+  },
+  {
+    "edificio": "main",
+    "nivel": 9
+  },
+  {
+    "edificio": "main",
+    "nivel": 10
+  },
+  {
+    "edificio": "smith",
+    "nivel": 3
+  },
+  {
+    "edificio": "smith",
+    "nivel": 4
+  },
+  {
+    "edificio": "smith",
+    "nivel": 5
+  },
+  {
+    "edificio": "stable",
+    "nivel": 1
+  },
+  {
+    "edificio": "stable",
+    "nivel": 2
+  },
+  {
+    "edificio": "stable",
+    "nivel": 3
+  },
+  {
+    "edificio": "farm",
+    "nivel": 7
+  },
+  {
+    "edificio": "storage",
+    "nivel": 9
+  },
+  {
+    "edificio": "storage",
+    "nivel": 10
+  },
+  {
+    "edificio": "farm",
+    "nivel": 8
+  },
+  {
+    "edificio": "wood",
+    "nivel": 13
+  },
+  {
+    "edificio": "stone",
+    "nivel": 11
+  },
+  {
+    "edificio": "iron",
+    "nivel": 9
+  },
+  {
+    "edificio": "iron",
+    "nivel": 10
+  },
+  {
+    "edificio": "stone",
+    "nivel": 12
+  },
+  {
+    "edificio": "wood",
+    "nivel": 14
+  },
+  {
+    "edificio": "stone",
+    "nivel": 13
+  },
+  {
+    "edificio": "iron",
+    "nivel": 11
+  },
+  {
+    "edificio": "main",
+    "nivel": 11
+  },
+  {
+    "edificio": "main",
+    "nivel": 12
+  },
+  {
+    "edificio": "storage",
+    "nivel": 11
+  },
+  {
+    "edificio": "storage",
+    "nivel": 12
+  },
+  {
+    "edificio": "farm",
+    "nivel": 9
+  },
+  {
+    "edificio": "farm",
+    "nivel": 10
+  },
+  {
+    "edificio": "storage",
+    "nivel": 13
+  },
+  {
+    "edificio": "storage",
+    "nivel": 14
+  },
+  {
+    "edificio": "storage",
+    "nivel": 15
+  },
+  {
+    "edificio": "wood",
+    "nivel": 15
+  },
+  {
+    "edificio": "stone",
+    "nivel": 14
+  },
+  {
+    "edificio": "iron",
+    "nivel": 12
+  },
+  {
+    "edificio": "wood",
+    "nivel": 16
+  },
+  {
+    "edificio": "stone",
+    "nivel": 15
+  },
+  {
+    "edificio": "iron",
+    "nivel": 13
+  },
+  {
+    "edificio": "farm",
+    "nivel": 11
+  },
+  {
+    "edificio": "storage",
+    "nivel": 16
+  },
+  {
+    "edificio": "hide",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 17
+  },
+  {
+    "edificio": "stone",
+    "nivel": 16
+  },
+  {
+    "edificio": "iron",
+    "nivel": 14
+  },
+  {
+    "edificio": "market",
+    "nivel": 8
+  },
+  {
+    "edificio": "market",
+    "nivel": 9
+  },
+  {
+    "edificio": "market",
+    "nivel": 10
+  },
+  {
+    "edificio": "main",
+    "nivel": 13
+  },
+  {
+    "edificio": "main",
+    "nivel": 14
+  },
+  {
+    "edificio": "main",
+    "nivel": 15
+  },
+  {
+    "edificio": "wood",
+    "nivel": 18
+  },
+  {
+    "edificio": "stone",
+    "nivel": 17
+  },
+  {
+    "edificio": "iron",
+    "nivel": 15
+  },
+  {
+    "edificio": "wood",
+    "nivel": 19
+  },
+  {
+    "edificio": "stone",
+    "nivel": 18
+  },
+  {
+    "edificio": "iron",
+    "nivel": 16
+  },
+  {
+    "edificio": "wood",
+    "nivel": 20
+  },
+  {
+    "edificio": "stone",
+    "nivel": 19
+  },
+  {
+    "edificio": "iron",
+    "nivel": 17
+  },
+  {
+    "edificio": "wood",
+    "nivel": 21
+  },
+  {
+    "edificio": "stone",
+    "nivel": 20
+  },
+  {
+    "edificio": "iron",
+    "nivel": 18
+  },
+  {
+    "edificio": "wood",
+    "nivel": 22
+  },
+  {
+    "edificio": "stone",
+    "nivel": 21
+  },
+  {
+    "edificio": "iron",
+    "nivel": 19
+  },
+  {
+    "edificio": "iron",
+    "nivel": 20
+  },
+  {
+    "edificio": "main",
+    "nivel": 16
+  },
+  {
+    "edificio": "main",
+    "nivel": 17
+  },
+  {
+    "edificio": "main",
+    "nivel": 18
+  },
+  {
+    "edificio": "storage",
+    "nivel": 17
+  },
+  {
+    "edificio": "storage",
+    "nivel": 18
+  },
+  {
+    "edificio": "storage",
+    "nivel": 19
+  },
+  {
+    "edificio": "farm",
+    "nivel": 12
+  },
+  {
+    "edificio": "farm",
+    "nivel": 13
+  },
+  {
+    "edificio": "farm",
+    "nivel": 14
+  },
+  {
+    "edificio": "storage",
+    "nivel": 20
+  },
+  {
+    "edificio": "farm",
+    "nivel": 15
+  },
+  {
+    "edificio": "wood",
+    "nivel": 23
+  },
+  {
+    "edificio": "stone",
+    "nivel": 22
+  },
+  {
+    "edificio": "iron",
+    "nivel": 21
+  },
+  {
+    "edificio": "storage",
+    "nivel": 21
+  },
+  {
+    "edificio": "storage",
+    "nivel": 22
+  },
+  {
+    "edificio": "market",
+    "nivel": 11
+  },
+  {
+    "edificio": "market",
+    "nivel": 12
+  },
+  {
+    "edificio": "market",
+    "nivel": 13
+  },
+  {
+    "edificio": "main",
+    "nivel": 19
+  },
+  {
+    "edificio": "main",
+    "nivel": 20
+  },
+  {
+    "edificio": "stone",
+    "nivel": 23
+  },
+  {
+    "edificio": "wood",
+    "nivel": 24
+  },
+  {
+    "edificio": "iron",
+    "nivel": 22
+  },
+  {
+    "edificio": "stone",
+    "nivel": 24
+  },
+  {
+    "edificio": "iron",
+    "nivel": 23
+  },
+  {
+    "edificio": "wood",
+    "nivel": 25
+  },
+  {
+    "edificio": "stone",
+    "nivel": 25
+  },
+  {
+    "edificio": "iron",
+    "nivel": 24
+  },
+  {
+    "edificio": "storage",
+    "nivel": 23
+  },
+  {
+    "edificio": "storage",
+    "nivel": 24
+  },
+  {
+    "edificio": "storage",
+    "nivel": 25
+  },
+  {
+    "edificio": "farm",
+    "nivel": 16
+  },
+  {
+    "edificio": "farm",
+    "nivel": 17
+  },
+  {
+    "edificio": "wood",
+    "nivel": 26
+  },
+  {
+    "edificio": "storage",
+    "nivel": 26
+  },
+  {
+    "edificio": "hide",
+    "nivel": 6
+  },
+  {
+    "edificio": "hide",
+    "nivel": 7
+  },
+  {
+    "edificio": "hide",
+    "nivel": 8
+  },
+  {
+    "edificio": "hide",
+    "nivel": 9
+  },
+  {
+    "edificio": "hide",
+    "nivel": 10
+  },
+  {
+    "edificio": "wall",
+    "nivel": 6
+  },
+  {
+    "edificio": "wall",
+    "nivel": 7
+  },
+  {
+    "edificio": "wall",
+    "nivel": 8
+  },
+  {
+    "edificio": "wall",
+    "nivel": 9
+  },
+  {
+    "edificio": "wall",
+    "nivel": 10
+  },
+  {
+    "edificio": "wall",
+    "nivel": 11
+  },
+  {
+    "edificio": "wall",
+    "nivel": 12
+  },
+  {
+    "edificio": "storage",
+    "nivel": 27
+  },
+  {
+    "edificio": "storage",
+    "nivel": 28
+  },
+  {
+    "edificio": "market",
+    "nivel": 14
+  },
+  {
+    "edificio": "market",
+    "nivel": 15
+  },
+  {
+    "edificio": "market",
+    "nivel": 16
+  },
+  {
+    "edificio": "market",
+    "nivel": 17
+  },
+  {
+    "edificio": "market",
+    "nivel": 18
+  },
+  {
+    "edificio": "market",
+    "nivel": 19
+  },
+  {
+    "edificio": "market",
+    "nivel": 20
+  },
+  {
+    "edificio": "storage",
+    "nivel": 29
+  },
+  {
+    "edificio": "storage",
+    "nivel": 30
+  },
+  {
+    "edificio": "market",
+    "nivel": 21
+  },
+  {
+    "edificio": "market",
+    "nivel": 22
+  },
+  {
+    "edificio": "market",
+    "nivel": 23
+  },
+  {
+    "edificio": "market",
+    "nivel": 24
+  },
+  {
+    "edificio": "market",
+    "nivel": 25
+  },
+  {
+    "edificio": "wood",
+    "nivel": 27
+  },
+  {
+    "edificio": "stone",
+    "nivel": 26
+  },
+  {
+    "edificio": "iron",
+    "nivel": 25
+  },
+  {
+    "edificio": "stone",
+    "nivel": 27
+  },
+  {
+    "edificio": "wood",
+    "nivel": 28
+  },
+  {
+    "edificio": "iron",
+    "nivel": 26
+  },
+  {
+    "edificio": "stone",
+    "nivel": 28
+  },
+  {
+    "edificio": "wood",
+    "nivel": 29
+  },
+  {
+    "edificio": "iron",
+    "nivel": 27
+  },
+  {
+    "edificio": "stone",
+    "nivel": 29
+  },
+  {
+    "edificio": "stone",
+    "nivel": 30
+  },
+  {
+    "edificio": "wood",
+    "nivel": 30
+  },
+  {
+    "edificio": "iron",
+    "nivel": 28
+  },
+  {
+    "edificio": "smith",
+    "nivel": 6
+  },
+  {
+    "edificio": "smith",
+    "nivel": 7
+  },
+  {
+    "edificio": "smith",
+    "nivel": 8
+  },
+  {
+    "edificio": "smith",
+    "nivel": 9
+  },
+  {
+    "edificio": "smith",
+    "nivel": 10
+  },
+  {
+    "edificio": "garage",
+    "nivel": 1
+  },
+  {
+    "edificio": "garage",
+    "nivel": 2
+  },
+  {
+    "edificio": "garage",
+    "nivel": 3
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 6
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 7
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 8
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 9
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 10
+  },
+  {
+    "edificio": "stable",
+    "nivel": 4
+  },
+  {
+    "edificio": "stable",
+    "nivel": 5
+  },
+  {
+    "edificio": "garage",
+    "nivel": 4
+  },
+  {
+    "edificio": "garage",
+    "nivel": 5
+  },
+  {
+    "edificio": "smith",
+    "nivel": 11
+  },
+  {
+    "edificio": "smith",
+    "nivel": 12
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 11
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 12
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 13
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 14
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 15
+  },
+  {
+    "edificio": "stable",
+    "nivel": 6
+  },
+  {
+    "edificio": "stable",
+    "nivel": 7
+  },
+  {
+    "edificio": "stable",
+    "nivel": 8
+  },
+  {
+    "edificio": "stable",
+    "nivel": 9
+  },
+  {
+    "edificio": "stable",
+    "nivel": 10
+  },
+  {
+    "edificio": "wall",
+    "nivel": 13
+  },
+  {
+    "edificio": "wall",
+    "nivel": 14
+  },
+  {
+    "edificio": "wall",
+    "nivel": 15
+  },
+  {
+    "edificio": "farm",
+    "nivel": 18
+  },
+  {
+    "edificio": "farm",
+    "nivel": 19
+  },
+  {
+    "edificio": "farm",
+    "nivel": 20
+  },
+  {
+    "edificio": "farm",
+    "nivel": 21
+  },
+  {
+    "edificio": "farm",
+    "nivel": 22
+  },
+  {
+    "edificio": "garage",
+    "nivel": 6
+  },
+  {
+    "edificio": "garage",
+    "nivel": 7
+  },
+  {
+    "edificio": "garage",
+    "nivel": 8
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 16
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 17
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 18
+  },
+  {
+    "edificio": "stable",
+    "nivel": 11
+  },
+  {
+    "edificio": "stable",
+    "nivel": 12
+  },
+  {
+    "edificio": "stable",
+    "nivel": 13
+  },
+  {
+    "edificio": "stable",
+    "nivel": 14
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 19
+  },
+  {
+    "edificio": "stable",
+    "nivel": 15
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 20
+  },
+  {
+    "edificio": "garage",
+    "nivel": 9
+  },
+  {
+    "edificio": "garage",
+    "nivel": 10
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 21
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 22
+  },
+  {
+    "edificio": "stable",
+    "nivel": 16
+  },
+  {
+    "edificio": "stable",
+    "nivel": 17
+  },
+  {
+    "edificio": "stable",
+    "nivel": 18
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 23
+  },
+  {
+    "edificio": "garage",
+    "nivel": 11
+  },
+  {
+    "edificio": "garage",
+    "nivel": 12
+  },
+  {
+    "edificio": "iron",
+    "nivel": 29
+  },
+  {
+    "edificio": "iron",
+    "nivel": 30
+  },
+  {
+    "edificio": "wall",
+    "nivel": 16
+  },
+  {
+    "edificio": "wall",
+    "nivel": 17
+  },
+  {
+    "edificio": "wall",
+    "nivel": 18
+  },
+  {
+    "edificio": "wall",
+    "nivel": 19
+  },
+  {
+    "edificio": "wall",
+    "nivel": 20
+  },
+  {
+    "edificio": "stable",
+    "nivel": 19
+  },
+  {
+    "edificio": "stable",
+    "nivel": 20
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 24
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 25
+  },
+  {
+    "edificio": "garage",
+    "nivel": 13
+  },
+  {
+    "edificio": "garage",
+    "nivel": 14
+  },
+  {
+    "edificio": "garage",
+    "nivel": 15
+  }
+];
+modelosSalvos["Up Recs + Armz e Merc P Cunhagem"] = modeloCtt;
+localStorage.setItem("modelosConstrucao", JSON.stringify(modelosSalvos));
+localStorage.setItem("modeloAldeiaSelecionado", 'Up Recs + Armz e Merc P Cunhagem');
+const checksave = [
+        "autoBuild",
+        "upFarm",
+        "upStorage",
+        "get_rewards",
+    ];
+localStorage.setItem("autoBuild", 'true'); /////////////// Ativa a Ctt automatica altere para false(desativado) e para true(ativado)
+localStorage.setItem("upFarm", 'true'); ////////////////// Ativa a prioridade da população
+localStorage.setItem("upStorage", 'true'); ////////////// Ativa a prioridade do mercado
+localStorage.setItem("get_rewards", 'true'); /////////// Ativa a coletar as recompensas
+localStorage.setItem("value-priority-farm", 20); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
+localStorage.setItem("value-priority-storage", 60); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
+localStorage.setItem("maxQueueSize", 3); //////////// maximo de filas para Ctt
+localStorage.setItem("get_rewards_temp", 3); /////// tempo para abrir e coletar as recompensas
+function carregarconfigCheckb() {
+        checksave.forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+            const savedValue = localStorage.getItem(id);
+                if (element.type === "checkbox") {
+                    element.checked = savedValue === "true";
+                }
+                }
+        });
+    }carregarconfigCheckb();
 ////////////////////////////////////////////////////////////// Priguicinha ///////////////////////////////////////////////////////////////////////////////////////////
+    unitsWithValues.forEach(unit => {
+    localStorage.setItem(unit.name, unit.value);
+});
 function converteDate(dataString) {
     // Divide a data no formato DD/MM/YYYY
     const [dia, mes, ano] = dataString.split("/").map(Number);
@@ -85,7 +1294,6 @@ if (link) {
     localStorage.setItem('user', nick);
   processaruser(nick)
 }
-
     let $Html2 = `<div border = "4px" class="quest" width = "25px" class="Myicon" id="MygScripts" style="background-image: url(https://i.postimg.cc/x1cBfkgX/02501.jpg);">
     </div>`;
     var Insert = document.getElementById('new_quest');
@@ -4067,7 +5275,7 @@ let $InfoTimeTrops = `<div id="Max_recruit" class="clearfix vis " style="width: 
                             <label for="modelNamer">Quantidade de tropas a recrutar por vez:</label>
                                 <input type="number" value ="2" id="quantR" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></tr></td>
                                 <tr><td><label for="modelNamer">Defina o Máximo de Filas no Recrutamento:</label>
-                                <input type="number"  value="3" id="quantRF" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></td><td></td><td></td><td align="right">
+                                <input type="number"  value="2" id="quantRF" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></td><td></td><td></td><td align="right">
                                 <select id="chosen" style="width: 150px; font-size: 14px;">
                                     <option value="xxx">Recrutamento ON</option>
                                     <option value="edict">Criar modelo</option>
@@ -4128,16 +5336,16 @@ function carregarM(){
 let unitsr = ['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy', 'ram', 'catapult'];
 // Definindo valores padrão
 let defaultQuantities = {
-    spear: 500,
-    sword: 100,
-    axe: 0,
-    archer: 0,
-    spy: 500,
-    marcher: 0,
-    light: 0,
-    heavy: 0,
-    ram: 0,
-    catapult: 0
+    spear: localStorage.getItem('lancas'),
+    sword: localStorage.getItem('espadas'),
+    axe: localStorage.getItem('barbaros'),
+    archer: localStorage.getItem('arcos'),
+    spy: localStorage.getItem('espioes'),
+    marcher: localStorage.getItem('arqueirosmontados'),
+    light: localStorage.getItem('cavalosleves'),
+    heavy: localStorage.getItem('cavalospesados'),
+    ram: localStorage.getItem('arietes'),
+    catapult: localStorage.getItem('catapas')
 };
 let unitsWithQuantities = {};
 unitsr.forEach(function(unit) {
