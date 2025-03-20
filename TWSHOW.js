@@ -26,19 +26,19 @@ localStorage.setItem('unlocks', 'S'); ///////// Desbloquear coletas Ativo, para 
 localStorage.setItem('check' + 2, 'true'); // ativar rotação da Coleta, para ativar altere para true e desativar altere para false
 localStorage.setItem('box2', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('Coleta', 2); ///////// tempo ativo na Coleta >. tempo referido em minutos, no caso q esta ficará 2 minutos
-const unidadesparacoleta = ["spear", "sword", "axe", "archer", "light"]; // mode completo ['spear', 'sword', 'axe', 'archer', 'spy', 'marcher', 'light', 'heavy', 'ram', 'catapult'], use para adicionar ou remover a q n quer q envia para coleta
+const unidadesparacoleta = ["spear"]; // mode completo ['spear', 'sword', 'axe', 'archer', 'spy', 'marcher', 'light', 'heavy', 'ram', 'catapult'], use para adicionar ou remover a q n quer q envia para coleta
 localStorage.setItem("unitsToAvoid", JSON.stringify(unidadesparacoleta));
 localStorage.setItem('MaxsendColeta', 300); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
 
-localStorage.setItem('UparPaladinoAtiva', 'N'); //// Script treinamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('UparPaladinoAtiva', 'S'); //// Script treinamento para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoUparPaladino', 10); // tempo q executará o script de enviar os pala para treinar
 localStorage.setItem('check' + 6, 'false'); ////// ativar rotação no treinamento do paladino, para ativar altere false para true
 localStorage.setItem('box6', 'false'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('CupPala', 2); //////////// tempo em que ficará na aba Treino do pala >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
-localStorage.setItem('RecruitAtivo', 'N'); //// Script recrutamento para desativar altere para N e ativar alyere para S
-localStorage.setItem('check' + 8, 'false'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
-localStorage.setItem('box8', 'false'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('RecruitAtivo', 'S'); //// Script recrutamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
+localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('Rrecruit', 2); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 ///////////// config recrute inicial ////////////////////
@@ -48,7 +48,7 @@ const unitsWithValues = [
     { name: 'espadas', value: 100 },
     { name: 'barbaros', value: 0 },
     { name: 'arcos', value: 0 },
-    { name: 'espioes', value: 500 },
+    { name: 'espioes', value: 120 },
     { name: 'arqueirosmontados', value: 0 },
     { name: 'cavalosleves', value: 0 },
     { name: 'cavalospesados', value: 0 },
