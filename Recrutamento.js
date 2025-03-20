@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Script de Recrutamento de Tropas
 // @namespace    http://tampermonkey.net/
-// @version      3.3
+// @version      3.4
 // @description  Recruta tropas até um limite total definido pelo usuário.
 // @author       singularidade
 // @include       https://*.tribalwars.com.br/game.php?village=*&screen=barracks*
