@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Tw - Show
 // @namespace http://tampermonkey.net/
-// @version 2.6
+// @version 2.7
 // @include https://**game.php**
 // @description Automação para TW
 // @icon https://i.imgur.com/7WgHTT8.gif
