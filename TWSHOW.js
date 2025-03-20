@@ -28,7 +28,7 @@ localStorage.setItem('box2', 'true'); ////// opção q mostra a checkbox marcada
 localStorage.setItem('Coleta', 2); ///////// tempo ativo na Coleta >. tempo referido em minutos, no caso q esta ficará 2 minutos
 const unidadesparacoleta = ["spear"]; // mode completo ['spear', 'sword', 'axe', 'archer', 'spy', 'marcher', 'light', 'heavy', 'ram', 'catapult'], use para adicionar ou remover a q n quer q envia para coleta
 localStorage.setItem("unitsToAvoid", JSON.stringify(unidadesparacoleta));
-localStorage.setItem('MaxsendColeta', 300); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
+localStorage.setItem('MaxsendColeta', 500); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
 
 localStorage.setItem('UparPaladinoAtiva', 'S'); //// Script treinamento para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoUparPaladino', 10); // tempo q executará o script de enviar os pala para treinar
