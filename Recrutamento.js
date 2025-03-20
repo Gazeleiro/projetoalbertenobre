@@ -43,8 +43,8 @@
         moveVillage: true,
         currentVillageIndex: 0,
         troops: [
-            { unitName: "spear", recruitDef: 4, cssClassSelector: classEnum.lanca, maxDef: 2000 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "sword", recruitDef: 4, cssClassSelector: classEnum.espada, maxDef: 2000 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "spear", recruitDef: 2, cssClassSelector: classEnum.lanca, maxDef: 2000 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "sword", recruitDef: 2, cssClassSelector: classEnum.espada, maxDef: 2000 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "axe", recruitDef: 0, cssClassSelector: classEnum.barbaro, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "archer", recruitDef: 0, cssClassSelector: classEnum.arqueiro, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "spy", recruitDef: 1, cssClassSelector: classEnum.explorador, maxDef: 200 }, // Removido recruitAtt, mantido apenas recruitDef
