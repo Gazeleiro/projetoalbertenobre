@@ -18,7 +18,7 @@
 localStorage.setItem('Ctt', 'S'); ///////////// Script Construção para desativar altere para N e ativar alyere para S
 localStorage.setItem('check' + 0, 'true'); // ativar rotação do ed Principal, para ativar altere para true e desativar altere para false
 localStorage.setItem('box0', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
-localStorage.setItem('Redp', 2); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
+localStorage.setItem('Redp', 30); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('ColetaAtiva', 'S'); /////// Script Coleta para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoColeta', 5); ///// tempo q executará o script de Coleta novamente em minutos
@@ -74,6 +74,10 @@ let modeloCtt = [
     "edificio": "hide",
     "nivel": 1
   },
+  {	
+    "edificio": "statue",
+    "nivel":1 
+  },	  
   {
     "edificio": "place",
     "nivel": 1
@@ -1232,9 +1236,9 @@ localStorage.setItem("autoBuild", 'true'); /////////////// Ativa a Ctt automatic
 localStorage.setItem("upFarm", 'true'); ////////////////// Ativa a prioridade da população
 localStorage.setItem("upStorage", 'true'); ////////////// Ativa a prioridade do mercado
 localStorage.setItem("get_rewards", 'true'); /////////// Ativa a coletar as recompensas
-localStorage.setItem("value-priority-farm", 20); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
-localStorage.setItem("value-priority-storage", 60); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
-localStorage.setItem("maxQueueSize", 3); //////////// maximo de filas para Ctt
+localStorage.setItem("value-priority-farm", 15); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
+localStorage.setItem("value-priority-storage", 80); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
+localStorage.setItem("maxQueueSize", 5); //////////// maximo de filas para Ctt
 localStorage.setItem("get_rewards_temp", 3); /////// tempo para abrir e coletar as recompensas
 function carregarconfigCheckb() {
         checksave.forEach(id => {
