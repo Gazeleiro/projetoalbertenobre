@@ -1,24 +1,28 @@
 // ==UserScript==
-// @name Tw - Show
-// @namespace http://tampermonkey.net/
-// @version 2.7
-// @include https://**game.php**
-// @description Automação para TW
-// @icon https://i.imgur.com/7WgHTT8.gif
-// @require http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
-// @updateURL https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
+// @name         Tw - Show
+// @namespace    http://tampermonkey.net/
+// @version      3.4
+// @include      https://**game.php**
+// @description  Automação para TW
+// @icon        https://i.imgur.com/7WgHTT8.gif
+// @require	http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
+// @updateURL	https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
 // @downloadURL https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
-// @grant none
-
+// @author       Gaspar
+// @grant        none
 // ==/UserScript==
 (function() {
     'use strict';
 //================================================================= Config inicial newba Albert =================================================================//
+localStorage.setItem('AbreCaptcha', 'N'); ///// Config Abrir captcha
+localStorage.setItem('AlarmeCaptcha', 'N'); // Config Alarme
+localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
+
 
 localStorage.setItem('Ctt', 'S'); ///////////// Script Construção para desativar altere para N e ativar alyere para S
 localStorage.setItem('check' + 0, 'true'); // ativar rotação do ed Principal, para ativar altere para true e desativar altere para false
 localStorage.setItem('box0', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
-localStorage.setItem('Redp', 30); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
+localStorage.setItem('Redp', 2); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('ColetaAtiva', 'S'); /////// Script Coleta para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoColeta', 5); ///// tempo q executará o script de Coleta novamente em minutos
@@ -28,17 +32,17 @@ localStorage.setItem('box2', 'true'); ////// opção q mostra a checkbox marcada
 localStorage.setItem('Coleta', 2); ///////// tempo ativo na Coleta >. tempo referido em minutos, no caso q esta ficará 2 minutos
 const unidadesparacoleta = ["spear"]; // mode completo ['spear', 'sword', 'axe', 'archer', 'spy', 'marcher', 'light', 'heavy', 'ram', 'catapult'], use para adicionar ou remover a q n quer q envia para coleta
 localStorage.setItem("unitsToAvoid", JSON.stringify(unidadesparacoleta));
-localStorage.setItem('MaxsendColeta', 500); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
+localStorage.setItem('MaxsendColeta', 280); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
 
-localStorage.setItem('UparPaladinoAtiva', 'S'); //// Script treinamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('UparPaladinoAtiva', 'N'); //// Script treinamento para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoUparPaladino', 10); // tempo q executará o script de enviar os pala para treinar
 localStorage.setItem('check' + 6, 'false'); ////// ativar rotação no treinamento do paladino, para ativar altere false para true
 localStorage.setItem('box6', 'false'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('CupPala', 2); //////////// tempo em que ficará na aba Treino do pala >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
-localStorage.setItem('RecruitAtivo', 'S'); //// Script recrutamento para desativar altere para N e ativar alyere para S
-localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
-localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('RecruitAtivo', 'N'); //// Script recrutamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('check' + 8, 'false'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
+localStorage.setItem('box8', 'false'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('Rrecruit', 2); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 ///////////// config recrute inicial ////////////////////
@@ -48,7 +52,7 @@ const unitsWithValues = [
     { name: 'espadas', value: 100 },
     { name: 'barbaros', value: 0 },
     { name: 'arcos', value: 0 },
-    { name: 'espioes', value: 120 },
+    { name: 'espioes', value: 500 },
     { name: 'arqueirosmontados', value: 0 },
     { name: 'cavalosleves', value: 0 },
     { name: 'cavalospesados', value: 0 },
@@ -74,10 +78,6 @@ let modeloCtt = [
     "edificio": "hide",
     "nivel": 1
   },
-  {	
-    "edificio": "statue",
-    "nivel":1 
-  },	  
   {
     "edificio": "place",
     "nivel": 1
@@ -1236,9 +1236,9 @@ localStorage.setItem("autoBuild", 'true'); /////////////// Ativa a Ctt automatic
 localStorage.setItem("upFarm", 'true'); ////////////////// Ativa a prioridade da população
 localStorage.setItem("upStorage", 'true'); ////////////// Ativa a prioridade do mercado
 localStorage.setItem("get_rewards", 'true'); /////////// Ativa a coletar as recompensas
-localStorage.setItem("value-priority-farm", 15); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
-localStorage.setItem("value-priority-storage", 80); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
-localStorage.setItem("maxQueueSize", 5); //////////// maximo de filas para Ctt
+localStorage.setItem("value-priority-farm", 20); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
+localStorage.setItem("value-priority-storage", 60); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
+localStorage.setItem("maxQueueSize", 3); //////////// maximo de filas para Ctt
 localStorage.setItem("get_rewards_temp", 3); /////// tempo para abrir e coletar as recompensas
 function carregarconfigCheckb() {
         checksave.forEach(id => {
@@ -1319,7 +1319,9 @@ function openPopup() {
     popupContainer.style.zIndex = '9999'; // Definir um índice z alto para garantir que a janela flutuante esteja acima de outros elementos
     // Adicionar o botão de fechar
      let $html3 = `<div id="ra-map-coord-grabber" class="popup_box_container" style="left: 51%; top: 50%; transform: translate(-50%, -50%);"><div align="center" class="popup_box slim show" id="popup_box_quest" style="width: 1105px;"><a id="popup_box_close" class="popup_box_close tooltip-delayed" data-title="Fechado :: atalho de teclado: <b>Esc</b>">&nbsp;</a>
-     <div class="popup_box_content" style="height: 500px;"><div class="vis divContentAuxiliares" style="margin: 15px 5px 5px 5px !important; width: 95% !important;"><h2> - Gerente Scripts - </h2><h3>Olá ${user}</h3>
+     <div class="popup_box_content" style="height: 500px;"><div style="width: 100% !important; display: flex;">
+     <div style=" !important; padding: 7px; float: left; width: 55%;"><h2> - Gerente Scripts - </h2><h3>Olá ${user}</h3></div>
+     <div class="vis divContentAuxiliares">     <h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/oldnoble.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Configurações de Anti-Captcha </h3>     <a class="tooltipDiv" style="font-size: 9pt; float: none;" href="#"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script estará rodando em todas as telas do TribalWars. Ele não realiza a solução do captcha apenas irá interagir com o botão de inicializar teste de Captcha disposto pelo TribalWars. Caso não esteja dando alarme consulte o documento de explicação dos scripts, pois é necessário configurar liberação de som para a pagina de seu mundo.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsCaptcha">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/hidingp.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o script irá realizar a abertura dos botões de realização de teste de captcha. Tanto o botão lateral como o botão central que aparece de tempos em tempos para o usuário de acordo com seu nível de navegações.</span></div> Realizar Abertura de Captcha:<select id="AbreCaptcha" style="width: 54px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/fchurch.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se irá realizar o disparo de alarmes para o usuário após 10 segundos que não reconhecer a solução do captcha.</span></div> Realizar Alarme após 10 Seg:<select id="AlarmeCaptcha" style="width: 57px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/speed.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se irá realizar a navegação para fora do jogo após 60 segundos que não reconhecer a solução do captcha.</span></div> Deslogar Conta após 60 Seg:<select id="DeslogaConta" style="width: 59px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
      </div>
 
      <div><table width="97%"><tbody><tr><td colspan="4"><div style="float: left; margin: 5px;"><input class="btn am-form-element" type="button" id="BTNSalvarConfig" value="Salvar Configurações" style="width: 300px; height: 36px;"></div></td>
@@ -1362,8 +1364,8 @@ function openPopup() {
      <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/oldlc.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Config. de Coleta em Massa </h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?screen=place&amp;mode=scavenge_mass"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de "Coleta em Massa" disponível na Praça de Reunião, ele irá executar o script autenticado de Shinko To Kuma e utilizar as configurações previamente salvas neste, caso você não utilizou este script é possível adicionar este a sua barra de acesso rápido e assim cadastrar um padrão de coleta. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsColetaMassa">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:<select id="ColetaMassaAtiva" style="width: 100px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a cada quanto tempo o Script irá executar em sua determinada tela.</span></div> Periodicidade:                      <select id="PeriodoColetaMassa" style="width: 90px;">                          <option value="5">5 Minutos</option>                          <option value="10">10 Minutos</option>                          <option value="15">15 Minutos</option>                          <option value="20">20 Minutos</option>                          <option value="30">30 Minutos</option>                          <option value="45">45 Minutos</option>                          <option value="60" selected="">1 Hora</option>                          <option value="120">2 Horas</option>                          <option value="180">3 Horas</option>                          <option value="240">4 Horas</option>                          <option value="300">5 Horas</option>                          <option value="360">6 Horas</option>                          <option value="420">7 Horas</option>                          <option value="480">8 Horas</option>                       </select>                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
      <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/market.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Config. de Puxar Recursos </h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?screen=market&amp;mode=call"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de "Pedido" disponível no Mercado, ele irá executar o script autenticado de Shinko To Kuma e enviar recursos balanceados para cunhagem na aldeia de destino. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsPuxarRecursos">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela. OBS: Após informada a coordenada e realizado o cálculo o script irá aguardar 1 minuto para começar o envio de recursos.</span></div> Script Ativo:<select id="PuxarRecursosAtiva" style="width: 100px;"><option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                                  <tr>                    <td style="white-space: nowrap; height: 20px;">                        <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/phome.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a coordenada para puxagem de recursos. OBS: Após informada a coordenada e realizado o cálculo o script irá aguardar 1 minuto para começar o envio de recursos.</span></div> Coordenada Destino:                        <input id="CoordenadaPuxarRecursos" type="text" name="input" class="target-input-field target-input-autocomplete ui-autocomplete-input" data-type="player" value="" autocomplete="off" data-ignore-single-exact-match="1" placeholder="123|456" style="width: 40px;">                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a cada quanto tempo o Script irá executar em sua determinada tela. OBS: Após informada a coordenada e realizado o cálculo o script irá aguardar 1 minuto para começar o envio de recursos.</span></div> Periodicidade:<select id="PeriodoPuxarRecursos" style="width: 90px;">                          <option value="30">30 Minutos</option>                          <option value="45">45 Minutos</option>                          <option value="60" selected="">1 Hora</option>                          <option value="120">2 Horas</option>                          <option value="180">3 Horas</option>                          <option value="240">4 Horas</option>                          <option value="300">5 Horas</option>                          <option value="360">6 Horas</option>                          <option value="720">12 Horas</option>                      </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/speed.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a quantidade de campos permitido para envio de recursos. OBS: Após informada a coordenada e realizado o cálculo o script irá aguardar 1 minuto para começar o envio de recursos.</span></div> Distância Máxima:                       <input id="DistanciaPuxarRecursos" type="text" name="input" class="target-input-field target-input-autocomplete ui-autocomplete-input" data-type="player" value="" autocomplete="off" data-ignore-single-exact-match="1" style="width: 56px;">                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
      </div>
+
      <div style="width: 100% !important; display: flex;">
-     <div class="vis divContentAuxiliares">     <h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/oldnoble.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Configurações de Anti-Captcha </h3>     <a class="tooltipDiv" style="font-size: 9pt; float: none;" href="#"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script estará rodando em todas as telas do TribalWars. Ele não realiza a solução do captcha apenas irá interagir com o botão de inicializar teste de Captcha disposto pelo TribalWars. Caso não esteja dando alarme consulte o documento de explicação dos scripts, pois é necessário configurar liberação de som para a pagina de seu mundo.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsCaptcha">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/hidingp.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o script irá realizar a abertura dos botões de realização de teste de captcha. Tanto o botão lateral como o botão central que aparece de tempos em tempos para o usuário de acordo com seu nível de navegações.</span></div> Realizar Abertura de Captcha:<select id="AbreCaptcha" style="width: 54px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/fchurch.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se irá realizar o disparo de alarmes para o usuário após 10 segundos que não reconhecer a solução do captcha.</span></div> Realizar Alarme após 10 Seg:<select id="AlarmeCaptcha" style="width: 57px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/speed.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se irá realizar a navegação para fora do jogo após 60 segundos que não reconhecer a solução do captcha.</span></div> Deslogar Conta após 60 Seg:<select id="DeslogaConta" style="width: 59px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
      </div>
 
 
@@ -1602,9 +1604,7 @@ document.getElementById('MygScripts').addEventListener('click', function() {
 var sair = document.querySelector('#linkContainer a[href*="logout"]');
 var contador = 0;
 function checkbot() {
-       var checkkk = document.getElementById('bot_check');
        var iconbot = document.getElementById('botprotection_quest');
-     var link = document.getElementsByClassName('btn btn-default');
     const AbreCaptcha = localStorage.getItem('AbreCaptcha');
     const AlarmeCaptcha = localStorage.getItem('AlarmeCaptcha');
     const DeslogaConta = localStorage.getItem('DeslogaConta');
@@ -1622,10 +1622,14 @@ function checkbot() {
                 iconbot.click();
             }, 2000);
         }
-         else if (link.length > 0 && !window.location.href.includes("checkbox") && checkkk) {
-                setTimeout(function () {
-                    link[0].click();
-                }, 2000);
+         else if (!iconbot && !window.location.href.includes("checkbox")) {
+              let botProtection = document.querySelector(".bot-protection-row");
+    if (botProtection) {
+        let botao = botProtection.querySelector(".btn.btn-default");
+        if (botao) {
+          setTimeout(function () { botao.click();}, 2000);
+        }
+    }
             }
 
     }
@@ -5279,7 +5283,7 @@ let $InfoTimeTrops = `<div id="Max_recruit" class="clearfix vis " style="width: 
                             <label for="modelNamer">Quantidade de tropas a recrutar por vez:</label>
                                 <input type="number" value ="2" id="quantR" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></tr></td>
                                 <tr><td><label for="modelNamer">Defina o Máximo de Filas no Recrutamento:</label>
-                                <input type="number"  value="2" id="quantRF" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></td><td></td><td></td><td align="right">
+                                <input type="number"  value="3" id="quantRF" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></td><td></td><td></td><td align="right">
                                 <select id="chosen" style="width: 150px; font-size: 14px;">
                                     <option value="xxx">Recrutamento ON</option>
                                     <option value="edict">Criar modelo</option>
@@ -5569,26 +5573,7 @@ function validarPreencher(unidade, maxsalvo, quantatual) {
         }, 300);
     }
 }
-/*async function processUnitsWithDelay() {
-    let unitsr = ['spear', 'sword', 'axe', 'archer', 'spy', 'marcher', 'light', 'heavy', 'ram', 'catapult'];
-    let delay = 1500; // Tempo de espera (em ms) entre cada execução
-
-    for (const unit of unitsr) {
-        let savedCount = parseInt(localStorage.getItem(unit), 10) || 0; // Obtém a quantidade salva ou 0 se não existir
-        let currentCount = getTroopCount(unit); // Obtém a quantidade atual da função
-        let unitmax = getNumberFromElement(unit + '_0_a');
-        let Qtpvez = localStorage.getItem('quantR') || 2;
-
-        if (savedCount > currentCount && currentCount != null && unitmax >= Qtpvez) {
-            console.log(`⚠️ Unidade ${unit}: Salvo (${savedCount}) > Atual (${currentCount}). Preenchendo...`);
-             validarPreencher(unit, savedCount, currentCount);
-
-        }
-
-        await new Promise(resolve => setTimeout(resolve, delay)); // Aguarda antes de continuar
-    }
-} //localStorage.getItem('check' + index);*/
-    async function processUnitsWithDelay() {
+async function processUnitsWithDelay() {
     let unitsr = ['spear', 'sword', 'axe', 'archer', 'spy', 'marcher', 'light', 'heavy', 'ram', 'catapult'];
     let delay = 1500; // Tempo de espera (em ms) entre cada execução
     let statusUnits = {}; // Objeto para armazenar o status de cada unidade
@@ -5619,8 +5604,7 @@ function validarPreencher(unidade, maxsalvo, quantatual) {
         localStorage.setItem('check' + 8, 'false'); localStorage.setItem('box8', 'false');
     }
 }
-
-    let xist = localStorage.getItem('RotTime') || 120;
+let xist = localStorage.getItem('RotTime') || 120;
 function recruit(){
  let Qtfila = localStorage.getItem('quantRF') || 3;
  let Rotime = localStorage.getItem('RotTime');
@@ -5782,7 +5766,7 @@ function executarScript() {
     const getAvailableTroops = () => {
       // we want to avoid sendint the paladin in scavange
       // we want to avoid sending CL in scavange
-      const unitsToAvoid = JSON.parse(localStorage.getItem("unitsToAvoid")) || ["spear", "light"];
+      const unitsToAvoid = JSON.parse(localStorage.getItem("unitsToAvoid")) || ["spear"];
       let responseTroops = [];
       const troops = document.getElementsByClassName("units-entry-all");
 
