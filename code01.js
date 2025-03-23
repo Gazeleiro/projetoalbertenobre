@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Auto Reload 10M
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      2.0
 // @description  Script Master que carrega automaticamente as atualizações de scripts futuros diretamente do GitHub ou Dropbox.
 // @author       Você
 // @match        *://*/*
