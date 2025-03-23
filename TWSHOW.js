@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tw - Show
 // @namespace    http://tampermonkey.net/
-// @version      3.4
+// @version      3.5
 // @include      https://**game.php**
 // @description  Automação para TW
 // @icon        https://i.imgur.com/7WgHTT8.gif
@@ -22,7 +22,7 @@ localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
 localStorage.setItem('Ctt', 'S'); ///////////// Script Construção para desativar altere para N e ativar alyere para S
 localStorage.setItem('check' + 0, 'true'); // ativar rotação do ed Principal, para ativar altere para true e desativar altere para false
 localStorage.setItem('box0', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
-localStorage.setItem('Redp', 2); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
+localStorage.setItem('Redp', 30); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('ColetaAtiva', 'S'); /////// Script Coleta para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoColeta', 5); ///// tempo q executará o script de Coleta novamente em minutos
@@ -40,19 +40,19 @@ localStorage.setItem('check' + 6, 'false'); ////// ativar rotação no treinamen
 localStorage.setItem('box6', 'false'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('CupPala', 2); //////////// tempo em que ficará na aba Treino do pala >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
-localStorage.setItem('RecruitAtivo', 'N'); //// Script recrutamento para desativar altere para N e ativar alyere para S
-localStorage.setItem('check' + 8, 'false'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
-localStorage.setItem('box8', 'false'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('RecruitAtivo', 'S'); //// Script recrutamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
+localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('Rrecruit', 2); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 ///////////// config recrute inicial ////////////////////
 // Array de objetos com as unidades e seus valores
 const unitsWithValues = [
-    { name: 'lancas', value: 500 },
-    { name: 'espadas', value: 100 },
+    { name: 'lancas', value: 1000 },
+    { name: 'espadas', value: 500 },
     { name: 'barbaros', value: 0 },
     { name: 'arcos', value: 0 },
-    { name: 'espioes', value: 500 },
+    { name: 'espioes', value: 120 },
     { name: 'arqueirosmontados', value: 0 },
     { name: 'cavalosleves', value: 0 },
     { name: 'cavalospesados', value: 0 },
@@ -72,6 +72,10 @@ let modeloCtt = [
   },
   {
     "edificio": "storage",
+    "nivel": 1
+  },
+  {
+    "edificio": "statue"
     "nivel": 1
   },
   {
