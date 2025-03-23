@@ -4,8 +4,8 @@
 // @version      3.5
 // @include      https://**game.php**
 // @description  Automação para TW
-// @icon        https://i.imgur.com/7WgHTT8.gif
-// @require	http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
+// @icon         https://i.imgur.com/7WgHTT8.gif
+// @require http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
 // @updateURL	https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
 // @downloadURL https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/TWSHOW.js
 // @author       Gaspar
@@ -14,7 +14,7 @@
 (function() {
     'use strict';
 //================================================================= Config inicial newba Albert =================================================================//
-localStorage.setItem('AbreCaptcha', 'N'); ///// Config Abrir captcha
+localStorage.setItem('AbreCaptcha', 'S'); ///// Config Abrir captcha
 localStorage.setItem('AlarmeCaptcha', 'N'); // Config Alarme
 localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
 
@@ -34,25 +34,25 @@ const unidadesparacoleta = ["spear"]; // mode completo ['spear', 'sword', 'axe',
 localStorage.setItem("unitsToAvoid", JSON.stringify(unidadesparacoleta));
 localStorage.setItem('MaxsendColeta', 280); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
 
-localStorage.setItem('UparPaladinoAtiva', 'N'); //// Script treinamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('UparPaladinoAtiva', 'S'); //// Script treinamento para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoUparPaladino', 10); // tempo q executará o script de enviar os pala para treinar
 localStorage.setItem('check' + 6, 'false'); ////// ativar rotação no treinamento do paladino, para ativar altere false para true
 localStorage.setItem('box6', 'false'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('CupPala', 2); //////////// tempo em que ficará na aba Treino do pala >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('RecruitAtivo', 'S'); //// Script recrutamento para desativar altere para N e ativar alyere para S
-localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
+localStorage.setItem('check' + 8, 'false'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
 localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('Rrecruit', 2); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 ///////////// config recrute inicial ////////////////////
 // Array de objetos com as unidades e seus valores
 const unitsWithValues = [
-    { name: 'lancas', value: 1000 },
-    { name: 'espadas', value: 500 },
+    { name: 'lancas', value: 500 },
+    { name: 'espadas', value: 100 },
     { name: 'barbaros', value: 0 },
     { name: 'arcos', value: 0 },
-    { name: 'espioes', value: 120 },
+    { name: 'espioes', value: 110 },
     { name: 'arqueirosmontados', value: 0 },
     { name: 'cavalosleves', value: 0 },
     { name: 'cavalospesados', value: 0 },
@@ -75,7 +75,7 @@ let modeloCtt = [
     "nivel": 1
   },
   {
-    "edificio": "statue"
+    "edificio": "statue",
     "nivel": 1
   },
   {
@@ -143,10 +143,6 @@ let modeloCtt = [
     "nivel": 2
   },
   {
-    "edificio": "barracks",
-    "nivel": 3
-  },
-  {
     "edificio": "market",
     "nivel": 1
   },
@@ -180,6 +176,10 @@ let modeloCtt = [
   },
   {
     "edificio": "iron",
+    "nivel": 3
+  },
+  {
+    "edificio": "barracks",
     "nivel": 3
   },
   {
@@ -223,12 +223,12 @@ let modeloCtt = [
     "nivel": 5
   },
   {
-    "edificio": "stone",
-    "nivel": 5
-  },
-  {
     "edificio": "wood",
     "nivel": 6
+  },
+  {
+    "edificio": "stone",
+    "nivel": 5
   },
   {
     "edificio": "wood",
@@ -1157,6 +1157,42 @@ let modeloCtt = [
   {
     "edificio": "stable",
     "nivel": 18
+  },
+  {
+    "edificio": "smith",
+    "nivel": 13
+  },
+  {
+    "edificio": "smith",
+    "nivel": 14
+  },
+  {
+    "edificio": "smith",
+    "nivel": 15
+  },
+  {
+    "edificio": "smith",
+    "nivel": 16
+  },
+  {
+    "edificio": "smith",
+    "nivel": 17
+  },
+  {
+    "edificio": "smith",
+    "nivel": 18
+  },
+  {
+    "edificio": "smith",
+    "nivel": 19
+  },
+  {
+    "edificio": "smith",
+    "nivel": 20
+  },
+  {
+    "edificio": "snob",
+    "nivel": 1
   },
   {
     "edificio": "barracks",
@@ -1240,9 +1276,9 @@ localStorage.setItem("autoBuild", 'true'); /////////////// Ativa a Ctt automatic
 localStorage.setItem("upFarm", 'true'); ////////////////// Ativa a prioridade da população
 localStorage.setItem("upStorage", 'true'); ////////////// Ativa a prioridade do mercado
 localStorage.setItem("get_rewards", 'true'); /////////// Ativa a coletar as recompensas
-localStorage.setItem("value-priority-farm", 20); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
-localStorage.setItem("value-priority-storage", 60); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
-localStorage.setItem("maxQueueSize", 3); //////////// maximo de filas para Ctt
+localStorage.setItem("value-priority-farm", 15); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
+localStorage.setItem("value-priority-storage", 80); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
+localStorage.setItem("maxQueueSize", 5); //////////// maximo de filas para Ctt
 localStorage.setItem("get_rewards_temp", 3); /////// tempo para abrir e coletar as recompensas
 function carregarconfigCheckb() {
         checksave.forEach(id => {
