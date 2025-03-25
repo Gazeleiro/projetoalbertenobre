@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tw - Show
 // @namespace    http://tampermonkey.net/
-// @version      3.6
+// @version      3.7
 // @include      https://**game.php**
 // @description  Automação para TW
 // @icon         https://i.imgur.com/7WgHTT8.gif
@@ -22,7 +22,7 @@ localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
 localStorage.setItem('Ctt', 'S'); ///////////// Script Construção para desativar altere para N e ativar alyere para S
 localStorage.setItem('check' + 0, 'true'); // ativar rotação do ed Principal, para ativar altere para true e desativar altere para false
 localStorage.setItem('box0', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
-localStorage.setItem('Redp', 30); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
+localStorage.setItem('Redp', 60); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('ColetaAtiva', 'S'); /////// Script Coleta para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoColeta', 5); ///// tempo q executará o script de Coleta novamente em minutos
@@ -32,16 +32,16 @@ localStorage.setItem('box2', 'true'); ////// opção q mostra a checkbox marcada
 localStorage.setItem('Coleta', 2); ///////// tempo ativo na Coleta >. tempo referido em minutos, no caso q esta ficará 2 minutos
 const unidadesparacoleta = ["spear"]; // mode completo ['spear', 'sword', 'axe', 'archer', 'spy', 'marcher', 'light', 'heavy', 'ram', 'catapult'], use para adicionar ou remover a q n quer q envia para coleta
 localStorage.setItem("unitsToAvoid", JSON.stringify(unidadesparacoleta));
-localStorage.setItem('MaxsendColeta', 280); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
+localStorage.setItem('MaxsendColeta', 500); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
 
 localStorage.setItem('UparPaladinoAtiva', 'S'); //// Script treinamento para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoUparPaladino', 10); // tempo q executará o script de enviar os pala para treinar
-localStorage.setItem('check' + 6, 'false'); ////// ativar rotação no treinamento do paladino, para ativar altere false para true
-localStorage.setItem('box6', 'false'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('check' + 6, 'true'); ////// ativar rotação no treinamento do paladino, para ativar altere false para true
+localStorage.setItem('box6', 'true'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('CupPala', 2); //////////// tempo em que ficará na aba Treino do pala >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('RecruitAtivo', 'S'); //// Script recrutamento para desativar altere para N e ativar alyere para S
-localStorage.setItem('check' + 8, 'false'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
+localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
 localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 localStorage.setItem('Rrecruit', 2); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
@@ -5321,7 +5321,7 @@ let $InfoTimeTrops = `<div id="Max_recruit" class="clearfix vis " style="width: 
   </tbody></table></div></div>
   <div style="font-size: 14px;" align="left"><table><tbody><tr><td>
                             <label for="modelNamer">Quantidade de tropas a recrutar por vez:</label>
-                                <input type="number" value ="2" id="quantR" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></tr></td>
+                                <input type="number" value ="5" id="quantR" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></tr></td>
                                 <tr><td><label for="modelNamer">Defina o Máximo de Filas no Recrutamento:</label>
                                 <input type="number"  value="3" id="quantRF" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></td><td></td><td></td><td align="right">
                                 <select id="chosen" style="width: 150px; font-size: 14px;">
