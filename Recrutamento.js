@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Script de Recrutamento de Tropas
 // @namespace    http://tampermonkey.net/
-// @version      3.5
+// @version      3.6
 // @description  Recruta tropas até um limite total definido pelo usuário.
 // @author       singularidade
 // @include       https://*.tribalwars.com.br/game.php?village=*&screen=barracks*
@@ -43,11 +43,11 @@
         moveVillage: true,
         currentVillageIndex: 0,
         troops: [
-            { unitName: "spear", recruitDef: 10, cssClassSelector: classEnum.lanca, maxDef: 2000 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "sword", recruitDef: 5, cssClassSelector: classEnum.espada, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "spear", recruitDef: 10, cssClassSelector: classEnum.lanca, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "sword", recruitDef: 5, cssClassSelector: classEnum.espada, maxDef: 0 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "axe", recruitDef: 0, cssClassSelector: classEnum.barbaro, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "archer", recruitDef: 0, cssClassSelector: classEnum.arqueiro, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "spy", recruitDef: 0, cssClassSelector: classEnum.explorador, maxDef: 200 }, // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "spy", recruitDef: 0, cssClassSelector: classEnum.explorador, maxDef: 120 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "light", recruitDef: 0, cssClassSelector: classEnum.cavalariaLeve, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "marcher", recruitDef: 0, cssClassSelector: classEnum.cavalariaArco, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
             { unitName: "heavy", recruitDef: 0, cssClassSelector: classEnum.cavalariaPesada, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
