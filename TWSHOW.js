@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tw - Show
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      4.1
 // @include      https://**game.php**
 // @description  Automação para TW
 // @icon         https://i.imgur.com/7WgHTT8.gif
@@ -12,4 +12,6291 @@
 // @grant        none
 // ==/UserScript==
 (function() {
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('\'CL CK\';Q.1t(\'7o\',\'S\');Q.1t(\'8a\',\'N\');Q.1t(\'89\',\'S\');Q.1t(\'94\',\'S\');Q.1t(\'3J\'+0,\'2D\');Q.1t(\'qv\',\'2D\');Q.1t(\'8W\',60);Q.1t(\'7a\',\'S\');Q.1t(\'7H\',5);Q.1t(\'7E\',\'S\');Q.1t(\'3J\'+2,\'2D\');Q.1t(\'qu\',\'2D\');Q.1t(\'4C\',2);E qT=["4l"];Q.1t("df",37.6K(qT));Q.1t(\'jk\',CJ);Q.1t(\'7i\',\'S\');Q.1t(\'7M\',10);Q.1t(\'3J\'+6,\'2D\');Q.1t(\'qt\',\'2D\');Q.1t(\'8G\',2);Q.1t(\'7g\',\'S\');Q.1t(\'3J\'+8,\'2D\');Q.1t(\'g0\',\'2D\');Q.1t(\'8q\',5);E qM=[{1y:\'kh\',l:CI},{1y:\'kg\',l:1H},{1y:\'kf\',l:0},{1y:\'ke\',l:0},{1y:\'kd\',l:CH},{1y:\'kc\',l:0},{1y:\'kb\',l:0},{1y:\'ka\',l:0},{1y:\'k9\',l:0},{1y:\'k8\',l:0}];W 5j=37.4n(Q.1f("92"))||{};W qS=[{"H":"2l","K":1},{"H":"39","K":1},{"H":"2K","K":1},{"H":"4Q","K":1},{"H":"4J","K":1},{"H":"3g","K":1},{"H":"2O","K":1},{"H":"2P","K":1},{"H":"2Q","K":1},{"H":"2O","K":2},{"H":"2P","K":2},{"H":"2Q","K":2},{"H":"2K","K":2},{"H":"39","K":2},{"H":"2K","K":3},{"H":"39","K":3},{"H":"2l","K":2},{"H":"2l","K":3},{"H":"33","K":1},{"H":"33","K":2},{"H":"2j","K":1},{"H":"2j","K":2},{"H":"4J","K":2},{"H":"4J","K":3},{"H":"3C","K":1},{"H":"3C","K":2},{"H":"2O","K":3},{"H":"2P","K":3},{"H":"2Q","K":3},{"H":"33","K":3},{"H":"2l","K":4},{"H":"2K","K":4},{"H":"39","K":4},{"H":"2O","K":4},{"H":"2P","K":4},{"H":"2Q","K":4},{"H":"3C","K":3},{"H":"2l","K":5},{"H":"2j","K":3},{"H":"2O","K":5},{"H":"2O","K":6},{"H":"2P","K":5},{"H":"2O","K":7},{"H":"2P","K":6},{"H":"2Q","K":5},{"H":"2O","K":8},{"H":"2K","K":5},{"H":"2K","K":6},{"H":"39","K":5},{"H":"2j","K":4},{"H":"2j","K":5},{"H":"2O","K":9},{"H":"2Q","K":6},{"H":"2P","K":7},{"H":"2O","K":10},{"H":"2P","K":8},{"H":"2Q","K":7},{"H":"2K","K":7},{"H":"39","K":6},{"H":"2K","K":8},{"H":"2l","K":6},{"H":"2l","K":7},{"H":"2l","K":8},{"H":"33","K":4},{"H":"33","K":5},{"H":"4J","K":4},{"H":"3C","K":4},{"H":"3C","K":5},{"H":"2j","K":6},{"H":"2j","K":7},{"H":"2O","K":11},{"H":"2P","K":9},{"H":"2P","K":10},{"H":"2P","K":11},{"H":"2Q","K":8},{"H":"3n","K":1},{"H":"3n","K":2},{"H":"2O","K":12},{"H":"2P","K":12},{"H":"2l","K":9},{"H":"2l","K":10},{"H":"3n","K":3},{"H":"3n","K":4},{"H":"3n","K":5},{"H":"3D","K":1},{"H":"3D","K":2},{"H":"3D","K":3},{"H":"39","K":7},{"H":"2K","K":9},{"H":"2K","K":10},{"H":"39","K":8},{"H":"2O","K":13},{"H":"2P","K":13},{"H":"2Q","K":9},{"H":"2Q","K":10},{"H":"2O","K":14},{"H":"2P","K":14},{"H":"2Q","K":11},{"H":"2l","K":11},{"H":"2l","K":12},{"H":"2K","K":11},{"H":"2K","K":12},{"H":"39","K":9},{"H":"39","K":10},{"H":"2K","K":13},{"H":"2K","K":14},{"H":"2K","K":15},{"H":"2O","K":15},{"H":"2P","K":15},{"H":"2Q","K":12},{"H":"2O","K":16},{"H":"2P","K":16},{"H":"2Q","K":13},{"H":"39","K":11},{"H":"2K","K":16},{"H":"4J","K":5},{"H":"2O","K":17},{"H":"2P","K":17},{"H":"2P","K":18},{"H":"2Q","K":14},{"H":"2j","K":8},{"H":"2j","K":9},{"H":"2j","K":10},{"H":"2l","K":13},{"H":"2l","K":14},{"H":"2l","K":15},{"H":"2O","K":18},{"H":"2K","K":17},{"H":"2K","K":18},{"H":"2Q","K":15},{"H":"2O","K":19},{"H":"2P","K":19},{"H":"2Q","K":16},{"H":"2K","K":19},{"H":"2P","K":20},{"H":"2P","K":21},{"H":"2O","K":20},{"H":"2Q","K":17},{"H":"2O","K":21},{"H":"2Q","K":18},{"H":"2P","K":22},{"H":"2O","K":22},{"H":"2Q","K":19},{"H":"2Q","K":20},{"H":"2l","K":16},{"H":"2l","K":17},{"H":"2l","K":18},{"H":"39","K":12},{"H":"39","K":13},{"H":"39","K":14},{"H":"2K","K":20},{"H":"39","K":15},{"H":"2P","K":23},{"H":"2O","K":23},{"H":"2Q","K":21},{"H":"2K","K":21},{"H":"2K","K":22},{"H":"2j","K":11},{"H":"2j","K":12},{"H":"2j","K":13},{"H":"2l","K":19},{"H":"2l","K":20},{"H":"2P","K":24},{"H":"2O","K":24},{"H":"2P","K":25},{"H":"2Q","K":22},{"H":"2Q","K":23},{"H":"2O","K":25},{"H":"2Q","K":24},{"H":"2K","K":23},{"H":"2K","K":24},{"H":"2K","K":25},{"H":"39","K":16},{"H":"39","K":17},{"H":"2O","K":26},{"H":"2K","K":26},{"H":"2P","K":26},{"H":"4J","K":6},{"H":"4J","K":7},{"H":"4J","K":8},{"H":"4J","K":9},{"H":"4J","K":10},{"H":"3C","K":6},{"H":"3C","K":7},{"H":"3C","K":8},{"H":"3C","K":9},{"H":"3C","K":10},{"H":"3C","K":11},{"H":"3C","K":12},{"H":"2K","K":27},{"H":"2K","K":28},{"H":"2j","K":14},{"H":"2j","K":15},{"H":"2j","K":16},{"H":"2j","K":17},{"H":"2j","K":18},{"H":"2j","K":19},{"H":"2j","K":20},{"H":"2K","K":29},{"H":"2K","K":30},{"H":"2j","K":21},{"H":"2j","K":22},{"H":"2P","K":27},{"H":"2j","K":23},{"H":"2j","K":24},{"H":"2j","K":25},{"H":"2O","K":27},{"H":"2P","K":28},{"H":"2Q","K":25},{"H":"2O","K":28},{"H":"2Q","K":26},{"H":"2O","K":29},{"H":"2P","K":29},{"H":"2Q","K":27},{"H":"2P","K":30},{"H":"2O","K":30},{"H":"2Q","K":28},{"H":"3n","K":6},{"H":"3n","K":7},{"H":"3n","K":8},{"H":"3n","K":9},{"H":"3n","K":10},{"H":"4j","K":1},{"H":"4j","K":2},{"H":"4j","K":3},{"H":"33","K":6},{"H":"33","K":7},{"H":"33","K":8},{"H":"33","K":9},{"H":"33","K":10},{"H":"3D","K":4},{"H":"3D","K":5},{"H":"4j","K":4},{"H":"4j","K":5},{"H":"3n","K":11},{"H":"3n","K":12},{"H":"33","K":11},{"H":"33","K":12},{"H":"33","K":13},{"H":"33","K":14},{"H":"33","K":15},{"H":"3D","K":6},{"H":"3D","K":7},{"H":"3D","K":8},{"H":"3D","K":9},{"H":"3D","K":10},{"H":"3C","K":13},{"H":"3C","K":14},{"H":"3C","K":15},{"H":"39","K":18},{"H":"39","K":19},{"H":"39","K":20},{"H":"39","K":21},{"H":"39","K":22},{"H":"4j","K":6},{"H":"4j","K":7},{"H":"4j","K":8},{"H":"33","K":16},{"H":"33","K":17},{"H":"33","K":18},{"H":"3D","K":11},{"H":"3D","K":12},{"H":"3D","K":13},{"H":"3D","K":14},{"H":"33","K":19},{"H":"3D","K":15},{"H":"33","K":20},{"H":"4j","K":9},{"H":"4j","K":10},{"H":"33","K":21},{"H":"33","K":22},{"H":"3D","K":16},{"H":"3D","K":17},{"H":"3D","K":18},{"H":"3n","K":13},{"H":"3n","K":14},{"H":"3n","K":15},{"H":"3n","K":16},{"H":"3n","K":17},{"H":"3n","K":18},{"H":"3n","K":19},{"H":"3n","K":20},{"H":"2V","K":1},{"H":"33","K":23},{"H":"4j","K":11},{"H":"4j","K":12},{"H":"2Q","K":29},{"H":"2Q","K":30},{"H":"3C","K":16},{"H":"3C","K":17},{"H":"3C","K":18},{"H":"3C","K":19},{"H":"3C","K":20},{"H":"3D","K":19},{"H":"3D","K":20},{"H":"33","K":24},{"H":"33","K":25},{"H":"4j","K":13},{"H":"4j","K":14},{"H":"4j","K":15}];5j["a0 qR + qQ e qP P aW"]=qS;Q.1t("92",37.6K(5j));Q.1t("hU",\'a0 qR + qQ e qP P aW\');E qO=["7l","bu","9I","7m",];Q.1t("7l",\'2D\');Q.1t("bu",\'2D\');Q.1t("9I",\'2D\');Q.1t("7m",\'2D\');Q.1t("l-9J-39",15);Q.1t("l-9J-2K",80);Q.1t("ah",5);Q.1t("fj",10);Z qN(){qO.2w(id=>{E 2G=u.V(id);if(2G){E 8r=Q.1f(id);if(2G.1c==="1V"){2G.4c=8r==="2D"}}})}qN();qM.2w(G=>{Q.1t(G.1y,G.l)});Z qH(qL){E[8m,9u,9v]=qL.2N("/").3I(4B);1K 1D 1N(9v,9u-1,8m)}W 8V=0;Z qC(ip){W qK=[["5c - 19/CG/CF"]];W qF=1D 1N();qK.2w(([qJ])=>{E[qI,Y]=qJ.2N(" - ");W bE=ip;if(qI===bE){E qG=qH(Y);E qE=qG-qF;E 8U=1R.2b(qE/(1P*60*60*24)); if((8U+1)>3){8V=1}1B if((8U+1)>0&&(8U+1)<4){8V=3;Q.1t(\'8U\',(8U+1))}1B{8V=2}}1B{8V=0}})}E 9x=u.6M(\'a[1s*="kM"]\');if(9x){E qD=9x[1];E it=qD.2u;Q.1t(\'bE\',it);qC(it)}W $qB=`<X 1Z="dU"k="hy"p="2o"k="CE"id="ih"f="1z-6a: 1Q(1d://i.CD.cc/CC/CB.CA);"></X>`;L dH=u.V(\'pe\');dH.3r(\'7d\',$qB);Z q3(){W bE=Q.1f(\'bE\');L 6l=u.6Y(\'X\');6l.aV.lc(\'Cz\');6l.f.av=\'aO\';6l.f.4W=\'50%\';6l.f.3P=\'50%\';6l.f.p=\'Cy\';6l.f.1r=\'Cx\';6l.f.9a=\'9b(0, 0, 0, 0.5)\';6l.f.cC=\'qA(-50%, -50%)\';6l.f.iw=\'Cw\';W $q9=`<X id="ra-3I-8E-Cv"k="Cu"f="3P: 51%; 4W: 50%; cC: qA(-50%, -50%);"><X 1A="2g"k="Ct Cs Cr"id="Cq"f="p: Cp;"><a id="az"k="az pd-pc"Y-1w="Co :: Cn de Cm: <b>Cl</b>">&Ck;</a><X k="Cj"f="1r: Ci;"><X f="p: 1H% !8b; 1G: bC;"><X f=" !8b; 4r: qa; 3U: 3P; p: 55%;"><h2>-Ch Cg-</h2><h3>Cfá ${bE}</h3></X><X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/Ce.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> 88ções de Cd-is </h3><a k="2C"f="2t-2q: 3H; 3U: 2i;"1s="#"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2M CcáCb em Ca as C9 do 5u.C8 não qz a C7ção do ig hz iráC6 1a o afão de C5 qy de is C4 pu 5u.qn não n7 C3 hv C2 o C1 de C0ção fx gB,95écYá86 qs BZção de BY 3c a BX de cU BW.</I>6W 3O e 6V 3O?</a><X id="BV"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/BU.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 2M irá hx a qr fx afões de qzção de qy de ig. BS o afão BR cS o afão BQ 4z BP de qx em qx 3c o BOá86 de iq 1a cU ní6k de BMções.</I></X> BL BK de is:<1E id="7o" f="p:BJ;">                          <w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr>                 <tr>                    <td f="2r-36:1u;1r:3S;">                       <I k="2E" f="1z:1Q(3e:</X><X><1o p="97%"><1q><tr><td 32="4"><X f="3U: 3P; 1Y: 2X;"><1b k="1S am-ae-2G"1c="1x"id="q5"l="dI 88ções"f="p: g7; 1r: 3E;"></X></td><td 32="4"1A="2g"><a k="2C"2B="5W"f="2t-2q: 3H; 3U: 2i;"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">A BIãoéBH a im de BG BF.7c as qwções 4z vc BE BD na BC BB eo b8 BA q BzáBy qwção</I>- Bx Bw -           </a></td></tr><tr><td k="6N"><2a><1b 1c="1V"id="qv"k="7p"1y="Bv">a0 cl</2a><1E id="8W" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="10">10 2h</w><w l="20">20 2h</w><w l="30">30 2h</w><w l="60">1 8c</w><w l="fZ">2 e0</w><w l="Bu">3 e0</w><w l="pQ">4 8c</w></1E></td><td k="6N"><2a><1b 1c="1V"id="Bt"k="7p"1y="Bs">qm</2a><1E id="9p" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="15">15 2I</w><w l="20">20 2I</w><w l="30">30 2I</w><w l="60">1 8c</w></1E></td><td k="6N"><2a><1b 1c="1V"id="qu"k="7p"1y="Br">4C</2a><1E id="4C" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="15">15 2I</w><w l="20">20 2I</w><w l="30">30 2I</w><w l="60">1 8c</w></1E></td><td k="6N"><2a><1b 1c="1V"id="Bq"k="7p"1y="Bp">4C M</2a><1E id="9s" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="15">15 2I</w><w l="20">20 2I</w><w l="30">30 2I</w><w l="60">1 8c</w></1E></td><td k="6N"><2a><1b 1c="1V"id="Bo"k="7p"1y="Bn">ik di</2a><1E id="9t" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="15">15 2I</w><w l="20">20 2I</w><w l="30">30 2I</w><w l="60">1 8c</w></1E></td><td k="6N"><2a><1b 1c="1V"id="Bm"k="7p"1y="Bl">Bk</2a><1E id="9r" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="15">15 2I</w><w l="20">20 2I</w><w l="30">30 2I</w><w l="60">1 8c</w></1E></td><td k="6N"><2a><1b 1c="1V"id="qt"k="7p"1y="Bj">a0 l8</2a><1E id="8G" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="15">15 2I</w><w l="20">20 2I</w><w l="30">30 2I</w><w l="60">1 8c</w></1E></td><td k="6N"><2a><1b 1c="1V"id="Bi"k="7p"1y="Bh">Bg M</2a><1E id="9q" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="15">15 2I</w><w l="20">20 2I</w><w l="30">30 2I</w><w l="60">1 8c</w></1E></td><td k="6N"><2a><1b 1c="1V"id="g0"k="7p"1y="Bf">Be</2a><1E id="8q" f="p: 96;"><w l="2">2 2I</w><w l="5">5 2I</w><w l="15">15 2I</w><w l="20">20 2I</w><w l="30">30 2I</w><w l="60">1 8c</w></1E></td></tr></1q></1o></X><X f="p: 1H% !8b; 1G: bC;"><X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(1d://1n.1i.1a/1m/hZ/1l/hY/hX/Bd.1e); p: 3o; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> bD. a0 cl</h3><a k="2C"2B="5W"f="2t-2q: 3H; 3U: 2i;"1s="/6j.54?&1p=2l"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 3X Bc o Bb de Ba 6n cl qo B9 a B8 de ib B7.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.</I>6W 3O e 6V 3O?</a><X id="B6"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="" p="13" 1r="13"><I k="2H" f="2r-36: 2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:<1E id="94" f="p: 7q;"><w l="S">5T</w><w l="N">Não</w></1E></td></tr></1q></1o></X></X></X><X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/4m.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I>88ções de aI</h3><a f="2t-2q: 3H; 3U: 2i;"2B="5W"1s="/6j.54?1p=62"k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k da"aI".Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.</I>6W 3O e 6V 3O?</a><X id="qq"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I><X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:                       <1E id="7g" f="p:7q;"><w l="S">5T</w><w l="N">Não</w></1E>                    </td>                 </tr> </1q>           </1o>        </X>        <X f="3U:3P;1Y-4W:1v;"></X>     </X></X><X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/B5.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> 88ções de B4</h3><a f="2t-2q: 3H; 3U: 2i;"2B="5W"1s="/6j.54?1p=3g"k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k da"abça de ilão",écYá86 qe o B3 de cP 3c o 9L 4z se ql a oE do 7k,écYá86 B2 5D B1ça qp 4z pv iráB0 as AZ AY 3c bt de 7k.g5 AX AWécYá86 qs a qr de AV-up de iq 1a AUção do 2M.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.</I>6W 3O e 6V 3O?</a><X id="qq"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:                       <1E id="87" f="p:7q;"><w l="S">5T</w><w l="N">Não</w></1E>                    </td>                 </tr>              </1q>           </1o>        </X>        <X f="3U:3P;1Y-4W:1v;"><1b k="1S am-ae-2G" 1c="1x" id="q8" l="AT 9W bm" f="p:AS;1r:3o;1Y:3t;"></X>     </X></X></X><X f="p: 1H% !8b; 1G: bC;"><X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/AR.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> 88ções de AQ c7 </h3><a k="2C"2B="5W"f="2t-2q: 3H; 3U: 2i;"1s="/6j.54?1p=4Q&9o;1X=6v"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k de APção fx AO AN.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.</I>6W 3O e 6V 3O?</a><X id=""><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:<1E id="7i" f="p:7q;">                          <w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr>                 <tr>                    <td f="2r-36:1u;1r:3S;">                       <I k="2E" f="1z:1Q(3e:<X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/AM.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> 88ções de AL</h3><a k="2C"2B="5W"f="2t-2q: 3H; 3U: 2i;"1s="/6j.54?1p=AK&9o;1X=kR&AJ=AI"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k de 9W AH,AG AF o 2M 6T e 5D 4K qp 5X AEço e aq irá6h qo AD a dt h8 AC e AB o oFá86 de BT.qn 8T AA um 5z 5C iráAz um hv 3c 4z o Ay 8T cT.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.an al 95 o 2M irá6X no 9L 4z 2m 4Y a 4X 4K.</I>6W 3O e 6V 3O?</a><X id="Ax"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:<1E id="7L" f="p:7q;">                          <w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr> <tr><td f="2r-36:1u;1r:3S;"><I k="2E" f="1z:1Q(3e:<X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e:      3B-1r: 2T;"></I> bD. de Aw qm</h3><a f="2t-2q: 3H; 3U: 2i;"2B="5W"1s="/6j.54?1p=74"k="2C"><1j 1h="1d:</X><X f="p: 1H% !8b; 1G: bC;"><X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(1d://44.43.1a/42/41/40/3Z%3Y/6u.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> 88ções de aW</h3><a f="2t-2q: 3H; 3U: 2i;"2B="5W"1s="/6j.54?1p=2V"k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k da"bk"4z ql aZ b0,aq irá6X qk 4z qj ao fo a im de b0 qi 3c aZ,aq iráhx um Av de Auça de iq 1a a qgção Aq.3a 2MéAn o io Am 1a o io do 2M de ik aA,95 AláAk os cZ de Aj a7 3c hz 5D Ai o io de Ah e Ag de oQção de Af de b0.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.an al 95 o 2M irá6X no 9L 4z 2m 4Y a 4X 4K.</I>6W 3O e 6V 3O?</a><X id="Ae"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:                       <1E id="7j" f="p:7q;">                          <w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr>                 <tr>                    <td f="2r-36:1u;1r:3S;">                       <I k="2E" f="1z:1Q(3e:<X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/qh.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> 88ções de 4C </h3><a k="2C"2B="5W"f="2t-2q: 3H; 3U: 2i;"1s="/6j.54?1p=3g&1X=7C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k de"fT"d0í6k na abça de ilão.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.an al 95 o 2M irá6X no 9L 4z 2m 4Y a 4X 4K.</I>6W 3O e 6V 3O?</a><X id="Ad"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:<1E id="7a" f="p:7q;">                          <w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr>        <tr>                    <td f="2r-36:1u;1r:3S;">                       <I k="2E" f="1z:1Q(3e:<X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/lH.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> bD. Ac</h3><a k="2C"2B="5W"f="2t-2q: 3H; 3U: 2i;"1s="/6j.54?1p=2j&9o;1X=71"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k de"Ab fx Aa"d0í6k no bj,aq irá6X o 2M ij e gM cZ A9 A8 a7 A7 em mY de A6,A5 qf cU hC,A4 a A3ção de a7 A2.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.an al 95 o 2M irá6X no 9L 4z 2m 4Y a 4X 4K.</I>6W 3O e 6V 3O?</a><X id="A1"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:<1E id="7O" f="p:7q;">                          <w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr>                 <tr>                    <td f="2r-36:1u;1r:3S;">                       <I k="2E" f="1z:1Q(3e:</X><X f="p: 1H% !8b; 1G: bC;"><X k="2s 5Z"><h3><I k="2E"Y-1w="3u de d6ções 6U"f="1z: 1Q(1d://44.43.1a/42/41/40/3Z%3Y/6u.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> bD. de aW ei 82</h3><a f="2t-2q: 3H; 3U: 2i;"2B="5W"1s="/6j.54?1p=2V&9o;1X=6u&9o;A0=-1"k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k da"bk"na opção de aW em 82,aq irá6X qk 4z qj ao fo a im de b0 qi 3c aZ.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.an al 95 o 2M irá6X no 9L 4z 2m 4Y a 4X 4K.</I>6W 3O e 6V 3O?</a><X id="zZ"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:<1E id="7N" f="p:7q;">                          <w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr><tr>                    <td f="2r-36:1u;1r:3S;">                       <I k="2E" f="1z:1Q(3e:<X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/qh.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> bD. de 4C em 82 </h3><a k="2C"2B="5W"f="2t-2q: 3H; 3U: 2i;"1s="/6j.54?1p=3g&9o;1X=73"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k de"4C em 82"d0í6k na abça de ilão,aq irá6X o 2M ij de qd qc qb e zY as qgções zX zW 5X,9G zVênão zU 5C 2Méi2í6k i1 5C a 6n zT de zS rázR e qf qe um zQão de fU.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.an al 95 o 2M irá6X no 9L 4z 2m 4Y a 4X 4K.</I>6W 3O e 6V 3O?</a><X id="zP"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k.</I></X> 3X 6T:<1E id="7P" f="p:7q;">                          <w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr>                 <tr>                    <td f="2r-36:1u;1r:3S;">                       <I k="2E" f="1z:1Q(3e:<X k="2s 5Z"><h3><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/2j.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> bD. de ik aA </h3><a k="2C"2B="5W"f="2t-2q: 3H; 3U: 2i;"1s="/6j.54?1p=2j&9o;1X=72"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"f="1Y-6o: 3v;"><I k="2H">3a 2Mé3W na 4k de"zO"d0í6k no bj,aq irá6X o 2M ij de qd qc qb e gM cZ zN 3c zM na f7 de zL.Ao 7w 5X 7v 3dá4Y 5D 4X 4K no 4i 7u 5C 2Mé3W.an al 95 o 2M irá6X no 9L 4z 2m 4Y a 4X 4K.</I>6W 3O e 6V 3O?</a><X id="zK"><X k="2s 6m"><1o p="1H%"><1q><tr><td f="2r-36: 1u; 1r: 3S;"><I k="2E"f="1z: 1Q(3e://44.43.1a/42/41/40/3Z%3Y/7t.1e); p: 3E; 1r: 3o; 3N-1A: 3F; 3B-1r: 2T;"></I> <X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H" f="2r-36:2T;">3a 4A 4I se o 3X 6Sá 6U e irá 7s em 6n 7r 4k. zJ: Após zI a zH e zG o cázF o 2M irá zE 1 kl 3c zDçar o bt de cZ.</I></X> 3X 6T:<1E id="7Q" f="p:7q;"><w l="S">5T</w>                          <w l="N">Não</w>                       </1E>                    </td>                 </tr>                                  <tr>                    <td f="2r-36:1u;1r:3S;">                        <I k="2E" f="1z:1Q(3e:</X><X f="p: 1H% !8b; 1G: bC;"></X></X><f>.5Z{1Y:2X!8b;4r:qa;3U:3P;p:46%}.6m{1Y:1v 3t 3t 3t!8b;p:zC!8b}.2C{av:zB;1G:5y-3w;5w:5v}.az:cj{5w:5v}.2C.2H{bh:9Z;p:h6;1z-2c:h5;2c:#h0;1k-1A:2g;1Z-gZ:gY;4r:2X;av:d1;z-1I:1;4W:1H%;3P:50%;cC:gX(-50%);8S:0;ck:8S 0.3s}.2C:cj.2H{bh:gW;8S:1}</f>`;6l.65=$q9;u.gf.aL(6l);u.V(\'az\').2S(\'1O\',Z(){6l.8J()});u.V(\'q8\').2S(\'1O\',Z(){Q.4R(\'1W\');5n.6t(\'zA zz 1a 9e!\')});u.V(\'zy\').2S(\'1O\',Z(){2m(L i=1;i<=zx;i++){Q.4R(`zw${i}`)}2L.34(\'ii 7Z a7 q7 do Q.\');5n.6t(\'ii 7Z a7 q7 1a 9e!\')});E 7o=Q.1f(\'7o\');u.V(\'7o\').l=7o;E 8a=Q.1f(\'8a\');u.V(\'8a\').l=8a;E 89=Q.1f(\'89\');u.V(\'89\').l=89;E 87=Q.1f(\'87\');u.V(\'87\').l=87;E fw=Q.1f(\'fw\');u.V(\'fw\').l=fw;E bB=Q.1f(\'bB\');u.V(\'bB\').l=bB;E 7j=Q.1f(\'7j\');u.V(\'7j\').l=7j;E 7R=Q.1f(\'7R\');u.V(\'7R\').l=7R;E 7S=Q.1f(\'7S\');u.V(\'7S\').l=7S;E 7Q=Q.1f(\'7Q\');u.V(\'7Q\').l=7Q;E a2=Q.1f(\'a2\');u.V(\'a2\').l=a2;E 8O=Q.1f(\'8O\');u.V(\'8O\').l=8O;E a1=Q.1f(\'a1\');u.V(\'a1\').l=a1;E 7a=Q.1f(\'7a\');u.V(\'7a\').l=7a;E 7H=Q.1f(\'7H\');u.V(\'7H\').l=7H;E 7E=Q.1f(\'7E\');u.V(\'7E\').l=7E;E 7P=Q.1f(\'7P\');u.V(\'7P\').l=7P;E 8N=Q.1f(\'8N\');u.V(\'8N\').l=8N;E 7O=Q.1f(\'7O\');u.V(\'7O\').l=7O;E 8M=Q.1f(\'8M\');u.V(\'8M\').l=8M;E 8L=Q.1f(\'8L\');u.V(\'8L\').l=8L;E 7N=Q.1f(\'7N\');u.V(\'7N\').l=7N;E 8I=Q.1f(\'8I\');u.V(\'8I\').l=8I;E 7i=Q.1f(\'7i\');u.V(\'7i\').l=7i;E 7M=Q.1f(\'7M\');u.V(\'7M\').l=7M;E 7L=Q.1f(\'7L\');u.V(\'7L\').l=7L;E 8D=Q.1f(\'8D\');u.V(\'8D\').l=8D;E 94=Q.1f(\'94\');u.V(\'94\').l=94;E 7g=Q.1f(\'7g\');u.V(\'7g\').l=7g;E 9p=Q.1f(\'9p\');u.V(\'9p\').l=9p;E 9t=Q.1f(\'9t\');u.V(\'9t\').l=9t;E 4C=Q.1f(\'4C\');u.V(\'4C\').l=4C;E 9s=Q.1f(\'9s\');u.V(\'9s\').l=9s;E 9r=Q.1f(\'9r\');u.V(\'9r\').l=9r;E 8G=Q.1f(\'8G\');u.V(\'8G\').l=8G;E 9q=Q.1f(\'9q\');u.V(\'9q\').l=9q;E 8q=Q.1f(\'8q\');u.V(\'8q\').l=8q;E 8W=Q.1f(\'8W\');u.V(\'8W\').l=8W;L 9k=u.4S("7p");2m(L i=0;i<9k.2J;i++){L 1V=9k[i];L q6=Q.1f(1V.id);if(q6==="2D"){1V.4c=2D}}u.V(\'q5\').2S(\'1O\',Z(){Q.1t(\'7o\',u.V(\'7o\').l);Q.1t(\'8a\',u.V(\'8a\').l);Q.1t(\'89\',u.V(\'89\').l);Q.1t(\'87\',u.V(\'87\').l);Q.1t(\'bB\',u.V(\'bB\').l);Q.1t(\'7S\',u.V(\'7S\').l);Q.1t(\'7j\',u.V(\'7j\').l);Q.1t(\'7R\',u.V(\'7R\').l);Q.1t(\'7Q\',u.V(\'7Q\').l);Q.1t(\'a2\',u.V(\'a2\').l);Q.1t(\'8O\',u.V(\'8O\').l);Q.1t(\'a1\',u.V(\'a1\').l);Q.1t(\'7a\',u.V(\'7a\').l);Q.1t(\'7H\',u.V(\'7H\').l);Q.1t(\'7E\',u.V(\'7E\').l);Q.1t(\'7P\',u.V(\'7P\').l);Q.1t(\'8N\',u.V(\'8N\').l);Q.1t(\'7O\',u.V(\'7O\').l);Q.1t(\'8M\',u.V(\'8M\').l);Q.1t(\'8L\',u.V(\'8L\').l);Q.1t(\'7N\',u.V(\'7N\').l);Q.1t(\'8I\',u.V(\'8I\').l);Q.1t(\'7i\',u.V(\'7i\').l);Q.1t(\'7M\',u.V(\'7M\').l);Q.1t(\'7L\',u.V(\'7L\').l);Q.1t(\'8D\',u.V(\'8D\').l);Q.1t(\'94\',u.V(\'94\').l);Q.1t(\'7g\',u.V(\'7g\').l);L 9k=u.4S("7p");2m(L i=0;i<9k.2J;i++){L 1V=9k[i];Q.1t(1V.id,1V.4c);Q.1t(\'3J\'+i,1V.4c)}Q.1t(\'8W\',u.V(\'8W\').l);Q.1t(\'9p\',u.V(\'9p\').l);Q.1t(\'9t\',u.V(\'9t\').l);Q.1t(\'4C\',u.V(\'4C\').l);Q.1t(\'9s\',u.V(\'9s\').l);Q.1t(\'9r\',u.V(\'9r\').l);Q.1t(\'8G\',u.V(\'8G\').l);Q.1t(\'9q\',u.V(\'9q\').l);Q.1t(\'8q\',u.V(\'8q\').l);5n.6t(\'ii jB 1a 9e!\');if(7j===\'N\'){L dx=0;Q.1t(\'8P\',dx)}})}W q4=u.V(\'ih\');if(q4){u.V(\'ih\').2S(\'1O\',Z(){q3()})}L zv=u.2z(\'#zu a[1s*="zt"]\');L bA = 0;Z ic(){L fv=u.V(\'zs\');E 7o=Q.1f(\'7o\');E 8a=Q.1f(\'8a\');E 89=Q.1f(\'89\');E q1=u.4S("ig");if(7o===\'S\'){Z zr(el){1K(el.zq===52)}Z zp(q2){1K u.2z(q2)}if(fv&&!2F.2y.1s.4Z("1V")){1L(Z(){fv.1O()},9M)}1B if(!fv&&!2F.2y.1s.4Z("1V")){W ie=u.2z(".af-zo-2k");if(ie){W 8l=ie.2z(".1S.1S-bJ");if(8l){1L(Z(){8l.1O()},9M)}}}}if(q1.2J>0){if(8a===\'S\'){if(bA>20){W q0=`<2v id="4d"5Q="5P"5O 57="0.9"5N><5M 1h="1d://5L.5K.5J/5I/zn/zm-lq.5t"1c="2v/67">5s 5H não 5G o 5F deá9m.</2v>`;u.gf.3r(\'5E\',q0)}}if(89===\'S\'){if(bA>59){2F.2y.1s="1d://zl.zk.1a.br"}}bA=bA+3}1B{bA=0}1L(Z(){ic()},5o)}ic();if(!2F.2y.1s.4Z("1V")){L ib=u.V(\'zj\');E pZ=Q.1f(\'94\');if(ib&&pZ===\'S\'){W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">zi</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F de 2v.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><X k="1o-p6"><X k="bz"><I k="8X-m5"></I></X><1x k="1S-6e"id="4J-dS"f="1z-2c: 2r; 1G: 2i;">zh pY de 88ções de 5Yção</1x><1x k="1S-6e"id="4J-i7"f="1z-2c: 2r; 1G: 5y;">zg pY de 88ções de 5Yção</1x><br><X id="ft"p="1H%"k="4J-zf"f="1G: 2i;"><1x id="pn"k="1S-6e"><i k="7e fa-aj-ze"></i>zd gN</1x><1b 1c="aj"id="hT"zc=".fl"><2a 2m="hT"k="1S-6e"><i k="7e fa-aj-zb"></i></2a><X k="za"><X id="z9"><1o id="z8"><eK><tr><th f="p: gc;">ia</th><th f="p: 6f">Ní6k</th><th f="p: 6f">i8 pXípW</th><th f="p: 6f">z7 z6</th></tr></eK><1q id="7n"></1q></1o></X></X><ae id="z5"><X f="2t-2q: 4g;"><2a 2m="H">ia:</2a><1E id="H"k="4U 1b-4E"f="p: gc; 2t-2q: 4g;"><w l="2l">ia z4</w><w l="33">eE</w><w l="3D">9DáeD</w><w l="4j">eC</w><w l="2V">bk</w><w l="bl">eB de eA</w><w l="pP">z3</w><w l="3n">ez</w><w l="3g">abça de eyão</w><w l="4Q">9Dáex</w><w l="2j">bj</w><w l="2O">ew</w><w l="2P">evço de z2</w><w l="2Q">eu de z1</w><w l="39">et</w><w l="2K">erém</w><w l="4J">z0</w><w l="3C">ep</w></1E></X><X f="2t-2q: 4g;"><2a 2m="K">NípN 3c yZ yY:</2a><1b 1c="4h"id="K"6c="1"k="4U 1b-4E"f="p: kn"></X><1x id="fp"1c="1x"k="1S-6e"><i k="7e fa-yX-i9"></i>yW+1 pV yV pXípW</1x><1x id="pz"1c="1x"k="1S-6e"><i k="7e fa-yU-i9"></i>i8 pV yT yS</1x><X f="2t-2q: 4g;"><2a 2m="3A">9S do 3u:</2a><1b 1c="1k"kk="g8 um 2U 3c o 4x de d6ção"id="3A"k="4U 1b-4E"f="p: g7; 2t-2q: 4g;"><1x id="hS"1c="1x"k="1S-6e"><i k="7e fa-9g"></i>dI 3u</1x></X><X f="2t-2q: 4g;"><2a 2m="5k">ks 3u:</2a><1E id="5k"k="4U 1b-4E"f="p: ga; 2t-2q: 4g;"><w l="">7c um 3u</w></1E></X><X><1x id="py"1c="1x"k="1S-6e"><i k="7e fa-kr-4q"></i>kq 3u</1x><1x id="pw"1c="1x"k="1S-6e"><i k="7e fa-kp"></i>gb 3u pU fu</1x><1x id="yR"1c="1x"k="1S-6e"><i k="7e fa-yQ-i9"></i>i8 3u yP fu</1x></X><X k="1V-bz"><1b 1c="1V"id="7l"k="4U 1b-4E"><2a 2m="7l">ko 5Yções yOáyN pU fu</2a></X><X k="1V-bz"><1b 1c="1V"id="bu"k="4U 1b-4E"><2a 2m="bu">pT a yM se yL fo de:</2a><1b 1c="4h"id="l-9J-39"k="4U 1b-4E"l="10"6c="0"7x="99">%da yKção d0í6k</X><X k="1V-bz"><1b 1c="1V"id="9I"k="4U 1b-4E"><2a 2m="9I">pT pSém se cZ yJ pf ou i3 a:</2a><1b 1c="4h"id="l-9J-2K"k="4U 1b-4E"l="1H"6c="0"7x="1H">%do pSém</X><X k="1V-bz"><1b 1c="1V"id="7m"k="4U 1b-4E"><2a 2m="7m">yI yH yG:yF</2a><1b l="10"1c="4h"f="p: 3o;"1c="4h"6c="1"7x="99"id="fj"k="4U 1b-4E">2h</X><X k="1V-bz"><1b 1c="1V"id="ai"1y="ai"><2a 2m="ai"id="2a-yE">yD 5Yções em 50%se o b8 2m i3 a(1U e 2h):<1b 1c="6i"id="6i-8X-up"k="4U 1b-4E"f="2t-2q: 4g; p: yC;"></2a></X><X k="7x-yB"f=" 2t-2q: 4g;"><2a 2m="ah">MádJ de kt:</2a><1b f="p: pR;"1c="4h"6c="1"7x="10"id="ah"k="1b-4E"></X><X f=" 2t-2q: 4g;"><2a 2m="6i-8X-5m">cF 3c 8jóax fu em lL:</2a><1b f="p: pR;"1c="4h"l="pQ"id="6i-8X-5m"k="1b-4E"></X></ae></X></X><3i><3j id="66">a0 D\'a cl v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="4a"></I></3j></3i>`;W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);u.V(\'4J-dS\').2S(\'1O\',Z(){3y.f.1G=\'2i\';u.V(\'ft\').f.1G=\'2i\';u.V(\'4J-i7\').f.1G=\'5y\'});u.V(\'4J-i7\').2S(\'1O\',Z(){3y.f.1G=\'2i\';u.V(\'ft\').f.1G=\'5y\';u.V(\'4J-dS\').f.1G=\'5y\'});E fp=u.V("fp");E 7n=u.V("7n");E pL=u.V("ft");E pO={2l:30,33:25,3D:20,4j:15,pP:3,bl:20,2V:1,3n:20,3g:1,4Q:1,2j:25,2O:30,2P:30,2Q:30,39:30,2K:30,4J:10,3C:20,};E i6={33:{2l:3},3D:{2l:10,33:5,3n:5},4j:{2l:10,3n:5},bl:{2l:5,39:5},2V:{2l:20,3n:20,2j:10},3n:{2l:5,33:1},2j:{2l:3,2K:2},3C:{33:1}};Z pC(){W H=u.V("H").l;W i0=2e(u.V("K").l)||1;if(!H){4f("7c um ptí83!");1K}if(i6[H]){2m(E[i5,i4]of 7y.n2(i6[H])){if(fd(i5)<i4){4f(`Nãoéi2í6k i1 ${H}.yA ${i5}ní6k ${i4}ou i3.`);1K}}}E fs=pO[H];E fq=fd(H);if(fq+i0>fs){4f(`Nãoéi2í6k i1 h8 nípN.O fs de ní6k 3c o ${H}é${fs}.`);1K}W 9K=[...u.6M("#7n tr")].9O(2k=>2k.2z(".H-1y").9E.H===H);W ag=0;if(9K.2J>0){W fr=9K[9K.2J-1];ag=2e(fr.2z(".K").2u)||0}W pM=ag+i0;W 2k=u.6Y("tr");2k.65=`<td k="H-1y"Y-H="${H}"><I k="2E"f="1z: 1Q(1d://1n.1i.1a/1m/hZ/1l/hY/hX/${H}1.1e); p: 3E; 1r: 3o; 1G: 5y-3w;"></I>${H}</td><td k="K">${pM}</td><td><1x k="8J-2k">❌</1x></td><td><1x k="ak-up">🔺</1x><1x k="ak-hW">🔻</1x></td>`;7n.aL(2k);pL.f.1G="3w"}Z fd(H){W 9K=[...u.6M("#7n tr")].9O(2k=>2k.2z(".H-1y").9E.H===H);if(9K.2J===0)1K 0;W fr=9K[9K.2J-1];W pK=2e(fr.2z(".K").2u)||0;1K pK}Z pB(3V){if(3V.2B.aV.9X("8J-2k")){3V.2B.7b("tr").8J()}}Z pA(3V){W 2k=3V.2B.7b("tr");if(!2k)1K;W 5V=u.V("7n");W 93=52;if(3V.2B.aV.9X("ak-up")&&2k.pJ){93=2k.pJ}1B if(3V.2B.aV.9X("ak-hW")&&2k.pI){93=2k.pI}if(93){W pH=2k.2z(".H-1y").9E.H;W pG=93.2z(".H-1y").9E.H;if(pH!=pG){W fq=2e(2k.2z(".K").2u);W pF=2e(93.2z(".K").2u);2k.2z(".K").2u=fq;93.2z(".K").2u=pF;if(3V.2B.aV.9X("ak-up")){5V.dX(2k,93)}1B{5V.dX(93,2k)}}}}Z fm(){W 5k=u.V("5k");5k.65=\'<w l="">7c um 3u</w>\';W 5j=37.4n(Q.1f("92"))||{};7y.98(5j).2w(4x=>{W w=u.6Y("w");w.l=4x;w.2u=4x;5k.aL(w)})}fm();W 91=Q.1f("hU");if(91){u.V("5k").l=91}Z pq(4x){W 5V=u.V("7n");5V.65="";4x.2w(1g=>{W 2k=u.6Y("tr");2k.65=`<td k="H-1y"Y-H="${1g.H}"><I k="2E"f="1z: 1Q(1d://1n.1i.1a/1m/hZ/1l/hY/hX/${1g.H}1.1e); p: 3E; 1r: 3o; 1G: 5y-3w;"></I>${1g.H}</td><td k="K">${1g.K}</td><td><1x k="8J-2k">❌</1x></td><td><1x k="ak-up">🔺</1x><1x k="ak-hW">🔻</1x></td>`;5V.aL(2k)})}E hV=["7l","bu","l-9J-39","9I","l-9J-2K","7m","ai","ah","6i-8X-5m","6i-8X-up","fj"];Z pD(){hV.2w(id=>{E 2G=u.V(id);if(2G){E 8r=Q.1f(id);if(2G.1c==="1V"){2G.4c=8r==="2D"}1B if(2G.1c==="4h"||2G.1c==="6i"){2G.l=8r!==52?8r:2G.l}}})}Z pE(3V){E 2G=3V.2B;if(2G.1c==="1V"){Q.1t(2G.id,2G.4c)}1B if(2G.1c==="4h"||2G.1c==="6i"){Q.1t(2G.id,2G.l)}}hV.2w(id=>{E 2G=u.V(id);if(2G){2G.2S("75",pE)}});pD();fp.2S("1O",pC);7n.2S("1O",pB);7n.2S("1O",pA);u.V("pz").2S("1O",()=>{W 7h=u.4S("8J-2k");if(7h.2J>0){7h[7h.2J-1].1O()}});u.V("py").2S("1O",Z(){W 5k=u.V("5k");W 3A=5k.l;if(!3A){4f("7c um 4x 3c jU.");1K}W 5j=37.4n(Q.1f("92"))||{};cI 5j[3A];Q.1t("92",37.6K(5j));fm();4f(`3u"${3A}"jTído 1a 9e!`)});u.V("pw").2S("1O",Z(){W 5k=u.V("5k");W 3A=5k.l;if(!3A){4f("7c um 4x 3c jR na f7.");1K}Q.1t("hU",3A);4f(`3u"${3A}"jP 3c pv f7!`)});u.V("hS").2S("1O",Z(){W 3A=u.V("3A").l.6J();if(!3A){4f("g5 jX, yz um 2U 3c o 4x.");1K}W fn=[];u.6M("#7n tr").2w(2k=>{W H=2k.2z(".H-1y").9E.H;W K=2e(2k.2z(".K").2u);fn.47({H,K})});if(fn.2J===0){4f("yy pu fo um ptí83 yx de yw o 4x.");1K}W 5j=37.4n(Q.1f("92"))||{};5j[3A]=fn;Q.1t("92",37.6K(5j));fm();4f(`3u"${3A}"jW 1a 9e!`)});u.V("hT").2S("75",Z(3V){W 9g=u.V("hS");W aj=3V.2B.yv[0];W ps=aj.1y.5b(/\\.fl$/i,"");u.V("3A").l=ps;if(!aj){4f("fc po yu.");1K}W hR=1D yt();hR.iF=Z(e){n5{W pp=37.4n(e.2B.8p);pq(pp);9g.1O()}b2(4G){4f("9P ao bS o 4x. ys se o po 6Sá yr.")}};hR.yq(aj)});u.V("pn").2S("1O",Z(){W 5k=u.V("5k");W 3A=5k.l;if(!3A){4f("7c um 4x 3c yp.");1K}W 5j=37.4n(Q.1f("92"))||{};W 91=5j[3A];if(!91){4f("3u não 8k.");1K}W pm=1D yo([37.6K(91,52,2)],{1c:"yn/fl"});W a=u.6Y("a");a.1s=6r.ym(pm);a.yl=`${3A}.fl`;a.1O()});E pa=63;E hI=9n;E 5Yçãp3=2D;E cXçãfi="yk";E fh="yj";Z pl(){W bx=hH();if(bx==fh){dY(Z(){L 7l=u.V(\'7l\');if(7l.4c){hFção()}},1P)}1B if(bx==cXçãfi){u.V("p9").4T[0].4T[0].1O()}}pl();Z 1O(){1L(Z(){L 1k="";L tr=$(\'[id="yi"]\').3R(\'tr\').eq(1);1k=tr.3R(\'td\').eq(1).3R(\'I\').eq(0).1k().2N(" ").cA("").2N("\\n").cA("");L fk=1k.2N(\':\');if(fk[0]*60*60+fk[1]*60+fk[2]*1<3*60){2L.34("yh ygáyf");tr.3R(\'td\').eq(2).3R(\'a\').eq(2).1O()}L 7m=u.V(\'7m\');if(7m.4c){$(\'[k="1S 1S-6O-aX ye-yd-yc-1x"]\').1O()}$(\'[k="1S 1S-6O-aX yb-1S hy-ya-1S"]\').1O();1O()},1P)}1O();Z hK(){W cV=u.2z(".1S.dZ-6O-1S.1S-6O-aX");L hQ=2e(u.V(\'hQ\').2u);L ai=u.V(\'ai\');if(ai.4c&&hQ>10){W hP=u.2z("#y9");if(!hP){2L.34("y8 de d6ção não n0.");1K}W hO=hP.2z("I[Y-y7]");if(!hO){2L.34("fc b8 8k na pg.");1K}W pk=hO.2u.6J();W hN=pk.2N(":").3I(4B);W pi=(hN[0]*60)+hN[1];W hM=u.V(\'6i-8X-up\');if(!hM){2L.34("y6 6i-8X-up não 8k.");1K}W pj=hM.l.6J();W hL=pj.2N(":").3I(4B);W ph=(hL[0]*60)+hL[1];if(pi>ph&&!cV){oT()}1B{2L.34("cF da pg é oU ou pf. y5 ação cYánf.")}}1L(Z(){hK()},63)}hK();Z hJ(){L 7m=u.V(\'7m\');L 7l=u.V(\'7l\');if(7m.4c&&7l.4c){L pb=u.V(\'fj\').l;u.V(\'pe\').1O();1L(Z(){$(\'[k="az pd-pc"]\').1O()},bK)}1L(Z(){hJ()},pb*2W)}hJ();W 1C=1R.2b(1R.gn()*(hI-hI)+pa);W bx=hH();1L(Z(){if(bx==fh){hFção()}1B if(bx==cXçãfi){u.V("p9").4T[0].4T[0].1O()}},1C);Z hH(){W hG=2F.2y.1s;if(hG.p8(\'cXção y4\')){1K cXçãfi}1B if(hG.p8(\'2l\')){1K fh}}Z hFção(){W 5Yçãbw=ffçãbw();L ah=2e(u.V(\'ah\').l);W p7=u.6M(\'.jv\');if(5Yçãbw!==dO&&p7.2J<(ah-1)){5Yçãbw.1O();2L.34("y3 on "+5Yçãbw)}}Z ffçãbw(){W p5=u.4S("1S 1S-p6");W 5Yçãbv=ffçãbv();W fg;if(y0.xZ(5Yçãbv)){2m(W i=0;i<5Yçãbv.2J;i++){L hE=5Yçãbv[i];if(p5.xY(hE)){W prócWí83=u.V(hE);if(prócWí83){L p4=prócWí83.xX>0||prócWí83.xW>0;if(p4){fg=prócWí83;2L.34(`${fg}`)}if(5Yçãp3){aK}}}}}1K fg}Z ffçãbv(){W 8Zê8Yção=[];L aC=2e($("#2Q").1k());L 7F=2e($("#2P").1k());L aF=2e($("#2O").1k());L hC=2e($("#2K").1k());L oX=u.V(\'bu\');L 9I=u.V(\'9I\');L p0=2e(u.V(\'l-9J-2K\').l);L oY=2e(u.V(\'l-9J-39\').l);L p2=2e(u.V(\'xV\').9c);L hD=2e(u.V(\'xU\').9c);L p1=hD-p2;L oZ=(p1/hD)*1H;L fe=(hC/1H)*p0;if(oZ<oY&&oX.4c){2m(W i=1;i<=30;i++){8Zê8Yção.47(`xT${i}`)}1K 8Zê8Yção}if(aC>fe&&7F>fe&&aF>fe&&9I.4c){2m(W i=1;i<=30;i++){8Zê8Yção.47(`xS${i}`)}1K 8Zê8Yção}W 5j=37.4n(Q.1f("92"))||{};if(91&&5j[91]){W oW=5j[91];oW.2w(({H,K})=>{W ag=fd(H);if(K>ag){2m(W i=ag+1;i<=K;i++){8Zê8Yção.47(`oV${H}au${i}`)}}1B if(K===ag){8Zê8Yção.47(`oV${H}au${K}`)}1B{2L.34(`Ní6k do ${H}no 4xéoU 4z o xR.xQ.`)}});1K 8Zê8Yção}1B{2L.34("3u não 8k no Q.")}1K 8Zê8Yção}Z oR(){W cV=u.2z(".1S.dZ-6O-1S.1S-6O-aX");if(cV){2L.34("bIão \'a5\' 8k! oS...");cV.1O()}1B{2L.34("fc afão \'a5\' 8k.")}}Z oT(){W hB=u.2z(".xP.1S.1S-xO");if(hB){2L.34("bIão 8k! oS...");hB.1O();1L(oR,bK)}1B{2L.34("fc afão de oQção de b8 8k.")}}Z oP(){L hA=2e(u.V(\'6i-8X-5m\').l);L bM=u.V(\'jq\');1L(Z(){bM.1O()},hA*1P);1L(Z(){$(\'.jo\').1O()},hA*1P)}oP();L v0=0;L oO=Q.1f(\'3J\'+v0);L oN=oO===\'2D\';if(oN){L oM=\'ok\'}if(oM===\'ok\'){Z 4N(){L 5e=2e(Q.1f(\'8W\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+5e);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:9n},{1p:"74",1C:1P},{1p:"3g&1X=7C",1C:5o},{1p:"3g&1X=73",1C:63},{1p:"2j&1X=72",1C:7B},{1p:"2j&1X=71",1C:8g},{1p:"4Q&1X=6v",1C:8f},{1p:"2V&1X=6u",1C:8h},{1p:"62",1C:64}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - xN";u.1w=48}E 87=Q.1f(\'87\');L oL=u.V(\'oG\');L 6O=u.V(\'xM\');if(87===\'S\'){if(oL){W oJ=`<X id="5d"><1o id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td f="1z-2c:4M(6G,6F,1H);1z-6a:1Q(1d:xL</h1></td><td f="1k-1A: 8C;"><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F deá9m.</2v></X></td></tr></1q></1o></td></tr></1q></1o></td></tr></1q></1o></X>`;E oK=u.V(\'5q\');oK.3r(\'5E\',oJ);if(8V===1){1L(Z(){E X=u.V(\'5d\');W 9H=`<3i><3j id="66"f="1k-1A: 2g;">f9 as 7f v3.0 by<I f="2c: 5r">5c</I><I id="f8"></I><I id="aY"></I><I id="4a"></I></3j></3i>`;X.3r(\'7d\',9H)},1P)}1B if(8V===2){1L(Z(){E X=u.V(\'5d\');W 9H=`<3i><3j id="66"f="1k-1A: 2g;">f9 as 7f v3.0 by<I f="2c: 5r">5c</I> xK xJ. xI oI do oH fb fb<I id="f8"></I><I id="aY"></I><I id="4a"></I></3j></3i>`;X.3r(\'7d\',9H)},1P);1K}1B if(8V===0){1L(Z(){E X=u.V(\'5d\');W 9H=`<3i><3j id="66"f="1k-1A: 2g;">f9 as 7f v3.0 by<I f="2c: 5r">5c</I> xH xG xF oI do oH fb fb<I id="f8"></I><I id="aY"></I><I id="4a"></I></3j></3i>`;X.3r(\'7d\',9H)},1P);1K}1B if(8V===3){1L(Z(){E X=u.V(\'5d\');W 8U=Q.1f(\'8U\');W 9H=`<3i><3j id="66"f="1k-1A: 2g;">f9 as 7f v3.0 by<I f="2c: 5r">5c</I> 5s xE xD em ${8U} xC<I id="f8"></I><I id="aY"></I><I id="4a"></I></3j></3i>`;X.3r(\'7d\',9H)},1P)}W $dG=`<X id="bp"k="9V 2s "f="p: g9; 1Z: 3v 5S #6L; 1Y: 3t 2X 4V 2X;"><h4>cF de oB atécH:</h4><1o k="2s" f="1Z-9i:aR; 1Z-aQ: aP; 1o-c5: aO; p: 1H%;"><1q><tr><th f="p: 1v"><a 1s="#" k="1T" Y-G="4l"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/7J.1e" Y-1w="7I"></a></th><th f="p:1v"><a 1s="#" k="1T" Y-G="3Q"><1j 1h="1d:W $nB=`<X id="oG"k="2B-1E 9V 2s "f="1Y: 3t; 1Z: 0; 1Z-4W: 3v 5S #6L;"><h4>ek:</h4><1o k="2s" f="p: 1H%"><1q><tr><td 32="8"><1b 1c="7Y-4i" id="cM" e6=".e5" f="p: xB"></td></tr><tr><td 32="4"><I>gb htá86:</I><X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e" p="13" 1r="13"><I k="2H">3a 4A 4I cS o oFá86 cT 3dá3W cS saída ou oE em xAção ao hw.</I></X></td><td 32="4"><1E id="o5"f="2t-2q: 3H; p: 1H%;"><w l="C">cs</w><w l="S">nzída</w></1E></td></tr><tr><td 32="4"><I>3u de 3x: </I><X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">3a 4A 4I cQ 3dáo oA de bt de 3x no cU 7k,9G 8T oz hu 3x,3dáor hz as 7f do 7k xz,9G 8T cT xw hyão xv xu 3dáxt xs xr opção 3c xq as 7f.</I></X></td><td 32="4"><1E id="hn"f="2t-2q: 3H; p: 1H%;"><w l="0">hu 3x</w><w l="1">3x og</w><w l="2">3x 2</w><w l="3">3x 3</w><w l="4">3x 4</w><w l="5">3x 5</w></1E></td></tr><tr 1y="xp" f="1G: 2i;"><td 32="4"><I>xo de 3x: </I><X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">3a 4A 4I cQ se o 7k de 3x xn 3d xm cS um 3x oD ou um 3x oC.</I></X></td><td 32="4"><1E id="xl"f="2t-2q: 3H;"><w l="R">oD</w><w l="F">oC</w></1E></td></tr><tr 1y="xk" f="1G: 2i;"><td 32="4"><I>oB 3c 3x: </I><X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">3a 4A 4I cQ 3dáo oA de bt de 3x no cU 7k,9G 8T oz ov,oy os ox ow 3dão em e7 xj 3c o 7k,9G 8T cT ot,oy os ox 3dão ow em xi 7Z e7 xh na f7.</I></X></td><td 32="4"><1E id="xg"f="2t-2q: 3H; p: 1H%;"><w l="U">ov</w><w l="P">ot</w></1E></td></tr><tr><td 32="4"><I>hg 7Z hf: </I><X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">3a 4A 4I cQ 3dáo hw 7Z xf no 7k.</I></X></td><td 32="4"><1E id="o4"f="2t-2q: 3H;"><w l="b6">dLão</w><w l="2l">heí83 hd</w><w l="33">eE</w><w l="3D">9DáeD</w><w l="4j">eC</w><w l="bl">eB de eA</w><w l="2V">bk</w><w l="3n">ez</w><w l="3g">abça de eyão</w><w l="4Q">9Dáex</w><w l="2j">bj</w><w l="2O">ew</w><w l="2P">evço de hc</w><w l="2Q">eu de hb</w><w l="39">et</w><w l="2K">erém</w><w l="3C">ep</w></1E></td></tr><tr><td 32="4"><I>ce xe: </I><X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">3a 4A 4I se iráhx 5D xd de xc 1a o n9 7k,ou 8T,o 7k xb xa e jaéor oq,9G 8T cT n8 x9 5X 4A 3dá3W cS um a3 de cP a 3d x8,ou 8T,9G x7 3,3dão oo um a3 de 3 cP 4z irão x6 no hw x5 e 3d x4 oq.</I></X></td><td 32="4"><1b id="o3" l="0" f="p: 2o;" 1c="1k"></td></tr></1q></1o><h4 1y="f0"f="1Z-4W: 3v 5S #6L; 1G: 2i;">5z 2:<X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">cR seção iráf6 f5 7f 3dão f4 1a o 3x f3.</I></X></h4><1o f="1G: 2i;" 1y="f0"><1q><tr><th f="p: 1v"><a 3b="-1" 1s="#" k="1T" Y-G="4l"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/7J.1e" Y-1w="7I"></a></th><th f="p:1v"><a 3b="-1" 1s="#" k="1T" Y-G="3Q"><1j 1h="1d:<1b id="x3"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-3Q"><1b id="x0"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4m"><1b id="wZ"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4w"><1b id="wY"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-5g"><1b id="wX"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-6d"><1b id="wW"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td></tr><tr><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4v"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8B.1e"Y-1w="4F 8A"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="5f"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"Y-1w="6g a 9h"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4u"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8y.1e"Y-1w="4F 8x"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4t"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8w.1e"Y-1w="f2"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4s"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8v.1e"Y-1w="8u"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="2V"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9j.1e"Y-1w="5z"></a></th></tr><tr k="3h-2k"><td f="p: 1v"k="1u G-1g G-1g-4v"><1b id="wV"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4w"><1b id="wU"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4u"><1b id="wT"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4t"><1b id="wS"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4s"><1b id="wR"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-2V"><1b id="wQ"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td></tr></1q></1o><h4 1y="eZ"f="1G: 2i; 1Z-4W: 3v 5S #6L;">5z 3:<X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">cR seção iráf6 f5 7f 3dão f4 1a o 3x f3.</I></X></h4>	<1o k="2s" f="p: 1H%; 1G: 2i;" 1y="eZ">		<1q>			<tr><th f="p: 1v"><a 3b="-1" 1s="#" k="1T" Y-G="4l"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/7J.1e" Y-1w="7I"></a></th><th f="p:1v"><a 3b="-1" 1s="#" k="1T" Y-G="3Q"><1j 1h="1d:<1b id="wP"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-3Q"><1b id="wO"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4m"><1b id="wN"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4w"><1b id="wM"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-5g"><1b id="wL"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-6d"><1b id="wK"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td></tr><tr><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4v"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8B.1e"Y-1w="4F 8A"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="5f"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"Y-1w="6g a 9h"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4u"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8y.1e"Y-1w="4F 8x"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4t"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8w.1e"Y-1w="f2"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4s"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8v.1e"Y-1w="8u"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="2V"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9j.1e"Y-1w="5z"></a></th></tr><tr k="3h-2k"><td f="p: 1v"k="1u G-1g G-1g-4v"><1b id="wJ"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4w"><1b id="wI"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4u"><1b id="wH"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4t"><1b id="wG"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4s"><1b id="wF"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-2V"><1b id="wE"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td></tr></1q></1o><h4 1y="eY"f="1G: 2i; 1Z-4W: 3v 5S #6L;">5z 4:<X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">cR seção iráf6 f5 7f 3dão f4 1a o 3x f3.</I></X></h4><1o k="2s" f="p: 1H%; 1G: 2i;" 1y="eY">		<1q>			<tr>				<th f="p: 1v"><a 3b="-1" 1s="#" k="1T" Y-G="4l"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/7J.1e" Y-1w="7I"></a></th><th f="p:1v"><a 3b="-1" 1s="#" k="1T" Y-G="3Q"><1j 1h="1d:<1b id="wD"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-3Q"><1b id="wC"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4m"><1b id="wB"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4w"><1b id="wA"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-5g"><1b id="wz"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-6d"><1b id="wy"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td></tr><tr><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4v"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8B.1e"Y-1w="4F 8A"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="5f"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"Y-1w="6g a 9h"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4u"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8y.1e"Y-1w="4F 8x"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4t"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8w.1e"Y-1w="f2"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4s"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8v.1e"Y-1w="8u"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="2V"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9j.1e"Y-1w="5z"></a></th></tr><tr k="3h-2k"><td f="p: 1v"k="1u G-1g G-1g-4v"><1b id="wx"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-5f"><1b id="ww"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4u"><1b id="wv"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4t"><1b id="wu"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4s"><1b id="wt"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-2V"><1b id="ws"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td></tr></1q></1o><h4 1y="eX"f="1G: 2i; 1Z-4W: 3v 5S #6L;">5z 5:<X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">cR seção iráf6 f5 7f 3dão f4 1a o 3x f3.</I></X></h4>	<1o k="2s" f="p: 1H%; 1G: 2i;" 1y="eX">		<1q>			<tr><th f="p: 1v"><a 3b="-1" 1s="#" k="1T" Y-G="4l"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/7J.1e" Y-1w="7I"></a></th><th f="p:1v"><a 3b="-1" 1s="#" k="1T" Y-G="3Q"><1j 1h="1d:<1b id="wr"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-3Q"><1b id="wq"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4m"><1b id="wp"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4w"><1b id="wo"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-5g"><1b id="wn"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-6d"><1b id="wm"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td>			</tr><tr><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4v"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8B.1e"Y-1w="4F 8A"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="5f"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"Y-1w="6g a 9h"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4u"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8y.1e"Y-1w="4F 8x"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4t"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8w.1e"Y-1w="f2"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="4s"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8v.1e"Y-1w="8u"></a></th><th f="p: 1v"><a 3b="-1"1s="#"k="1T"Y-G="2V"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9j.1e"Y-1w="5z"></a></th></tr><tr k="3h-2k"><td f="p: 1v"k="1u G-1g G-1g-4v"><1b id="wl"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-5f"><1b id="wk"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4u"><1b id="wj"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4t"><1b id="wi"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-4s"><1b id="wh"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td><td f="p: 1v"k="1u G-1g G-1g-2V"><1b id="wg"1c="1k"Y-1M-1J="0"l="0"f="p: 2o;"></td>			</tr></1q>	</1o><h4 1y="f1"f="1G: 2i;">3x wf:<X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">cR seção se we ao bt de c9 e wd 5C 7k após 2 2h do bt 3c 4z o wc wb o hv 9G wa.</I></X></h4><1o k="2s"f="p: 1H%; 1G: 2i;"1y="f1"><1q><tr><td 32="10"><I>en cP:</I><X k="2C"><1j 1h="1d://1n.1i.1a/1m/2Z/1l/2Y.1e"p="13"1r="13"><I k="2H">3a 4A 4I cQ 3dáo núeM de cP oo w9 3c o w8 de 5z.</I></X><1b id="w7"l="0"f="p: 2o;"1c="1k"></td></tr></1q></1o><1o k="2s"f="p: 1H%"><1q><tr><td 32="10"><1x 1c="1x"id="nZ"k="ej 1S 1S-ej 1S-2B-8H">ce</1x></td><td><1x 1c="1x"id="nX"k="9C 1S 1S-9C 1S-2B-8H">cD</1x></td><td></tr></1q></1o><1o k="2s"f="p: 1H%"><1q><X k="2B-1E 9V 2s "f="1Y: 3t; 1Z: 0; 1Z-4W: 3v 5S #6L;"><h4>ek em 82:</h4><tr><td 32="10"><1x k="1S am-ae-2G" id="nq" 1c="1x" >ek</1x></td><td><1x k="1S am-ae-2G" id="np" 1c="1x" >9W bm</1x></td></tr></X></1q></1o></X><f>.2C.2H{bh:9Z;p:h6;1z-2c:h5;2c:#h0;1k-1A:2g;1Z-gZ:gY;4r:2X;av:d1;z-1I:1;4W:80%;3P:77%;cC:gX(-10%);8S:0;ck:8S 0.3s}.2C:cj.2H{bh:gW;8S:1}</f>`;W nT=`<X id="cK"k="2B-1E 9V 2s "f="p: w6; 1Y: 3t; 1Z: 0; 1Z-4W: 3v 5S #6L;"><h4>w5ções de 9W bm:</h4><1o k="2s" f="1Z-9i: aR; 1Z-aQ: aP; 1o-c5: aO; p: 1H%;"><1q><tr><td 32="10"><I id="nK"></I></td></tr><tr><td 32="10"><I id="nJ"></I></td></tr><tr><td 32="10"><I id="nH"></I></td></tr></1q></1o><X id="cK"k="2B-1E 9V 2s "f="p: w4; 1Y: 3t; 1Z: 0; 1Z-4W: 3v 5S #6L;"><h4>8jódJ cE w3 3dáw2:</h4><1o k="2s"f="1Z-9i: aR; 1Z-aQ: aP; 1o-c5: aO; p: 1H%;"><1q><tr><th f="p: 4V"><a 1s="#"k="1T"Y-G="4l"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/7J.1e"Y-1w="7I"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="3Q"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9U.1e"Y-1w="c4"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="4m"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9T.1e"Y-1w="Bác3"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="4w"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/c2.1e"Y-1w="6g"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="5g"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/c1.1e"Y-1w="c0"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="4v"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8B.1e"Y-1w="4F 8A"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="5f"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"Y-1w="6g a 9h"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="4u"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8y.1e"Y-1w="4F 8x"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="4t"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8w.1e"Y-1w="AríbZ"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="4s"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8v.1e"Y-1w="8u"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="6d"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/dK.1e"Y-1w="c7"></a></th><th f="p: 4V"><a 1s="#"k="1T"Y-G="2V"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9j.1e"Y-1w="5z"></a></th></tr><tr id="nQ" k="3h-2k"></tr><tr><td id="2c"32="2"><I id="2E"></I><I id="nP"></I></td><td 32="5"><I 1w="w1 - oj (om|ol) w0"k="2E 6x 5m"></I><I>bi</I><1b id="5a"l="om|ol"3M=""></td><td 32="5"><I 1w="vZ | oj (oi|oh)"k="2E 6x 5m"></I><I>cH</I><1b id="58"l="oi|oh"3M=""></td></tr><tr><td 32="5"><I>3u 3x:</I></td><td 32="7"><I></I><1E id="nM" f="2t-2q: 3H; p: 1H%;"><w l="0">hu 3x</w><w l="1">3x og</w><w l="2">3x 2</w><w l="3">3x 3</w><w l="4">3x 4</w><w l="5">3x 5</w></1E></td></tr><tr><td 32="5"><I>hg 7Z hf:</I></td><td 32="7"><1E id="nN"f="2t-2q: 3H;"><w l="b6">dLão</w><w l="2l">heí83 hd</w><w l="33">eE</w><w l="3D">9DáeD</w><w l="4j">eC</w><w l="bl">eB de eA</w><w l="2V">bk</w><w l="3n">ez</w><w l="3g">abça de eyão</w><w l="4Q">9Dáex</w><w l="2j">bj</w><w l="2O">ew</w><w l="2P">evço de hc</w><w l="2Q">eu de hb</w><w l="39">et</w><w l="2K">erém</w><w l="3C">ep</w></1E></td></tr><tr><td 32="6"><I>htá86 vY:</I><1b id="nO"l="oe-vX-vW:gk:gk"1c="7Y-4i"3M=""></td><td 32="6"><I>htá86 cs:</I><1b id="nL"l="oe-10-vV:45:45.vU"1c="7Y-4i"3M=""></td></tr></1q></1o></X></X></X>`;W gQ=37.4n(Q.1f(\'vT\'))||{};W cx=37.4n(Q.1f(`vS${gQ[\'vR\']}`))||{};$(u).j6(Z(){E 75=u.V(\'hn\');75.2S(\'75\',Z(){E hs=u.2z(\'h4[1y="f1"]\');E hr=u.2z(\'1o[1y="f1"]\');E bs=u.2z(\'h4[1y="f0"]\');E bq=u.2z(\'1o[1y="f0"]\');E cO=u.2z(\'h4[1y="eZ"]\');E cN=u.2z(\'1o[1y="eZ"]\');E eW=u.2z(\'h4[1y="eY"]\');E eV=u.2z(\'1o[1y="eY"]\');E hq=u.2z(\'h4[1y="eX"]\');E hp=u.2z(\'1o[1y="eX"]\');E cg=[hs,hr,bs,bq,cO,cN,eW,eV,hq,hp];cg.2w(2G=>{if(2G){2G.f.1G=\'2i\'}});if(3y.l===\'1\'){hs.f.1G=\'3w\';hr.f.1G=\'3w\'}1B if(3y.l===\'2\'){bs.f.1G=\'3w\';bq.f.1G=\'3w\'}1B if(3y.l===\'3\'){bs.f.1G=\'3w\';bq.f.1G=\'3w\';cO.f.1G=\'3w\';cN.f.1G=\'3w\'}1B if(3y.l===\'4\'){bs.f.1G=\'3w\';bq.f.1G=\'3w\';cO.f.1G=\'3w\';cN.f.1G=\'3w\';eW.f.1G=\'3w\';eV.f.1G=\'3w\'}1B if(3y.l===\'5\'){bs.f.1G=\'3w\';bq.f.1G=\'3w\';cO.f.1G=\'3w\';cN.f.1G=\'3w\';eW.f.1G=\'3w\';eV.f.1G=\'3w\';hq.f.1G=\'3w\';hp.f.1G=\'3w\'}});Z 7W(3L){E 9v=3L.b3();E 9u=3G(3L.cr()+1).3m(2,\'0\');E 8m=3G(3L.cq()).3m(2,\'0\');E 1U=3G(3L.dP()).3m(2,\'0\');E 2h=3G(3L.4D()).3m(2,\'0\');E 2p=3G(3L.8F()).3m(2,\'0\');E b5=3G(3L.gI()).3m(3,\'0\');1K`${9v}-${9u}-${8m}T${1U}:${2h}:${2p}.${b5}`}E od=7W(1D 1N());u.V(\'cM\').l=od;u.6M(\'.4U\').2w(1b=>{E 1V=u.6Y(\'1b\');1V.1c=\'1V\';1V.1y=1b.1y;1b.lb.dX(1V,1b)});Z hj(){E nV=u.V(\'vQ-Y-ae\');E 2G=u.2z(\'.5m-9w\');E eN=u.V(\'bp\');if(2G){E oc=u.V(\'vP\');E ob=oc.2u.6J();E bo=ob.35(/\\((\\d+\\|\\d+)\\)/);E oa=u.2z(\'.5m-1y\');E o9=oa.2u.6J();E 5h=o9.35(/\\((\\d+\\|\\d+)\\)/);Z ho(bo,5h){W x1,y1,x2,y2;if(bo){E o8=bo[1];[x1,y1]=o8.2N(\'|\').3I(4B)}if(5h){E eU=5h[1];[x2,y2]=eU.2N(\'|\').3I(4B)}L bb=1R.ed(x1-x2);L ba=1R.ed(y1-y2);1K 1R.mC(bb*bb+ba*ba)}ho();if(2G&&!eN){Z cy(56){E 9A=1R.2b(56/1P).8n().3m(2,\'0\'); E 7V=1R.2b(9A/aU).8n().3m(2,\'0\');E 7U=1R.2b((9A%aU)/60).8n().3m(2,\'0\');E 7T=(9A%60).8n().3m(2,\'0\');1K`${7V}:${7U}:${7T}`}E 9w=ho(bo,5h);$(\'<f>\').1k(`#bp.3h-2k td,#bp th{1G:2i}`).kj(\'ki\');Z bR(){1K $.bY(\'/dF.54?dE=dD\').aN(Z($9f){L $3h={};$($9f).3R(\'dC\').4T().aM(Z(){E 2R=3y.dB;E 5B=4B($(3y).3R(\'5B\').l3(\'2u\'));if(vO(5B))1K;E 56=9w*5B*2W;E dA=cy(56);$3h[2R]={5B,56};$(\'#bp th a[Y-G="\'+2R+\'"]\').7b(\'th\').8t(\'1G\',\'1o-dz\');$(\'#bp #\'+2R).1k(dA).8t(\'1G\',\'1o-dz\')});1K $3h})}bR();Z o6(){E 1Q=2F.2y.1s;E eT=1Q.2N(\'&1p=\')[0];1K eT}Z hk(){W x2,y2;E eU=5h[1];[x2,y2]=eU.2N(\'|\').3I(4B);E 6Q=[];1K $.bY(\'/dF.54?dE=dD\').aN(Z($9f){E 3h={};E a6=[\'vN\',\'vM\',\'vL\',\'vK\',\'vJ\',\'vI\',\'vH\',\'vG\',\'vF\',\'vE\',\'vD\',\'vC\',];a6.2w(id=>{E 1b=u.V(id)});2m(W i=0;i<a6.2J;i++){E b9=u.V(a6[i]);E 2R=b9.1y;E 4H=b9.l||0;E 1V=u.2z(`1b[1c="1V"][1y="${2R}"]`);if(!1V.4c){6Q.47({2R,4H})}1B{E 4H=\'1M\';6Q.47({2R,4H})}}$($9f).3R(\'dC\').4T().aM(Z(){E 2R=3y.dB;E 5B=4B($(3y).3R(\'5B\').1k());E 56=9w*5B*2W;if(6Q.mm(G=>G.2R===2R&&G.4H!=0)){3h[2R]={5B:5B,56:56}}});W 6R=-1;W cw=\'\';2m(E G of 6Q){E 9z=3h[G.2R];if(9z&&9z.56>6R){6R=9z.56;cw=G.2R}}if(cy(6R)){E o7=cy(6R)2L.34(\'jC 1a vB b8:\',cw,\'cF:\',o7)}E eT=o6();W hm=u.V(\'o5\').l||\'C\';W 2U;W 9x=`${eT}&1p=3g&x=${x2}&y=${y2}`;W 3T;W 6P;W 5a=bo[1];W 58=5h[1];W 8R=u.V(\'hn\').l;W 7X=u.V(\'o4\').l;if(!8R){8R=0}if(!7X){7X=\'b6\'}2U=Q.1f(\'9S\');W eR=2e(u.V(\'o3\').l)||0;if(eR===0){eR=1}W cL;W 85;if(hm===\'S\'){E o2=u.V(\'cM\').l;cL=u.V(\'cM\').l;E eS=1D 1N(o2);E o1=(6R/1P);eS.cu(eS.8F()+o1);E o0=7W(eS);85=o0}1B if(hm===\'C\'){E cv=u.V(\'cM\').l;E 9y=1D 1N(cv);E eb=(6R/1P);9y.cu(9y.8F()-eb);E ea=7W(9y);cL=ea;85=cv}E eP=(6R/1P);3T=cL;6P=85;2m(W xy=0;xy<eR;xy++){if(xy===0){3T=cL;6P=85}1B{W hl=85;E eQ=1D 1N(hl);eQ.cu(eQ.8F()+eP+30);3T=7W(eQ);85=hl+eP;E eO=1D 1N(3T);eO.cu(eO.8F()+eP);85=7W(eO);6P=85;2L.34(`A:${3T},B:${85}`)}W 1W=37.4n(Q.1f(\'1W\'))||[];W e9={2U,5a,58,9x,3h:6Q,3T,6P,8R,7X};1W.47(e9);Q.1t(\'1W\',37.6K(1W));1W.e8((a,b)=>1D 1N(a.3T)-1D 1N(b.3T));2L.34(\'gN mi mh Y de saída:\',1W)}1K 3h}).b2(Z(4G){2L.4G(\'9P ao mg mfções 7Z e7:\',4G)})}Z nW(){u.V(\'nZ\').2S(\'1O\',Z(){E nY=\'b7\';Q.1t(\'9S\',nY);hk()});u.V(\'nX\').2S(\'1O\',Z(){E gj=\'cD\';Q.1t(\'9S\',gj);hk()})}nW();nV.3r(\'5E\',$dG)}}1B if(!2G&&eN){eN.8J()}1L(Z(){hj()},1P)}hj()});Z hi(){E 1W=37.4n(Q.1f(\'1W\'))||[];if(1W.2J>2){1W.e8((a,b)=>1D 1N(b.3T)-1D 1N(a.3T));1W.e8((a,b)=>1D 1N(a.3T)-1D 1N(b.3T))}if(1W.2J>0){E nU=u.4S(\'2B-1E-vA\');if(!u.V(\'cK\')){nU[0].3r(\'7d\',nT)}E 5A=1D 1N();1W.2w((2x,1I)=>{E nS=1D 1N(2x.3T);E nR=nS-5A;if(nR<=vz&&!2x.cJ){2x.cJ=2D;Q.1t(\'1W\',37.6K(1W));2F.vy(2x.9x,\'5W\')}1B if(2x.cJ){1L(()=>{1W.nv(1I,1);Q.1t(\'1W\',37.6K(1W))},vx)}})}1B if(u.V(\'cK\')&&1W.2J<=0){u.V(\'cK\').8J()}E 2k=u.V(\'nQ\');if(1W.2J>0){if(2k.4T.2J===0){1W[0].3h.2w(G=>{E td=u.6Y(\'td\');td.f.p=\'4V\';E 2R=G.2R||\'vw\';td.2u=2R;td.f.iH=\'3P\';2k.aL(td)})}1W[0].3h.2w((G,1I)=>{E td=2k.4T[1I];td.2u=G.4H});if(1W[0].2U===\'b7\'){u.V(\'2c\').f.9a=\'9b(7A, 0, 0, 0.53)\';u.V(\'2E\').65=\'<a 1s="#" k="1T" Y-G="4m"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/9T.1e" 4q="eJ bH"></a>\'}1B{u.V(\'2c\').f.9a=\'9b(0, 0, 7A, 0.53)\';u.V(\'2E\').65=\'<a 1s="#" k="1T" Y-G="3Q"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/9U.1e" 4q="eJ bH"></a>\'}u.V(\'nP\').2u=1W[0].2U;u.V(\'nO\').l=1W[0].3T;u.V(\'5a\').l=1W[0].5a;u.V(\'nN\').l=1W[0].7X;u.V(\'nM\').l=1W[0].8R;u.V(\'58\').l=1W[0].58;u.V(\'nL\').l=1W[0].6P;u.V(\'nK\').2u=`NúeM de 9W bm:${1W.2J}`;E nI=1W.9O(2x=>2x.2U===\'b7\').dg((a3,2x)=>a3+(2x.2U?(2x.2U.2J-3):0),0);u.V(\'nJ\').2u=`NúeM de kF bm:${nI}`;E nG=1W.9O(2x=>2x.2U===\'cD\').dg((a3,2x)=>a3+(2x.2U?(2x.2U.2J-4):0),0);u.V(\'nH\').2u=`NúeM de vv bm:${nG}`}1L(hi,1P)}hi();Z nE(){E nF=u.2z(\'.2B-1b-vu\');E 1W=37.4n(Q.1f(\'1W\'))||[];if(2F.e4&&!2F.e4.m7){1W.2w((2x,1I)=>{if(2x.cJ){2x.3h.2w(G=>{E eL=G.2R;E 4H=G.4H;2L.34(`vt dt:${eL},vs:${4H}`);if(4H===\'1M\'){E 1b=u.V(`vr${eL}`);1b.1O()}1B{E 1b=u.V(`mn${eL}`);1b.l=4H}});if(nF.f.1G===\'2i\'){1L(()=>{if(2x.2U===\'b7\'){u.V(\'vq\').1O()}1B{u.V(\'nD\').1O()}},9M)}}});1L(()=>{2F.vp()},5o)}}nE();L nC=u.V(\'nD\');nC.3r(\'7d\',$nB);Z nn(){W ny=`<X id="vo"><1o id="eG"k="2s vn"p="1H%"f="1Z-aQ: 5x; 1Z-9i: aR; 1Z: 3v 5S #6L; 1Z-4W: 3t;"><eK><tr><th 32="2">cE</th><th f="p: nA; 1k-1A:2g;">bi</th><th f="p: nA; 1k-1A:2g;">cH</th><th>nzída</th><th>cs</th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/7J.1e"Y-1w="7I"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/9U.1e"Y-1w="c4"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/9T.1e"Y-1w="Bác3"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/c2.1e"Y-1w="6g"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/c1.1e"Y-1w="c0"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/8B.1e"Y-1w="4F 8A"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"Y-1w="4F vm"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/8y.1e"Y-1w="4F 8x"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/8w.1e"Y-1w="AríbZ"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/8v.1e"Y-1w="8u"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/dK.1e"Y-1w="c7"></th><th f="1k-1A:2g"><1j 1h="1d://1n.1i.1a/1m/84/1l/G/9j.1e"Y-1w="5z"></th><th f="1k-1A:2g">vl</th><th f="1k-1A:2g">hh</th></tr></eK><1q><!--As fW 3dão vk vj--></1q></1o></X>`;u.V(\'5q\').3r(\'7d\',ny);W 1W=37.4n(Q.1f(\'1W\'))||[];W 5V=u.2z("#eG 1q");5V.65=\'\';Z bS(){1W.2w((2x,1I)=>{if(!2x.cJ){if(2x.2U===\'b7\'){W 9F=`<tr k="1u"><td f="1z-2c: 9b(7A, 0, 0, 0.53);"><a 1s="#"k="1T"Y-G="4m"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/9T.1e"4q="eJ bH"></a></td><td f="1z-2c: 9b(7A, 0, 0, 0.53);"><I>ce</I></td><td f="1k-1A:2g"><I>${2x.5a}</I></td><td f="1k-1A:2g"><I>${2x.58}</I></td><td><1b id="nx-${1I}"l="${2x.3T}"1c="7Y-4i"3M f="p: eI;"></td><td><1b id="nw-${1I}"l="${2x.6P}"1c="7Y-4i"3M f="p: eI;"></td>`;2x.3h.2w(G=>{9F+=`<td f="1k-1A:2g;"><1b f="p: 2o;"id="eF-${1I}-${G.2R}"l="${G.4H || \'0\'}"3M></td>`});9F+=`<td f="1k-1A:2g"><1x 1c="1x"k="eH"Y-1I="${1I}"><1j k="5m-cI"4q=""1h="1d://1n.1i.1a/1m/5i/1l//cI.1e"></1x></td><td f="1k-1A:2g"><1x 1c="1x"k="ac"Y-1I="${1I}"id="ac-${1I}">hh</1x><1x 1c="1x"k="ad"f="1G: 2i;"id="ad-${1I}"Y-1I="${1I}">a5</1x></td></tr>`;5V.3r(\'ge\',9F)}1B{W 9F=`<tr k="1u"><td f="1z-2c: 9b(0, 0, 7A, 0.53);"><a 1s="#"k="1T"Y-G="3Q"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/9U.1e"4q="eJ bH"></a></td><td f="1z-2c: 9b(0, 0, 7A, 0.53);"><I>cD</I></td><td f="1k-1A:2g"><I>${2x.5a}</I></td><td f="1k-1A:2g"><I>${2x.58}</I></td><td><1b id="nx-${1I}"l="${2x.3T}"1c="7Y-4i"3M f="p: eI;"></td><td><1b id="nw-${1I}"l="${2x.6P}"1c="7Y-4i"3M f="p: eI;"></td>`;2x.3h.2w(G=>{9F+=`<td f="1k-1A:2g;"><1b f="p: 2o;"id="eF-${1I}-${G.2R}"l="${G.4H || \'0\'}"3M></td>`});9F+=`<td f="1k-1A:2g"><1x 1c="1x"k="eH"Y-1I="${1I}"><1j k="5m-cI"4q=""1h="1d://1n.1i.1a/1m/5i/1l//cI.1e"></1x></td><td f="1k-1A:2g"><1x 1c="1x"k="ac"Y-1I="${1I}"id="ac-${1I}">hh</1x><1x 1c="1x"k="ad"f="1G: 2i;"id="ad-${1I}"Y-1I="${1I}">a5</1x></td></tr>`;5V.3r(\'ge\',9F)}}})}bS();5V.2S(\'1O\',Z(3V){if(3V.2B.7b(\'.eH\')){E 1I=3V.2B.7b(\'.eH\').9E.1I;1W.nv(1I,1);Q.1t(\'1W\',37.6K(1W));5V.65=\'\';bS()}});5V.2S(\'1O\',Z(3V){if(3V.2B.7b(\'.ac\')){E 1I=3V.2B.7b(\'.ac\').9E.1I;E aG=u.6M(`#eG 1b[id^=\'eF-${1I}\']`);aG.2w(1b=>{1b.ns=9N});3V.2B.f.1G=\'2i\';E nu=u.2z(`#ad-${1I}`);nu.f.1G=\'5y\'}});5V.2S(\'1O\',Z(3V){if(3V.2B.7b(\'.ad\')){E 1I=3V.2B.7b(\'.ad\').9E.1I;E aG=u.6M(`#eG 1b[id^=\'eF-${1I}\']`);aG.2w((1b,nt)=>{1W[1I].3h[nt].4H=1b.l;1b.ns=2D});3V.2B.f.1G=\'2i\';E nr=u.2z(`#ac-${1I}`);nr.f.1G=\'5y\';Q.1t(\'1W\',37.6K(1W))}})}u.V(\'nq\').2S(\'1O\',Z(){if(!u.V(\'nl\')){nm()}});u.V(\'np\').2S(\'1O\',Z(){nn()});Z nm(){W $n6=`<X id="nl"k="2s"f="p: 1H%; 1Z-9i: 1Y: 2X; 1Z: 3t"><h4>vi em 82</h4><tr><td><X k="2s"f="1Y: 2X;"><1o k="2s"f="p: 1H%; 1Z-9i: 1Y-4W: 5x; 1Z: 3t 5S 4M(vh, 81, 15);"><1q><tr><td k="1u"><a 1s="#"k="1T"Y-G="4l"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/7J.1e"k=""Y-1w="7I"></a><1b id="vg"1y="4l"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="3Q"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/9U.1e"k=""Y-1w="c4"></a><1b id="vf"1y="3Q"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="4m"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/9T.1e"k=""Y-1w="Bác3"></a><1b id="ve"1y="4m"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="4w"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/c2.1e"k=""Y-1w="6g"></a><1b id="vd"1y="4w"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="5g"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/c1.1e"k=""Y-1w="c0"></a><1b id="vb"1y="5g"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="4v"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/8B.1e"k=""Y-1w="4F 8A"></a><1b id="va"1y="4v"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="5f"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"k=""Y-1w="6g a 9h"></a><1b id="v9"1y="5f"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="4u"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/8y.1e"k=""Y-1w="4F 8x"></a><1b id="uZ"1y="4u"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="4t"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/8w.1e"k=""Y-1w="AríbZ"></a><1b id="uY"1y="4t"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="4s"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/8v.1e"k=""Y-1w="8u"></a><1b id="uX"1y="4s"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="6d"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/dK.1e"k=""Y-1w="c7"></a><1b id="uW"1y="6d"1c="1V"Y-1M-1J="0"3M=""></td><td k="1u"><a 1s="#"k="1T"Y-G="2V"><1j 1h="1d://1n.1i.1a/1m/5i/1l/G/9j.1e"k=""Y-1w="5z"></a><1b id="uV"1y="2V"1c="1V"Y-1M-1J="0"3M=""></td></tr><tr><td k="1u"><1b id="mA"1y="4l"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mz"1y="3Q"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="my"1y="4m"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mx"1y="4w"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mw"1y="5g"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mv"1y="4v"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mu"1y="5f"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mt"1y="4u"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mr"1y="4t"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mq"1y="4s"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mp"1y="6d"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td><td k="1u"><1b id="mo"1y="2V"1c="1k"l=""Y-1M-1J="0"f="p : 90%;"></td></tr><tr><td 32="2"><I>hg 7Z hf:</I></td><td 32="10"><1E id="mj"f="2t-2q: 3H;"><w l="b6">dLão</w><w l="2l">heí83 hd</w><w l="33">eE</w><w l="3D">9DáeD</w><w l="4j">eC</w><w l="bl">eB de eA</w><w l="2V">bk</w><w l="3n">ez</w><w l="3g">abça de eyão</w><w l="4Q">9Dáex</w><w l="2j">bj</w><w l="2O">ew</w><w l="2P">evço de hc</w><w l="2Q">eu de hb</w><w l="39">et</w><w l="2K">erém</w><w l="3C">ep</w></1E></td></tr></1q></1o></X><X k="2s"f="1Y: 2X;"><X f="1Y: 1v;"><br><I>uU de bi</I><I id="cB" f="2t-2q: 3H;"></I><1x 1c="1x"id="mM"k="9C 1S 1S-2B-8H">uT cG</1x><br><br><I>cG bi</I><be id="cz"7h="6"f="p: 99%;"></be><br><1x 1c="1x"id="mI"k="9C 1S 1S-2B-8H">nj e ni cG Jánh</1x><1b id="gT"3M=""f="3U: 8C; p: c6;"><I f="3U: 8C; 1Y-8C: 2X;">en de bi:</I><br><br><I>en de bi gd cH:</I><1b id="mB"f="p: c6;"><br><br><X f="1Y-3k: 2X;"><I>uSção de uR gd ng:</I><1E id="uQ"f="2t-2q: 3H;"><w l="P">nk gg 8jóuP</w><w l="D">nk gg uO</w></1E></X><br><I>cG cH</I><be id="ec"7h="6"f="p: 99%;"></be><1x 1c="1x"id="mH"k="9C 1S 1S-2B-8H">nj e ni cG Jánh</1x><1b id="mE"3M=""f="3U: 8C; p: c6;"><I f="3U: 8C; 1Y-8C: 2X;">en de ng:</I><br><br><X f="1Y-3k: 2X;"><I>uN de uM:</I><1E id="mD"f="2t-2q: 3H;"><w l="0">uL</w><w l="1">uKção uJónf</w></1E></X><X><I 1y="ne">uI de cs</I><1b 1y="ne"1c="7Y-4i"id="ml"e6=".e5"><I 1y="ee"f="1G: 2i;">Até</I><1b 1y="ee"f="1G: 2i;"1c="7Y-4i"id="mk"e6=".e5"></X><X><1b 1c="1V"id="ha"1y="ha"><2a 2m="ha">nd nc se cE uH no BN</2a>                 </X><X><1b 1c="1V"id="h9"1y="h9"><2a 2m="h9">nd nc 4z cE não uG h8 a cF</2a>                 </X><X><1b 1c="1V"id="h7"1y="h7"><2a 2m="h7">ek 9W em 82 n9 4z n8 cE n7 1a uF</2a>                 </X><br><1x 1c="1x"id="ma"k="ej 1S 1S-ej 1S-2B-8H"f="1Y-3k:2X;">a5 ce ei 82</1x><1x 1c="1x"id="uE"k="9C 1S 1S-9C 1S-2B-8H"f="1Y-3k:2X;">a5 cD ei 82</1x><1x 1c="1x"id="uD"k="9C 1S 1S-2B-8H"f="1Y-3k:2X;">uCção ei 82</1x></X></X></X><f>.2C.2H{bh:9Z;p:h6;1z-2c:h5;2c:#h0;1k-1A:2g;1Z-gZ:gY;4r:2X;av:d1;z-1I:1;4W:1H%;3P:50%;cC:gX(-50%);8S:0;ck:8S 0.3s}.2C:cj.2H{bh:gW;8S:1}</f>`;u.V(\'5q\').3r(\'7d\',$n6);ds Z n3(){n5{E n4=dn a8.bY(6s.70+\'a9&1X=6v&mW=uB\');1K n4}b2(4G){5n.uA(\'uz uy 5m a9!\');1K 52}}ds Z mZ(){E a9=dn n3();if(!a9||!a9.8p){1K\'\'}W bg=Q.1f(\'ux\')||0;bg=2e(bg);W aa=`<1E id="mL">`;2m(E[au,cB]of 7y.n2(a9.8p)){E{bf,1y}=cB;E n1=2e(bf)===bg?\'uw\':\'\';if(1y!==dO){aa+=`<w l="${bf}"${n1}>${1y}</w>`}}aa+=`</1E>`;1K aa}ds Z mX(){E gV=u.V(\'cB\');if(!gV){2L.4G(\'uv "cB" não n0.\');1K}E aa=dn mZ();if(!aa){2L.4G(\'9P ao uu o ut de mY.\');1K}gV.65=aa}mX();Z mK(bg){E 1Q=6s.70+\'a9&mW=us\';E bf=bg;1K 1D jz((dm,mN)=>{a8.kY({1Q:1Q,Y:{bf:bf},ur:Z(mU){E mV=1D uq();E mT=mV.uo(mU.3z,\'1k/3z\');E mS=a8(mT).3R(\'#un > 1q > tr\').kL(\':eq(0)\');W gU=[];mS.aM(Z(1I){E mQ=2e(a8(3y).3R(\'td:eq(0) a\').mR(\'Y-5m-id\')??a8(3y).3R(\'td:eq(0) a\').mR(\'1s\').35(/\\d+/)[0]);E mP=a8(3y).3R(\'td:eq(0)\').1k().6J();E mO=a8(3y).3R(\'td:eq(1)\').1k().6J();gU.47({id:mQ,1y:mP,9l:mO})});dm(gU)},4G:Z(4G){2L.4G(\'9P ao ul uk 7Z a7:\',4G);mN(4G)}})})}u.V(\'mM\').2S(\'1O\',Z(){E mJ=u.V(\'mL\').l;mK(mJ).aN(d2=>{E be=u.V(\'cz\');be.l=d2.3I(v=>v.9l).cA(\' \');E 8P=d2.2J;u.V(\'gT\').l=8P}).b2(4G=>{2L.4G(\'9P ao uj as a7:\',4G)})});u.V(\'mI\').2S(\'1O\',Z(){E eg=u.V(\'cz\').l;E 1W=37.4n(Q.1f(\'1W\'))||[];E eh=/\\b(\\d{3})\\|(\\d{3})\\b/g;E bd=[];W 35;mG((35=eh.mF(eg))!==52){bd.47(`${35[1]}|${35[2]}`)}E 9B=[];1W.2w(2x=>{if(2x.58){9B.47(2x.58)}if(2x.5a){9B.47(2x.5a)}});E bc=bd.9O(8E=>!9B.4Z(8E));E ef=bc.cA(\' \');u.V(\'cz\').l=ef;E 8P=bc.2J;u.V(\'gT\').l=8P});u.V(\'mH\').2S(\'1O\',Z(){E eg=u.V(\'ec\').l;E 1W=37.4n(Q.1f(\'1W\'))||[];E eh=/\\b(\\d{3})\\|(\\d{3})\\b/g;E bd=[];W 35;mG((35=eh.mF(eg))!==52){bd.47(`${35[1]}|${35[2]}`)}E 9B=[];1W.2w(2x=>{if(2x.58){9B.47(2x.58)}if(2x.5a){9B.47(2x.5a)}});E bc=bd.9O(8E=>!9B.4Z(8E));E ef=bc.cA(\' \');u.V(\'ec\').l=ef;E 8P=bc.2J;u.V(\'mE\').l=8P});u.V(\'mD\').2S(\'75\',Z(){E gS=u.2z(\'I[1y="ee"]\');E gR=u.2z(\'1b[1y="ee"]\');if(3y.l===\'1\'){gS.f.1G=\'5y\';gR.f.1G=\'5y\'}1B{gS.f.1G=\'2i\';gR.f.1G=\'2i\'}});Z mc(8Q,5h){W[x1,y1]=8Q.2N(\'|\').3I(4B);W[x2,y2]=5h.2N(\'|\').3I(4B);E bb=1R.ed(x1-x2);E ba=1R.ed(y1-y2);1K 1R.mC(bb*bb+ba*ba)}Z m9(){E md=u.V("cz").l.6J().2N(" ");E gL=u.V("ec").l.6J().2N(" ");E me=2e(u.V("mB").l)||1;W xx=0;Z mb(8Q,5h,9w){E 6Q=[];1K $.bY(\'/dF.54?dE=dD\').aN(Z($9f){E 3h={};E a6=[\'mA\',\'mz\',\'my\',\'mx\',\'mw\',\'mv\',\'mu\',\'mt\',\'mr\',\'mq\',\'mp\',\'mo\',];2m(W i=0;i<a6.2J;i++){E b9=u.V(a6[i]);E 2R=b9.1y;E 4H=b9.l||0;E 1V=u.V(`mn${2R}ui`);if(!1V.4c){6Q.47({2R,4H})}1B{E 4H=\'1M\';6Q.47({2R,4H})}}$($9f).3R(\'dC\').4T().aM(Z(){E 2R=3y.dB;E 5B=4B($(3y).3R(\'5B\').1k());E 56=9w*5B*2W;if(6Q.mm(G=>G.2R===2R&&G.4H!=0)){3h[2R]={5B:5B,56:56}}});W 6R=-1;W cw=\'\';Z 7W(3L){E 9v=3L.b3();E 9u=3G(3L.cr()+1).3m(2,\'0\');E 8m=3G(3L.cq()).3m(2,\'0\');E 1U=3G(3L.dP()).3m(2,\'0\');E 2h=3G(3L.4D()).3m(2,\'0\');E 2p=3G(3L.8F()).3m(2,\'0\');E b5=3G(3L.gI()).3m(3,\'0\');1K`${9v}-${9u}-${8m}T${1U}:${2h}:${2p}.${b5}`}Z cy(56){E 9A=1R.2b(56/1P).8n().3m(2,\'0\'); E 7V=1R.2b(9A/aU).8n().3m(2,\'0\');E 7U=1R.2b((9A%aU)/60).8n().3m(2,\'0\');E 7T=(9A%60).8n().3m(2,\'0\');1K`${7V}:${7U}:${7T}`}Z gP(){if(8Q in cx&&5h in cx){1K`${gQ[\'uh\']}/6j.54?5m=${cx[8Q]}&1p=3g&2B=${cx[5h]}`}1K gP}W 9x=gP();2m(E G of 6Q){E 9z=3h[G.2R];if(9z&&9z.56>6R){6R=9z.56;cw=G.2R}}W 2U;2U=Q.1f(\'9S\');W 3T;W 6P=u.V(\'ml\').l W ug=u.V(\'mk\').l;W 5a=8Q;W 58=5h;W 8R=0;W 7X=u.V(\'mj\').l;if(!8R){8R=0}if(!7X){7X=\'b6\'}E cv=6P;E 9y=1D 1N(cv);E eb=(6R/1P);9y.cu(9y.8F()-eb);E ea=7W(9y);3T=ea;E gO=1D 1N(3T)2L.34(\'uf: \',gO);if(gO>1D 1N()){W 1W=37.4n(Q.1f(\'1W\'))||[];W e9={2U,5a,58,9x,3h:6Q,3T,6P,8R,7X};1W.47(e9);Q.1t(\'1W\',37.6K(1W));1W.e8((a,b)=>1D 1N(a.3T)-1D 1N(b.3T));2L.34(\'gN mi mh Y de saída:\',1W)}1B{2L.34(\'Não ue, ud b8 3c gM\')}1K 3h}).b2(Z(4G){2L.4G(\'9P ao mg mfções 7Z e7:\',4G)})}2m(W cf=0;cf<gL.2J;cf++){W 5h=gL[cf];2m(W ct=0;ct<me;ct++){W 8Q=md[xx];E 9w=mc(8Q,5h);xx++;mb(8Q,5h,9w)}}}u.V(\'ma\').2S(\'1O\',Z(){Q.1t(\'9S\',\'b7\');m9()})}}if(6O){E 7h=u.6M(\'1o.2s tr\');E x=6;E m8=7h[x];E gK=u.6Y(\'tr\');gK.65=\'<td>cs:</td><td 32="10"><1b 1c="7Y-4i" id="e3" e6=".e5"><1x 1c="1x" id="e2" k="1S">a5</1x></td>\';m8.uc(\'7d\',gK);if(2F.e4&&!2F.e4.m7){E 1W=37.4n(Q.1f(\'1W\'))||[];E 5A=1D 1N();E m6=1W[0].6P;E gJ=1W[0].7X;u.V(\'e3\').l=m6;if(gJ!=\'b6\'){u.ub("m5")[0].l=gJ}1L(Z(){u.V(\'e2\').1O()},5o)}1B{Z 7W(3L){E 9v=3L.b3();E 9u=3G(3L.cr()+1).3m(2,\'0\');E 8m=3G(3L.cq()).3m(2,\'0\');E 1U=3G(3L.dP()).3m(2,\'0\');E 2h=3G(3L.4D()).3m(2,\'0\');E 2p=3G(3L.8F()).3m(2,\'0\');E b5=3G(3L.gI()).3m(3,\'0\');1K`${9v}-${9u}-${8m}T${1U}:${2h}:${2p}.${b5}`}W tt=1D 1N();u.V(\'e3\').l=7W(tt)}u.V(\'e2\').2S(\'1O\',Z(){E m4=u.2z(\'.ua\');E a4=m4.9c.6J();W cp;if(a4.g6("u9")){E b4=a4.2N(" às ")[1];E[7V,7U,7T]=b4.2N(":").3I(4B);E 5A=1D 1N();cp=1D 1N(5A.b3(),5A.cr(),5A.cq(),7V,7U,7T)}1B if(a4.g6("u8ã")){E b4=a4.2N(" às ")[1];E[7V,7U,7T]=b4.2N(":").3I(4B);E 5A=1D 1N();cp=1D 1N(5A.b3(),5A.cr(),5A.cq()+1,7V,7U,7T)}1B{E m3=a4.5b("em ","").2N(" às ")[0];E b4=a4.2N(" às ")[1];E[m1,m2]=m3.2N(".").3I(4B);E[7V,7U,7T]=b4.2N(":").3I(4B);E 5A=1D 1N();cp=1D 1N(5A.b3(),m2-1,m1,7V,7U,7T)}E m0=u.V(\'e3\').l;E lZ=1D 1N(m0);W b1=lZ-cp;b1=(b1-1P);2L.34(\'u7 u6 (ms):\',b1);Z u5(lX){E lY=1N.5A();u4(2F.2y.1s).aN(()=>{E lW=1N.5A()-lY;lX(lW)}).b2(()=>{1K 0})}if(b1>0){u.V(\'e2\').e1=2D;u.V(\'co\').e1=2D;1L(Z(){u.V(\'co\').e1=9N;u.V(\'co\').1O();2L.34(\'u3\');1K},b1)}1B{u.V(\'co\').e1=9N;u.V(\'co\').1O()}})}}L lV=2e($(\'#lQ .l\').1k().5b(/\\D/g,\'\'));E 7j=Q.1f(\'7j\');if(2F.2y.1s.4Z(\'1p=2V\')&&lV&&7j===\'S\'){W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td><h1 id="6E"f="1k-1A: 2g; 1Y-3k: 3t;"></h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/5t">5s 5H não 5G o 5F deá9m.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j id="66">gv As gF v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="lU"></I></3j></3i>`;L cn=Q.1f(\'8P\');W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);L lT=u.V(\'6E\');L lS="lx - ll";L 5U=u.V("1U")L cb=u.V("lU")lT.2u=lS;Z aZ(){cb.2u=" ||je u2 [ "+cn+" ]";W 7R=Q.1f(\'7R\');W 7S=Q.1f(\'7S\');Z dQ(6c,7x){1K 1R.2b(1R.gn()*(7x-6c+1))+6c}L lR=dQ(1,3);if(7S===\'R\'){1L(Z(){2y.6p()},lR*60*1P)}if(7S===\'F\'){1L(Z(){2y.6p()},2W)}L aC=2e($("#2Q").1k());L 7F=2e($("#2P").1k());L aF=2e($("#2O").1k());L lK=Q.1f(\'7F\');W lP=2e($(\'#lQ .l\').1k().5b(/\\D/g,\'\'));L lO=2e($(\'#u1 .l\').1k().5b(/\\D/g,\'\'));L lN=2e($(\'#u0 .l\').1k().5b(/\\D/g,\'\'));L cd=13;L b0=[aC/lP,7F/lO,aF/lN,];L gH=1R.6c.tZ(1R,b0);L cm=gH<0?0:1R.2b(gH);if(7R<=cm){L gG=u.V("tY").1k.35(/\\(([^)]+)\\)/)[1];if(u.V("lM").l!=gG){u.V("lM").l=gG}L e0="gv[ "+cm+" ]gF";5U.2u=e0;cn=(2e(cm)+2e(cn));1L(Z(){Q.1t(\'8P\',cn);u.4S("1S 1S-bJ")[0].1O()},9M)}1B{Z gE(){if(cd>=0){5U.2u=":[ "+cm+" ]tX um a3 de[ "+7R+" ]gF.lJ aA em[ "+cd+" ]lL.";cd--}1B if(cd<=0){1L(Z(){if(lK!=7F){tW(lI);cd=13;5U.2u="lJ aA";Q.1t(\'7F\',7F);aZ()}1B{5U.2u="tV";2y.6p()}},1P)}L lI=1L(gE,1P)}gE()}}aZ();L 1Q=2F.2y.1s;L 49=1D 6r(1Q).6Z.2N(\'.\')[0];L 48=49+" - lg";u.1w=48}E 7Q=Q.1f(\'7Q\');if(2F.2y.1s.4Z(\'1p=2j&1X=72\')&&7Q===\'S\'){L lG=Q.1f(\'a2\');E 8O=2e(Q.1f(\'8O\'));L lF=Q.1f(\'a1\');W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">tU tT</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F deá9m.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j id="66">tS c8 di v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="aY"></I><I id="4a"></I></3j></3i>`;L 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);Z 6w(){L aw=u.V(\'1U\');L 4y=Q.1f(\'gC\');if(4y){4y=1D 1N(4y)}1B{6y();4y=1D 1N();4y.5p(4y.4D()+8O);Q.1t(\'gC\',4y)}Z 6y(){$.gy(\'1d://lw-to-lv.1a/gB/lH-tR.js\');dY(Z tQ(){u.V(\'tP\').l=lG},bK);dY(Z 9g(){u.V(\'tO\').1O()},64);L t=0;1L(Z(){L 8K=$(\'[k="1S dZ-6O-1S 1S-6O-aX"]\');L 1I=0;L lB=lF;L n=2;L lE=$(\'1q#tN tr\');Z gD(){L lD=$(lE[n]).3R(\'td:eq(2)\').1k();L lC=2e(lD);if(1I<(8K.2J-1)&&lC<lB){$(8K[1I]).1O();1I++;n++;1L(gD,1P)}}gD()},2W)}Z 8i(){L 2A=1D 1N();if(2A>=4y){Q.4R(\'gC\');2y.6p()}1B{L 2f=4y-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31="8jóax d5ção em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";aw.2u=31;1L(8i,1P)}}8i()}6w();L v2=4;L lA=Q.1f(\'3J\'+v2);L lz=lA===\'2D\';if(lz){L ly=\'ok\'}if(ly===\'ok\'){Z 4N(){L 5e=2e(Q.1f(\'9t\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+5e);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:8g},{1p:"74",1C:8f},{1p:"3g&1X=7C",1C:8h},{1p:"3g&1X=73",1C:64},{1p:"2j&1X=72",1C:9n},{1p:"2j&1X=71",1C:1P},{1p:"4Q&1X=6v",1C:5o},{1p:"2V&1X=6u",1C:63},{1p:"62",1C:7B}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - tM";u.1w=48}E 7P=Q.1f(\'7P\');if(2F.2y.1s.4Z(\'1p=3g&1X=73\')&&7P===\'S\'){E 8N=2e(Q.1f(\'8N\'));W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">lx-tL tK</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F deá9m.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j id="66">fT c8 di v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="aY"></I><I id="4a"></I></3j></3i>`;W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);Z 6w(){L aw=u.V(\'1U\');L 4y=Q.1f(\'gz\');if(4y){4y=1D 1N(4y)}1B{6y();4y=1D 1N();4y.5p(4y.4D()+(8N+3));Q.1t(\'gz\',4y)}Z 6y(){$.gy(\'1d://lw-to-lv.1a/gB/tJ.js\');1L(Z(){u.4S(\'1S lu\')[1].1O()},64);1L(Z(){L nb=0;L $8K=$(\'.lu\');Z gA(){if($8K.2J>nb){$8K.eq(nb).1O();nb++;1L(gA,1P)}1B{$(\'#x\').1O()}}gA()},tI)}Z 8i(){L 2A=1D 1N();if(2A>=4y){Q.4R(\'gz\');2y.6p()}1B{L 2f=4y-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31="8jóax d5ção em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";aw.2u=31;1L(8i,1P)}}8i()}6w();L v4=3;L lt=Q.1f(\'3J\'+v4);L ls=lt===\'2D\';if(ls){L lr=\'ok\'}if(lr===\'ok\'){Z 4N(){L 5e=2e(Q.1f(\'9s\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+5e);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:8f},{1p:"74",1C:8h},{1p:"3g&1X=7C",1C:64},{1p:"3g&1X=73",1C:9n},{1p:"2j&1X=72",1C:1P},{1p:"2j&1X=71",1C:5o},{1p:"4Q&1X=6v",1C:63},{1p:"2V&1X=6u",1C:7B},{1p:"62",1C:8g}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - tH";u.1w=48}E 7O=Q.1f(\'7O\');if(2F.2y.1s.4Z(\'1p=2j&1X=71\')&&7O===\'S\'){E 8M=2e(Q.1f(\'8M\'));E 8L=Q.1f(\'8L\');W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">tG tF</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F de 2v.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j id="66">tE c8 tD v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="4a"></I></3j></3i>`;W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);Z 6w(){L 5U=u.V(\'1U\');L 3l=Q.1f(\'gw\');if(3l){3l=1D 1N(3l)}1B{6y();3l=1D 1N();3l.5p(3l.4D()+8M);Q.1t(\'gw\',3l)}Z 6y(){$.gy(\'1d://dl.tC.1a/s/tB/tA.js?dl=0\');tz(0)1L(Z(){u.V(\'ty\').l=8L},63);1L(Z(){u.4S(\'1S dZ-6O-1S 1S-6O-aX\')[2].1O()},7B);dY(Z tx(){L 8K=u.6M(\'.tw\');L 1I=0;Z gx(){if(1I<8K.2J){8K[1I].1O();1I++;1L(gx,1P)}1B{Z lp(){$(\'#tv\').8J()}lp()}}gx()},64)}Z 6h(){L 2A=1D 1N();if(2A>=3l){Q.4R(\'gw\');2y.6p()}1B{L 2f=3l-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31="8jóax d5ção em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";5U.2u=31;1L(6h,1P)}}6h()}6w();L v5=5;L lo=Q.1f(\'3J\'+v5);L ln=lo===\'2D\';if(ln){L lm=\'ok\'}if(lm===\'ok\'){Z 4N(){L 5e=2e(Q.1f(\'9r\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+5e);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:7B},{1p:"74",1C:8g},{1p:"3g&1X=7C",1C:8f},{1p:"3g&1X=73",1C:8h},{1p:"2j&1X=72",1C:64},{1p:"2j&1X=71",1C:9n},{1p:"4Q&1X=6v",1C:1P},{1p:"2V&1X=6u",1C:5o},{1p:"62",1C:63}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - tuço";u.1w=48}E 7N=Q.1f(\'7N\');if(u.V(\'ts\')&&7N===\'S\'){E 8I=2e(Q.1f(\'8I\'));W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">ll tq tp</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="0.9"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F deá9m.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j>gv tn tm v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="4a"></I></3j></3i>`;W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);Z 6w(){L 5U=u.V(\'1U\');L 3l=Q.1f(\'gu\');if(3l){3l=1D 1N(3l)}1B{6y();3l=1D 1N();3l.5p(3l.4D()+8I);Q.1t(\'gu\',3l)}Z 6y(){1L(Z(){E lk=u.V(\'tl\');1L(Z(){lk.1O()},1P);1L(Z(){u.4S("tk 1S")[0].1O()},5o)},63)}Z 6h(){L 2A=1D 1N();if(2A>=3l){Q.4R(\'gu\');2F.2y.6p()}1B{L 2f=3l-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31="8jóax aW em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";5U.2u=31;1L(6h,1P)}}6h()}6w();L v7=7;L lj=Q.1f(\'3J\'+v7);L li=lj===\'2D\';if(li){L lh=\'ok\'}if(lh===\'ok\'){Z 4N(){L 5e=2e(Q.1f(\'9q\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+5e);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:5o},{1p:"74",1C:63},{1p:"3g&1X=7C",1C:7B},{1p:"3g&1X=73",1C:8g},{1p:"2j&1X=72",1C:8f},{1p:"2j&1X=71",1C:8h},{1p:"4Q&1X=6v",1C:64},{1p:"2V&1X=6u",1C:9n},{1p:"62",1C:1P}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - lg";u.1w=48}if(2F.2y.1s.4Z(\'&1p=74\')){W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">tj</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F de 2v.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j id="66">a0 D\'a cl v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="4a"></I></3j></3i>`;W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);L v1=1;L lf=Q.1f(\'3J\'+v1);L le=lf===\'2D\';if(le){L ld=\'ok\'}if(ld===\'ok\'){Z 4N(){L 5e=2e(Q.1f(\'9p\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+5e);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:64},{1p:"74",1C:9n},{1p:"3g&1X=7C",1C:1P},{1p:"3g&1X=73",1C:5o},{1p:"2j&1X=72",1C:63},{1p:"2j&1X=71",1C:7B},{1p:"4Q&1X=6v",1C:8g},{1p:"2V&1X=6u",1C:8f},{1p:"62",1C:8h}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - ti";u.1w=48}E 7i=Q.1f(\'7i\');if(2F.2y.1s.4Z(\'1p=4Q&1X=6v\')&&7i===\'S\'){E 7M=2e(Q.1f(\'7M\'));L dW=u.4S("1y");2m(L i=0;i<dW.2J;i++){L 1V=u.6Y("1b");1V.1c="1V";1V.id="la"+i;1V.1y="tg";1V.aV.lc("l1");dW[i].lb.dX(1V,dW[i].tf);L l9=Q.1f("la"+i);if(l9==="2D"){1V.4c=2D}1V.2S("75",Z(){Q.1t(3y.id,3y.4c)})}E l4=u.V(\'5q\');W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">te tc</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F deá9m.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><1o k="6b-1Z"p="1H%"f="1Y-3k: 2X;"><1q><tr>`;L l0=u.4S("8H");aT.9Y[7y.98(aT.9Y)[0]].kW.2w(Z(el,i){$3z+=`<td f="1z-2c: tb;"><X k="6i"><1b 1c="gq"1y="62-9Y"l="${i}"><I f="1Y-3k: 3v"k="2E 6x 6i"></I>${3G(1R.2b(el.gt/aU)).3m(2,\'0\')}:${3G(1R.2b((el.gt%aU)/60)).3m(2,\'0\')}:${3G(1R.2b(el.gt%60)).3m(2,\'0\')}</X></td>`});$3z+=`</tr></1q></1o><f>#dR.9Z,#9g.9Z{1G:2i}</f><X f="4r-4W: dU; 1k-1A: 8C;"><1b 1c="1x"id="dR"k="1S 9Z"l="ta t9"><1b 1c="1x"id="9g"k="1S 9Z"l="t8 t7"></X><br><3i><3j>t6 c8 l8 v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="4a"></I></3j></3i><f>.gs{1Z:3v 5S#t5;6N-gr:0 0 3S 3S 4M(38 38 38)dV,dV 3t 3t 0 0 4M(0,7A,0);-t4-ck:1M l7 l6-in-l5;ck:1M l7 l6-in-l5;1G:5y-3w;4r:2X;2t-t3:t2;2t-t1:t0;5w:5v;1Z-sZ:2X;1Y:aP;3B-sY:2T}.gs:cj{6N-gr:0 0 4V 0#dT dV,0 0 4V dU#dT}.gs.on{6N-gr:0 0 1v 0#dT dV,0 0 1v dU#dT}</f>`;l4.3r(\'5E\',$3z);W 8o=4B(Q.1f(\'l2\'));$(`1b[l="${8o === dO ? 0 : 8o}"]`).l3(\'4c\',2D);$(\'#9g\').on(\'1O\',Z(){Q.1t(\'l2\',$(\'1b[1c="gq"]:4c\').8o());5n.kV(\'sX dS sW sV sU sT.\')});$(\'#dR\').on(\'1O\',Z(e){e.sS();8o=4B($(\'1b[1c="gq"]:4c\').8o());L gp=u.4S(\'l1\');L x=0;7y.98(aT.9Y).2w((i,el)=>{E kZ=aT.9Y[i].sR;if(x<gp.2J){if(!gp[x].4c){if(l0[x].2u.4Z("sQ")){if(kZ<30){1L(Z(){5u.kY(6s.sP.5b(\'9o;1p=\',\'\')+\'1p=4Q&sO=kX\',52,{6d:aT.9Y[i].id,kX:aT.9Y[i].kW[8o].id,},Z(){5n.kV(au(\'sN\'))},Z(r){2L.4G(r)})},el*fM)}}}}x++})});Z 6w(){L 5U=u.V(\'1U\');L 3l=Q.1f(\'go\');if(3l){3l=1D 1N(3l)}1B{6y();3l=1D 1N();3l.5p(3l.4D()+7M);Q.1t(\'go\',3l)}Z 6y(){1L(Z(){u.V(\'dR\').1O()},64)}Z 6h(){L 2A=1D 1N();if(2A>=3l){Q.4R(\'go\');2F.2y.6p()}1B{L 2f=3l-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31="8jódJ sM em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";5U.2u=31;1L(6h,1P)}}6h()}6w();L v6=6;L kU=Q.1f(\'3J\'+v6);L kT=kU===\'2D\';if(kT){L kS=\'ok\'}if(kS===\'ok\'){Z 4N(){L 5e=2e(Q.1f(\'8G\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+5e);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:63},{1p:"74",1C:7B},{1p:"3g&1X=7C",1C:8g},{1p:"3g&1X=73",1C:8f},{1p:"2j&1X=72",1C:8h},{1p:"2j&1X=71",1C:64},{1p:"4Q&1X=6v",1C:9n},{1p:"2V&1X=6u",1C:1P},{1p:"62",1C:5o}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - sL";u.1w=48}E 7L=Q.1f(\'7L\');if(2F.2y.1s.4Z(\'1X=kR\')&&7L===\'S\'){E 8D=Q.1f(\'8D\');W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">ku sK</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F deá9m.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j id="66">As sJ v3.0 by<I f="2c: 5r">5c</I><I id="kQ"></I><I id="1U"></I></3j></3i>`;W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);Z dQ(6c,7x){1K 1R.2b(1R.gn()*(7x-6c+1))+6c}L cd=dQ(7,17);1L(Z(){2y.6p()},cd*60*1P);W 5U=u.V(\'1U\');W cb=u.V(\'kQ\');L d=1D 1N(),h=3G("0"+d.dP()).bL(-2),m=3G("0"+d.4D()).bL(-2),s=3G("0"+d.8F()).bL(-2);L t=h+":"+m+":"+s;L sI=$("#sH");L kG=$(\'1b[l=sG]\');Z kH(){L gm=0;Z kI(){L kP=gm;gm+=1H;1K kP}(Z(){Z gl(i,2k){L kO=$(2k).4T(\'td\').eq(2).1k();1K kO.35(/\\d{3}\\|\\d{3}/)[0]}Z 1J(9l){1K 9l.dg(Z(ci,8E){if(ci[8E]==dO){ci[8E]=1}1B{ci[8E]++}1K ci},{})}L $7h=$(\'#sF 1q\').4T(\'.sE, .sD\');L 9l=$7h.3I(gl).sC();L kN=1J(9l);$7h.aM(Z(i,2k){L 9l=gl(i,2k);L 1J=kN[9l];$(2k).4T(\'td\').eq(0).sB(3G("gk"+1J).bL(-3));L 2U=$(2k).3R(".kB-2a").1k().5b(/\\t/g,\'\').5b(/(?:\\r\\n|\\r|\\n)/g,\'\').5b("                        ","").5b(" sA!","");L sz=$(2k).3R("td a[1s*=\'kM&id\']").1k();L sy=$(2k).3R("td:9X(\'.\'):kL(:9X(\'às\'))").sx().1k();L ch=$(2k).3R("td:9X(s)").1k().2N("às")[1].2N(":")[0];if(2U.35(/kK/gi)&&!2U.35(/kJ/gi)&&!2U.35(/ok/gi)){$(2k).4T(\'td\').8t({"1z-2c":"sw"})}1L(Z(){if(!2U.35(/sv/gi)&&!2U.35(/kK/gi)&&!2U.35(/su/gi)&&!2U.35(/st/gi)&&!2U.35(/gj/gi)&&!2U.35(/kJ/gi)&&!2U.35(/ok/gi)&&!2U.35(/ss/gi)){if(1J==1){$(2k).4T(\'td\').8t({"1z-2c":"sr"});if(!2U.35(/sq/gi)&&!2U.35(/sp/gi)){if(ch>0&&ch<7){$(2k).4T(\'td\').8t({"1z-2c":"so"});if(!2U.35(/bn/gi)){}}1B{}}}if(1J>1){$(2k).4T(\'td\').8t({"1z-2c":"2r"});if(!2U.35(/sn/gi)){if(ch>0&&ch<7){$(2k).4T(\'td\').8t({"1z-2c":"2r"});if(!2U.35(/bn/gi)){}}1B{}}}}},kI())})})()}kH();Z kA(){kG.1O()}L dN=Q.1f(\'4o\');if(dN===52){dN=0}Z kD(){L 7K=2e($("#kC").1k());if(7K===52){7K=0}if(7K>0){L 31="kE em sm: "+7K+" kF a ky";5U.2u=31}1B{31="kE em sl";5U.2u=31}}kD();Z 6h(){L 7K=2e($("#kC").1k());L 8p=7K-dN;if(7K===52){7K=0}if(8p!==0){Q.1t(\'4o\',7K);1L(Z(){2y.6p()},9M)}1L(6h,30*1P)}6h();L cg=u.6M(\'.kB-2a\');E 9k=u.6M(\'1b[1c="1V"][1y^="sk"]\');L ca=0;L gh=0;2m(W i=0;i<cg.2J;i++){E 2G=cg[i];E 1k=2G.9c;if(1k.4Z(\'5z\')){ca++}1B if(1k.4Z(\'ce\')){E 1V=9k[i];1V.4c=2D;gh++}}if(gh>0){1L(kA,sj)}L aS=Q.1f(\'c9\');if(aS===52){aS=0}Z kx(){L kz=ca-aS;if(kz>0){L dM="gg c9 a ky, si em sh! || ";cb.2u=dM;if(8D===\'S\'){kw()}}1B{dM="9W de c9 sg: "+ca+" || ";cb.2u=dM}aS=ca;Q.1t(\'c9\',aS)}kx();Z kw(){W $kv=`<1q><tr><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><2v 5Q="5P"5O 57="0.9"5N><5M 1h="1d://5L.5K.5J/5I/sf/sd-lq.5t"1c="2v/67">5s 5H não 5G o 5F de 2v.</2v></X></td></tr></1q>`;u.gf.3r(\'ge\',$kv)}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - ku";u.1w=48}L 62=u.V(\'sc\');E 7g=Q.1f(\'7g\');if(62&&7g===\'S\'){W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">sb</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F de 2v.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j id="66">s9 c8 s8 v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="4a"></I></3j></3i>`;W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);W $dG=`<X id="bX"k="9V 2s "f="p: g9; 1Z: 3v 5S #6L; 1Y: 3t 2X 4V 2X;"><h4>s7 de jG:<I id="k5">dLão</I></h4><X><1o k="2s"f="1Z-9i:aR; 1Z-aQ: aP; 1o-c5: aO; p: 1H%;"><1q><tr><th f="p: 1v"><a 1s="#"k="1T"Y-G="4l"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/7J.1e"Y-1w="7I"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="3Q"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9U.1e"Y-1w="c4"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="4m"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9T.1e"Y-1w="Bác3"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="4w"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/c2.1e"Y-1w="6g"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="5g"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/c1.1e"Y-1w="c0"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="4v"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8B.1e"Y-1w="4F 8A"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="5f"><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"Y-1w="6g a 9h"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="4u"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8y.1e"Y-1w="4F 8x"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="4t"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8w.1e"Y-1w="AríbZ"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="4s"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8v.1e"Y-1w="8u"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="6d"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/dK.1e"Y-1w="c7"></a></th><th f="p: 1v"><a 1s="#"k="1T"Y-G="2V"><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9j.1e"Y-1w="5z"></a></th></tr><tr id="s6"k="3h-2k"><td f="p: 1v"id="4l"k="1u G-1g G-1g-4l"></td><td f="p: 1v"id="3Q"k="1u G-1g G-1g-3Q"></td><td f="p: 1v"id="4m"k="1u G-1g G-1g-4m"></td><td f="p: 1v"id="4w"k="1u G-1g G-1g-4w"></td><td f="p: 1v"id="5g"k="1u G-1g G-1g-5g"></td><td f="p: 1v"id="4v"k="1u G-1g G-1g-4v"></td><td f="p: 1v"id="5f"k="1u G-1g G-1g-4w"></td><td f="p: 1v"id="4u"k="1u G-1g G-1g-4u"></td><td f="p: 1v"id="4t"k="1u G-1g G-1g-4t"></td><td f="p: 1v"id="4s"k="1u G-1g G-1g-4s"></td><td f="p: 1v"id="6d"k="1u G-1g G-1g-6d"></td><td f="p: 1v"id="2V"k="1u G-1g G-1g-2V"></td></tr></1q></1o></X></X><X f="2t-2q: 4g;"1A="3P"><1o><1q><tr><td><2a 2m="bU">s5 de 7f a s4 gd s3:</2a><1b 1c="4h"l="5"id="dr"k="4U 1b-4E"f="p: c6; 2t-2q: 4g;"></tr></td><tr><td><2a 2m="bU">g8 o MádJ de kt no aI:</2a><1b 1c="4h"l="3"id="fY"k="4U 1b-4E"f="p: c6; 2t-2q: 4g;"></td><td></td><td></td><td 1A="8C"><1E id="k3"f="p: gc; 2t-2q: 4g;"><w l="dx">aI s2</w><w l="k1">s1 4x</w><w l="k0">s0 4x</w><w l="jZ">rZ rY</w></1E></td></tr></1q></1o></X><X id="9Q"f="2t-2q: 4g; 1G: 2i;"><2a 2m="bT">ks 3u:</2a><1E id="bT"k="4U 1b-4E"f="p: ga; 2t-2q: 4g;"><w l="">7c um 3u</w></1E><1x id="jV"1c="1x"k="1S-6e"><i k="7e fa-kr-4q"></i>kq 3u</1x><1x id="jS"1c="1x"k="1S-6e"><i k="7e fa-kp"></i>gb 3u</1x></X><X id="bV"f="2t-2q: 4g; 1G: 2i;"><2a 2m="km">ko rXção de rW:</2a><1E id="jO"k="4U 1b-4E"f="p: kn; 2t-2q: 4g;"><w l="5T">5T</w><w l="rV">Não</w></1E><2a 2m="km">rUárT jp em:</2a><1E id="jN"f="p: ga; 2t-2q: 4g;"><w l="30">30 2p</w><w l="60">1 kl</w><w l="fZ">2 2h</w></1E></X><X id="bW"k="9V 2s "f="p: g9; 1G: 2i; 1Z: 3v 5S #6L; 1Y: 3t 2X 4V 2X;"><h4>dI 3u:</h4><X><1o k="2s"f="1Z-9i:aR; 1Z-aQ: aP; 1o-c5: aO; p: 1H%;"><1q><tr><td><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/7J.1e"Y-1w="7I"><1b 1c="4h"l="0"f="p: 6f"id="rS"k="1u G-1g G-1g-4l"/></td><td><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9U.1e"Y-1w="c4"><1b 1c="4h"l="0"f="p: 6f"id="rR"k="1u G-1g G-1g-3Q"/></td><td><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/9T.1e"Y-1w="Bác3"><1b 1c="4h"l="0"f="p: 6f"id="rQ"k="1u G-1g G-1g-4m"/></td><td><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/c2.1e"Y-1w="6g"><1b 1c="4h"l="0"f="p: 6f"id="rP"k="1u G-1g G-1g-4w"></td></tr><tr><td><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/c1.1e"Y-1w="c0"><1b 1c="4h"l="0"f="p: 6f"id="rO"k="1u G-1g G-1g-5g"/></td><td><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8B.1e"Y-1w="4F 8A"><1b 1c="4h"l="0"f="p: 6f"id="rN"k="1u G-1g G-1g-4v"/></td><td><1j 1h="1d://1n.1i.1a/1m/5R/1l/G/8z.1e"Y-1w="6g a 9h"><1b 1c="4h"l="0"f="p: 6f"id="rM"k="1u G-1g G-1g-4w"/></td></tr><tr><td><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8y.1e"Y-1w="4F 8x"><1b 1c="4h"l="0"f="p: 6f"id="rL"k="1u G-1g G-1g-4u"/></td><td><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8w.1e"Y-1w="AríbZ"><1b 1c="4h"l="0"f="p: 6f"id="rK"k="1u G-1g G-1g-4t"/></td><td><1j 1h="1d://1n.1i.1a/1m/2n/1l/G/8v.1e"Y-1w="8u"><1b 1c="4h"l="0"f="p: 6f"id="rJ"k="1u G-1g G-1g-4s"/></td></tr></1q></1o><X f="2t-2q: 4g;"><2a 2m="bU">9S do 3u:</2a><1b 1c="1k"kk="g8 um 2U 3c o 4x de aI"id="bU"k="4U 1b-4E"f="p: g7; 2t-2q: 4g;"><1x id="jY"1c="1x"k="1S-6e"><i k="7e fa-9g"></i>dI 3u</1x></X></X></X>`;W dH=u.V(\'5q\');dH.3r(\'7d\',$dG);$(\'<f>\').1k(`#bX.3h-2k td,#bX th{1G:2i}`).kj(\'ki\');Z 9Q(){W aJ=[\'4l\',\'3Q\',\'4m\',\'4w\',\'5g\',\'4v\',\'5f\',\'4u\',\'4t\',\'4s\'];W k7={4l:Q.1f(\'kh\'),3Q:Q.1f(\'kg\'),4m:Q.1f(\'kf\'),4w:Q.1f(\'ke\'),5g:Q.1f(\'kd\'),5f:Q.1f(\'kc\'),4v:Q.1f(\'kb\'),4u:Q.1f(\'ka\'),4t:Q.1f(\'k9\'),4s:Q.1f(\'k8\')};W k6={};aJ.2w(Z(G){W 9R=Q.1f(G);if(9R===52){9R=k7[G];Q.1t(G,9R)}1B{9R=4B(9R)}k6[G]=9R})}9Q();Z bR(){1K $.bY(\'/dF.54?dE=dD\').aN(Z($9f){L $3h={};$($9f).3R(\'dC\').4T().aM(Z(){E 2R=3y.dB;if(2R===\'2V\'||2R===\'6d\'){}1B{E dA=Q.1f(`${2R}`)||0;$(\'#bX th a[Y-G="\'+2R+\'"]\').7b(\'th\').8t(\'1G\',\'1o-dz\');$(\'#bX #\'+2R).1k(dA).8t(\'1G\',\'1o-dz\')}});W k4=Q.1f(\'jQ\');u.V(\'k5\').2u=k4;1K $3h})}bR();Z dv(){W 1E=u.V(\'bT\');1E.65=\'<w l="">7c um 3u</w>\';7y.98(Q).2w(dy=>{if(dy.g6(\'bQ\')){W 3A=dy.5b(\'bQ\',\'\');W w=u.6Y(\'w\');w.l=dy;w.2u=3A;1E.aL(w)}})}dv();u.V(\'k3\').2S(\'75\',Z(){E k2=3y.l;rI(k2){dw\'dx\':u.V(\'bW\').f.1G=\'2i\';u.V(\'9Q\').f.1G=\'2i\';u.V(\'bV\').f.1G=\'2i\';aK;dw\'k1\':u.V(\'bW\').f.1G=\'5y\';u.V(\'9Q\').f.1G=\'2i\';u.V(\'bV\').f.1G=\'2i\';aK;dw\'k0\':u.V(\'bW\').f.1G=\'2i\';u.V(\'9Q\').f.1G=\'5y\';u.V(\'bV\').f.1G=\'2i\';aK;dw\'jZ\':u.V(\'bW\').f.1G=\'2i\';u.V(\'9Q\').f.1G=\'2i\';u.V(\'bV\').f.1G=\'5y\';aK;bJ:aK}});u.V(\'jY\').2S(\'1O\',Z(){W 3A=u.V(\'bU\').l.6J();if(!3A){4f(\'g5 jX, rH um 2U 3c o 4x.\');1K}W aJ=[\'4l\',\'3Q\',\'4m\',\'4w\',\'5g\',\'4v\',\'5f\',\'4u\',\'4t\',\'4s\'];W g4={};aJ.2w(G=>{W 1b=u.V(G+\'c\');if(1b){g4[G]=2e(1b.l)||0}});Q.1t(`bQ${3A}`,37.6K(g4));4f(`3u"${3A}"jW 1a 9e!`);dv()});u.V(\'jV\').2S(\'1O\',Z(){W 1E=u.V(\'bT\');W 8s=1E.l;if(!8s){4f(\'7c um 4x 3c jU.\');1K}Q.4R(8s);4f(`3u"${8s.5b(\'bQ\', \'\')}"jTído 1a 9e!`);dv()});u.V(\'jS\').2S(\'1O\',Z(){W 1E=u.V(\'bT\');W 8s=1E.l;if(!8s){4f(\'7c um 4x 3c jR.\');1K}W du=37.4n(Q.1f(8s));if(!du){4f(\'9P ao bS o 4x.\');1K}7y.98(du).2w(G=>{Q.1t(G,du[G])});Q.1t(\'jQ\',8s);bR();4f(`3u"${8s.5b(\'bQ\', \'\')}"jP 1a 9e!`)});W jM=["dr","fY"];W jL=[{id:"jO",bP:"jw"},{id:"jN",bP:"fX"}];jM.2w(id=>{W 1b=u.V(id);if(Q.1f(id)){1b.l=Q.1f(id)}1b.2S("75",Z(){Q.1t(id,3y.l);2L.34(`📌[${id}]rG 3c:${3y.l}`)})});jL.2w(({id,bP})=>{W 1E=u.V(id);W 8r=Q.1f(bP);if(8r){1E.l=8r}1E.2S("75",Z(){Q.1t(bP,3y.l)})});Z jF(2R){E g3=$(`a[Y-G="${2R}"]`).7b(\'tr\').3R(\'td:eq(2)\');if(g3.2J){E jK=g3.1k().2N(\'/\')[1].6J();E 1J=2e(jK);1K 1J}1B{1K 52}}Z jE(id){W 2G=u.V(id);if(2G){W 35=2G.2u.35(/\\((\\d+)\\)/);if(35){1K 2e(35[1],10)}}1K 52}Z jA(dt,jJ,jI){W dq=Q.1f(\'dr\')||5;W g2=dt;W g1=u.2z(`1b[1y="${g2}"]`);E jH=1R.6c(jJ-jI);if(jH>0){$(`1b[1y="${g2}"]`).8o(dq);1L(()=>{W 8l=u.2z(\'1b.1S.1S-dj\');if(g1&&g1.l>0&&8l){8l.1O();2L.34(`✅bIão de jG iZ!`)}},j3)}}ds Z jt(){W aJ=[\'4l\',\'3Q\',\'4m\',\'4w\',\'5g\',\'5f\',\'4v\',\'4u\',\'4t\',\'4s\'];W 1C=1P;W bN={};2m(E G of aJ){W dp=2e(Q.1f(G),10)||0;W bO=jF(G);W jD=jE(G+\'rF\');W dq=Q.1f(\'dr\')||5;if(dp>bO&&bO!=52&&jD>=dq){2L.34(`⚠️jC ${G}:jB(${dp})>rE(${bO}).rD...`);jA(G,dp,bO);bN[G]=2D}1B{bN[G]=9N}dn 1D jz(dm=>1L(dm,1C))}W jy=7y.98(bN).9O(G=>Q.1f(G)!==52);W jx=jy.rC(G=>bN[G]===9N);if(jx){2L.34("🚨 aI rB!");Q.1t(\'3J\'+8,\'9N\');Q.1t(\'g0\',\'9N\')}}W dk=Q.1f(\'fX\')||fZ;Z dj(){W ju=Q.1f(\'fY\')||3;W rA=Q.1f(\'fX\');W jr=Q.1f(\'jw\')||\'N\';W fW=u.4S(\'jv\');if(fW.2J<(ju-1)){jt()}if(jr===\'S\'){if(dk<=0){L bM=u.V(\'jq\');2L.34(\'rz de jp!\')W fV=$(\'.jo\');1L(Z(){if(bM){bM.1O()}},1*1P);1L(Z(){if(fV){fV.1O()}},2*1P)}dk=2e(dk)-10}1L(()=>{dj()},16*1P)}dj();L v8=8;L jn=Q.1f(\'3J\'+v8);L jm=jn===\'2D\';if(jm){L jl=\'ok\'}if(jl===\'ok\'){Z 4N(){L 5e=2e(Q.1f(\'8q\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+5e);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:1P},{1p:"74",1C:5o},{1p:"3g&1X=7C",1C:63},{1p:"3g&1X=73",1C:7B},{1p:"2j&1X=72",1C:8g},{1p:"2j&1X=71",1C:8f},{1p:"4Q&1X=6v",1C:8h},{1p:"2V&1X=6u",1C:64},{1p:"62",1C:5*60*1P}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - ry";u.1w=48}L fU=u.V(\'rx\');E 7a=Q.1f(\'7a\');if(fU&&7a===\'S\'){E 7H=2e(Q.1f(\'7H\'));W $3z=`<X id="5d"><1o 1A="2g"id="6I"p="1H%"f="1Y-3k: 2X;"><1q><tr><td><1o k="6b-1Z"p="1H%"6H="0"><1q><tr><td id="79-1Z"f="1z-2c: 4M(6G,6F,1H); 1z-6a: 1Q(1d://1n.1i.1a/1m/78/1l/1p/76.1e); 1z-4b: 4b-x;"><1o k="2l"1A="3P"><1q><tr><td id="6E"><h1 f="1k-1A: 2g; 1Y-3k: 3t;">rw</h1></td><td><X f="1z-2c: 2r; 1r: 1.69; p: 1.68; 4r: 5x;"><1j id="5l"f="5w:5v;"4q="6D"k="3K"1h="1d://6C.1i.1a/5u/3K/6B.1e"><2v id="4d"5Q="5P"5O 57="1"5N><5M 1h="1d://5L.5K.5J/5I/6A/6z-lq.5t"1c="2v/67">5s 5H não 5G o 5F de 2v.</2v></X></td></tr></1q></1o></td></tr></1q></1o></1q></1o></X><3i><3j id="66">fT rv di v3.0 by<I f="2c: 5r">5c</I><I id="1U"></I><I id="4a"></I></3j></3i>`;W 4p=u.V(\'5q\');4p.3r(\'5E\',$3z);Z 6w(){L aw=u.V(\'1U\');L 7D=Q.1f(\'fK\');if(7D){7D=1D 1N(7D)}1B{6y();7D=1D 1N();7D.5p(7D.4D()+(7H));Q.1t(\'fK\',7D)}Z 6y(){E j5=1D Z(){E d9=[15,6,3,2];W fQ=Q.1f(\'jk\');E fN=()=>{1K u.4S("ru").2J};E jb=()=>{1K u.4S("rt")};E jf=()=>{E fS=fN();W dh=d9;if(fS>0){dh=dh.bL(0,fS*-1)}1K dh.dg((jj,ji)=>{1K jj+ji})};E jc=()=>{E df=37.4n(Q.1f("df"))||["4l"];W fR=[];E 9d=u.4S("3h-rs-1M");2m(E 7G of 9d){L jh=7G.jg("Y-G");if(df.4Z(jh)){fR.47({G:7G.jg("Y-G"),dd:2e(7G.65.5b("(","").5b(")","")),})}}1K fR};E jd=(fP,9d)=>{E fO=jf();E 8p=[];2m(E 7G of 9d){2L.34(\'je:\',7G.dd)if(7G.dd>fQ){E aH=1R.2b((fQ*fP)/fO);8p.47({G:7G.G,db:aH,})}1B{E aH=1R.2b((7G.dd*fP)/fO);8p.47({G:7G.G,db:aH,})}}1K 8p};E j8=(d7,9d,2G)=>{E aH=jd(d7,9d);2m(E dc of aH){if(dc.db){L aG=$(`[1y=${dc.G}]`);aG.8o(dc.db.8n()).75()}}2G.1O()};3y.j4=()=>{E 9d=jc();E d8=jb();E j9=d9.2J-fN();if(d8.2J>=j9){2m(W 1I=0;1I<d8.2J;1I++){E d7=d9[1I];E 2G=d8[1I];E j7=5o+5o*1I;1L(()=>j8(d7,9d,2G),j7)}}}};$(u).j6(()=>{1L(()=>{j5.j4()},1P)});Z iY(){E 6x=u.2z("h2.rr");L aC=2e($("#2Q").1k());L 7F=2e($("#2P").1k());L aF=2e($("#2O").1k());W aE;W aD;W aB;if(6x&&6x.9c==="ay rq 4C"){aE=25;aD=30;aB=25}1B if(6x&&6x.9c==="ay Mé8m 4C"){aE=fM;aD=j3;aB=fM}1B if(6x&&6x.9c==="ay rp 4C"){aE=1P;aD=ro;aB=1P}1B if(6x&&6x.9c==="ay rn 4C"){aE=bK;aD=rm;aB=bK}W j2=aF>=aE;W j1=7F>=aD;W j0=aC>=aB;1K j2&&j1&&j0}Z iW(){W 7E=Q.1f(\'7E\');W 8l=u.2z(\'.1S.1S-bJ.rl-1x\');if(7E===\'S\'){if(8l){8l.1O();2L.34(\'bIão "ay" iZ.\');1L(Z(){if(iY()){2L.34("aA rk 3c a d6ção!");E fL=u.4S("1S 1S-bJ");fL[fL.2J-1].1O()}1B{2L.34("aA rj.");E iX=u.2z("a.az");iX.1O()}},9M)}1B{2L.34(\'bIão "ay" não 8k.\')}}}1L(iW,9M)}Z 8i(){L 2A=1D 1N();if(2A>=7D){Q.4R(\'fK\');2y.6p()}1B{L 2f=7D-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31="8jóax d5ção em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";aw.2u=31;1L(8i,1P)}}8i()}6w();L v3=2;L iV=Q.1f(\'3J\'+v3);L iU=iV===\'2D\';if(iU){L iT=\'ok\'}if(iT===\'ok\'){Z 4N(){L iS=2e(Q.1f(\'4C\'));L 4O=u.V(\'4a\');L 1F=Q.1f(\'3q\');if(1F){1F=1D 1N(1F)}1B{1F=1D 1N();1F.5p(1F.4D()+iS);Q.1t(\'3q\',1F)}Z 3p(){L 2A=1D 1N();if(2A>=1F){Q.4R(\'3q\');L 4P=[{1p:"2l",1C:8h},{1p:"74",1C:64},{1p:"3g&1X=7C",1C:5*60*1P},{1p:"3g&1X=73",1C:1P},{1p:"2j&1X=72",1C:5o},{1p:"2j&1X=71",1C:63},{1p:"4Q&1X=6v",1C:7B},{1p:"2V&1X=6u",1C:8g},{1p:"62",1C:8f}];4P.2w((1g,1I)=>{W 4o=Q.1f(\'3J\'+1I);if(4o===\'2D\'){1L(()=>{5n.6t(\'8e...\');2F.2y.1s=6s.70+\'&1p=\'+1g.1p},1g.1C)}})}1B{L 2f=1F-2A;L 1U=1R.2b(2f/3f); L 2h=1R.2b((2f%3f)/2W); L 2p=1R.2b((2f%2W)/1P); L 31=" || 8d em: "+1U+" 1U, "+2h+" 2h e "+2p+" 2p";4O.2u=31;1L(3p,1P)}}3p()}4N()}W 1Q=2F.2y.1s;W 49=1D 6r(1Q).6Z.2N(\'.\')[0];W 48=49+" - 4C";u.1w=48}if(2F.2y.1s.4Z(\'1p=3I\')){W 1W=37.4n(Q.1f(\'1W\'))||[];if(1W.2J>0){W fJ=[];1W.2w((2x)=>{W 5a=2x.5a;W 58=2x.58;fJ.47([5a],[58])});W 4L=iN;if(!4L.bF.fB){4L.bF.fB=4L.bF.iC}Z iu(6q,61){E 4e=6q.ri(\'2d\');4e.rh=2;fJ.2w(([5m])=>{E[iR,iQ]=5m.2N(\'|\').3I(4B);E fI=4L.3I.iP(iR,iQ);E fH=4L.3I.iP(61.x,61.y);E x=(fI[0]-fH[0])+4L.iO[0]/2;E y=(fI[1]-fH[1])+4L.iO[1]/2;iL(4e,x,y,0.17*iN.3I.fy[0]*5,\'9b(1H, 0, 7A, 0.3)\');iI(4e,x,y,[\'rg\',\'rf\',\'re\'],[5,10,15],[{9a:\'4M(7A, 0, 0)\',bG:\'/1l/fG/4m.1e\'},{9a:\'4M(0, 7A, 0)\',bG:\'/1l/fG/4l.1e\'},{9a:\'4M(0, iM, iM)\',bG:\'/1l/fG/2V.1e\'}])})}Z iL(4e,x,y,2q,iK,iJ){E fF=2q/2; 4e.rd();4e.fC=iK;4e.rc=iJ;4e.rb(x-fF,y-fF,2q,2q);4e.r9();4e.r8();4e.r7()}Z iI(4e,x,y,fE,iD,iG){E fD=20;E 7z=15;E iE=10;4e.iH=\'2g\';4e.r6=\'3F\';fE.2w((2E,1I)=>{E d4=x-(fE.2J-1)*fD/2+1I*fD;E d3=y+20;E f=iG[1I];if(f.9a){4e.fC=f.9a;4e.r5(d4-7z/2,d3-7z/2,7z,7z)}if(f.bG){E 1j=1D bH();1j.iF=()=>{4e.r4(1j,d4-7z/2,d3-7z/2,7z,7z)};1j.1h=f.bG}4e.2t=`${iE}px r3`;4e.fC=\'#r2\';4e.r1(iD[1I],d4,d3+7z)})}4L.bF.iC=Z(Y,61){4L.bF.fB(Y,61);E fA=61.x-Y.x;E iA=fA+4L.iB;E fz=61.y-Y.y;E iy=fz+4L.iB;7y.98(Y.iz).2w((x)=>{x=2e(x,10);if(x<fA||x>=iA)1K;7y.98(Y.iz[x]).2w((y)=>{y=2e(y,10);if(y<fz||y>=iy)1K;E v=4L.d2[(Y.x+x)*1P+(Y.y+y)];if(v){W el=u.V(`iv${61.x}au${61.y}`);if(!el){E 6q=u.6Y(\'6q\');6q.f.av=\'d1\';6q.p=4L.3I.fy[0]*4L.3I.ix;6q.1r=4L.3I.fy[1]*4L.3I.ix;6q.f.iw=10;6q.r0=\'qZ\';6q.id=`iv${61.x}au${61.y}`;61.qY(6q,0,0);iu(6q,61)}}})})};4L.6p()}}L 4d=u.V("4d");if(4d){L 5l=u.V("5l");2m(L j=0;j<9;j++){4d.57=1R.7x(0,4d.57-0.1)}5l.qX=Z(){if(4d.qW){4d.qV()}1B{4d.qU()}}}}})();',62,2404,'|||||||||||||||style|||||class|value||||width|||||document||option||||||||const||unit|edificio|span||nivel|var|||||localStorage|||||getElementById|let|div|data|function|||||||||||com|input|type|https|png|getItem|item|src|innogamescdn|img|text|graphic|asset|dsbr|table|screen|tbody|height|href|setItem|nowrap|10px|title|button|name|background|align|else|delay|new|select|proximaRotacao|display|100|index|count|return|setTimeout|all|Date|click|1000|url|Math|btn|unit_link|horas|checkbox|savedModels|mode|margin|border|||||||||||label|floor|color||parseInt|tempoRestante|center|minutos|none|market|row|main|for|0e187870|25px|segundos|size|white|vis|font|textContent|audio|forEach|model|location|querySelector|agora|target|tooltipDiv|true|icon|window|element|tooltiptext|Minutos|length|storage|console|script|split|wood|stone|iron|unitName|addEventListener|normal|nome|snob|60000|5px|questionmark|1e2782a7||tempoRestanteFormatado|colspan|barracks|log|match|space|JSON||farm|Este|tabindex|para|ser|http|3600000|place|units|small|strong|bottom|proximoCarregamento|padStart|smith|30px|atualizares|proximoCarregamentoRot2|insertAdjacentHTML||0px|Modelo|1px|block|NT|this|html|modelName|line|wall|stable|36px|middle|String|9pt|map|check|emoji|date|readonly|vertical|Usar|left|sword|find|20px|Dsaida|float|event|utilizado|Script|20Quickbar|New|TWPiaf|ll102|albums|photobucket|i286|||push|novoTitulo|subdominio|Inforot|repeat|checked|audioElement|ctx|alert|14px|number|local|garage|tela|spear|axe|parse|valorSalvo|Inserir|alt|padding|catapult|ram|heavy|light|archer|modelo|proximoCarregamentoR|que|campo|Number|Coleta|getMinutes|nicer|Cavalaria|error|inputValue|indica|hide|guia|mapOverlay|rgb|redirecionar|rotacion|redirecionamentos|statue|removeItem|getElementsByClassName|children|unitsInput|15px|top|nova|aberto|includes|||null||php||unitTime|volume|CTo||CFrom|replace|Zigaeezz|divScriptRodando|temp_farm|marcher|spy|coordinatedestine|fd86cac8|modelosSalvos|modelSelect|tocaSom|village|UI|3000|setMinutes|contentContainer|red|Seu|mp3|TribalWars|pointer|cursor|2px|inline|Nobre|now|speed|este|uma|beforebegin|elemento|suporta|navegador|previews|org|freesound|cdn|source|loop|autoplay|auto|preload|c1748d3c|solid|Sim|horasElement|tableBody|_blank|neste|Constru|divContentAuxiliares||sector|train|5000|15000|innerHTML|movendoTexto|mpeg|5em|2em|image|content|min|knight|modify|80px|Arqueiro|atualizar|time|game|vel|popupContainer|divOpcaoAuxiliar|sua|botton|reload|canvas|URL|game_data|InfoMessage|coin|overview|atualizarTempoRestante|header|executarScript|448713_4473224|448|1f50a|media|loud_sound|avisoScriptContent|162|193|cellspacing|avisoScript|trim|stringify|7d510f|querySelectorAll|box|confirm|Dchegada|selectedUnits|maxUnitTime|est|Ativo|ativo|Onde|Como|executar|createElement|hostname|link_base_pure|traders|call|scavenge_mass|am_farm|change|tableheader_bg3||7fe7ab60|inner|ColetaAtiva|closest|Selecione|afterend|fas|tropas|RecruitAtivo|rows|UparPaladinoAtiva|CunhagemAtiva|comando|autoBuild|get_rewards|edificiosTableBody|AbreCaptcha|CheckRot|100px|determinada|rodar|pflaggreen|onde|texto|clicar|max|Object|iconSize|255|7000|scavenge|proximoCarregamentoRc|unlocks|qtdArgilaAldeia|troop|PeriodoColeta|Lanceiro|unit_spear|incoming|EtiquetadorAtiva|PeriodoUparPaladino|CunhagemMassaAtiva|BalanceamentoAtiva|ColetaMassaAtiva|PuxarRecursosAtiva|MoedasCunhagem|CunhagemRandomica|seconds|minutes|hours|convertToInput|AlvCat|datetime|das|||Massa|cio|68480359|Ddchegada|rio|AgendadorAtivo|Configura|DeslogaConta|AlarmeCaptcha|important|Hora|Rotacionando|Redirecting|11000|9000|13000|atualizarR|Pr|encontrado|botao|dia|toString|val|result|Rrecruit|savedValue|selectedKey|css|Catapulta|unit_catapult|unit_ram|pesada|unit_heavy|unit_marcher|leve|unit_light|right|Alarmenobre|coord|getSeconds|CupPala|action|PeriodoCunhaMassa|remove|botoes|QuantiClusters|PeriodoBalanceamento|PeriodoColetaMassa|PeriodoPuxarRecursos|totalC|coordinateOrigem|NtType|opacity|seja|diffDias|acess|Redp|next|ncia_Constru|Sequ||modeloSelecionado|modelosConstrucao|adjacentRow|Ctt|pois|55px||keys||backgroundColor|rgba|innerText|troops|sucesso|xml|save|Cavalo|collapse|unit_snob|checkboxes|coords|udio|20000|amp|Rfarm|CCMass|CBalance|ColetaM|CPuxar|mes|ano|distance|link|arrivalTime|unitData|totalSeconds|savedCoordinates|support|Est|dataset|newRowHTML|caso|Agendars|upStorage|priority|existingRows|momento|2000|false|filter|Erro|carregarM|storedValue|Nome|unit_axe|unit_sword|clearfix|Comandos|contains|knights|hidden|Up|DistanciaPuxarRecursos|CoordenadaPuxarRecursos|total|relativeTime|Confirmar|unitsM|aldeias|jQuery|groups|groupsFilter|Pra|editButton|confirmedt|form|bot|ultimoNivel|maxQueueSize|autoReduzir|file|move|cuidado||Tome|||ele||||_|position|infopux|xima|Desbloquear|popup_box_close|Recursos|custoFerro|qtdFerroAldeia|custoArgila|custoMadeira|qtdMadeiraAldeia|inputs|troopsToSend|Recrutamento|unitsr|break|appendChild|each|then|fixed|3px|spacing|separate|elementosAnteriores|BuildingStatue|3600|classList|Cunhagem|yes|info|cunhar|moedas|msDiff|catch|getFullYear|timePart|milissegundos|padrao|Atak|tempo|inputElement|deltaY|deltaX|filteredMatches|matches|textarea|group_id|selected_Group|visibility|Origem|Mercado|Academia|watchtower|Agendados||coordinateorigem|command_tempo_alvo|nt22||nt2|envio|upFarm|o_Edifcios_Serie|o_proximo_edificio|Evoluir_vilas||container|contador|AssistenteFarmTipoGrupo|flex|Config|user|mapHandler|backgroundImage|Image|Bot|default|10000|slice|vai|statusUnits|currentCount|storageKey|Modelo_|RequestUnits|carregar|modelRSelect|modelNamer|Rotacionarsss|ModeloE|Max_recruit|get|ete|Explorador|unit_spy|unit_archer|rbaro|Espadachim|layout|40px|Paladino|Us|Nobres|elementosAtuais|extraElement|||Ataque||elements|hora|acc|hover|transition|Vila|Mcunhar|CTotal|troop_confirm_submit|arrivalDate|getDate|getMonth|Chegada||setSeconds|inputDate|maxUnitName|coordsToID|formatTime|CoordenadasOrigem|join|group|transform|Apoio|Comando|Tempo|Coordenadas|Destino|delete|opened|command_target_mass|Ddsaida|CStime|nt33|nt3|comandos|qual|Esta|como|informado|seu|botaoConfirmar|ximo_edif|Visualiza|necess|recursos|dispon|absolute|villages|iconY|iconX|atualiza|constru|weight|availableScavanges|scavangesWeight||quantityToSend|troopToSend|quantity||unitsToAvoid|reduce|weightArray|Rec|recruit|xist||resolve|await||savedCount|Qtpvez|quantR|async|unidade|modelData|updateModelSelect|case|xxx|key|cell|formattedTime|tagName|config|get_unit_info|func|interface|InfoTimeTrops|Insert|Salvar|ximo|unit_knight|Padr|extraFormatado|S_incoming|undefined|getHours|Aleatorio|start|settings|3498db|4px|inset|elementosName|insertBefore|setInterval|evt|Horas|disabled|CSbuttonC|CSchegada|opener|001|step|unidades|sort|selectedData|formattedDate|timeToSubtract|CoordenadasDestino|abs|envioProgramadoAleatorio|outputText|inputText|regex|Em|attack|Agendar|||Nro||Muralha||Armaz||Fazenda|Mina|Po|Bosque|tua|reuni|Ferreiro|vigia|Torre|Oficina|bulo|Quartel|unitValue|dataTable|deleteItem|165px|Unit|thead|inputName|mero|commandDiv|sssaida|tdas|nsaida|QtAtks|saida|villageNumber|Cto|nt44|nt4|tab_nt5|tab_nt4|tab_nt3|tab_nt2|tab_ntCancel|Ariete|indicado|enviadas|quantas|indicar|aldeia|Csaida|Agendando||000|Nenhum|getNivelAtual|compArm|getConstru|instituir|Edificio_Principal|o_Geral|get_rewards_temp|timeSplit|json|carregarModelos|edificios|menos|addButton|nivelAtual|ultimaLinha|limite|xyzzz|Aldeia|iconbot|AssistenteFarmAtivo|dos|scale|beginY|beginX|_spawnSector|fillStyle|iconSpacing|icons|halfSize|unit_map|st_pixel|wt_pixel|serverData|proximoCarregamentoMcoletau|desbloquearBotao|250|getBlockedScavanges|totalWeight|scavangeWeight|maxtrop|responseTroops|blockedScavanges|Coletando|coleta|vai2|linhas|RotTime|quantRF|120|box8|inputUnit|Aunit|troopCountElement|recruitmentModel|Por|startsWith|300px|Defina|890px|210px|Definir|150px|por|beforeend|body|Mais|elementosA||apoio|00|getOriginCoords|millis|random|proximoCarregamentoPtraing|checkpala|radio|shadow|ligarDesligar|duration|proximoCarregamentocoinss|Cunhando|proximoCarregamentoBalanceC|clicarBotao|getScript|proximoCarregamentoMcoleta|clickss|scripts|proximoCarregamentoPuxRecs|clickBotao|Att|Moedas|maximumAmount|menorResultado|getMilliseconds|targetCata|newRow|toValues|enviar|Modelos|CSaida|getLink|activeWorldData|inputAleatorio|spanAleatorio|NroOrigens|villagesList|groupDiv|visible|translateX|6px|radius|fff|||||black|200px|CadastroComErro|mais|EnvioMesmoSemTempo|EnvioMesmoBN|ferro|argila|principal|Edif|Catapultas|Alvo|Editar|checkAndOpenLinks|calctemp|RequestUnitsSelect|temp|horario|NTtype|calculateDistance|nt55|nt5|nt11|nt1|Hor|SEM|alarme|alvo|realizar|quest|apenas|timenextvillage|botaoReducao|armazem|_maxpop|proximo|Proxima_Constru|currentUrl|getEvoluir_vilas|Max_Tempo_Espera|openQ|compararTempoComInput|inputPartes|timeInput|partes|primeiroTempoElem|tabela|premium_points|reader|saveButton|importModelsInput|modeloAldeiaSelecionado|elementsToSave|down|mid|buildings|95eda994|nivelAdicionado|adicionar|poss|superior|reqNivel|reqEdificio|requisitosDeEdificio|settingss|Remover|circle|Edificio|ctt|checkbot||botProtection||captcha|MygScripts|Dados|autenticado|Puxar|Reuni|quantidade||uso||acordo||Captcha|nick|drawMapTowers|mapOverlay_canvas_|zIndex|sectorSize|endY|tiles|endX|mapSubSectorSize|spawnSector|numbers|textSize|onload|styles|textAlign|drawIconsAndNumbers|strokeColor|fillColor|drawSquare|254|TWMap|tileSize|pixelByCoord|villageY|villageX|temp_Coleta|conf3|estado3|valor3|clicarBotaoDesbloquear|closepop|verificarRecursos|clicado|ferroSuficiente|argilaSuficiente|madeiraSuficiente|300|init|Scavange|ready|delayTime|sendScavange|scavangesUnlocked||getAvailableScavanges|getAvailableTroops|calculateScavangeTroops|Total|getScavangeWeight|getAttribute|unitType|item2|item1|MaxsendColeta|conf8|estado8|valor8|groupRight|vila|village_switch_right|condR||processUnitsWithDelay|Qtfila|sortable_row|RotON|todasFalharam|unidadesSalvas|Promise|validarPreencher|Salvo|Unidade|unitmax|getNumberFromElement|getTroopCount|recrutamento|recruitAmount|quantatual|maxsalvo|troopCountText|selects|inputIds|TimeRotacionarss|Rotacionarss|definido|modeloSelect|definir|setModelButtonR|exclu|excluir|deleteModelR|salvo|favor|saveButtonr|rotact|Load|edict|selectedValue|chosen|texts|nameModel|unitsWithQuantities|defaultQuantities|catapas|arietes|cavalospesados|cavalosleves|arqueirosmontados|espioes|arcos|barbaros|espadas|lancas|head|appendTo|placeholder|minuto|modelRSelects|70px|Ativar|cogs|Excluir|trash|Selecionar|Filas|ETIQUETANDO|Html5|funcaoParaMais|verificarElementos|caminho|diferenca|etiquetar|quickedit|incomings_amount|notific|Estamos|Ataques|etiqueta|identificar|setMillis|morto|nobre|not|info_player|attackCount|villName|tmp|extra|incomings|conf6|estado6|valor6|SuccessMessage|usable_regimens|regimen|post|knightLevel|elementAction|Select_pala|Statue|prop|knightCardContainer|out|ease|150ms|Pala|checkboxpala|checkboxp_|parentNode|add|conf1|estado1|valor1|CUNHANDO|conf7|estado7|valor7|btnSelecionar|CUNHAR|conf5|estado5|valor5|fecharContainer||conf4|estado4|valor4|btnSophie|kuma|shinko|SCRIPT|conf2|estado2|valor2|limt|terceiroTd|trS|trs|DistMax|cordenada|res|intervalId|Validando|VArgSalvo|Segundos|coin_mint_count|CustoMad|CustoArg|CustoFer|coin_cost_iron|Randomic|avisoC|avisoCunhar|EXTRA|Checkss|ping|callback|startTime|SFuture|arrivalInput|day|month|datePart|spanElement|building|ChegadaH|closed|targetRow|RequestUnitsM|agendarEmMassaConfirmAtaque|gerar|distanceM|fromValues|limit|informa|obter|pela|organizados|alvoCatapaMassa|CStimeMassaAte|CStimeMassa|some|unit_input_|unit_input_snob_massa_nro|unit_input_knight_massa_nro|unit_input_catapult_massa_nro|unit_input_ram_massa_nro||unit_input_heavy_massa_nro|unit_input_marcher_massa_nro|unit_input_light_massa_nro|unit_input_spy_massa_nro|unit_input_archer_massa_nro|unit_input_axe_massa_nro|unit_input_sword_massa_nro|unit_input_spear_massa_nro|NroOrigensPorAlvo|sqrt|ModEnvioMassa|NroDestinos|exec|while|botaoRemoveCoordenadaDestinoUtilizadas|botaoRemoveCoordenadaOrigemUtilizadas|selectedGroupValue|fetchAndSaveVillagesData|raGroupsFilter1|botaoGrupoBuscaCoordenada|reject|villageCoords|villageName|villageId|attr|tableRows|htmlDoc|response|parser|ajax|updateGroupFilter|grupos|renderGroupsFilter|encontrada|isSelected|entries|fetchVillageGroups|villageGroups|try|Html10|esteja|algum|mesmo|||Mesmo|Enviar|envioProgramado|ria|Destinos|Utilizadas|Remove|Organizar|Priorizar|content_mass_comands|openComand|updateTable||showComandos|OpenCommand|editBtn|readOnly|unitIndex|confirmBtn|splice|Hdestinh|Hsaidah|Tabelagendados|Sa|60px|BtnCommand|btnComand|target_support|send|inputField|totalapoio|CmdD|totalatak|CmdA|CmdAG|Hchegada|NTtypeABC|alvoCatC|Hsaida|Tcmd|TropC|timeDiff|modelTime|comag|targetElements|Infotimertrops|agendar|agendarApoio|atk|agendarAtaque|TForm|timeToAdc|ssaida|qtdeAtaqueSequencial|alvoCatapaSimples|definirHorario|extrairIdDaPagina|unitmaxx|Cfrom|villageNameText|villageNameSpan|coordinatesText|coordinatesCell|dateNow|2024||CANCEL|486|713|Lissim||624|648||criados||novamente|enviado||Percentual||Unidades|utilizados|valores|todos|informato|modo|Tropas|Fake|Real|chegada|hor|command_actions|0800|atraves|AgendarM|Agendart|commands|conf0|estado0|valor0|altAldeia|redu|clicarBotaoConfirmar|Clicando|clicarBotaoReducao|menor|main_buildlink_|modeloCarregado|upFarmCheckbox|percpop|dif_percent|percFarm|_dif|_pop|o_Edificios_Ordem|Visivel|Clicar_Upar_Edificos|build|filaFull|endsWith|l_main|Min_Tempo_Espera|cdReward|delayed|tooltip|new_quest|igual|fila|minutosInput|minutosFila|inputTexto|primeiroTempoTexto|executarEtapa1|blob|xyzz|arquivo|importedModel|exibirModeloNaTabela||fileName|edif|pelo|esta|setModelButton||deleteModel|removeButton|moveRow|removeRow|addBuilding|restoreValues|saveValue|nivelAdjacente|edificioAdjacente|edificioAtual|nextElementSibling|previousElementSibling|nivelUltimaLinha|formContainer|novoNivel|veis|limitesDeNivel|church|240|50px|armaz|Construir|nessa|Fila|ficio|Ed|Menu|CttAtivo|audioHtml|capcha|selector|openPopup|iconn|BTNSalvarConfig|checkboxState|apagados|BTNApagarComandos|html3|7px|Kuma|To|Shinko|cadastrar|assim|configura|oldlc|desejadas|houver|sempre|deseja|Farm|Caso|automaticamente|aberta|divConfigsAgendador|abertura|configurar|box6|box2|box0|Fun|tempos|teste|realiza|translate|Html2|processaruser|segundoLink|diffs|agoracheck|validade|converteDate|users|checar|ips|dataString|unitsWithValues|carregarconfigCheckb|checksave|Merc|Armz|Recs|modeloCtt|unidadesparacoleta|pause|play|paused|onclick|appendElement|mapOverlay_map_canvas|className|fillText|FFFFFF|Arial|drawImage|fillRect|textBaseline|closePath|stroke|fill||rect|strokeStyle|beginPath|Icon3|Icon2|Icon1|lineWidth|getContext|insuficientes|suficientes|unlock|12000|Extrema|1200|Grande|Pequena|popup_box_header|entry|free_send_button|lock|Uns|COLETANDO|scavenge_screen|Recruit|mudando|Rotime|Concluido|every|Preenchendo|Atual|_0_a|atualizado|insira|switch|catapultc|ramc|heavyc|marcherc|lightc|spyc|archerc|axec|swordc|spearc|proxima|Ir|Nao|Aldeias|rota|vilas|Rotacionar|Carregar|Criar|ON|vez|recrutar|Quantidade|ModeloC|Meta|Brabo|Recrutando||RECRUTANDO|train_form|174021_3240885||174|identificados|Alerta|Fique|29000|id_|Paz|Guerra|fake|aquamarine|desvia|full|violet|defendido|suporte|desv|ataque|yellow|last|distancia|player|DESIGNORAR|prepend|toArray|row_b|row_a|incomings_table|Etiqueta|select_all|seleciona|Etiquetas|COMANDOS|TREINANDO|Treinamento|386e303de70e5a2ff1b5cabefb0666f5|ajaxaction|link_base|casa|level|preventDefault|successfully|saved|been|have|The|Height|Radius|bolder|Weight|9px|Size|webkit|0080ff|Treinando|Options|Save|Training|Start|orange|TRAING||PALA|nextSibling|checkbox_group||Farming|FARMANDO|mint_multi_button|select_anchor_top|Mueda|muita||MASSA|EM||coin_overview_table||Balan|div_container|btn_send|clicarEmCadaBotao|nr_clusters|void|resBalancer|bytvle86lj6230c|dropboxusercontent|rec|Balanceando|REC|BALANCEANDO|Coletao|30000|massScavenge|COLETA|MASS|Push|appendHere|saveCoord|coordinateTargetFirstTime|cord|senderV2|Puxando|RECURSOS|PUXAR|Relogando|clearInterval|Esperando|coin_mint_fill_max|apply|coin_cost_wood|coin_cost_stone|Cunhado|foi|fetch|measurePing|inicial|Contagem|amanh|hoje|relative_time|getElementsByName|insertAdjacentElement|sem|agendado|DSaida|DchegadaF|origin|_massa|processar|dados|buscar||group_table|parseFromString||DOMParser|success|load_villages_from_group|filtro|renderizar|Div|selected|selected_groupoo|fetching|Error|ErrorMessage|load_group_menu|Simula|simularEmMassaConfirm|agendarEmMassaConfirmApoio|Problema|chegue|Bater|Horario|Aleat|Programa|Programado|Cadastro|Modalidade|Distantes|ximas|defOrigemDestino|Origens|Defini|Importar|Grupo|unit_input_snob_massa|unit_input_knight_massa|unit_input_catapult_massa|unit_input_ram_massa|unit_input_heavy_massa||||||||||unit_input_marcher_massa|unit_input_light_massa|unit_input_spy_massa||unit_input_archer_massa|unit_input_axe_massa|unit_input_sword_massa|unit_input_spear_massa|125|Agendamento|aqui|adicionadas|Cancelar|Arqueira|overview_table|content_history_comands|close|target_attack|units_entry_all_|Valor|Inserindo|field|Apoios|Unnamed|4000|open|14000|links|maior|unit_input_snob|unit_input_knight|unit_input_catapult|unit_input_ram|unit_input_heavy|unit_input_marcher|unit_input_light|unit_input_spy|unit_input_archer|unit_input_axe|unit_input_sword|unit_input_spear|isNaN|menu_row2|command|world|coordsToID_|activeTW|141|01T21|30T00|09|Saida|0569|K66|0069|Enviado|Que|370|Informa|370px|nroCmd|cancelamento|sequencialmente|possua|dispare|inimigo|cancelar|destina|Cancel|unit_input_snob_nt5|unit_input_catapult_nt5|unit_input_ram_nt5|unit_input_heavy_nt5|unit_input_marcher_nt5|unit_input_light_nt5|unit_input_knight_nt5|unit_input_spy_nt5|unit_input_archer_nt5|unit_input_axe_nt5|unit_input_sword_nt5|unit_input_spear_nt5|unit_input_snob_nt4|unit_input_catapult_nt4|unit_input_ram_nt4|unit_input_heavy_nt4|unit_input_marcher_nt4|unit_input_light_nt4|unit_input_knight_nt4|unit_input_spy_nt4|unit_input_archer_nt4|unit_input_axe_nt4|unit_input_sword_nt4|unit_input_spear_nt4|unit_input_snob_nt3|unit_input_catapult_nt3|unit_input_ram_nt3|unit_input_heavy_nt3|unit_input_marcher_nt3|unit_input_light_nt3|unit_input_knight_nt3|unit_input_spy_nt3|unit_input_archer_nt3|unit_input_axe_nt3|unit_input_sword_nt3|unit_input_spear_nt3|unit_input_snob_nt2|unit_input_catapult_nt2|unit_input_ram_nt2|unit_input_heavy_nt2|unit_input_marcher_nt2|unit_input_light_nt2|unit_input_knight_nt2|unit_input_spy_nt2|unit_input_archer_nt2|unit_input_axe_nt2|unit_input_sword_nt2|||unit_input_spear_nt2|enviados|retornar|bater|informe|criado|valor|volta|bate|ataques|sequencia|Sequencial|catapultas|typeTropas|existentes|percentuais|selecionadas|tab_nt|NTReal|considerado|deve|Tipo|type_nt|selecionar|conforme|campos|habilitado|desta|alem|qualquer|||acima|rela|190px|Dias|expira|plano|Contrate|Premium|Area|Renove|Expirado|Plano|AGENDAMENTOS|place_confirm_units|Upando|btr|order_feature|Ignorando|atual|main_buildlink_storage_|main_buildlink_farm_|pop_max_label|pop_current_label|offsetHeight|offsetWidth|hasOwnProperty|isArray|Array|||Clicked|Geral|Nenhuma|Input|endtime|Tabela|build_queue|complete|status|claim|system|reward|tis|Gr|Completar|buildqueue|HEADQUARTERS_VIEW|OVERVIEW_VIEW|download|createObjectURL|application|Blob|exportar|readAsText|correto|Verifique|FileReader|selecionado|files|salvar|antes|Adicione|defina|Requer|queue|85px|Reduzir|reduzir|Periodo|Automaticamente|Recompensas|Coletar|forem|popula|tiver|fazenda|tica|Autom|dessa|times|unsetModelButton|Adicionada|Anterior|minus|desse|Adicionar|plus|Adicionados|serem|Esconderijo|Ferro|Argila|Igreja|Principal|formId|Ordens|Ajustar|edificiosTable|tableContainer|scrollable|import|accept|Exportar|export|menu|Exibir|Ocultar|UPANDO|building_wrapper|tribalwars|www|507577_735175|507|protection|qSelector|offsetParent|isHidden|botprotection_quest|logout|linkContainer|sair|village_|3333|BTNApagarConfigFarm|Apagados|Agendamentos|relative|340px|come|aguardar|lculo|realizado|coordenada|informada|OBS|divConfigsPuxarRecursos|destino|cunhagem|balanceados|Pedido|divConfigsColetaMassa|padr|pido|acesso|barra|utilizou|voc|salvas|previamente|utilizar|divConfigsCunhagemMassa|from|divConfigsBalanceamento|menores|evolu|melhorando|balanceando|Clusters|divididas|suas|entre|Comerciantes|Estado|Balanceamento|divConfigsColeta|divConfigsCunhagem|custo|bandeiras|itens|otimizando|varias|puxar|poder|juntamente|recomendado|||indicada||||seguran|refresh|Assistente|divConfigsEtiquetador|jogador|soar|detectado|informando|lenta|etiquetando|endere|manter|basta|Chegando|attacks|subtype|overview_villages|Etiquetador|fchurch|Paladinos|seus|visualiza|Upar|pally|232px|Apagar|documenta|pop|motivo|esse|guias|novas|abrir|pra|deixar|agendamento|Agendador|oldaxe|divConfigsCtt|configurada|ordem|seguindo|upar|intuito|tem|main3|Recrutar|checkbox8|Cunhar|checkbox7|box7|checkbox6|Balancear|checkbox5|box5|checkbox4|box4|checkbox3|box3|checkbox2|checkbox1|box1|180|checkbox0|CheckBoxes|Info|naquela|permanecer|desejado|Aba|mesma|rotacionar|quer|abertas|abas|diminuir|intens|54px|Abertura|Realizar|navega||usu|aparece|central|lateral|Tanto||hidingp|divConfigsCaptcha|mundo|pagina|som|libera|explica|documento|consulte|dando|disposto|inicializar|interagir|solu|Ele|telas|todas|rodando|estar|Anti|oldnoble|Ol|Scripts|Gerente|500px|popup_box_content|nbsp|Esc|teclado|atalho|Fechado|1105px|popup_box_quest|show|slim|popup_box|popup_box_container|grabber|9999|1500px|2000px|popup_container|jpg|02501|x1cBfkgX|postimg|Myicon|2025|03|110|500|600|strict|use'.split('|'),0,{}))
+    'use strict';
+//================================================================= Config inicial newba Albert =================================================================//
+localStorage.setItem('AbreCaptcha', 'S'); ///// Config Abrir captcha
+localStorage.setItem('AlarmeCaptcha', 'N'); // Config Alarme
+localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
+
+
+localStorage.setItem('Ctt', 'S'); ///////////// Script Construção para desativar altere para N e ativar alyere para S
+localStorage.setItem('check' + 0, 'true'); // ativar rotação do ed Principal, para ativar altere para true e desativar altere para false
+localStorage.setItem('box0', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('Redp', 60); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
+
+localStorage.setItem('ColetaAtiva', 'S'); /////// Script Coleta para desativar altere para N e ativar alyere para S
+localStorage.setItem('PeriodoColeta', 5); ///// tempo q executará o script de Coleta novamente em minutos
+localStorage.setItem('unlocks', 'S'); ///////// Desbloquear coletas Ativo, para desativar altere S para N
+localStorage.setItem('check' + 2, 'true'); // ativar rotação da Coleta, para ativar altere para true e desativar altere para false
+localStorage.setItem('box2', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('Coleta', 2); ///////// tempo ativo na Coleta >. tempo referido em minutos, no caso q esta ficará 2 minutos
+const unidadesparacoleta = ["spear"]; // mode completo ['spear'], use para adicionar ou remover a q n quer q envia para coleta
+localStorage.setItem("unitsToAvoid", JSON.stringify(unidadesparacoleta));
+localStorage.setItem('MaxsendColeta', 600); //maximo de tropas a enviar na coleta, alterne até achar a quantia q lhe convem.
+
+localStorage.setItem('UparPaladinoAtiva', 'S'); //// Script treinamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('PeriodoUparPaladino', 10); // tempo q executará o script de enviar os pala para treinar
+localStorage.setItem('check' + 6, 'true'); ////// ativar rotação no treinamento do paladino, para ativar altere false para true
+localStorage.setItem('box6', 'true'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('CupPala', 2); //////////// tempo em que ficará na aba Treino do pala >. tempo referido em minutos, no caso q esta ficará 2 minutos
+
+localStorage.setItem('RecruitAtivo', 'S'); //// Script recrutamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
+localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('Rrecruit', 5); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
+
+///////////// config recrute inicial ////////////////////
+// Array de objetos com as unidades e seus valores
+const unitsWithValues = [
+    { name: 'lancas', value: 500 },
+    { name: 'espadas', value: 100 },
+    { name: 'barbaros', value: 0 },
+    { name: 'arcos', value: 0 },
+    { name: 'espioes', value: 110 },
+    { name: 'arqueirosmontados', value: 0 },
+    { name: 'cavalosleves', value: 0 },
+    { name: 'cavalospesados', value: 0 },
+    { name: 'arietes', value: 0 },
+    { name: 'catapas', value: 0 }
+];
+////////////////////////////////////////////////// config Up de vila /////////////////////////////////////////////////////////////////////////////////////////////////
+let modelosSalvos = JSON.parse(localStorage.getItem("modelosConstrucao")) || {};
+let modeloCtt = [
+ {
+    "edificio": "main",
+    "nivel": 1
+  },
+  {
+    "edificio": "farm",
+    "nivel": 1
+  },
+  {
+    "edificio": "storage",
+    "nivel": 1
+  },
+  {
+    "edificio": "statue",
+    "nivel": 1
+  },
+  {
+    "edificio": "hide",
+    "nivel": 1
+  },
+  {
+    "edificio": "place",
+    "nivel": 1
+  },
+  {
+    "edificio": "wood",
+    "nivel": 1
+  },
+  {
+    "edificio": "stone",
+    "nivel": 1
+  },
+  {
+    "edificio": "iron",
+    "nivel": 1
+  },
+  {
+    "edificio": "wood",
+    "nivel": 2
+  },
+  {
+    "edificio": "stone",
+    "nivel": 2
+  },
+  {
+    "edificio": "iron",
+    "nivel": 2
+  },
+  {
+    "edificio": "storage",
+    "nivel": 2
+  },
+  {
+    "edificio": "farm",
+    "nivel": 2
+  },
+  {
+    "edificio": "storage",
+    "nivel": 3
+  },
+  {
+    "edificio": "farm",
+    "nivel": 3
+  },
+  {
+    "edificio": "main",
+    "nivel": 2
+  },
+  {
+    "edificio": "main",
+    "nivel": 3
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 1
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 2
+  },
+  {
+    "edificio": "market",
+    "nivel": 1
+  },
+  {
+    "edificio": "market",
+    "nivel": 2
+  },
+  {
+    "edificio": "hide",
+    "nivel": 2
+  },
+  {
+    "edificio": "hide",
+    "nivel": 3
+  },
+  {
+    "edificio": "wall",
+    "nivel": 1
+  },
+  {
+    "edificio": "wall",
+    "nivel": 2
+  },
+  {
+    "edificio": "wood",
+    "nivel": 3
+  },
+  {
+    "edificio": "stone",
+    "nivel": 3
+  },
+  {
+    "edificio": "iron",
+    "nivel": 3
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 3
+  },
+  {
+    "edificio": "main",
+    "nivel": 4
+  },
+  {
+    "edificio": "storage",
+    "nivel": 4
+  },
+  {
+    "edificio": "farm",
+    "nivel": 4
+  },
+  {
+    "edificio": "wood",
+    "nivel": 4
+  },
+  {
+    "edificio": "stone",
+    "nivel": 4
+  },
+  {
+    "edificio": "iron",
+    "nivel": 4
+  },
+  {
+    "edificio": "wall",
+    "nivel": 3
+  },
+  {
+    "edificio": "main",
+    "nivel": 5
+  },
+  {
+    "edificio": "market",
+    "nivel": 3
+  },
+  {
+    "edificio": "wood",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 6
+  },
+  {
+    "edificio": "stone",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 7
+  },
+  {
+    "edificio": "stone",
+    "nivel": 6
+  },
+  {
+    "edificio": "iron",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 8
+  },
+  {
+    "edificio": "storage",
+    "nivel": 5
+  },
+  {
+    "edificio": "storage",
+    "nivel": 6
+  },
+  {
+    "edificio": "farm",
+    "nivel": 5
+  },
+  {
+    "edificio": "market",
+    "nivel": 4
+  },
+  {
+    "edificio": "market",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 9
+  },
+  {
+    "edificio": "iron",
+    "nivel": 6
+  },
+  {
+    "edificio": "stone",
+    "nivel": 7
+  },
+  {
+    "edificio": "wood",
+    "nivel": 10
+  },
+  {
+    "edificio": "stone",
+    "nivel": 8
+  },
+  {
+    "edificio": "iron",
+    "nivel": 7
+  },
+  {
+    "edificio": "storage",
+    "nivel": 7
+  },
+  {
+    "edificio": "farm",
+    "nivel": 6
+  },
+  {
+    "edificio": "storage",
+    "nivel": 8
+  },
+  {
+    "edificio": "main",
+    "nivel": 6
+  },
+  {
+    "edificio": "main",
+    "nivel": 7
+  },
+  {
+    "edificio": "main",
+    "nivel": 8
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 4
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 5
+  },
+  {
+    "edificio": "hide",
+    "nivel": 4
+  },
+  {
+    "edificio": "wall",
+    "nivel": 4
+  },
+  {
+    "edificio": "wall",
+    "nivel": 5
+  },
+  {
+    "edificio": "market",
+    "nivel": 6
+  },
+  {
+    "edificio": "market",
+    "nivel": 7
+  },
+  {
+    "edificio": "wood",
+    "nivel": 11
+  },
+  {
+    "edificio": "stone",
+    "nivel": 9
+  },
+  {
+    "edificio": "stone",
+    "nivel": 10
+  },
+  {
+    "edificio": "stone",
+    "nivel": 11
+  },
+  {
+    "edificio": "iron",
+    "nivel": 8
+  },
+  {
+    "edificio": "smith",
+    "nivel": 1
+  },
+  {
+    "edificio": "smith",
+    "nivel": 2
+  },
+  {
+    "edificio": "wood",
+    "nivel": 12
+  },
+  {
+    "edificio": "stone",
+    "nivel": 12
+  },
+  {
+    "edificio": "main",
+    "nivel": 9
+  },
+  {
+    "edificio": "main",
+    "nivel": 10
+  },
+  {
+    "edificio": "smith",
+    "nivel": 3
+  },
+  {
+    "edificio": "smith",
+    "nivel": 4
+  },
+  {
+    "edificio": "smith",
+    "nivel": 5
+  },
+  {
+    "edificio": "stable",
+    "nivel": 1
+  },
+  {
+    "edificio": "stable",
+    "nivel": 2
+  },
+  {
+    "edificio": "stable",
+    "nivel": 3
+  },
+  {
+    "edificio": "farm",
+    "nivel": 7
+  },
+  {
+    "edificio": "storage",
+    "nivel": 9
+  },
+  {
+    "edificio": "storage",
+    "nivel": 10
+  },
+  {
+    "edificio": "farm",
+    "nivel": 8
+  },
+  {
+    "edificio": "wood",
+    "nivel": 13
+  },
+  {
+    "edificio": "stone",
+    "nivel": 13
+  },
+  {
+    "edificio": "iron",
+    "nivel": 9
+  },
+  {
+    "edificio": "iron",
+    "nivel": 10
+  },
+  {
+    "edificio": "wood",
+    "nivel": 14
+  },
+  {
+    "edificio": "stone",
+    "nivel": 14
+  },
+  {
+    "edificio": "iron",
+    "nivel": 11
+  },
+  {
+    "edificio": "main",
+    "nivel": 11
+  },
+  {
+    "edificio": "main",
+    "nivel": 12
+  },
+  {
+    "edificio": "storage",
+    "nivel": 11
+  },
+  {
+    "edificio": "storage",
+    "nivel": 12
+  },
+  {
+    "edificio": "farm",
+    "nivel": 9
+  },
+  {
+    "edificio": "farm",
+    "nivel": 10
+  },
+  {
+    "edificio": "storage",
+    "nivel": 13
+  },
+  {
+    "edificio": "storage",
+    "nivel": 14
+  },
+  {
+    "edificio": "storage",
+    "nivel": 15
+  },
+  {
+    "edificio": "wood",
+    "nivel": 15
+  },
+  {
+    "edificio": "stone",
+    "nivel": 15
+  },
+  {
+    "edificio": "iron",
+    "nivel": 12
+  },
+  {
+    "edificio": "wood",
+    "nivel": 16
+  },
+  {
+    "edificio": "stone",
+    "nivel": 16
+  },
+  {
+    "edificio": "iron",
+    "nivel": 13
+  },
+  {
+    "edificio": "farm",
+    "nivel": 11
+  },
+  {
+    "edificio": "storage",
+    "nivel": 16
+  },
+  {
+    "edificio": "hide",
+    "nivel": 5
+  },
+  {
+    "edificio": "wood",
+    "nivel": 17
+  },
+  {
+    "edificio": "stone",
+    "nivel": 17
+  },
+  {
+    "edificio": "stone",
+    "nivel": 18
+  },
+  {
+    "edificio": "iron",
+    "nivel": 14
+  },
+  {
+    "edificio": "market",
+    "nivel": 8
+  },
+  {
+    "edificio": "market",
+    "nivel": 9
+  },
+  {
+    "edificio": "market",
+    "nivel": 10
+  },
+  {
+    "edificio": "main",
+    "nivel": 13
+  },
+  {
+    "edificio": "main",
+    "nivel": 14
+  },
+  {
+    "edificio": "main",
+    "nivel": 15
+  },
+  {
+    "edificio": "wood",
+    "nivel": 18
+  },
+  {
+    "edificio": "storage",
+    "nivel": 17
+  },
+  {
+    "edificio": "storage",
+    "nivel": 18
+  },
+  {
+    "edificio": "iron",
+    "nivel": 15
+  },
+  {
+    "edificio": "wood",
+    "nivel": 19
+  },
+  {
+    "edificio": "stone",
+    "nivel": 19
+  },
+  {
+    "edificio": "iron",
+    "nivel": 16
+  },
+  {
+    "edificio": "storage",
+    "nivel": 19
+  },
+  {
+    "edificio": "stone",
+    "nivel": 20
+  },
+  {
+    "edificio": "stone",
+    "nivel": 21
+  },
+  {
+    "edificio": "wood",
+    "nivel": 20
+  },
+  {
+    "edificio": "iron",
+    "nivel": 17
+  },
+  {
+    "edificio": "wood",
+    "nivel": 21
+  },
+  {
+    "edificio": "iron",
+    "nivel": 18
+  },
+  {
+    "edificio": "stone",
+    "nivel": 22
+  },
+  {
+    "edificio": "wood",
+    "nivel": 22
+  },
+  {
+    "edificio": "iron",
+    "nivel": 19
+  },
+  {
+    "edificio": "iron",
+    "nivel": 20
+  },
+  {
+    "edificio": "main",
+    "nivel": 16
+  },
+  {
+    "edificio": "main",
+    "nivel": 17
+  },
+  {
+    "edificio": "main",
+    "nivel": 18
+  },
+  {
+    "edificio": "farm",
+    "nivel": 12
+  },
+  {
+    "edificio": "farm",
+    "nivel": 13
+  },
+  {
+    "edificio": "farm",
+    "nivel": 14
+  },
+  {
+    "edificio": "storage",
+    "nivel": 20
+  },
+  {
+    "edificio": "farm",
+    "nivel": 15
+  },
+  {
+    "edificio": "stone",
+    "nivel": 23
+  },
+  {
+    "edificio": "wood",
+    "nivel": 23
+  },
+  {
+    "edificio": "iron",
+    "nivel": 21
+  },
+  {
+    "edificio": "storage",
+    "nivel": 21
+  },
+  {
+    "edificio": "storage",
+    "nivel": 22
+  },
+  {
+    "edificio": "market",
+    "nivel": 11
+  },
+  {
+    "edificio": "market",
+    "nivel": 12
+  },
+  {
+    "edificio": "market",
+    "nivel": 13
+  },
+  {
+    "edificio": "main",
+    "nivel": 19
+  },
+  {
+    "edificio": "main",
+    "nivel": 20
+  },
+  {
+    "edificio": "stone",
+    "nivel": 24
+  },
+  {
+    "edificio": "wood",
+    "nivel": 24
+  },
+  {
+    "edificio": "stone",
+    "nivel": 25
+  },
+  {
+    "edificio": "iron",
+    "nivel": 22
+  },
+  {
+    "edificio": "iron",
+    "nivel": 23
+  },
+  {
+    "edificio": "wood",
+    "nivel": 25
+  },
+  {
+    "edificio": "iron",
+    "nivel": 24
+  },
+  {
+    "edificio": "storage",
+    "nivel": 23
+  },
+  {
+    "edificio": "storage",
+    "nivel": 24
+  },
+  {
+    "edificio": "storage",
+    "nivel": 25
+  },
+  {
+    "edificio": "farm",
+    "nivel": 16
+  },
+  {
+    "edificio": "farm",
+    "nivel": 17
+  },
+  {
+    "edificio": "wood",
+    "nivel": 26
+  },
+  {
+    "edificio": "storage",
+    "nivel": 26
+  },
+  {
+    "edificio": "stone",
+    "nivel": 26
+  },
+  {
+    "edificio": "hide",
+    "nivel": 6
+  },
+  {
+    "edificio": "hide",
+    "nivel": 7
+  },
+  {
+    "edificio": "hide",
+    "nivel": 8
+  },
+  {
+    "edificio": "hide",
+    "nivel": 9
+  },
+  {
+    "edificio": "hide",
+    "nivel": 10
+  },
+  {
+    "edificio": "wall",
+    "nivel": 6
+  },
+  {
+    "edificio": "wall",
+    "nivel": 7
+  },
+  {
+    "edificio": "wall",
+    "nivel": 8
+  },
+  {
+    "edificio": "wall",
+    "nivel": 9
+  },
+  {
+    "edificio": "wall",
+    "nivel": 10
+  },
+  {
+    "edificio": "wall",
+    "nivel": 11
+  },
+  {
+    "edificio": "wall",
+    "nivel": 12
+  },
+  {
+    "edificio": "storage",
+    "nivel": 27
+  },
+  {
+    "edificio": "storage",
+    "nivel": 28
+  },
+  {
+    "edificio": "market",
+    "nivel": 14
+  },
+  {
+    "edificio": "market",
+    "nivel": 15
+  },
+  {
+    "edificio": "market",
+    "nivel": 16
+  },
+  {
+    "edificio": "market",
+    "nivel": 17
+  },
+  {
+    "edificio": "market",
+    "nivel": 18
+  },
+  {
+    "edificio": "market",
+    "nivel": 19
+  },
+  {
+    "edificio": "market",
+    "nivel": 20
+  },
+  {
+    "edificio": "storage",
+    "nivel": 29
+  },
+  {
+    "edificio": "storage",
+    "nivel": 30
+  },
+  {
+    "edificio": "market",
+    "nivel": 21
+  },
+  {
+    "edificio": "market",
+    "nivel": 22
+  },
+  {
+    "edificio": "stone",
+    "nivel": 27
+  },
+  {
+    "edificio": "market",
+    "nivel": 23
+  },
+  {
+    "edificio": "market",
+    "nivel": 24
+  },
+  {
+    "edificio": "market",
+    "nivel": 25
+  },
+  {
+    "edificio": "wood",
+    "nivel": 27
+  },
+  {
+    "edificio": "stone",
+    "nivel": 28
+  },
+  {
+    "edificio": "iron",
+    "nivel": 25
+  },
+  {
+    "edificio": "wood",
+    "nivel": 28
+  },
+  {
+    "edificio": "iron",
+    "nivel": 26
+  },
+  {
+    "edificio": "wood",
+    "nivel": 29
+  },
+  {
+    "edificio": "stone",
+    "nivel": 29
+  },
+  {
+    "edificio": "iron",
+    "nivel": 27
+  },
+  {
+    "edificio": "stone",
+    "nivel": 30
+  },
+  {
+    "edificio": "wood",
+    "nivel": 30
+  },
+  {
+    "edificio": "iron",
+    "nivel": 28
+  },
+  {
+    "edificio": "smith",
+    "nivel": 6
+  },
+  {
+    "edificio": "smith",
+    "nivel": 7
+  },
+  {
+    "edificio": "smith",
+    "nivel": 8
+  },
+  {
+    "edificio": "smith",
+    "nivel": 9
+  },
+  {
+    "edificio": "smith",
+    "nivel": 10
+  },
+  {
+    "edificio": "garage",
+    "nivel": 1
+  },
+  {
+    "edificio": "garage",
+    "nivel": 2
+  },
+  {
+    "edificio": "garage",
+    "nivel": 3
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 6
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 7
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 8
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 9
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 10
+  },
+  {
+    "edificio": "stable",
+    "nivel": 4
+  },
+  {
+    "edificio": "stable",
+    "nivel": 5
+  },
+  {
+    "edificio": "garage",
+    "nivel": 4
+  },
+  {
+    "edificio": "garage",
+    "nivel": 5
+  },
+  {
+    "edificio": "smith",
+    "nivel": 11
+  },
+  {
+    "edificio": "smith",
+    "nivel": 12
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 11
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 12
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 13
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 14
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 15
+  },
+  {
+    "edificio": "stable",
+    "nivel": 6
+  },
+  {
+    "edificio": "stable",
+    "nivel": 7
+  },
+  {
+    "edificio": "stable",
+    "nivel": 8
+  },
+  {
+    "edificio": "stable",
+    "nivel": 9
+  },
+  {
+    "edificio": "stable",
+    "nivel": 10
+  },
+  {
+    "edificio": "wall",
+    "nivel": 13
+  },
+  {
+    "edificio": "wall",
+    "nivel": 14
+  },
+  {
+    "edificio": "wall",
+    "nivel": 15
+  },
+  {
+    "edificio": "farm",
+    "nivel": 18
+  },
+  {
+    "edificio": "farm",
+    "nivel": 19
+  },
+  {
+    "edificio": "farm",
+    "nivel": 20
+  },
+  {
+    "edificio": "farm",
+    "nivel": 21
+  },
+  {
+    "edificio": "farm",
+    "nivel": 22
+  },
+  {
+    "edificio": "garage",
+    "nivel": 6
+  },
+  {
+    "edificio": "garage",
+    "nivel": 7
+  },
+  {
+    "edificio": "garage",
+    "nivel": 8
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 16
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 17
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 18
+  },
+  {
+    "edificio": "stable",
+    "nivel": 11
+  },
+  {
+    "edificio": "stable",
+    "nivel": 12
+  },
+  {
+    "edificio": "stable",
+    "nivel": 13
+  },
+  {
+    "edificio": "stable",
+    "nivel": 14
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 19
+  },
+  {
+    "edificio": "stable",
+    "nivel": 15
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 20
+  },
+  {
+    "edificio": "garage",
+    "nivel": 9
+  },
+  {
+    "edificio": "garage",
+    "nivel": 10
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 21
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 22
+  },
+  {
+    "edificio": "stable",
+    "nivel": 16
+  },
+  {
+    "edificio": "stable",
+    "nivel": 17
+  },
+  {
+    "edificio": "stable",
+    "nivel": 18
+  },
+  {
+    "edificio": "smith",
+    "nivel": 13
+  },
+  {
+    "edificio": "smith",
+    "nivel": 14
+  },
+  {
+    "edificio": "smith",
+    "nivel": 15
+  },
+  {
+    "edificio": "smith",
+    "nivel": 16
+  },
+  {
+    "edificio": "smith",
+    "nivel": 17
+  },
+  {
+    "edificio": "smith",
+    "nivel": 18
+  },
+  {
+    "edificio": "smith",
+    "nivel": 19
+  },
+  {
+    "edificio": "smith",
+    "nivel": 20
+  },
+  {
+    "edificio": "snob",
+    "nivel": 1
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 23
+  },
+  {
+    "edificio": "garage",
+    "nivel": 11
+  },
+  {
+    "edificio": "garage",
+    "nivel": 12
+  },
+  {
+    "edificio": "iron",
+    "nivel": 29
+  },
+  {
+    "edificio": "iron",
+    "nivel": 30
+  },
+  {
+    "edificio": "wall",
+    "nivel": 16
+  },
+  {
+    "edificio": "wall",
+    "nivel": 17
+  },
+  {
+    "edificio": "wall",
+    "nivel": 18
+  },
+  {
+    "edificio": "wall",
+    "nivel": 19
+  },
+  {
+    "edificio": "wall",
+    "nivel": 20
+  },
+  {
+    "edificio": "stable",
+    "nivel": 19
+  },
+  {
+    "edificio": "stable",
+    "nivel": 20
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 24
+  },
+  {
+    "edificio": "barracks",
+    "nivel": 25
+  },
+  {
+    "edificio": "garage",
+    "nivel": 13
+  },
+  {
+    "edificio": "garage",
+    "nivel": 14
+  },
+  {
+    "edificio": "garage",
+    "nivel": 15
+  }
+];
+modelosSalvos["Up Recs + Armz e Merc P Cunhagem"] = modeloCtt;
+localStorage.setItem("modelosConstrucao", JSON.stringify(modelosSalvos));
+localStorage.setItem("modeloAldeiaSelecionado", 'Up Recs + Armz e Merc P Cunhagem');
+const checksave = [
+        "autoBuild",
+        "upFarm",
+        "upStorage",
+        "get_rewards",
+    ];
+localStorage.setItem("autoBuild", 'true'); /////////////// Ativa a Ctt automatica altere para false(desativado) e para true(ativado)
+localStorage.setItem("upFarm", 'true'); ////////////////// Ativa a prioridade da população
+localStorage.setItem("upStorage", 'true'); ////////////// Ativa a prioridade do mercado
+localStorage.setItem("get_rewards", 'true'); /////////// Ativa a coletar as recompensas
+localStorage.setItem("value-priority-farm", 15); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
+localStorage.setItem("value-priority-storage", 80); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
+localStorage.setItem("maxQueueSize", 5); //////////// maximo de filas para Ctt
+localStorage.setItem("get_rewards_temp", 10); /////// tempo para abrir e coletar as recompensas
+function carregarconfigCheckb() {
+        checksave.forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+            const savedValue = localStorage.getItem(id);
+                if (element.type === "checkbox") {
+                    element.checked = savedValue === "true";
+                }
+                }
+        });
+    }carregarconfigCheckb();
+////////////////////////////////////////////////////////////// Priguicinha ///////////////////////////////////////////////////////////////////////////////////////////
+    unitsWithValues.forEach(unit => {
+    localStorage.setItem(unit.name, unit.value);
+});
+function converteDate(dataString) {
+    // Divide a data no formato DD/MM/YYYY
+    const [dia, mes, ano] = dataString.split("/").map(Number);
+
+    // Cria um objeto Date (mês no JavaScript é indexado a partir de 0)
+    return new Date(ano, mes - 1, dia);
+}
+    let acess = 0;
+function processaruser(ip) {
+let ips = [
+    ["Zigaeezz - 19/03/2025"]
+];
+let agoracheck = new Date();
+ips.forEach(([checar]) => {
+    const [users, data] = checar.split(" - ");
+    let user = ip;
+    if (users === user) {
+        const validade = converteDate(data); // Converte a string de data para um objeto Date
+        const diffs = validade - agoracheck; // Diferença em milissegundos
+        const diffDias = Math.floor(diffs / (1000 * 60 * 60 * 24)); // Converte para dias
+
+        if ((diffDias+1) > 3) {
+          acess = 1; // plano ativo
+        }else if((diffDias+1) > 0 && (diffDias+1) < 4){
+           acess = 3; // plano expirado
+            localStorage.setItem('diffDias', (diffDias+1));
+}
+        else{
+           acess = 2; // plano expirado
+}
+    }
+    else{
+       acess = 0; // sem plano
+}
+});}
+   // Seleciona a primeira linha da tabela
+   const link = document.querySelectorAll('a[href*="info_player"]');
+if (link) {
+    const segundoLink = link[1];
+    const nick = segundoLink.textContent;
+    localStorage.setItem('user', nick);
+  processaruser(nick)
+}
+    let $Html2 = `<div border = "4px" class="quest" width = "25px" class="Myicon" id="MygScripts" style="background-image: url(https://i.postimg.cc/x1cBfkgX/02501.jpg);">
+    </div>`;
+    var Insert = document.getElementById('new_quest');
+    // Adiciona o HTML antes de cada elemento 'menu-item'
+    Insert.insertAdjacentHTML('afterend', $Html2);
+// Função para abrir a popup com base na ID do elemento clicado
+function openPopup() {
+    let user = localStorage.getItem('user');
+    // Criar o contêiner da janela flutuante
+    var popupContainer = document.createElement('div');
+    popupContainer.classList.add('popup_container');
+    popupContainer.style.position = 'fixed';
+    popupContainer.style.top = '50%';
+    popupContainer.style.left = '50%';
+    popupContainer.style.width = '2000px';
+    popupContainer.style.height = '1500px';
+    popupContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Cor de fundo semi-transparente para simular um fundo escurecido
+    popupContainer.style.transform = 'translate(-50%, -50%)';
+    popupContainer.style.zIndex = '9999'; // Definir um índice z alto para garantir que a janela flutuante esteja acima de outros elementos
+    // Adicionar o botão de fechar
+     let $html3 = `<div id="ra-map-coord-grabber" class="popup_box_container" style="left: 51%; top: 50%; transform: translate(-50%, -50%);"><div align="center" class="popup_box slim show" id="popup_box_quest" style="width: 1105px;"><a id="popup_box_close" class="popup_box_close tooltip-delayed" data-title="Fechado :: atalho de teclado: <b>Esc</b>">&nbsp;</a>
+     <div class="popup_box_content" style="height: 500px;"><div style="width: 100% !important; display: flex;">
+     <div style=" !important; padding: 7px; float: left; width: 55%;"><h2> - Gerente Scripts - </h2><h3>Olá ${user}</h3></div>
+     <div class="vis divContentAuxiliares">     <h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/oldnoble.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Configurações de Anti-Captcha </h3>     <a class="tooltipDiv" style="font-size: 9pt; float: none;" href="#"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script estará rodando em todas as telas do TribalWars. Ele não realiza a solução do captcha apenas irá interagir com o botão de inicializar teste de Captcha disposto pelo TribalWars. Caso não esteja dando alarme consulte o documento de explicação dos scripts, pois é necessário configurar liberação de som para a pagina de seu mundo.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsCaptcha">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/hidingp.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o script irá realizar a abertura dos botões de realização de teste de captcha. Tanto o botão lateral como o botão central que aparece de tempos em tempos para o usuário de acordo com seu nível de navegações.</span></div> Realizar Abertura de Captcha:<select id="AbreCaptcha" style="width: 54px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/fchurch.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se irá realizar o disparo de alarmes para o usuário após 10 segundos que não reconhecer a solução do captcha.</span></div> Realizar Alarme após 10 Seg:<select id="AlarmeCaptcha" style="width: 57px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/speed.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se irá realizar a navegação para fora do jogo após 60 segundos que não reconhecer a solução do captcha.</span></div> Deslogar Conta após 60 Seg:<select id="DeslogaConta" style="width: 59px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
+     </div>
+
+     <div><table width="97%"><tbody><tr><td colspan="4"><div style="float: left; margin: 5px;"><input class="btn am-form-element" type="button" id="BTNSalvarConfig" value="Salvar Configurações" style="width: 300px; height: 36px;"></div></td>
+     <td colspan="4" align="center"><a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">A intensão é diminuir a quantidade de abas abertas.Selecione as Funções que vc quer rotacionar na mesma Aba eo tempo desejado q permanecerá naquela Função</span>- Info CheckBoxes -           </a></td>
+     </tr><tr>
+     <td class="box" ><label><input type="checkbox" id="box0" class="CheckRot" name="checkbox0">Up Vila</label><select id="Redp" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="10">10 minutos</option><option value="20">20 minutos</option><option value="30">30 minutos</option><option value="60">1 Hora</option><option value="120">2 Horas</option><option value="180">3 Horas</option><option value="240">4 Hora</option></select></td>
+     <td class="box" ><label><input type="checkbox" id="box1" class="CheckRot" name="checkbox1">Farm</label><select id="Rfarm" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="15">15 Minutos</option><option value="20">20 Minutos</option><option value="30">30 Minutos</option><option value="60">1 Hora</option></select></td>
+     <td class="box" ><label><input type="checkbox" id="box2" class="CheckRot" name="checkbox2">Coleta</label><select id="Coleta" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="15">15 Minutos</option><option value="20">20 Minutos</option><option value="30">30 Minutos</option><option value="60">1 Hora</option></select></td>
+     <td class="box" ><label><input type="checkbox" id="box3" class="CheckRot" name="checkbox3">Coleta M</label><select id="ColetaM" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="15">15 Minutos</option><option value="20">20 Minutos</option><option value="30">30 Minutos</option><option value="60">1 Hora</option></select></td>
+     <td class="box" ><label><input type="checkbox" id="box4" class="CheckRot" name="checkbox4">Puxar Rec</label><select id="CPuxar" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="15">15 Minutos</option><option value="20">20 Minutos</option><option value="30">30 Minutos</option><option value="60">1 Hora</option></select></td>
+     <td class="box" ><label><input type="checkbox" id="box5" class="CheckRot" name="checkbox5">Balancear</label><select id="CBalance" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="15">15 Minutos</option><option value="20">20 Minutos</option><option value="30">30 Minutos</option><option value="60">1 Hora</option></select></td>
+     <td class="box" ><label><input type="checkbox" id="box6" class="CheckRot" name="checkbox6">Up Pala</label><select id="CupPala" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="15">15 Minutos</option><option value="20">20 Minutos</option><option value="30">30 Minutos</option><option value="60">1 Hora</option></select></td>
+     <td class="box" ><label><input type="checkbox" id="box7" class="CheckRot" name="checkbox7">Cunhar M</label><select id="CCMass" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="15">15 Minutos</option><option value="20">20 Minutos</option><option value="30">30 Minutos</option><option value="60">1 Hora</option></select></td>
+     <td class="box" ><label><input type="checkbox" id="box8" class="CheckRot" name="checkbox8">Recrutar</label><select id="Rrecruit" style="width: 55px;"><option value="2">2 Minutos</option><option value="5">5 Minutos</option><option value="15">15 Minutos</option><option value="20">20 Minutos</option><option value="30">30 Minutos</option><option value="60">1 Hora</option></select></td>
+     </tr></tbody></table></div>
+
+
+     <div style="width: 100% !important; display: flex;">
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(https://dsbr.innogamescdn.com/asset/95eda994/graphic/buildings/mid/main3.png); width: 30px; height: 30px; vertical-align: middle; line-height: normal;"></span> Config. Up Vila</h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?&screen=main"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"><span class="tooltiptext">Este Script tem o intuito de upar sua Vila automaticamente seguindo a ordem de ctt configurada. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado.</span>Como Usar e Onde Usar?</a><div id="divConfigsCtt"><div class="vis divOpcaoAuxiliar"><table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;"><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:<select id="Ctt" style="width: 100px;"><option value="S">Sim</option><option value="N">Não</option></select></td></tr></tbody></table></div></div></div>
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/axe.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span>Configurações de Recrutamento</h3>     <a style="font-size: 9pt; float: none;" target="_blank" href="/game.php?screen=train" class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela da "Recrutamento".Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsAgendador">        <div class="vis divOpcaoAuxiliar"><table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;"><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span><div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script estáativo e irá rodar em sua determinada tela.</span></div> Script Ativo:                       <select id="RecruitAtivo" style="width: 100px;"><option value="S">Sim</option><option value="N">Não</option></select>                    </td>                 </tr> </tbody>           </table>        </div>        <div style="float: left; margin-top: 10px;">      </div>     </div>  </div>
+     <div class="vis divContentAuxiliares">     <h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/oldaxe.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Configurações de Agendador</h3>     <a style="font-size: 9pt; float: none;" target="_blank" href="/game.php?screen=place" class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela da "Praça de Reunião", é necessário cadastrar o agendamento de comandos para o momento que se deseja a chegada do comando, é necessário deixar uma praça aberta que esta irá abrir as novas guias para envio de comando. Por esse motivo é necessário configurar a abertura de pop-up de acordo com documentação do script. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsAgendador">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:                       <select id="AgendadorAtivo" style="width: 100px;"><option value="S">Sim</option><option value="N">Não</option></select>                    </td>                 </tr>              </tbody>           </table>        </div>        <div style="float: left; margin-top: 10px;"><input class="btn am-form-element" type="button" id="BTNApagarComandos" value="Apagar Comandos Agendados" style="width: 232px; height: 30px; margin: 0px;">        </div>     </div>  </div>
+     </div>
+
+     <div style="width: 100% !important; display: flex;">
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pally.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Configurações de Upar Paladino </h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?screen=statue&amp;mode=overview"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de visualização dos seus Paladinos. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado.</span>Como Usar e Onde Usar?</a>     <div id="">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:<select id="UparPaladinoAtiva" style="width: 100px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a cada quanto tempo o Script irá executar em sua determinada tela.</span></div> Periodicidade:<select id="PeriodoUparPaladino" style="width: 90px;">                          <option value="10">10 Minutos</option>                          <option value="20">20 Minutos</option>                          <option value="30">30 Minutos</option>                          <option value="45">45 Minutos</option>                          <option value="60" selected="">1 Hora</option>                          <option value="120">2 Horas</option>                          <option value="180">3 Horas</option>                          <option value="240">4 Horas</option>                          <option value="300">5 Horas</option>                          <option value="360">6 Horas</option>                       </select>                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
+     <div class="vis divContentAuxiliares">     <h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/fchurch.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Configurações de Etiquetador</h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?screen=overview_villages&amp;mode=incomings&subtype=attacks"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de Comandos Chegando, basta manter o script Ativo e uma guia aberta neste endereço e ele irá atualizar automaticamente etiquetando a unidade mais lenta e informando o horário de BT. Caso seja detectado um Nobre este irá soar um alarme para que o jogador seja informado. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsEtiquetador">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:<select id="EtiquetadorAtiva" style="width: 100px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr> <tr><td style="white-space: nowrap; height: 20px;"><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/fchurch.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se irá realizar o disparo de alarmes para o usuário caso seja etiquetado Nobres</span></div>Realizar Alarme:<select id="Alarmenobre" style="width: 57px;"><option value="S">Sim</option><option value="N">Não</option></select></td></tr>             </tbody>           </table>        </div>     </div>  </div>
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/speed.png); width: 36px; height: 30px; vertical-align: middle;
+     line-height: normal;"></span> Config. de Assistente Farm</h3>     <a style="font-size: 9pt; float: none;" target="_blank" href="/game.php?screen=am_farm" class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de "Assistente de Farm", é necessário cadastrar a configuração de acordo como deseja realizar os envios de modelos e quebras de muralha, assim como as configurações de tempo para envio destes comandos e configurações de antibot. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsAssistenteFarm">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:                       <select id="AssistenteFarmAtivo" style="width: 100px;"><option value="S">Sim</option><option value="N">Não</option></select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pblueflag.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica qual tipo de seleção de grupo que o Script irá utilizar, caso seja selecionado o tipo Salvo, será utilizado o grupo que for salvo no assistente de saque, desta forma é possível utilizar as aldeias de um grupo fixo salvo em memória enquanto que este grupo não é selecionado manualmente no jogo, caso seja utilizado o valor Atual, será utilizado o grupo que estiver selecionado no momento do uso do Script.</span></div> Seleção de Grupo:                       <select id="AssistenteFarmTipoGrupo" style="width: 100px;">                          <option value="S">Salvo</option>                          <option value="A">Atual</option>                       </select>                    </td>                 </tr>              </tbody>           </table>        </div>        <div style="float: left; margin-top: 10px;"><input class="btn am-form-element" type="button" id="BTNApagarConfigFarm" value="Apagar Configurações" style="width: 232px; height: 30px; margin: 0px;">        </div>     </div>  </div>
+     </div>
+
+
+     <div style="width: 100% !important; display: flex;">
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(https://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/coin.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Configurações de Cunhagem</h3>     <a style="font-size: 9pt; float: none;" target="_blank" href="/game.php?screen=snob" class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela da "Academia" que deseja cunhar moedas, ele irá executar sempre que houver ao menos a quantidade de moedas desejadas para cunhar, ele irá realizar um refresh de segurança de acordo com a configuração indicada. Este script é recomendado o uso juntamente com o uso do script de Puxar Recursos, pois poderá puxar os recursos de varias aldeias para apenas uma otimizando o uso de itens e bandeiras de redução de custo de moedas. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsCunhagem">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:                       <select id="CunhagemAtiva" style="width: 100px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pcalculator.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica com quantas moedas será realizado a cunhagem, em caso do armazem não suportar a quantidade de moedas ele irá cunhar com a capacidade total do armazem.</span></div> Qtde Moedas Cunhar:<select id="MoedasCunhagem" style="width: 78px;">                          <option value="3">3 Moedas</option>                          <option value="4">4 Moedas</option>                          <option value="5" selected="">5 Moedas</option>                          <option value="6">6 Moedas</option>                          <option value="7">7 Moedas</option>                          <option value="8">8 Moedas</option>                          <option value="9">9 Moedas</option>                          <option value="10">10 Moedas</option></select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se a tela será atualizada a cada 1 minuto fixo em caso de não possuir moedas para cunhar ou em um tempo aleatório entre 2 a 3 minutos. OBS: A cunhagem sempre irá ocorrer quando o script reconhecer a quantidade de moedas desejadas para cunhagem, este tempo é para refresh de segurança.</span></div> Tipo de Atualização:                       <select id="CunhagemRandomica" style="width: 87px;">                          <option value="F">Fixo</option><option value="R" selected="">Randômico</option></select></td></tr></tbody></table></div></div></div>
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/oldlc.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Configurações de Coleta </h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?screen=place&mode=scavenge"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de "Coletando" disponível na Praça de Reunião. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsColeta">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>   <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:<select id="ColetaAtiva" style="width: 100px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>        <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a cada quanto tempo o Script irá executar em sua determinada tela.</span></div> Periodicidade:                      <select id="PeriodoColeta" style="width: 90px;">                          <option value="5">5 Minutos</option>                          <option value="10">10 Minutos</option>                          <option value="15">15 Minutos</option>                          <option value="20">20 Minutos</option>                          <option value="30">30 Minutos</option>                          <option value="45">45 Minutos</option>                          <option value="60" selected="">1 Hora</option>                          <option value="120">2 Horas</option>                          <option value="180">3 Horas</option><option value="240">4 Horas</option>                          <option value="300">5 Horas</option>                          <option value="360">6 Horas</option>                          <option value="420">7 Horas</option><option value="480">8 Horas</option>                       </select>                    </td>                 </tr><tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/hidingp.png); width: 36px; height: 30px;vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Estecampo indica se o Script Desbloqueará as coletas bloqueadas</span></div> Desbloquear:<select id="unlocks" style="width: 100px;"><option value="S">Sim</option><option value="N">Não</option>                       </select>                    </td>                 </tr>        <tr></tbody></table></div></div></div>
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/res.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Config. Balanceamento</h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?screen=market&amp;mode=traders"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de "Estado dos Comerciantes" disponível no Mercado, ele irá executar o script autenticado e enviar recursos entre suas aldeias divididas em grupos de Clusters, balanceando assim seu armazem, melhorando a evolução de aldeias menores. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsBalanceamento">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:<select id="BalanceamentoAtiva" style="width: 100px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a cada quanto tempo o Script irá executar em sua determinada tela.</span></div> Periodicidade:                       <select id="PeriodoBalanceamento" style="width: 90px;">                          <option value="15">15 Minutos</option>                          <option value="20">20 Minutos</option>                          <option value="30">30 Minutos</option>                          <option value="45">45 Minutos</option>                          <option value="60" selected="">1 Hora</option>                          <option value="120">2 Horas</option>                          <option value="180">3 Horas</option>                          <option value="240">4 Horas</option>                          <option value="300">5 Horas</option>                          <option value="360">6 Horas</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/speed.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a quantidade de campos permitido para envio de recursos.</span></div> Quant Clusters:                       <input id="QuantiClusters" type="text" name="input" class="target-input-field target-input-autocomplete ui-autocomplete-input" data-type="player" value="" autocomplete="off" data-ignore-single-exact-match="1" style="width: 55px;">                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
+     </div>
+
+     <div style="width: 100% !important; display: flex;">
+     <div class="vis divContentAuxiliares"><h3><span class="icon" data-title="Modelo de construções ativo" style="background: url(https://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/coin.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Config. de Cunhagem Em Massa</h3>     <a style="font-size: 9pt; float: none;" target="_blank" href="/game.php?screen=snob&amp;mode=coin&amp;from=-1" class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela da "Academia" na opção de Cunhagem em Massa, ele irá executar sempre que houver ao menos a quantidade de moedas desejadas para cunhar. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsCunhagemMassa">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:<select id="CunhagemMassaAtiva" style="width: 100px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr><tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a cada quanto tempo o Script irá executar em sua determinada tela.</span></div> Periodicidade:<select id="PeriodoCunhaMassa" style="width: 90px;">                          <option value="60" selected="">1 Hora</option>                          <option value="120">2 Horas</option>                          <option value="180">3 Horas</option>                          <option value="240">4 Horas</option>                          <option value="300">5 Horas</option>                          <option value="360">6 Horas</option>                       </select>                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/oldlc.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Config. de Coleta em Massa </h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?screen=place&amp;mode=scavenge_mass"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de "Coleta em Massa" disponível na Praça de Reunião, ele irá executar o script autenticado de Shinko To Kuma e utilizar as configurações previamente salvas neste, caso você não utilizou este script é possível adicionar este a sua barra de acesso rápido e assim cadastrar um padrão de coleta. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsColetaMassa">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela.</span></div> Script Ativo:<select id="ColetaMassaAtiva" style="width: 100px;">                          <option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a cada quanto tempo o Script irá executar em sua determinada tela.</span></div> Periodicidade:                      <select id="PeriodoColetaMassa" style="width: 90px;">                          <option value="5">5 Minutos</option>                          <option value="10">10 Minutos</option>                          <option value="15">15 Minutos</option>                          <option value="20">20 Minutos</option>                          <option value="30">30 Minutos</option>                          <option value="45">45 Minutos</option>                          <option value="60" selected="">1 Hora</option>                          <option value="120">2 Horas</option>                          <option value="180">3 Horas</option>                          <option value="240">4 Horas</option>                          <option value="300">5 Horas</option>                          <option value="360">6 Horas</option>                          <option value="420">7 Horas</option>                          <option value="480">8 Horas</option>                       </select>                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
+     <div class="vis divContentAuxiliares"><h3><span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/market.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> Config. de Puxar Recursos </h3>     <a class="tooltipDiv" target="_blank" style="font-size: 9pt; float: none;" href="/game.php?screen=market&amp;mode=call"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13" style="margin-botton: 1px;"> <span class="tooltiptext">Este script é utilizado na tela de "Pedido" disponível no Mercado, ele irá executar o script autenticado de Shinko To Kuma e enviar recursos balanceados para cunhagem na aldeia de destino. Ao clicar neste texto será aberto uma nova guia no local onde este script é utilizado. Tome cuidado pois o script irá executar no momento que for aberto a nova guia.</span>Como Usar e Onde Usar?</a>     <div id="divConfigsPuxarRecursos">        <div class="vis divOpcaoAuxiliar">           <table width="100%">              <tbody>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pflaggreen.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica se o Script está ativo e irá rodar em sua determinada tela. OBS: Após informada a coordenada e realizado o cálculo o script irá aguardar 1 minuto para começar o envio de recursos.</span></div> Script Ativo:<select id="PuxarRecursosAtiva" style="width: 100px;"><option value="S">Sim</option>                          <option value="N">Não</option>                       </select>                    </td>                 </tr>                                  <tr>                    <td style="white-space: nowrap; height: 20px;">                        <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/phome.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a coordenada para puxagem de recursos. OBS: Após informada a coordenada e realizado o cálculo o script irá aguardar 1 minuto para começar o envio de recursos.</span></div> Coordenada Destino:                        <input id="CoordenadaPuxarRecursos" type="text" name="input" class="target-input-field target-input-autocomplete ui-autocomplete-input" data-type="player" value="" autocomplete="off" data-ignore-single-exact-match="1" placeholder="123|456" style="width: 40px;">                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/pclock.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a cada quanto tempo o Script irá executar em sua determinada tela. OBS: Após informada a coordenada e realizado o cálculo o script irá aguardar 1 minuto para começar o envio de recursos.</span></div> Periodicidade:<select id="PeriodoPuxarRecursos" style="width: 90px;">                          <option value="30">30 Minutos</option>                          <option value="45">45 Minutos</option>                          <option value="60" selected="">1 Hora</option>                          <option value="120">2 Horas</option>                          <option value="180">3 Horas</option>                          <option value="240">4 Horas</option>                          <option value="300">5 Horas</option>                          <option value="360">6 Horas</option>                          <option value="720">12 Horas</option>                      </select>                    </td>                 </tr>                 <tr>                    <td style="white-space: nowrap; height: 20px;">                       <span class="icon" style="background: url(http://i286.photobucket.com/albums/ll102/TWPiaf/New%20Quickbar/speed.png); width: 36px; height: 30px; vertical-align: middle; line-height: normal;"></span> <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext" style="white-space: normal;">Este campo indica a quantidade de campos permitido para envio de recursos. OBS: Após informada a coordenada e realizado o cálculo o script irá aguardar 1 minuto para começar o envio de recursos.</span></div> Distância Máxima:                       <input id="DistanciaPuxarRecursos" type="text" name="input" class="target-input-field target-input-autocomplete ui-autocomplete-input" data-type="player" value="" autocomplete="off" data-ignore-single-exact-match="1" style="width: 56px;">                    </td>                 </tr>              </tbody>           </table>        </div>     </div>  </div>
+     </div>
+
+     <div style="width: 100% !important; display: flex;">
+     </div>
+
+
+</div>
+<style>.divContentAuxiliares { margin: 5px !important; padding: 7px; float: left; width: 46%; }  .divOpcaoAuxiliar { margin: 10px 0px 0px 0px !important; width: 340px !important; }.tooltipDiv {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .popup_box_close:hover {
+  cursor: pointer; /* Mudança de cursor para mãozinha ao passar o mouse sobre ele */
+     }
+    .tooltipDiv .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+     .tooltipDiv:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }</style>
+     `;
+    popupContainer.innerHTML = $html3;
+    // Adicionar o contêiner ao body
+    document.body.appendChild(popupContainer);
+    document.getElementById('popup_box_close').addEventListener('click', function() {
+    popupContainer.remove();
+});
+    document.getElementById('BTNApagarComandos').addEventListener('click', function() {
+       localStorage.removeItem('savedModels');
+        UI.InfoMessage('Agendamentos Apagados com sucesso!');
+    });
+    document.getElementById('BTNApagarConfigFarm').addEventListener('click', function() {
+   for (var i = 1; i <= 3333; i++) {
+            localStorage.removeItem(`village_${i}`); // Remove o item do localStorage
+        }
+        console.log('Dados das aldeias apagados do localStorage.');
+         UI.InfoMessage('Dados das aldeias apagados com sucesso!');
+});
+    const AbreCaptcha = localStorage.getItem('AbreCaptcha');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('AbreCaptcha').value = AbreCaptcha;
+    const AlarmeCaptcha = localStorage.getItem('AlarmeCaptcha');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('AlarmeCaptcha').value = AlarmeCaptcha;
+    const DeslogaConta = localStorage.getItem('DeslogaConta');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('DeslogaConta').value = DeslogaConta;
+    const AgendadorAtivo = localStorage.getItem('AgendadorAtivo');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('AgendadorAtivo').value = AgendadorAtivo;
+    const AssistenteFarmAtivo = localStorage.getItem('AssistenteFarmAtivo');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('AssistenteFarmAtivo').value = AssistenteFarmAtivo;
+    const AssistenteFarmTipoGrupo = localStorage.getItem('AssistenteFarmTipoGrupo');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('AssistenteFarmTipoGrupo').value = AssistenteFarmTipoGrupo;
+    const CunhagemAtiva = localStorage.getItem('CunhagemAtiva');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('CunhagemAtiva').value = CunhagemAtiva;
+    const MoedasCunhagem = localStorage.getItem('MoedasCunhagem');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('MoedasCunhagem').value = MoedasCunhagem;
+    const CunhagemRandomica = localStorage.getItem('CunhagemRandomica');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('CunhagemRandomica').value = CunhagemRandomica;
+    const PuxarRecursosAtiva = localStorage.getItem('PuxarRecursosAtiva');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('PuxarRecursosAtiva').value = PuxarRecursosAtiva;
+    const CoordenadaPuxarRecursos = localStorage.getItem('CoordenadaPuxarRecursos');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('CoordenadaPuxarRecursos').value = CoordenadaPuxarRecursos;
+    const PeriodoPuxarRecursos = localStorage.getItem('PeriodoPuxarRecursos');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('PeriodoPuxarRecursos').value = PeriodoPuxarRecursos;
+    const DistanciaPuxarRecursos = localStorage.getItem('DistanciaPuxarRecursos');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('DistanciaPuxarRecursos').value = DistanciaPuxarRecursos;
+    const ColetaAtiva = localStorage.getItem('ColetaAtiva');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('ColetaAtiva').value = ColetaAtiva;
+    const PeriodoColeta = localStorage.getItem('PeriodoColeta');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('PeriodoColeta').value = PeriodoColeta;
+    const unlocks = localStorage.getItem('unlocks');
+      document.getElementById('unlocks').value = unlocks;
+    const ColetaMassaAtiva = localStorage.getItem('ColetaMassaAtiva');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('ColetaMassaAtiva').value = ColetaMassaAtiva;
+    const PeriodoColetaMassa = localStorage.getItem('PeriodoColetaMassa');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('PeriodoColetaMassa').value = PeriodoColetaMassa;
+    const BalanceamentoAtiva = localStorage.getItem('BalanceamentoAtiva');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('BalanceamentoAtiva').value = BalanceamentoAtiva;
+    const PeriodoBalanceamento = localStorage.getItem('PeriodoBalanceamento');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('PeriodoBalanceamento').value = PeriodoBalanceamento;
+    const QuantiClusters = localStorage.getItem('QuantiClusters');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('QuantiClusters').value = QuantiClusters;
+    const CunhagemMassaAtiva = localStorage.getItem('CunhagemMassaAtiva');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('CunhagemMassaAtiva').value = CunhagemMassaAtiva;
+    const PeriodoCunhaMassa = localStorage.getItem('PeriodoCunhaMassa');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('PeriodoCunhaMassa').value = PeriodoCunhaMassa;
+    const UparPaladinoAtiva = localStorage.getItem('UparPaladinoAtiva');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('UparPaladinoAtiva').value = UparPaladinoAtiva;
+    const PeriodoUparPaladino = localStorage.getItem('PeriodoUparPaladino');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('PeriodoUparPaladino').value = PeriodoUparPaladino;
+    const EtiquetadorAtiva = localStorage.getItem('EtiquetadorAtiva');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('EtiquetadorAtiva').value = EtiquetadorAtiva;
+    const Alarmenobre = localStorage.getItem('Alarmenobre');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('Alarmenobre').value = Alarmenobre;
+    const Ctt = localStorage.getItem('Ctt');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('Ctt').value = Ctt;
+    const RecruitAtivo = localStorage.getItem('RecruitAtivo');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('RecruitAtivo').value = RecruitAtivo;
+//============================== CheckBoxes =============================================================
+     const Rfarm = localStorage.getItem('Rfarm');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('Rfarm').value = Rfarm;
+     const CPuxar = localStorage.getItem('CPuxar');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('CPuxar').value = CPuxar;
+     const Coleta = localStorage.getItem('Coleta');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('Coleta').value = Coleta;
+     const ColetaM = localStorage.getItem('ColetaM');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('ColetaM').value = ColetaM;
+     const CBalance = localStorage.getItem('CBalance');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('CBalance').value = CBalance;
+     const CupPala = localStorage.getItem('CupPala');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('CupPala').value = CupPala;
+     const CCMass = localStorage.getItem('CCMass');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('CCMass').value = CCMass;
+    const Rrecruit = localStorage.getItem('Rrecruit');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('Rrecruit').value = Rrecruit;
+    const Redp = localStorage.getItem('Redp');
+   // Define a opção selecionada conforme o que está no localStorage
+      document.getElementById('Redp').value = Redp;
+
+var checkboxes = document.getElementsByClassName("CheckRot");
+    for (var i = 0; i < checkboxes.length; i++) {
+        var checkbox = checkboxes[i];
+        var checkboxState = localStorage.getItem(checkbox.id);
+        if (checkboxState === "true") {
+            checkbox.checked = true;
+        }
+    }
+
+
+
+
+    document.getElementById('BTNSalvarConfig').addEventListener('click', function () {
+        localStorage.setItem('AbreCaptcha', document.getElementById('AbreCaptcha').value);
+        localStorage.setItem('AlarmeCaptcha', document.getElementById('AlarmeCaptcha').value);
+        localStorage.setItem('DeslogaConta', document.getElementById('DeslogaConta').value);
+        localStorage.setItem('AgendadorAtivo', document.getElementById('AgendadorAtivo').value);
+        localStorage.setItem('AssistenteFarmTipoGrupo', document.getElementById('AssistenteFarmTipoGrupo').value);
+        localStorage.setItem('CunhagemRandomica', document.getElementById('CunhagemRandomica').value);
+        localStorage.setItem('CunhagemAtiva', document.getElementById('CunhagemAtiva').value);
+        localStorage.setItem('MoedasCunhagem', document.getElementById('MoedasCunhagem').value);
+        localStorage.setItem('PuxarRecursosAtiva', document.getElementById('PuxarRecursosAtiva').value);
+        localStorage.setItem('CoordenadaPuxarRecursos', document.getElementById('CoordenadaPuxarRecursos').value);
+        localStorage.setItem('PeriodoPuxarRecursos', document.getElementById('PeriodoPuxarRecursos').value);
+        localStorage.setItem('DistanciaPuxarRecursos', document.getElementById('DistanciaPuxarRecursos').value);
+        localStorage.setItem('ColetaAtiva', document.getElementById('ColetaAtiva').value);
+        localStorage.setItem('PeriodoColeta', document.getElementById('PeriodoColeta').value);
+        localStorage.setItem('unlocks', document.getElementById('unlocks').value);
+        localStorage.setItem('ColetaMassaAtiva', document.getElementById('ColetaMassaAtiva').value);
+        localStorage.setItem('PeriodoColetaMassa', document.getElementById('PeriodoColetaMassa').value);
+        localStorage.setItem('BalanceamentoAtiva', document.getElementById('BalanceamentoAtiva').value);
+        localStorage.setItem('PeriodoBalanceamento', document.getElementById('PeriodoBalanceamento').value);
+        localStorage.setItem('QuantiClusters', document.getElementById('QuantiClusters').value);
+        localStorage.setItem('CunhagemMassaAtiva', document.getElementById('CunhagemMassaAtiva').value);
+        localStorage.setItem('PeriodoCunhaMassa', document.getElementById('PeriodoCunhaMassa').value);
+        localStorage.setItem('UparPaladinoAtiva', document.getElementById('UparPaladinoAtiva').value);
+        localStorage.setItem('PeriodoUparPaladino', document.getElementById('PeriodoUparPaladino').value);
+        localStorage.setItem('EtiquetadorAtiva', document.getElementById('EtiquetadorAtiva').value);
+        localStorage.setItem('Alarmenobre', document.getElementById('Alarmenobre').value);
+        localStorage.setItem('Ctt', document.getElementById('Ctt').value);
+        localStorage.setItem('RecruitAtivo', document.getElementById('RecruitAtivo').value);
+         var checkboxes = document.getElementsByClassName("CheckRot");
+    for (var i = 0; i < checkboxes.length; i++) {
+        var checkbox = checkboxes[i];
+        // Salve o estado da caixa de seleção no localStorage
+        localStorage.setItem(checkbox.id, checkbox.checked);
+        localStorage.setItem('check' + i, checkbox.checked);
+    }
+
+        localStorage.setItem('Redp', document.getElementById('Redp').value);
+        localStorage.setItem('Rfarm', document.getElementById('Rfarm').value);
+        localStorage.setItem('CPuxar', document.getElementById('CPuxar').value);
+        localStorage.setItem('Coleta', document.getElementById('Coleta').value);
+        localStorage.setItem('ColetaM', document.getElementById('ColetaM').value);
+        localStorage.setItem('CBalance', document.getElementById('CBalance').value);
+        localStorage.setItem('CupPala', document.getElementById('CupPala').value);
+        localStorage.setItem('CCMass', document.getElementById('CCMass').value);
+        localStorage.setItem('Rrecruit', document.getElementById('Rrecruit').value);
+        UI.InfoMessage('Dados Salvo com sucesso!');
+        if(CunhagemAtiva === 'N'){var xxx = 0; localStorage.setItem('totalC', xxx);}
+
+    });
+}
+// Função de clique para o elemento MygScripts
+    let iconn = document.getElementById('MygScripts');
+    if(iconn){
+document.getElementById('MygScripts').addEventListener('click', function() {
+    openPopup();
+});}
+//======================================================CapTcha==================================================================================
+var sair = document.querySelector('#linkContainer a[href*="logout"]');
+var contador = 0;
+function checkbot() {
+       var iconbot = document.getElementById('botprotection_quest');
+    const AbreCaptcha = localStorage.getItem('AbreCaptcha');
+    const AlarmeCaptcha = localStorage.getItem('AlarmeCaptcha');
+    const DeslogaConta = localStorage.getItem('DeslogaConta');
+    const capcha = document.getElementsByClassName("captcha");
+    // Verifica se AbreCaptcha está definido como 'S'
+    if (AbreCaptcha === 'S') {
+        function isHidden(el) {
+           return (el.offsetParent === null);
+           }
+        function qSelector(selector) {
+               return document.querySelector(selector);
+               }
+        if (iconbot && !window.location.href.includes("checkbox")) {
+            setTimeout(function () {
+                iconbot.click();
+            }, 2000);
+        }
+         else if (!iconbot && !window.location.href.includes("checkbox")) {
+              let botProtection = document.querySelector(".bot-protection-row");
+    if (botProtection) {
+        let botao = botProtection.querySelector(".btn.btn-default");
+        if (botao) {
+          setTimeout(function () { botao.click();}, 2000);
+        }
+    }
+            }
+
+    }
+    // Verifica se DeslogaConta está definido como 'S'
+   if (capcha.length > 0) {
+         if (AlarmeCaptcha === 'S') {
+               if (contador > 20) {
+                    // Adicionar o código para tocar o áudio aqui
+                    let audioHtml = `<audio id="audioElement" preload="auto" autoplay volume="0.9" loop>
+                                        <source src="https://cdn.freesound.org/previews/507/507577_735175-lq.mp3" type="audio/mpeg">
+                                        Seu navegador não suporta o elemento de áudio.
+                                    </audio>`;
+                    document.body.insertAdjacentHTML('beforebegin', audioHtml);
+
+                }}
+         if (DeslogaConta === 'S') {
+                if (contador > 59) {
+                 window.location.href = "https://www.tribalwars.com.br";
+                }
+       }
+      contador = contador + 3;
+    }else{contador = 0; }
+setTimeout(function () {checkbot();}, 3000);
+}
+checkbot();
+//================================================= Scripts =====================================================================================
+ //  localStorage.removeItem("modelosConstrucao");
+if(!window.location.href.includes("checkbox")){
+//==================================================== script Up Vila ===========================================================================
+var ctt = document.getElementById('building_wrapper');
+const CttAtivo = localStorage.getItem('Ctt');
+ if(ctt && CttAtivo === 'S'){
+
+    // Cria um html
+  let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">UPANDO</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de audio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+        <div class="table-build">
+                    <div class="container">
+                        <span class="next-building"></span>
+                    </div>
+                    <button class="btn-modify" id="hide-settings" style="background-color: white; display: none;">Ocultar Menu de Configurações de Construção</button>
+                    <button class="btn-modify" id="hide-settingss" style="background-color: white; display: inline;">Exibir Menu de Configurações de Construção</button><br>
+
+                    <div id="xyzzz" width="100%" class="hide-menu" style="display: none;">
+                        <button id="xyzz" class="btn-modify">
+                            <i class="fas fa-file-export"></i> Exportar Modelos
+                        </button>
+                        <input type="file" id="importModelsInput" accept=".json">
+                        <label for="importModelsInput" class="btn-modify">
+                            <i class="fas fa-file-import"></i>
+                        </label>
+                        <div class="scrollable">
+                            <div id="tableContainer">
+                                <table id="edificiosTable" >
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 150px;">Edificio</th>
+                                            <th style="width: 80px">Nível</th>
+                                            <th style="width: 80px">Remover Edíficio</th>
+                                            <th style="width: 80px">Ajustar Ordens</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="edificiosTableBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <form id="formId">
+                            <div style="font-size: 14px;">
+                                <label for="edificio">Edificio:</label>
+                                <select id="edificio" class="unitsInput input-nicer" style="width: 150px; font-size: 14px;">
+                                    <option value="main">Edificio Principal</option>
+                                    <option value="barracks">Quartel</option>
+                                    <option value="stable">Estábulo</option>
+                                    <option value="garage">Oficina</option>
+                                    <option value="snob">Academia</option>
+                                    <option value="watchtower">Torre de vigia</option>
+                                    <option value="church">Igreja</option>
+                                    <option value="smith">Ferreiro</option>
+                                    <option value="place">Praça de reunião</option>
+                                    <option value="statue">Estátua</option>
+                                    <option value="market">Mercado</option>
+                                    <option value="wood">Bosque</option>
+                                    <option value="stone">Poço de Argila</option>
+                                    <option value="iron">Mina de Ferro</option>
+                                    <option value="farm">Fazenda</option>
+                                    <option value="storage">Armazém</option>
+                                    <option value="hide">Esconderijo</option>
+                                    <option value="wall">Muralha</option>
+                                </select>
+                            </div>
+                            <div style="font-size: 14px;">
+                                <label for="nivel">Níveis para serem Adicionados:</label>
+                                <input type="number" id="nivel" min="1" class="unitsInput input-nicer" style="width: 70px">
+                            </div>
+                            <button id="addButton" type="button" class="btn-modify">
+                                <i class="fas fa-plus-circle"></i> Adicionar +1 Fila desse Edíficio
+                            </button>
+                            <button id="removeButton" type="button" class="btn-modify">
+                                <i class="fas fa-minus-circle"></i> Remover Fila Anterior Adicionada
+                            </button>
+                            <div style="font-size: 14px;">
+                                <label for="modelName">Nome do Modelo:</label>
+                                <input type="text" placeholder="Defina um nome para o modelo de construção" id="modelName" class="unitsInput input-nicer" style="width: 300px; font-size: 14px;">
+                                <button id="saveButton" type="button" class="btn-modify">
+                                    <i class="fas fa-save"></i> Salvar Modelo
+                                </button>
+                            </div>
+                            <div style="font-size: 14px;">
+                                <label for="modelSelect">Selecionar Modelo:</label>
+                                <select id="modelSelect" class="unitsInput input-nicer" style="width: 210px; font-size: 14px;"><option value="">Selecione um Modelo</option></select>
+                            </div>
+                            <div>
+                                <button id="deleteModel" type="button" class="btn-modify">
+                                    <i class="fas fa-trash-alt"></i> Excluir Modelo
+                                </button>
+                                <button id="setModelButton" type="button" class="btn-modify">
+                                    <i class="fas fa-cogs"></i> Definir Modelo nessa Aldeia
+                                </button>
+                                <button id="unsetModelButton" type="button" class="btn-modify">
+                                    <i class="fas fa-times-circle"></i> Remover Modelo dessa Aldeia
+                                </button>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="autoBuild" class="unitsInput input-nicer">
+                                <label for="autoBuild">Ativar Construções Automática nessa Aldeia</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="upFarm" class="unitsInput input-nicer">
+                                <label for="upFarm">Construir a fazenda se tiver menos de:</label>
+                                <input type="number" id="value-priority-farm" class="unitsInput input-nicer" value="10" min="0" max="99">% da população disponível
+
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="upStorage" class="unitsInput input-nicer">
+                                <label for="upStorage">Construir armazém se recursos forem igual ou superior a:</label>
+                                <input type="number" id="value-priority-storage" class="unitsInput input-nicer" value="100" min="0" max="100">% do armazém
+
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="get_rewards" class="unitsInput input-nicer">
+                                <label for="get_rewards">Coletar Recompensas Automaticamente: Periodo </label> <input value="10" type="number" style="width: 30px;" type="number" min="1" max="99" id="get_rewards_temp" class="unitsInput input-nicer"> minutos
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="autoReduzir" name="autoReduzir">
+                                <label for="autoReduzir" id="label-reduzir">Reduzir Construções em 50% se o tempo for superior a (horas e minutos):<input type="time" id="time-next-up" class="unitsInput input-nicer" style="font-size: 14px; width: 85px;"></label>
+                            </div>
+                            <div class="max-queue" style=" font-size: 14px;">
+                                <label for="maxQueueSize">Máximo de Filas:</label>
+                                <input style="width: 50px;" type="number" min="1" max="10" id="maxQueueSize" class="input-nicer">
+                            </div>
+                            <div style=" font-size: 14px;">
+                                <label for="time-next-village">Tempo para Próxima Aldeia em Segundos:</label>
+                                <input style="width: 50px;" type="number" value="240" id="time-next-village" class="input-nicer">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+           <small>
+        <strong id="movendoTexto">
+            Up D'a Vila v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="Inforot"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+let Inserir = document.getElementById('contentContainer');
+   // Adiciona a nova div antes da divBorda
+Inserir.insertAdjacentHTML('beforebegin', $html);
+
+ document.getElementById('hide-settings').addEventListener('click', function() {
+              this.style.display = 'none';
+              document.getElementById('xyzzz').style.display = 'none';
+              document.getElementById('hide-settingss').style.display = 'inline';
+});
+ document.getElementById('hide-settingss').addEventListener('click', function() {
+              this.style.display = 'none';
+              document.getElementById('xyzzz').style.display = 'inline';
+              document.getElementById('hide-settings').style.display = 'inline';
+                     });
+    const addButton = document.getElementById("addButton");
+    const edificiosTableBody = document.getElementById("edificiosTableBody");
+    const formContainer = document.getElementById("xyzzz");
+    // Limites de nível por edifício
+    const limitesDeNivel = {
+    main: 30,
+    barracks: 25,
+    stable: 20,
+    garage: 15,
+    church: 3,
+    watchtower: 20,
+    snob: 1,
+    smith: 20,
+    place: 1,
+    statue: 1,
+    market: 25,
+    wood: 30,
+    stone: 30,
+    iron: 30,
+    farm: 30,
+    storage: 30,
+    hide: 10,
+    wall: 20,
+};
+   // Definição dos pré-requisitos de cada edifício
+    const requisitosDeEdificio = {
+    barracks: { main: 3 }, // Quartel precisa do Edifício Principal nv 3
+    stable: { main: 10, barracks: 5, smith: 5 }, // Estábulo precisa de EP 10, Quartel 5, Ferreiro 5
+    garage: { main: 10, smith: 5 }, // Oficina precisa de EP 10, Ferreiro 5
+    watchtower: { main: 5, farm: 5 }, // Torre de vigia precisa de EP 5, Fazenda 5
+    snob: { main: 20, smith: 20, market: 10 }, // Academia precisa de EP 20, Ferreiro 20, Mercado 10
+    smith: { main: 5, barracks: 1 }, // Ferreiro precisa de EP 5, Quartel 1
+    market: { main: 3, storage: 2 }, // Mercado precisa de EP 3, Armazém 2
+    wall: { barracks: 1 } // Muralha precisa de Quartel 1
+};
+    function addBuilding() {
+    let edificio = document.getElementById("edificio").value;
+    let nivelAdicionado = parseInt(document.getElementById("nivel").value) || 1;
+
+    if (!edificio) {
+        alert("Selecione um edifício!");
+        return;
+    }
+
+    // Verificar os pré-requisitos antes de adicionar o edifício
+    if (requisitosDeEdificio[edificio]) {
+        for (const [reqEdificio, reqNivel] of Object.entries(requisitosDeEdificio[edificio])) {
+            if (getNivelAtual(reqEdificio) < reqNivel) {
+                alert(`Não é possível adicionar ${edificio}. Requer ${reqEdificio} nível ${reqNivel} ou superior.`);
+                return;
+            }
+        }
+    }
+
+    // Verificar o limite de nível do edifício
+    const limite = limitesDeNivel[edificio];
+    const nivelAtual = getNivelAtual(edificio); // Verifica o nível atual do edifício
+
+    if (nivelAtual + nivelAdicionado > limite) {
+        alert(`Não é possível adicionar mais níveis. O limite de nível para o ${edificio} é ${limite}.`);
+        return;
+    }
+
+    // Encontra todas as linhas existentes desse edifício
+    let existingRows = [...document.querySelectorAll("#edificiosTableBody tr")].filter(row =>
+        row.querySelector(".edificio-name").dataset.edificio === edificio
+    );
+
+    // Pega o nível da última linha do mesmo edifício, se existir
+    let ultimoNivel = 0;
+    if (existingRows.length > 0) {
+        let ultimaLinha = existingRows[existingRows.length - 1]; // Última linha encontrada
+        ultimoNivel = parseInt(ultimaLinha.querySelector(".nivel").textContent) || 0;
+    }
+
+    let novoNivel = ultimoNivel + nivelAdicionado;
+
+    // Criar uma nova linha para o edifício com o nível somado
+    let row = document.createElement("tr");
+    row.innerHTML = `
+        <td class="edificio-name" data-edificio="${edificio}">
+            <span class="icon" style="background: url(https://dsbr.innogamescdn.com/asset/95eda994/graphic/buildings/mid/${edificio}1.png); width: 36px; height: 30px; display: inline-block;"></span>
+            ${edificio}
+        </td>
+        <td class="nivel">${novoNivel}</td>
+        <td><button class="remove-row">❌</button></td>
+        <td>
+            <button class="move-up">🔺</button>
+            <button class="move-down">🔻</button>
+        </td>
+    `;
+    edificiosTableBody.appendChild(row);
+
+    formContainer.style.display = "block"; // Exibe a área de edição se estiver oculta
+}
+    // Função para obter o nível atual do edifício
+    function getNivelAtual(edificio) {
+    // Encontrar todas as linhas para o edifício específico
+    let existingRows = [...document.querySelectorAll("#edificiosTableBody tr")].filter(row =>
+        row.querySelector(".edificio-name").dataset.edificio === edificio
+    );
+
+    // Se não houver nenhuma linha para esse edifício, retornar 0
+    if (existingRows.length === 0) return 0;
+
+    // Pegar a última linha do edifício
+    let ultimaLinha = existingRows[existingRows.length - 1];
+
+    // Pegar o valor do nível da última linha
+    let nivelUltimaLinha = parseInt(ultimaLinha.querySelector(".nivel").textContent) || 0;
+
+    // Retornar o nível da última linha
+    return nivelUltimaLinha;
+}
+    // Remover edifício
+    function removeRow(event) {
+        if (event.target.classList.contains("remove-row")) {
+            event.target.closest("tr").remove();
+        }
+    }
+    // Função para mover as linhas e ajustar os níveis ao mesmo tempo
+    function moveRow(event) {
+        let row = event.target.closest("tr");
+        if (!row) return;
+
+        let tableBody = document.getElementById("edificiosTableBody");
+        let adjacentRow = null;
+
+        if (event.target.classList.contains("move-up") && row.previousElementSibling) {
+            adjacentRow = row.previousElementSibling;
+        } else if (event.target.classList.contains("move-down") && row.nextElementSibling) {
+            adjacentRow = row.nextElementSibling;
+        }
+
+        if (adjacentRow) {
+            let edificioAtual = row.querySelector(".edificio-name").dataset.edificio;
+            let edificioAdjacente = adjacentRow.querySelector(".edificio-name").dataset.edificio;
+
+            // Só troca de lugar e níveis se forem edifícios do mesmo tipo
+            if (edificioAtual != edificioAdjacente) {
+                // Troca os níveis
+                let nivelAtual = parseInt(row.querySelector(".nivel").textContent);
+                let nivelAdjacente = parseInt(adjacentRow.querySelector(".nivel").textContent);
+
+                row.querySelector(".nivel").textContent = nivelAtual;
+                adjacentRow.querySelector(".nivel").textContent = nivelAdjacente;
+
+                // Troca de lugar as linhas
+                if (event.target.classList.contains("move-up")) {
+                    tableBody.insertBefore(row, adjacentRow);
+                } else {
+                    tableBody.insertBefore(adjacentRow, row);
+                }
+            }
+        }
+    }
+    function carregarModelos() {
+    let modelSelect = document.getElementById("modelSelect");
+    modelSelect.innerHTML = '<option value="">Selecione um Modelo</option>'; // Resetar lista
+
+    let modelosSalvos = JSON.parse(localStorage.getItem("modelosConstrucao")) || {};
+
+    Object.keys(modelosSalvos).forEach(modelo => {
+        let option = document.createElement("option");
+        option.value = modelo;
+        option.textContent = modelo;
+        modelSelect.appendChild(option);
+    });
+}carregarModelos(); // Primeiro, carrega a lista de modelos
+    let modeloSelecionado = localStorage.getItem("modeloAldeiaSelecionado");
+    if (modeloSelecionado) {
+        document.getElementById("modelSelect").value = modeloSelecionado;
+    }
+     function exibirModeloNaTabela(modelo) {
+    let tableBody = document.getElementById("edificiosTableBody");
+    tableBody.innerHTML = ""; // Limpa a tabela antes de adicionar os novos dados
+
+    modelo.forEach(item => {
+        let row = document.createElement("tr");
+        row.innerHTML = `
+            <td class="edificio-name" data-edificio="${item.edificio}">
+                <span class="icon" style="background: url(https://dsbr.innogamescdn.com/asset/95eda994/graphic/buildings/mid/${item.edificio}1.png); width: 36px; height: 30px; display: inline-block;"></span>
+                ${item.edificio}
+            </td>
+            <td class="nivel">${item.nivel}</td>
+            <td><button class="remove-row">❌</button></td>
+            <td>
+                <button class="move-up">🔺</button>
+                <button class="move-down">🔻</button>
+            </td>
+        `;
+        tableBody.appendChild(row);
+    });
+
+   // alert("Modelo importado com sucesso! Você pode editá-lo ou salvá-lo.");
+}
+    const elementsToSave = [
+        "autoBuild",
+        "upFarm",
+        "value-priority-farm",
+        "upStorage",
+        "value-priority-storage",
+        "get_rewards",
+        "autoReduzir",
+        "maxQueueSize",
+        "time-next-village",
+        "time-next-up",
+        "get_rewards_temp"
+    ];
+    // Função para restaurar valores salvos no localStorage
+    function restoreValues() {
+        elementsToSave.forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+                const savedValue = localStorage.getItem(id);
+
+                if (element.type === "checkbox") {
+                    element.checked = savedValue === "true";
+                } else if (element.type === "number" || element.type === "time") {
+                    element.value = savedValue !== null ? savedValue : element.value;
+                }
+            }
+        });
+    }
+    // Função para salvar os valores quando modificados
+    function saveValue(event) {
+        const element = event.target;
+        if (element.type === "checkbox") {
+            localStorage.setItem(element.id, element.checked);
+        } else if (element.type === "number" || element.type === "time") {
+            localStorage.setItem(element.id, element.value);
+        }
+    }
+    // Adiciona eventos para salvar mudanças automaticamente
+    elementsToSave.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.addEventListener("change", saveValue);
+        }
+    });
+    // Restaurar os valores ao carregar a página
+    restoreValues();
+
+    // Eventos de clique
+    addButton.addEventListener("click", addBuilding);
+    edificiosTableBody.addEventListener("click", removeRow);
+    edificiosTableBody.addEventListener("click", moveRow);
+document.getElementById("removeButton").addEventListener("click", () => {
+    let rows = document.getElementsByClassName("remove-row");
+    if (rows.length > 0) {
+        rows[rows.length - 1].click(); // Clica no último botão de remoção
+    }
+});
+document.getElementById("deleteModel").addEventListener("click", function () {
+    let modelSelect = document.getElementById("modelSelect");
+    let modelName = modelSelect.value;
+
+    if (!modelName) {
+        alert("Selecione um modelo para excluir.");
+        return;
+    }
+
+    let modelosSalvos = JSON.parse(localStorage.getItem("modelosConstrucao")) || {};
+    delete modelosSalvos[modelName]; // Remove o modelo
+
+    localStorage.setItem("modelosConstrucao", JSON.stringify(modelosSalvos));
+    carregarModelos(); // Atualiza a lista
+    alert(`Modelo "${modelName}" excluído com sucesso!`);
+});
+document.getElementById("setModelButton").addEventListener("click", function () {
+    let modelSelect = document.getElementById("modelSelect");
+    let modelName = modelSelect.value;
+
+    if (!modelName) {
+        alert("Selecione um modelo para definir na aldeia.");
+        return;
+    }
+
+    localStorage.setItem("modeloAldeiaSelecionado", modelName);
+    alert(`Modelo "${modelName}" definido para esta aldeia!`);
+});
+document.getElementById("saveButton").addEventListener("click", function () {
+    let modelName = document.getElementById("modelName").value.trim();
+
+    if (!modelName) {
+        alert("Por favor, defina um nome para o modelo.");
+        return;
+    }
+
+    let edificios = [];
+    document.querySelectorAll("#edificiosTableBody tr").forEach(row => {
+        let edificio = row.querySelector(".edificio-name").dataset.edificio;
+        let nivel = parseInt(row.querySelector(".nivel").textContent);
+        edificios.push({ edificio, nivel });
+    });
+
+    if (edificios.length === 0) {
+        alert("Adicione pelo menos um edifício antes de salvar o modelo.");
+        return;
+    }
+
+    // Recupera modelos existentes ou cria um novo objeto
+    let modelosSalvos = JSON.parse(localStorage.getItem("modelosConstrucao")) || {};
+
+    // Salva o modelo com o nome fornecido
+    modelosSalvos[modelName] = edificios;
+    localStorage.setItem("modelosConstrucao", JSON.stringify(modelosSalvos));
+     carregarModelos();
+    alert(`Modelo "${modelName}" salvo com sucesso!`);
+});
+document.getElementById("importModelsInput").addEventListener("change", function (event) {
+    let save = document.getElementById("saveButton");
+    let file = event.target.files[0];
+    let fileName = file.name.replace(/\.json$/i, "");
+    document.getElementById("modelName").value = fileName;
+    if (!file) {
+        alert("Nenhum arquivo selecionado.");
+        return;
+    }
+
+    let reader = new FileReader();
+    reader.onload = function (e) {
+        try {
+            let importedModel = JSON.parse(e.target.result);
+            exibirModeloNaTabela(importedModel);
+            save.click();
+        } catch (error) {
+            alert("Erro ao carregar o modelo. Verifique se o arquivo está correto.");
+        }
+    };
+    reader.readAsText(file);
+});
+document.getElementById("xyzz").addEventListener("click", function () {
+    let modelSelect = document.getElementById("modelSelect");
+    let modelName = modelSelect.value;
+
+    if (!modelName) {
+        alert("Selecione um modelo para exportar.");
+        return;
+    }
+
+    let modelosSalvos = JSON.parse(localStorage.getItem("modelosConstrucao")) || {};
+    let modeloSelecionado = modelosSalvos[modelName];
+
+    if (!modeloSelecionado) {
+        alert("Modelo não encontrado.");
+        return;
+    }
+
+    let blob = new Blob([JSON.stringify(modeloSelecionado, null, 2)], { type: "application/json" });
+    let a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `${modelName}.json`;
+    a.click();
+});
+
+// Escolha Tempo de espera mínimo e máximo entre ações (em milissegundos)
+const Min_Tempo_Espera= 5000;
+const Max_Tempo_Espera = 20000;
+// Escolha se você deseja que o bot enfileire os edifícios na ordem definida (= true) ou
+// assim que um prédio estiver disponível para a fila de construção (= false)
+const Construção_Edificios_Ordem = true;
+//*************************** /CONFIGURAÇÃO ***************************//
+// Constantes (NÃO DEVE SER ALTERADAS)
+const Visualização_Geral = "OVERVIEW_VIEW";
+const Edificio_Principal = "HEADQUARTERS_VIEW";
+function executarEtapa1(){
+    let Evoluir_vilas = getEvoluir_vilas();
+    if (Evoluir_vilas == Edificio_Principal){
+        setInterval(function(){
+            var autoBuild = document.getElementById('autoBuild');
+            if(autoBuild.checked){
+            // construir qualquer edificio custeável, se possível
+            Proxima_Construção();}
+        }, 1000);
+    }
+    else if (Evoluir_vilas == Visualização_Geral){
+        // Visualização Geral PG
+        document.getElementById("l_main").children[0].children[0].click();
+    }
+
+}executarEtapa1();
+function click(){
+    setTimeout(function(){
+    var text="";
+    var tr=$('[id="buildqueue"]').find('tr').eq(1);
+
+    text=tr.find('td').eq(1).find('span').eq(0).text().split(" ").join("").split("\n").join("");
+    var timeSplit=text.split(':');
+
+  if(timeSplit[0]*60*60+timeSplit[1]*60+timeSplit[2]*1<3*60){
+      console.log("Completar Grátis");
+      tr.find('td').eq(2).find('a').eq(2).click();
+
+  }
+    //missao concluida
+         var get_rewards = document.getElementById('get_rewards');
+
+    if (get_rewards.checked) {$('[class="btn btn-confirm-yes reward-system-claim-button"]').click();}
+                              $('[class="btn btn-confirm-yes status-btn quest-complete-btn"]').click();
+
+click();
+},1000);}click();
+function compararTempoComInput() {
+
+    let botaoConfirmar = document.querySelector(".btn.evt-confirm-btn.btn-confirm-yes");
+    var premium_points = parseInt(document.getElementById('premium_points').textContent);
+    var autoReduzir = document.getElementById('autoReduzir');
+    if (autoReduzir.checked && premium_points > 10) {
+    let tabela = document.querySelector("#build_queue");
+    if (!tabela) {
+        console.log("Tabela de construção não encontrada.");
+        return;
+    }
+    // Seleciona o primeiro <span> que contém o tempo restante (exemplo: "2:30:44")
+    let primeiroTempoElem = tabela.querySelector("span[data-endtime]");
+    if (!primeiroTempoElem) {
+        console.log("Nenhum tempo encontrado na fila.");
+        return;
+    }
+    let primeiroTempoTexto = primeiroTempoElem.textContent.trim(); // Exemplo: "2:30:44"
+    let partes = primeiroTempoTexto.split(":").map(Number); // Divide em [2,30,44]
+
+    // Converte para minutos totais (para facilitar a comparação)
+    let minutosFila = (partes[0] * 60) + partes[1]; // Exemplo: 2h30min → 150 minutos
+    // Pegando o valor do input
+    let timeInput = document.getElementById('time-next-up');
+    if (!timeInput) {
+        console.log("Input time-next-up não encontrado.");
+        return;
+    }
+    let inputTexto = timeInput.value.trim(); // Exemplo: "02:10"
+    let inputPartes = inputTexto.split(":").map(Number); // Divide em [2,10]
+
+    // Converte para minutos totais
+    let minutosInput = (inputPartes[0] * 60) + inputPartes[1]; // Exemplo: 2h10min → 130 minutos
+
+    // Comparação
+    if (minutosFila > minutosInput && !botaoConfirmar) {
+        clicarBotaoReducao();
+    } else {
+        console.log("Tempo da fila é menor ou igual. Nenhuma ação necessária.");
+    }
+}
+setTimeout(function(){
+compararTempoComInput();
+    }, 5000);
+}compararTempoComInput();
+function openQ(){
+    var get_rewards = document.getElementById('get_rewards');
+    var autoBuild = document.getElementById('autoBuild');
+    if (get_rewards.checked && autoBuild.checked) {
+    var cdReward = document.getElementById('get_rewards_temp').value;
+     document.getElementById('new_quest').click();
+     setTimeout(function(){ $('[class="popup_box_close tooltip-delayed"]').click();},10000);}
+     setTimeout(function(){openQ();},cdReward*60000);
+    }openQ();
+    let delay = Math.floor(Math.random() * (Max_Tempo_Espera - Max_Tempo_Espera) + Min_Tempo_Espera);
+    // Ação do processo
+    let Evoluir_vilas = getEvoluir_vilas();
+    setTimeout(function(){
+        if (Evoluir_vilas == Edificio_Principal){
+            // construir qualquer edificio custeável, se possível
+            Proxima_Construção();
+        }
+        else if (Evoluir_vilas == Visualização_Geral){
+            // Visualização Geral Pag
+            document.getElementById("l_main").children[0].children[0].click();
+
+        }
+    }, delay);
+function getEvoluir_vilas(){
+    let currentUrl = window.location.href;
+    if (currentUrl.endsWith('Visualização Geral')){
+        return Visualização_Geral;
+    }
+    else if (currentUrl.endsWith('main')){
+        return Edificio_Principal;
+    }
+}
+function Proxima_Construção(){
+    let Construção_proximo_edificio = getConstrução_proximo_edificio();
+    var maxQueueSize = parseInt(document.getElementById('maxQueueSize').value);
+        // Seleciona todos os elementos com a classe especificada
+       let filaFull = document.querySelectorAll('.sortable_row');
+    if (Construção_proximo_edificio !== undefined && filaFull.length < (maxQueueSize - 1)){
+        Construção_proximo_edificio.click();
+        console.log("Clicked on " + Construção_proximo_edificio);
+    }
+}
+function getConstrução_proximo_edificio() {
+    let Clicar_Upar_Edificos = document.getElementsByClassName("btn btn-build");
+    let Construção_Edifcios_Serie = getConstrução_Edifcios_Serie();
+    let instituir;
+   // while(instituir === undefined && Construção_Edifcios_Serie.length > 0){
+     if (Array.isArray(Construção_Edifcios_Serie)) {
+       for (let i = 0; i < Construção_Edifcios_Serie.length; i++) {
+        var proximo = Construção_Edifcios_Serie[i]; // Pega o próximo edifício na sequência
+        if (Clicar_Upar_Edificos.hasOwnProperty(proximo)){
+            let próximo_edifício = document.getElementById(proximo);
+            if (próximo_edifício) {
+            var Visivel = próximo_edifício.offsetWidth > 0 || próximo_edifício.offsetHeight > 0;
+            if (Visivel) {
+                instituir = próximo_edifício; // Define o edifício visível como o próximo a ser clicado
+               console.log(`${instituir}`);
+            }
+                if (Construção_Edificios_Ordem){
+                break;
+            }
+        }
+        }
+    }}
+    return instituir;
+}
+function getConstrução_Edifcios_Serie() {
+    let Sequência_Construção = [];
+    var qtdFerroAldeia = parseInt($("#iron").text());
+    var qtdArgilaAldeia = parseInt($("#stone").text());
+    var qtdMadeiraAldeia = parseInt($("#wood").text());
+    var armazem = parseInt($("#storage").text());
+    // Lógica do pop atual
+    var upFarmCheckbox = document.getElementById('upFarm');
+    var upStorage = document.getElementById('upStorage');
+    var percFarm = parseInt(document.getElementById('value-priority-storage').value);
+    var percpop = parseInt(document.getElementById('value-priority-farm').value);
+    var _pop = parseInt(document.getElementById('pop_current_label').innerText);
+    var _maxpop = parseInt(document.getElementById('pop_max_label').innerText);
+    var _dif = _maxpop - _pop;
+    var dif_percent = (_dif / _maxpop) * 100;
+    var compArm = (armazem/100)*percFarm;
+    // Se a diferença for menor que a porcentagem configurada e a checkbox estiver marcada, upar fazenda
+    if (dif_percent < percpop && upFarmCheckbox.checked) {
+        // Adiciona fazendas
+        for (let i = 1; i <= 30; i++) {
+            Sequência_Construção.push(`main_buildlink_farm_${i}`);
+        }
+        return Sequência_Construção; // Retorna o array de fazendas
+    }
+    if (qtdFerroAldeia > compArm && qtdArgilaAldeia > compArm && qtdMadeiraAldeia > compArm && upStorage.checked) {
+        // Adiciona fazendas
+        for (let i = 1; i <= 30; i++) {
+            Sequência_Construção.push(`main_buildlink_storage_${i}`);
+        }
+        return Sequência_Construção; // Retorna o array de armazens
+    }
+
+    // Carregar o modelo selecionado do localStorage
+    let modelosSalvos = JSON.parse(localStorage.getItem("modelosConstrucao")) || {};
+
+    // Verificar se o modelo selecionado existe no localStorage
+    if (modeloSelecionado && modelosSalvos[modeloSelecionado]) {
+        let modeloCarregado = modelosSalvos[modeloSelecionado];
+
+        modeloCarregado.forEach(({ edificio, nivel }) => {
+            let ultimoNivel = getNivelAtual(edificio); // Obtém o nível atual daquele edifício
+
+            // Se o nível no modelo for maior do que o nível atual
+            if (nivel > ultimoNivel) {
+                // Adiciona os níveis faltantes
+                for (let i = ultimoNivel + 1; i <= nivel; i++) {
+                    Sequência_Construção.push(`main_buildlink_${edificio}_${i}`);
+                }
+            } else if (nivel === ultimoNivel) {
+                // Se o nível no modelo for igual ao nível atual, adicione o modelo atual
+                Sequência_Construção.push(`main_buildlink_${edificio}_${nivel}`);
+            } else {
+                // Caso o nível no modelo seja menor que o nível atual, não faça nada (ou adicione uma lógica customizada)
+                console.log(`Nível do ${edificio} no modelo é menor que o atual. Ignorando.`);
+            }
+        });
+
+        // Retorna o array com a sequência de construções gerada
+        return Sequência_Construção;
+    } else {
+        console.log("Modelo não encontrado no localStorage.");
+    }
+
+    // Retorna a sequência construída, mesmo que o modelo não tenha sido encontrado
+    return Sequência_Construção;
+}
+function clicarBotaoConfirmar() {
+    // Seleciona o primeiro botão "Confirmar" disponível
+    let botaoConfirmar = document.querySelector(".btn.evt-confirm-btn.btn-confirm-yes");
+
+    if (botaoConfirmar) {
+        console.log("Botão 'Confirmar' encontrado! Clicando...");
+        botaoConfirmar.click();
+    } else {
+        console.log("Nenhum botão 'Confirmar' encontrado.");
+    }
+}
+function clicarBotaoReducao() {
+    // Seleciona o primeiro botão "-50%" disponível na fila de construção
+    let botaoReducao = document.querySelector(".order_feature.btn.btn-btr");
+
+    if (botaoReducao) {
+        console.log("Botão encontrado! Clicando...");
+        botaoReducao.click();
+        setTimeout(clicarBotaoConfirmar,10000);
+    } else {
+        console.log("Nenhum botão de redução de tempo encontrado.");
+    }
+}
+
+function altAldeia() {
+    var timenextvillage = parseInt(document.getElementById('time-next-village').value);
+    var vai = document.getElementById('village_switch_right');
+       setTimeout(function(){ vai.click();},timenextvillage*1000);
+       setTimeout(function(){$('.groupRight').click();},timenextvillage*1000);
+       // location.reload();
+    }
+altAldeia();
+
+       var v0 = 0;
+    var valor0 = localStorage.getItem('check' + v0);
+    var estado0 = valor0 === 'true';
+    if(estado0){ var conf0 = 'ok'}
+    if(conf0 === 'ok'){
+function redirecionar(){
+    var temp_farm = parseInt(localStorage.getItem('Redp'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_farm);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+            var redirecionamentos = [
+    { screen: "main", delay: 20000 },
+    { screen: "am_farm", delay: 1000 },
+    { screen: "place&mode=scavenge", delay: 3000 },
+    { screen: "place&mode=scavenge_mass", delay: 5000 },
+    { screen: "market&mode=call", delay: 7000 },
+    { screen: "market&mode=traders", delay: 9000 },
+    { screen: "statue&mode=overview", delay: 11000 },
+    { screen: "snob&mode=coin", delay: 13000 },
+    { screen: "train", delay: 15000 }
+];
+
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+}
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - Upando";
+    document.title = novoTitulo;
+    }
+//================================================== Agendador comandos ==========================================================================
+    const AgendadorAtivo = localStorage.getItem('AgendadorAtivo');
+    var commands = document.getElementById('command_actions');
+    var confirm = document.getElementById('place_confirm_units');
+if(AgendadorAtivo === 'S'){
+if(commands){
+    let AgendarM = `<div id="divScriptRodando">
+    <table id="avisoScript" width="100%" style="margin-bottom: 5px;"><tbody><tr><td><table class="content-border" width="100%" cellspacing="0"><tbody><tr><td style="background-color: rgb(193,162,100); background-image:
+    url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;"><table class="main" width="100%"><tbody><tr><td style="text-align: center; width: 100%;"><h1 style="margin-bottom: 0px;">
+    AGENDAMENTOS</h1></td><td style="text-align: right;"><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji"
+    src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png"><audio id="audioElement" preload="auto" autoplay volume="1" loop><source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.</audio></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>
+    `;
+         // Captura a referência para a tabela de destino
+           const Agendart = document.getElementById('contentContainer');
+                // Adiciona a nova div antes da divBorda
+                         Agendart.insertAdjacentHTML('beforebegin', AgendarM);
+    if(acess === 1){setTimeout(function(){const div = document.getElementById('divScriptRodando'); let Agendars = `<small><strong id="movendoTexto" style="text-align: center;">
+    Agendando as tropas v3.0 by <span style="color: red"> Zigaeezz </span><span id="Csaida"></span><span id="info"></span><span id="Inforot"></span></strong></small>`;
+                div.insertAdjacentHTML('afterend', Agendars);},1000);}
+    else if(acess === 2){setTimeout(function(){const div = document.getElementById('divScriptRodando'); let Agendars = `<small><strong id="movendoTexto" style="text-align: center;">
+    Agendando as tropas v3.0 by <span style="color: red"> Zigaeezz </span> Plano Expirado. Renove atraves do 0800 000 000<span id="Csaida"></span><span id="info"></span><span id="Inforot"></span></strong></small>`;
+                div.insertAdjacentHTML('afterend', Agendars);},1000); return;}
+    else if(acess === 0){setTimeout(function(){const div = document.getElementById('divScriptRodando'); let Agendars = `<small><strong id="movendoTexto" style="text-align: center;">
+    Agendando as tropas v3.0 by <span style="color: red"> Zigaeezz </span> Area Premium Contrate atraves do 0800 000 000<span id="Csaida"></span><span id="info"></span><span id="Inforot"></span></strong></small>`;
+                div.insertAdjacentHTML('afterend', Agendars);},1000); return;}
+    else if(acess === 3){setTimeout(function(){const div = document.getElementById('divScriptRodando');
+      let diffDias = localStorage.getItem('diffDias');
+  let Agendars = `<small><strong id="movendoTexto" style="text-align: center;">
+    Agendando as tropas v3.0 by <span style="color: red"> Zigaeezz </span> Seu plano expira em ${diffDias} Dias<span id="Csaida"></span><span id="info"></span><span id="Inforot"></span></strong></small>`;
+                div.insertAdjacentHTML('afterend', Agendars);},1000);}
+
+    let $InfoTimeTrops = `<div id="command_tempo_alvo" class="clearfix vis " style="width: 890px; border: 1px solid #7d510f; margin: 0px 5px 15px 5px;"><h4>Tempo de Tropas até Destino:</h4><table class="vis" style="border-collapse:separate; border-spacing: 3px; table-layout: fixed; width: 100%;"><tbody><tr><th style="width: 10px"><a href="#" class="unit_link" data-unit="spear"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spear.png" data-title="Lanceiro"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_sword.png" data-title="Espadachim"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_axe.png" data-title="Bárbaro"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="archer"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="spy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spy.png" data-title="Explorador"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="light"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_light.png" data-title="Cavalaria leve"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="marcher"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Arqueiro a Cavalo"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="heavy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="ram"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_ram.png" data-title="Aríete"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="catapult"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_catapult.png" data-title="Catapulta"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="knight"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_knight.png" data-title="Paladino"></a></th><th style="width: 10px"><a href="#" class="unit_link" data-unit="snob"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_snob.png" data-title="Nobre"></a></th></tr><tr class="units-row"><td style="width: 10px" id="spear" class="nowrap unit-item unit-item-spear"></td><td style="width: 10px" id="sword" class="nowrap unit-item unit-item-sword"></td><td style="width: 10px" id="axe" class="nowrap unit-item unit-item-axe"></td><td style="width: 10px" id="archer" class="nowrap unit-item unit-item-archer"></td><td style="width: 10px" id="spy" class="nowrap unit-item unit-item-spy"></td><td style="width: 10px" id="light" class="nowrap unit-item unit-item-light"></td><td style="width: 10px" id="marcher" class="nowrap unit-item unit-item-archer"></td><td style="width: 10px" id="heavy" class="nowrap unit-item unit-item-heavy"></td><td style="width: 10px" id="ram" class="nowrap unit-item unit-item-ram"></td><td style="width: 10px" id="catapult" class="nowrap unit-item unit-item-catapult"></td><td style="width: 10px" id="knight" class="nowrap unit-item unit-item-knight"></td><td style="width: 10px" id="snob" class="nowrap unit-item unit-item-snob"></td></tr></tbody></table></div>`;
+
+    let $BtnCommand = `<div id="command_actions" class="target-select clearfix vis " style="margin: 0px; border: 0; border-top: 1px solid #7d510f;">
+    <h4>Agendar:</h4><table class="vis" style="width: 100%"><tbody><tr><td colspan="8"><input type="datetime-local" id="CStime" step=".001" style="width: 190px"></td></tr><tr><td colspan="4">
+    <span>Definir Horário: </span><div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13">
+    <span class="tooltiptext">Este campo indica como o horário informado será utilizado como saída ou chegada em relação ao alvo.</span></div></td><td colspan="4"><select id="definirHorario" style="font-size: 9pt; width: 100%;">
+    <option value="C">Chegada</option><option value="S">Saída</option></select></td></tr><tr><td colspan="4"><span>Modelo de NT: </span><div class="tooltipDiv">
+    <img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Este campo indica qual será o modo de envio de NT no seu comando, caso seja informato SEM NT, será enviado apenas as tropas do comando acima, caso seja informado qualquer questão alem desta será habilitado campos conforme opção para selecionar as tropas.</span>
+    </div></td><td colspan="4"><select id="NTtype" style="font-size: 9pt; width: 100%;"><option value="0">SEM NT</option><option value="1">NT CANCEL</option><option value="2">NT 2</option><option value="3">NT 3</option>
+    <option value="4">NT 4</option><option value="5">NT 5</option></select></td></tr><tr name="type_nt" style="display: none;"><td colspan="4"><span>Tipo de NT: </span><div class="tooltipDiv">
+    <img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Este campo indica qual se o comando de NT deve ser considerado como um NT Real ou um NT Fake.</span></div></td><td colspan="4">
+    <select id="NTReal" style="font-size: 9pt;"><option value="R">Real</option><option value="F">Fake</option></select></td></tr><tr name="tab_nt" style="display: none;"><td colspan="4"><span>Tropas para NT: </span><div class="tooltipDiv">
+    <img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Este campo indica qual será o modo de envio de NT no seu comando, caso seja informato Unidades, todos os valores utilizados serão em unidades selecionadas para o comando, caso seja informado Percentual, todos os valores serão utilizados em percentuais das unidades existentes na aldeia.</span></div></td><td colspan="4">
+    <select id="typeTropas" style="font-size: 9pt; width: 100%;"><option value="U">Unidades</option><option value="P">Percentual</option></select></td></tr><tr><td colspan="4"><span>Alvo das Catapultas: </span><div class="tooltipDiv">
+    <img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Este campo indica qual será o alvo das catapultas no comando.</span></div></td><td colspan="4">
+    <select id="alvoCatapaSimples" style="font-size: 9pt;"><option value="padrao">Padrão</option><option value="main">Edifício principal</option><option value="barracks">Quartel</option><option value="stable">Estábulo</option>
+    <option value="garage">Oficina</option><option value="watchtower">Torre de vigia</option><option value="snob">Academia</option><option value="smith">Ferreiro</option><option value="place">Praça de reunião</option>
+    <option value="statue">Estátua</option><option value="market">Mercado</option><option value="wood">Bosque</option><option value="stone">Poço de argila</option><option value="iron">Mina de ferro</option><option value="farm">Fazenda</option>
+    <option value="storage">Armazém</option><option value="wall">Muralha</option></select></td></tr><tr><td colspan="4"><span>Ataque Sequencial: </span><div class="tooltipDiv">
+    <img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Este campo indica se irá realizar uma sequencia de ataques com o mesmo comando, ou seja, o comando bate volta e ja é enviado novamente, caso seja informado algum valor neste campo será utilizado como um total de comandos a ser criado, ou seja, caso informe 3, serão criados um total de 3 comandos que irão bater no alvo retornar e ser enviados novamente.</span></div>
+    </td><td colspan="4"><input id="qtdeAtaqueSequencial" value="0" style="width: 25px;" type="text"></td></tr></tbody></table>
+
+    <h4 name="tab_nt2" style="border-top: 1px solid #7d510f; display: none;">Nobre 2: <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Esta seção irá indicar quantas tropas serão enviadas com o NT indicado.</span></div></h4><table style="display: none;" name="tab_nt2"><tbody><tr><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="spear"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spear.png" data-title="Lanceiro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_sword.png" data-title="Espadachim"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_axe.png" data-title="Bárbaro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="archer"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="spy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spy.png" data-title="Explorador"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="knight"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_knight.png" data-title="Paladino"></a></th></tr><tr class="units-row"><td style="width: 10px" class="nowrap unit-item unit-item-spear">
+    <input id="unit_input_spear_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-sword">
+    <input id="unit_input_sword_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-axe">
+    <input id="unit_input_axe_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-archer">
+    <input id="unit_input_archer_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-spy">
+    <input id="unit_input_spy_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-knight">
+    <input id="unit_input_knight_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td></tr><tr><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="light"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_light.png" data-title="Cavalaria leve"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="marcher"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Arqueiro a Cavalo"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="heavy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="ram"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_ram.png" data-title="Ariete"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="catapult"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_catapult.png" data-title="Catapulta"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="snob"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_snob.png" data-title="Nobre"></a></th></tr><tr class="units-row"><td style="width: 10px" class="nowrap unit-item unit-item-light">
+    <input id="unit_input_light_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-archer">
+    <input id="unit_input_marcher_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-heavy">
+    <input id="unit_input_heavy_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-ram">
+    <input id="unit_input_ram_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-catapult">
+    <input id="unit_input_catapult_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-snob">
+    <input id="unit_input_snob_nt2" type="text" data-all-count="0" value="0" style="width: 25px;"></td></tr></tbody></table>
+
+    <h4 name="tab_nt3" style="display: none; border-top: 1px solid #7d510f;">Nobre 3: <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Esta seção irá indicar quantas tropas serão enviadas com o NT indicado.</span></div></h4>	<table class="vis" style="width: 100%; display: none;" name="tab_nt3">		<tbody>			<tr><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="spear"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spear.png" data-title="Lanceiro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_sword.png" data-title="Espadachim"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_axe.png" data-title="Bárbaro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="archer"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="spy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spy.png" data-title="Explorador"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="knight"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_knight.png" data-title="Paladino"></a></th>			</tr><tr class="units-row"><td style="width: 10px" class="nowrap unit-item unit-item-spear">
+    <input id="unit_input_spear_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-sword">
+    <input id="unit_input_sword_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-axe">
+    <input id="unit_input_axe_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td>	<td style="width: 10px" class="nowrap unit-item unit-item-archer">
+    <input id="unit_input_archer_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-spy">
+    <input id="unit_input_spy_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-knight">
+    <input id="unit_input_knight_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td></tr><tr><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="light"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_light.png" data-title="Cavalaria leve"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="marcher"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Arqueiro a Cavalo"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="heavy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="ram"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_ram.png" data-title="Ariete"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="catapult"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_catapult.png" data-title="Catapulta"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="snob"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_snob.png" data-title="Nobre"></a></th>			</tr><tr class="units-row">				<td style="width: 10px" class="nowrap unit-item unit-item-light">
+    <input id="unit_input_light_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-archer">
+    <input id="unit_input_marcher_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-heavy">
+    <input id="unit_input_heavy_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-ram">
+    <input id="unit_input_ram_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-catapult">
+    <input id="unit_input_catapult_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-snob">
+    <input id="unit_input_snob_nt3" type="text" data-all-count="0" value="0" style="width: 25px;"></td></tr></tbody></table>
+
+    <h4 name="tab_nt4" style="display: none; border-top: 1px solid #7d510f;">Nobre 4: <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Esta seção irá indicar quantas tropas serão enviadas com o NT indicado.</span></div></h4><table class="vis" style="width: 100%; display: none;" name="tab_nt4">		<tbody>			<tr>				<th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="spear"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spear.png" data-title="Lanceiro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_sword.png" data-title="Espadachim"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_axe.png" data-title="Bárbaro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="archer"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="spy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spy.png" data-title="Explorador"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="knight"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_knight.png" data-title="Paladino"></a></th></tr>			<tr class="units-row">				<td style="width: 10px" class="nowrap unit-item unit-item-spear">
+    <input id="unit_input_spear_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-sword">
+    <input id="unit_input_sword_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-axe">
+    <input id="unit_input_axe_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-archer">
+    <input id="unit_input_archer_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-spy">
+    <input id="unit_input_spy_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-knight">
+    <input id="unit_input_knight_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td></tr><tr><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="light"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_light.png" data-title="Cavalaria leve"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="marcher"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Arqueiro a Cavalo"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="heavy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="ram"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_ram.png" data-title="Ariete"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="catapult"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_catapult.png" data-title="Catapulta"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="snob"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_snob.png" data-title="Nobre"></a></th></tr><tr class="units-row"><td style="width: 10px" class="nowrap unit-item unit-item-light">
+    <input id="unit_input_light_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-marcher">
+    <input id="unit_input_marcher_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-heavy">
+    <input id="unit_input_heavy_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-ram">
+    <input id="unit_input_ram_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-catapult">
+    <input id="unit_input_catapult_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td><td style="width: 10px" class="nowrap unit-item unit-item-snob">
+    <input id="unit_input_snob_nt4" type="text" data-all-count="0" value="0" style="width: 25px;"></td></tr></tbody></table>
+
+    <h4 name="tab_nt5" style="display: none; border-top: 1px solid #7d510f;">Nobre 5: <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Esta seção irá indicar quantas tropas serão enviadas com o NT indicado.</span></div></h4>	<table class="vis" style="width: 100%; display: none;" name="tab_nt5">		<tbody>			<tr><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="spear"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spear.png" data-title="Lanceiro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_sword.png" data-title="Espadachim"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_axe.png" data-title="Bárbaro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="archer"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="spy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spy.png" data-title="Explorador"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="knight"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_knight.png" data-title="Paladino"></a></th></tr>			<tr class="units-row">				<td style="width: 10px" class="nowrap unit-item unit-item-spear">
+    <input id="unit_input_spear_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>				<td style="width: 10px" class="nowrap unit-item unit-item-sword">
+    <input id="unit_input_sword_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>				<td style="width: 10px" class="nowrap unit-item unit-item-axe">
+    <input id="unit_input_axe_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>	<td style="width: 10px" class="nowrap unit-item unit-item-archer">
+    <input id="unit_input_archer_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">			</td>				<td style="width: 10px" class="nowrap unit-item unit-item-spy">
+    <input id="unit_input_spy_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>				<td style="width: 10px" class="nowrap unit-item unit-item-knight">
+    <input id="unit_input_knight_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>			</tr>			<tr><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="light"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_light.png" data-title="Cavalaria leve"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="marcher"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Arqueiro a Cavalo"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="heavy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="ram"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_ram.png" data-title="Ariete"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="catapult"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_catapult.png" data-title="Catapulta"></a></th><th style="width: 10px"><a tabindex="-1" href="#" class="unit_link" data-unit="snob"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_snob.png" data-title="Nobre"></a></th>			</tr><tr class="units-row"><td style="width: 10px" class="nowrap unit-item unit-item-light">
+    <input id="unit_input_light_nt5" type="text" data-all-count="0" value="0" style="width: 25px;"></td>	<td style="width: 10px" class="nowrap unit-item unit-item-marcher">
+    <input id="unit_input_marcher_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">			</td><td style="width: 10px" class="nowrap unit-item unit-item-heavy">
+    <input id="unit_input_heavy_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>				<td style="width: 10px" class="nowrap unit-item unit-item-ram">
+    <input id="unit_input_ram_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>				<td style="width: 10px" class="nowrap unit-item unit-item-catapult">
+    <input id="unit_input_catapult_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>				<td style="width: 10px" class="nowrap unit-item unit-item-snob">
+    <input id="unit_input_snob_nt5" type="text" data-all-count="0" value="0" style="width: 25px;">				</td>			</tr>		</tbody>	</table>
+
+    <h4 name="tab_ntCancel" style="display: none;">NT Cancel: <div class="tooltipDiv"><img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13">
+    <span class="tooltiptext">Esta seção se destina ao envio de Nobres e cancelar este comando após 2 minutos do envio para que o inimigo dispare o alarme caso possua.</span></div></h4>
+    <table class="vis" style="width: 100%; display: none;" name="tab_ntCancel"><tbody><tr><td colspan="10"><span>Nro comandos: </span> <div class="tooltipDiv">
+    <img src="https://dsbr.innogamescdn.com/asset/1e2782a7/graphic/questionmark.png" width="13" height="13"><span class="tooltiptext">Este campo indica qual será o número de comandos criados sequencialmente para o cancelamento de Nobre.</span></div>
+    <input id="nroCmd" value="0" style="width: 25px;" type="text"></td></tr></tbody></table><table class="vis" style="width: 100%">
+    <tbody><tr><td colspan="10">
+    <button type="button" id="agendarAtaque" class="attack btn btn-attack btn-target-action" >Ataque</button></td><td>
+    <button type="button" id="agendarApoio" class="support btn btn-support btn-target-action" >Apoio</button></td><td></tr></tbody></table><table class="vis" style="width: 100%">
+    <tbody>
+    <div class="target-select clearfix vis " style="margin: 0px; border: 0; border-top: 1px solid #7d510f;"><h4>Agendar em Massa:</h4><tr><td colspan="10"><button class="btn am-form-element" id="OpenCommand" type="button" >Agendar</button>
+    </td><td><button class="btn am-form-element" id="showComandos" type="button" >Comandos Agendados</button></td></tr></div>
+    </tbody></table></div>
+    <style>
+    .tooltipDiv .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        top: 80%;
+        left: 77%;
+        transform: translateX(-10%);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+     .tooltipDiv:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }</style>`;
+ let comag= `<div id="command_target_mass" class="target-select clearfix vis " style="width: 370px; margin: 0px; border: 0; border-top: 1px solid #7d510f;"><h4>Informações de Comandos Agendados:</h4><table class="vis" style="border-collapse: separate; border-spacing: 3px; table-layout: fixed; width: 100%;"><tbody><tr><td colspan="10"><span id="CmdAG"></span></td></tr><tr><td colspan="10"><span id="CmdA"></span></td></tr><tr><td colspan="10"><span id="CmdD"></span></td></tr></tbody></table>
+ <div id="command_target_mass" class="target-select clearfix vis " style="width: 370; margin: 0px; border: 0; border-top: 1px solid #7d510f;"><h4>Próximo Comando Que será Enviado:</h4>
+ <table class="vis" style="border-collapse: separate; border-spacing: 3px; table-layout: fixed; width: 100%;"><tbody><tr><th style="width: 15px"><a href="#" class="unit_link" data-unit="spear"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spear.png" data-title="Lanceiro"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_sword.png" data-title="Espadachim"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_axe.png" data-title="Bárbaro"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="archer"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="spy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spy.png" data-title="Explorador"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="light"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_light.png" data-title="Cavalaria leve"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="marcher"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Arqueiro a Cavalo"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="heavy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="ram"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_ram.png" data-title="Aríete"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="catapult"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_catapult.png" data-title="Catapulta"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="knight"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_knight.png" data-title="Paladino"></a></th><th style="width: 15px"><a href="#" class="unit_link" data-unit="snob"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_snob.png" data-title="Nobre"></a></th></tr><tr id="TropC" class="units-row"></tr><tr>
+ <td id="color" colspan="2"><span id="icon"></span><span id="Tcmd"></span></td><td colspan="5">
+ <span title="0069 - Lissim (648|624) K66" class="icon header village"></span><span>Origem</span><input id="CFrom" value="648|624" readonly=""></td><td colspan="5"><span title="0569 | Lissim (713|486)" class="icon header village">
+ </span><span>Destino</span><input id="CTo" value="713|486" readonly=""></td></tr><tr><td colspan="5">
+ <span>Modelo NT: </span></td><td colspan="7"><span></span><select id="NTtypeABC" style="font-size: 9pt; width: 100%;"><option value="0">SEM NT</option><option value="1">NT CANCEL</option><option value="2">NT 2</option><option value="3">NT 3</option>
+    <option value="4">NT 4</option><option value="5">NT 5</option></select></td></tr>
+ <tr><td colspan="5"><span>Alvo das Catapultas: </span></td><td colspan="7"><select id="alvoCatC" style="font-size: 9pt;"><option value="padrao">Padrão</option><option value="main">Edifício principal</option><option value="barracks">Quartel</option><option value="stable">Estábulo</option>
+    <option value="garage">Oficina</option><option value="watchtower">Torre de vigia</option><option value="snob">Academia</option><option value="smith">Ferreiro</option><option value="place">Praça de reunião</option>
+    <option value="statue">Estátua</option><option value="market">Mercado</option><option value="wood">Bosque</option><option value="stone">Poço de argila</option><option value="iron">Mina de ferro</option><option value="farm">Fazenda</option>
+    <option value="storage">Armazém</option><option value="wall">Muralha</option></select></td></tr><tr><td colspan="6"><span>Horário Saida:</span>
+ <input id="Hsaida" value="2024-09-30T00:00:00" type="datetime-local" readonly=""></td><td colspan="6"><span>Horário Chegada:</span><input id="Hchegada" value="2024-10-01T21:45:45.141" type="datetime-local" readonly=""></td></tr></tbody></table></div></div></div>
+    `;
+let activeWorldData = JSON.parse(localStorage.getItem('activeTW')) || {};
+let coordsToID = JSON.parse(localStorage.getItem(`coordsToID_${activeWorldData['world']}`)) || {};
+
+    $(document).ready(function() {
+    const change = document.getElementById('NTtype');
+change.addEventListener('change', function() {
+    const nt1 = document.querySelector('h4[name="tab_ntCancel"]');
+    const nt11 = document.querySelector('table[name="tab_ntCancel"]');
+    const nt2 = document.querySelector('h4[name="tab_nt2"]');
+    const nt22 = document.querySelector('table[name="tab_nt2"]');
+    const nt3 = document.querySelector('h4[name="tab_nt3"]');
+    const nt33 = document.querySelector('table[name="tab_nt3"]');
+    const nt4 = document.querySelector('h4[name="tab_nt4"]');
+    const nt44 = document.querySelector('table[name="tab_nt4"]');
+    const nt5 = document.querySelector('h4[name="tab_nt5"]');
+    const nt55 = document.querySelector('table[name="tab_nt5"]');
+
+    // Verifica se os elementos existem antes de tentar alterar o display
+    const elements = [nt1, nt11, nt2, nt22, nt3, nt33, nt4, nt44, nt5, nt55];
+
+    // Oculta todos os elementos inicialmente
+    elements.forEach(element => {
+        if (element) {
+            element.style.display = 'none';
+        }
+    });
+
+    // Exibe os elementos com base no valor selecionado
+    if (this.value === '1') {
+        nt1.style.display = 'block';
+        nt11.style.display = 'block';
+    }else if (this.value === '2') {
+        nt2.style.display = 'block';
+        nt22.style.display = 'block';
+    } else if (this.value === '3') {
+        nt2.style.display = 'block';
+        nt22.style.display = 'block';
+        nt3.style.display = 'block';
+        nt33.style.display = 'block';
+    } else if (this.value === '4') {
+        nt2.style.display = 'block';
+        nt22.style.display = 'block';
+        nt3.style.display = 'block';
+        nt33.style.display = 'block';
+        nt4.style.display = 'block';
+        nt44.style.display = 'block';
+    } else if (this.value === '5') {
+        nt2.style.display = 'block';
+        nt22.style.display = 'block';
+        nt3.style.display = 'block';
+        nt33.style.display = 'block';
+        nt4.style.display = 'block';
+        nt44.style.display = 'block';
+        nt5.style.display = 'block';
+        nt55.style.display = 'block';
+    }
+});
+   // gerando data atual
+            function convertToInput(date) {
+    const ano = date.getFullYear();
+    const mes = String(date.getMonth() + 1).padStart(2, '0');
+    const dia = String(date.getDate()).padStart(2, '0');
+    const horas = String(date.getHours()).padStart(2, '0');
+    const minutos = String(date.getMinutes()).padStart(2, '0');
+    const segundos = String(date.getSeconds()).padStart(2, '0');
+    const milissegundos = String(date.getMilliseconds()).padStart(3, '0');
+    return `${ano}-${mes}-${dia}T${horas}:${minutos}:${segundos}.${milissegundos}`;
+}
+// Obtendo a data e hora atual
+const dateNow = convertToInput(new Date());
+// Definindo o valor do input usando JavaScript puro
+document.getElementById('CStime').value = dateNow;
+document.querySelectorAll('.unitsInput').forEach(input => {
+            // Cria um checkbox
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.name = input.name; // O name será o mesmo do input
+         // checkbox.id = `checkbox_${input.name}`; // Id único para cada checkbox
+
+            // Adiciona o checkbox após o input
+           input.parentNode.insertBefore(checkbox, input);
+        });
+
+ function calctemp(){
+    const Infotimertrops = document.getElementById('command-data-form');
+    const element = document.querySelector('.village-distance');
+    const commandDiv = document.getElementById('command_tempo_alvo');
+    if (element) {
+// Seleciona a célula que contém as coordenadas
+const coordinatesCell = document.getElementById('menu_row2');
+// Obtém o texto da célula e usa uma expressão regular para extrair apenas as coordenadas
+const coordinatesText = coordinatesCell.textContent.trim();
+const coordinateorigem = coordinatesText.match(/\((\d+\|\d+)\)/);
+
+   // Seleciona o span com a classe 'village-name'
+const villageNameSpan = document.querySelector('.village-name');
+// Obtém o texto do span e usa uma expressão regular para extrair as coordenadas
+const villageNameText = villageNameSpan.textContent.trim();
+const coordinatedestine = villageNameText.match(/\((\d+\|\d+)\)/);
+        function calculateDistance(coordinateorigem, coordinatedestine) {
+    let x1, y1, x2, y2;
+    if (coordinateorigem) {
+        // Extrai as coordenadas
+        const Cfrom = coordinateorigem[1]; // '699|566'
+        [x1, y1] = Cfrom.split('|').map(Number); // Divide em x1 e y1 e converte para número
+       // console.log(`x1: ${x1}, y1: ${y1}`); // Exibe os valores
+    }
+
+    if (coordinatedestine) {
+        // Extrai as coordenadas
+        const Cto = coordinatedestine[1]; // '699|566'
+        [x2, y2] = Cto.split('|').map(Number); // Divide em x2 e y2 e converte para número
+       // console.log(`x2: ${x2}, y2: ${y2}`); // Exibe os valores
+    }
+
+    var deltaX = Math.abs(x1 - x2);
+    var deltaY = Math.abs(y1 - y2);
+    return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+}calculateDistance();
+        if (element && !commandDiv) {
+        function formatTime(unitTime) {
+    const totalSeconds = Math.floor(unitTime / 1000).toString().padStart(2, '0'); // Converte milissegundos para segundos
+    const hours = Math.floor(totalSeconds / 3600).toString().padStart(2, '0');
+    const minutes = Math.floor((totalSeconds % 3600) / 60).toString().padStart(2, '0');
+    const seconds = (totalSeconds % 60).toString().padStart(2, '0');;
+
+    return `${hours}:${minutes}:${seconds}`; // Formata como string
+             }
+            const distance = calculateDistance(coordinateorigem, coordinatedestine);
+ // Oculta todas as células da tabela no início
+$('<style>').text(`
+    #command_tempo_alvo .units-row td,
+    #command_tempo_alvo th {
+        display: none;
+    }
+`).appendTo('head');
+function RequestUnits() {
+    return $.get('/interface.php?func=get_unit_info').then(function ($xml) {
+        var $units = {};
+        $($xml).find('config').children().each(function () {
+            const unitName = this.tagName;
+            const speed = Number($(this).find('speed').prop('textContent'));
+
+            if (isNaN(speed)) return; // Ignora unidades inválidas
+
+            const unitTime = distance * speed * 60000;
+            const formattedTime = formatTime(unitTime);
+
+            $units[unitName] = { speed, unitTime };
+
+            // Exibe apenas os elementos correspondentes da unidade requisitada
+            $('#command_tempo_alvo th a[data-unit="' + unitName + '"]').closest('th').css('display', 'table-cell');
+            $('#command_tempo_alvo #' + unitName).text(formattedTime).css('display', 'table-cell');
+        });
+
+        return $units;
+    });
+}
+RequestUnits();
+            function extrairIdDaPagina() {
+    const url = window.location.href; // Obtém a URL da página atual
+    const villageNumber = url.split('&screen=')[0]; // Divide a URL e pega a parte antes do parâmetro "screen"
+    return villageNumber;
+}
+            function RequestUnitsSelect() {
+                let x2, y2;
+        // Extrai as coordenadas
+        const Cto = coordinatedestine[1]; // '699|566'
+        [x2, y2] = Cto.split('|').map(Number);
+    const selectedUnits = [];
+    return $.get('/interface.php?func=get_unit_info').then(function ($xml) {
+            const units = {};
+            const unitsM = [
+    'unit_input_spear',
+    'unit_input_sword',
+    'unit_input_axe',
+    'unit_input_archer',
+    'unit_input_spy',
+    'unit_input_light',
+    'unit_input_marcher',
+    'unit_input_heavy',
+    'unit_input_ram',
+    'unit_input_catapult',
+    'unit_input_knight',
+    'unit_input_snob',
+];
+        unitsM.forEach(id => {
+    const input = document.getElementById(id);
+  });
+for (let i = 0; i < unitsM.length; i++) {
+    const inputElement = document.getElementById(unitsM[i]);
+    const unitName = inputElement.name; // Obtém o nome da unidade
+    const inputValue = inputElement.value || 0; // Obtém o valor do input
+    const checkbox = document.querySelector(`input[type="checkbox"][name="${unitName}"]`);
+         if(!checkbox.checked){
+        selectedUnits.push({ unitName, inputValue });
+         }else{ const inputValue = 'all';
+             selectedUnits.push({ unitName, inputValue });}
+}
+        // Processa o XML e calcula unitTime para as unidades
+            $($xml).find('config').children().each(function () {
+                const unitName = this.tagName;
+                const speed = Number($(this).find('speed').text());
+                const unitTime = distance * speed * 60000;
+                // Armazena o unitTime e a unidade, se ela estiver selecionada
+                if (selectedUnits.some(unit => unit.unitName === unitName && unit.inputValue != 0)) {
+                    units[unitName] = {
+                        speed: speed,
+                        unitTime: unitTime
+                    };
+                }
+            });
+            // Encontra a unidade com o maior unitTime
+let maxUnitTime = -1;
+let maxUnitName = '';
+// Verifica as unidades selecionadas
+for (const unit of selectedUnits) {
+    const unitData = units[unit.unitName];
+    if (unitData && unitData.unitTime > maxUnitTime) {
+        maxUnitTime = unitData.unitTime;
+        maxUnitName = unit.unitName;
+    }
+}
+// Compara os tempos formatados e exibe os resultados
+if (formatTime(maxUnitTime)) {
+    const unitmaxx = formatTime(maxUnitTime)
+    console.log('Unidade com maior tempo:', maxUnitName, 'Tempo:', unitmaxx);
+    // Exibe o resultado na interface, se necessário
+}
+         const villageNumber = extrairIdDaPagina();
+            let horario = document.getElementById('definirHorario').value || 'C';
+            let nome;
+            let link = `${villageNumber}&screen=place&x=${x2}&y=${y2}`;
+            let Dsaida;
+            let Dchegada;
+            let CFrom = coordinateorigem[1];
+            let CTo = coordinatedestine[1];
+            let NtType = document.getElementById('NTtype').value;
+            let AlvCat = document.getElementById('alvoCatapaSimples').value;
+               if(!NtType){NtType = 0;}
+               if(!AlvCat){AlvCat = 'padrao';}
+               nome = localStorage.getItem('Nome');
+                let QtAtks = parseInt(document.getElementById('qtdeAtaqueSequencial').value) || 0;
+                       if(QtAtks === 0){ QtAtks = 1;}
+                 let Ddsaida;
+                 let Ddchegada;
+              if (horario === 'S') {
+                const ssaida = document.getElementById('CStime').value;// Salva a data/hora se "Saída"
+                  Ddsaida = document.getElementById('CStime').value;
+                    const saida = new Date(ssaida);
+                  const timeToAdc = (maxUnitTime/1000);
+                  saida.setSeconds(saida.getSeconds() + timeToAdc);
+                    const TForm = convertToInput(saida);
+                   Ddchegada = TForm;
+         } else if (horario === 'C') {
+                  // Obtém a data inserida no input
+                      const inputDate = document.getElementById('CStime').value;
+                              const arrivalTime = new Date(inputDate);
+                       const timeToSubtract = (maxUnitTime/1000); // tempo a ser subtraído em milissegundos
+                          // Subtraindo os milissegundos
+                           arrivalTime.setSeconds(arrivalTime.getSeconds() - timeToSubtract);
+                           // Convertendo a data formatada após a subtração
+                            const formattedDate = convertToInput(arrivalTime);
+                       // Subtrai o tempo formatado
+                   Ddsaida = formattedDate; // Salva a data/hora ajustada para "Chegada"
+                   Ddchegada = inputDate;
+                   }
+                const tdas = (maxUnitTime/1000);
+               Dsaida = Ddsaida;
+               Dchegada = Ddchegada;
+        for (let xy = 0; xy < QtAtks; xy++) { // Altere 10 para o número de iterações desejado
+           if(xy === 0){
+               Dsaida = Ddsaida;
+               Dchegada = Ddchegada;}else{let temp = Ddchegada;
+            const nsaida = new Date(temp);
+            nsaida.setSeconds(nsaida.getSeconds() + tdas + 30);
+             Dsaida = convertToInput(nsaida);
+             Ddchegada = temp + tdas;
+              const sssaida = new Date(Dsaida);
+            sssaida.setSeconds(sssaida.getSeconds() + tdas);
+              Ddchegada = convertToInput(sssaida);
+              Dchegada = Ddchegada;
+             console.log(`A: ${Dsaida}, B: ${Ddchegada}`);}
+
+     // Recupera os dados existentes do localStorage
+              let savedModels = JSON.parse(localStorage.getItem('savedModels')) || [];
+              let selectedData = { nome, CFrom, CTo,link, units: selectedUnits, Dsaida, Dchegada, NtType, AlvCat};
+                // Adiciona o novo modelo
+        // Salva de volta no localStorage
+                 savedModels.push(selectedData); // Adiciona apenas se o link for novo
+               localStorage.setItem('savedModels', JSON.stringify(savedModels));
+            // Ordena o array pela data de Dsaida
+         savedModels.sort((a, b) => new Date(a.Dsaida) - new Date(b.Dsaida));
+        console.log('Modelos organizados pela data de saída:', savedModels);
+               // console.log(`Modelo salvo: ${JSON.stringify(savedModels, null, 2)}` );
+        }
+
+return units;
+        })
+        .catch(function (error) {
+            console.error('Erro ao obter informações das unidades:', error);
+        });}
+       //criando  a função de comandos
+        function agendar(){
+            document.getElementById('agendarAtaque').addEventListener('click', function () {
+                const atk = 'Atak';
+                localStorage.setItem('Nome', atk);
+                RequestUnitsSelect();
+            });
+            document.getElementById('agendarApoio').addEventListener('click', function () {
+                const apoio = 'Apoio';
+                localStorage.setItem('Nome', apoio);
+                RequestUnitsSelect();
+            });
+        }agendar();
+       Infotimertrops.insertAdjacentHTML('beforebegin', $InfoTimeTrops);
+        }
+    }
+     else if(!element && commandDiv){
+        // Fecha a div, por exemplo, escondendo-a
+        commandDiv.remove();
+    }setTimeout (function(){calctemp()},1000); }
+  calctemp();
+
+
+
+    });
+    function checkAndOpenLinks() {
+    const savedModels = JSON.parse(localStorage.getItem('savedModels')) || [];
+            // Ordena o array pela data de Dsaida
+        if (savedModels.length > 2) {
+        savedModels.sort((a, b) => new Date(b.Dsaida) - new Date(a.Dsaida));
+         savedModels.sort((a, b) => new Date(a.Dsaida) - new Date(b.Dsaida));}
+    if (savedModels.length > 0) {
+        const targetElements = document.getElementsByClassName('target-select-links');
+        if (!document.getElementById('command_target_mass')) {
+            targetElements[0].insertAdjacentHTML('afterend', comag);
+        }
+        const now = new Date();
+        savedModels.forEach((model, index) => {
+            const modelTime = new Date(model.Dsaida);
+            const timeDiff = modelTime - now;
+            // Verifica se faltam 30 segundos e se o modelo ainda não foi aberto
+                if (timeDiff <= 14000 && !model.opened) {
+                    model.opened = true; // Marca o modelo como aberto
+                    localStorage.setItem('savedModels', JSON.stringify(savedModels));
+                    window.open(model.link, '_blank'); // Abre o link em uma nova aba
+                }else if (model.opened) {setTimeout(() => {
+                                  savedModels.splice(index, 1); // Remove o modelo da lista
+                                 localStorage.setItem('savedModels', JSON.stringify(savedModels)); // Atualiza o localStorage
+                                }, 4000); // Espera 30 segundos antes de verificar
+                                         }});}else if(document.getElementById('command_target_mass') && savedModels.length <= 0){document.getElementById('command_target_mass').remove();}
+//================ config para exibição info de comandos agendados ================================
+const row = document.getElementById('TropC');
+        if (savedModels.length > 0) {
+  if (row.children.length === 0) {
+    // Cria um <td> para cada unitName e depois preenche com inputValue
+    savedModels[0].units.forEach(unit => {
+      const td = document.createElement('td');
+      td.style.width = '15px';
+      const unitName = unit.unitName || 'Unnamed';
+     // td.className = `nowrap unit-item unit-item-${unitName.replace(/\s+/g, '-').toLowerCase()}`;
+      td.textContent = unitName; // Adiciona o nome da unidade
+      td.style.textAlign = 'left';
+      row.appendChild(td);
+    });}
+    // Depois, preenche os valores correspondentes
+    savedModels[0].units.forEach((unit, index) => {
+      const td = row.children[index]; // Pega o <td> correspondente
+      td.textContent = unit.inputValue; // Atualiza o texto do <td> com o inputValue
+    });
+
+   if(savedModels[0].nome === 'Atak'){document.getElementById('color').style.backgroundColor = 'rgba(255, 0, 0, 0.53)';
+       document.getElementById('icon').innerHTML = '<a href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_axe.png" alt="Unit Image"></a>'}
+      else{document.getElementById('color').style.backgroundColor = 'rgba(0, 0, 255, 0.53)';
+          document.getElementById('icon').innerHTML = '<a href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_sword.png" alt="Unit Image"></a>'}
+     document.getElementById('Tcmd').textContent = savedModels[0].nome;
+     document.getElementById('Hsaida').value = savedModels[0].Dsaida;
+     document.getElementById('CFrom').value = savedModels[0].CFrom;
+     document.getElementById('alvoCatC').value = savedModels[0].AlvCat;
+     document.getElementById('NTtypeABC').value = savedModels[0].NtType;
+     document.getElementById('CTo').value = savedModels[0].CTo;
+     document.getElementById('Hchegada').value = savedModels[0].Dchegada;
+    document.getElementById('CmdAG').textContent = `Número de Comandos Agendados: ${savedModels.length}`;
+           const totalatak = savedModels
+                      .filter(model => model.nome === 'Atak') // Filtra modelos com o nome 'Atak'
+                      .reduce((total, model) => total + (model.nome ? (model.nome.length - 3) : 0), 0); // Soma o total de ataks
+       document.getElementById('CmdA').textContent = `Número de Ataques Agendados: ${totalatak}`;
+           const totalapoio = savedModels
+                      .filter(model => model.nome === 'Apoio') // Filtra modelos com o nome 'Apoio'
+                      .reduce((total, model) => total + (model.nome ? (model.nome.length - 4) : 0), 0); // Soma o total de apoios
+       document.getElementById('CmdD').textContent = `Número de Apoios Agendados: ${totalapoio}`;}
+//=================================================================================================
+                            setTimeout(checkAndOpenLinks, 1000);
+    } checkAndOpenLinks();
+function send(){
+                         const inputField = document.querySelector('.target-input-field');
+     const savedModels = JSON.parse(localStorage.getItem('savedModels')) || [];
+ if (window.opener && !window.opener.closed) {
+     savedModels.forEach((model, index) => {
+         if(model.opened){
+                      model.units.forEach(unit => {
+                          const inputName = unit.unitName;
+                           const inputValue = unit.inputValue;
+                                       console.log(`Inserindo unidade: ${inputName}, Valor: ${inputValue}`);
+                                      // Insere o valor coletado na respectiva input
+                                           if(inputValue === 'all'){
+                                            const input = document.getElementById(`units_entry_all_${inputName}`);
+                                               input.click(); }
+                                                else{const input = document.getElementById(`unit_input_${inputName}`);
+                                                input.value = inputValue;
+                                                }});
+             if (inputField.style.display === 'none'){setTimeout(() => {if(model.nome === 'Atak'){ document.getElementById('target_attack').click();}else{document.getElementById('target_support').click();}}, 2000);}
+                            }
+                                               });
+                setTimeout(() => {window.close();}, 3000);
+}} send();
+    var btnComand = document.getElementById('target_support');
+    btnComand.insertAdjacentHTML('afterend', $BtnCommand);
+    function updateTable() {
+let Tabelagendados = `
+    <div id="content_history_comands">
+        <table id="dataTable" class="vis overview_table" width="100%" style="border-spacing: 2px; border-collapse: separate; border: 1px solid #7d510f; border-top: 0px;">
+            <thead>
+                <tr>
+                    <th colspan="2">Comando</th>
+                    <th style="width: 60px; text-align:center;">Origem</th>
+                    <th style="width: 60px; text-align:center;">Destino</th>
+                    <th>Saída</th>
+                    <th>Chegada</th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_spear.png" data-title="Lanceiro"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_sword.png" data-title="Espadachim"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_axe.png" data-title="Bárbaro"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_spy.png" data-title="Explorador"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_light.png" data-title="Cavalaria leve"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Cavalaria Arqueira"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_ram.png" data-title="Aríete"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_catapult.png" data-title="Catapulta"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_knight.png" data-title="Paladino"></th>
+                    <th style="text-align:center"><img src="https://dsbr.innogamescdn.com/asset/68480359/graphic/unit/unit_snob.png" data-title="Nobre"></th>
+                    <th style="text-align:center">Cancelar</th>
+                    <th style="text-align:center">Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As linhas serão adicionadas aqui -->
+            </tbody>
+        </table>
+    </div>
+`;
+
+document.getElementById('contentContainer').insertAdjacentHTML('afterend', Tabelagendados);
+
+let savedModels = JSON.parse(localStorage.getItem('savedModels')) || [];
+let tableBody = document.querySelector("#dataTable tbody");
+tableBody.innerHTML = ''; // Limpa a tabela
+function carregar(){
+savedModels.forEach((model, index) => {
+    if (!model.opened) {
+        if(model.nome === 'Atak'){
+        let newRowHTML = `<tr class="nowrap">
+            <td style="background-color: rgba(255, 0, 0, 0.53);">
+                <a href="#" class="unit_link" data-unit="axe">
+                    <img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_axe.png" alt="Unit Image">
+                </a>
+            </td>
+            <td style="background-color: rgba(255, 0, 0, 0.53);"><span>Ataque</span></td>
+            <td style="text-align:center"><span>${model.CFrom}</span></td>
+            <td style="text-align:center"><span>${model.CTo}</span></td>
+            <td><input id="Hsaidah-${index}" value="${model.Dsaida}" type="datetime-local" readonly style="width: 165px;"></td>
+            <td><input id="Hdestinh-${index}" value="${model.Dchegada}" type="datetime-local" readonly style="width: 165px;"></td>`;
+
+        // Adicionando unidades
+            model.units.forEach(unit => {
+            newRowHTML += `<td style="text-align:center;"><input style="width: 25px;" id="unitValue-${index}-${unit.unitName}" value="${unit.inputValue || '0'}" readonly></td>`;
+        });
+
+        // Botões de excluir e editar com IDs específicos
+        newRowHTML += `
+            <td style="text-align:center">
+                <button type="button" class="deleteItem" data-index="${index}">
+                    <img class="village-delete" alt="" src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic//delete.png">
+                </button>
+            </td>
+            <td style="text-align:center">
+                <button type="button" class="editButton" data-index="${index}" id="editButton-${index}">Editar</button>
+                <button type="button" class="confirmedt" style="display: none;" id="confirmedt-${index}" data-index="${index}">Confirmar</button>
+            </td>
+        </tr>`;
+         tableBody.insertAdjacentHTML('beforeend', newRowHTML);
+        }
+        else{let newRowHTML = `<tr class="nowrap">
+            <td style="background-color: rgba(0, 0, 255, 0.53);">
+                <a href="#" class="unit_link" data-unit="sword">
+                    <img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_sword.png" alt="Unit Image">
+                </a>
+            </td>
+            <td style="background-color: rgba(0, 0, 255, 0.53);"><span>Apoio</span></td>
+            <td style="text-align:center"><span>${model.CFrom}</span></td>
+            <td style="text-align:center"><span>${model.CTo}</span></td>
+            <td><input id="Hsaidah-${index}" value="${model.Dsaida}" type="datetime-local" readonly style="width: 165px;"></td>
+            <td><input id="Hdestinh-${index}" value="${model.Dchegada}" type="datetime-local" readonly style="width: 165px;"></td>`;
+
+        // Adicionando unidades
+            model.units.forEach(unit => {
+            newRowHTML += `<td style="text-align:center;"><input style="width: 25px;" id="unitValue-${index}-${unit.unitName}" value="${unit.inputValue || '0'}" readonly></td>`;
+        });
+
+        // Botões de excluir e editar com IDs específicos
+        newRowHTML += `
+            <td style="text-align:center">
+                <button type="button" class="deleteItem" data-index="${index}">
+                    <img class="village-delete" alt="" src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic//delete.png">
+                </button>
+            </td>
+            <td style="text-align:center">
+                <button type="button" class="editButton" data-index="${index}" id="editButton-${index}">Editar</button>
+                <button type="button" class="confirmedt" style="display: none;" id="confirmedt-${index}" data-index="${index}">Confirmar</button>
+            </td>
+        </tr>`;
+
+         tableBody.insertAdjacentHTML('beforeend', newRowHTML);}
+    }
+});
+}carregar();
+// Função para deletar item
+tableBody.addEventListener('click', function (event) {
+    if (event.target.closest('.deleteItem')) {
+        const index = event.target.closest('.deleteItem').dataset.index;
+        savedModels.splice(index, 1); // Remove o item do array
+        localStorage.setItem('savedModels', JSON.stringify(savedModels)); // Atualiza o localStorage
+        tableBody.innerHTML = ''; // Limpa a tabela
+        // Recarrega as linhas da tabela
+                carregar();
+            }
+});
+// Função para editar item
+tableBody.addEventListener('click', function (event) {
+    if (event.target.closest('.editButton')) {
+        const index = event.target.closest('.editButton').dataset.index;
+        const inputs = document.querySelectorAll(`#dataTable input[id^='unitValue-${index}']`);
+
+        inputs.forEach(input => {
+            input.readOnly = false; // Torna os campos editáveis
+        });
+
+        event.target.style.display = 'none'; // Esconde o botão de editar
+        const confirmBtn = document.querySelector(`#confirmedt-${index}`);
+        confirmBtn.style.display = 'inline'; // Mostra o botão de confirmar
+    }
+});
+// Função para confirmar edição
+tableBody.addEventListener('click', function (event) {
+    if (event.target.closest('.confirmedt')) {
+        const index = event.target.closest('.confirmedt').dataset.index;
+        const inputs = document.querySelectorAll(`#dataTable input[id^='unitValue-${index}']`);
+
+        inputs.forEach((input, unitIndex) => {
+            savedModels[index].units[unitIndex].inputValue = input.value; // Atualiza o valor no array
+            input.readOnly = true; // Torna os campos não editáveis novamente
+        });
+
+        event.target.style.display = 'none'; // Esconde o botão de confirmar
+        const editBtn = document.querySelector(`#editButton-${index}`);
+        editBtn.style.display = 'inline'; // Mostra o botão de editar novamente
+        localStorage.setItem('savedModels', JSON.stringify(savedModels)); // Atualiza o localStorage
+    }
+});
+
+        }
+    document.getElementById('OpenCommand').addEventListener('click', function () {
+       if(!document.getElementById('content_mass_comands')){ openComand();}
+        });
+    document.getElementById('showComandos').addEventListener('click', function () {
+        updateTable();});
+    function openComand(){
+    let $Html10 = `<div id="content_mass_comands" class="vis"  style="width: 100%; border-collapse: margin: 5px; border: 0px"><h4>Agendamento em Massa</h4><tr><td>
+    <div class="vis" style="margin: 5px;"><table class="vis" style="width: 100%; border-collapse: margin-top: 2px; border: 0px solid rgb(125, 81, 15);"><tbody> <tr><td class="nowrap">
+    <a href="#" class="unit_link" data-unit="spear"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_spear.png" class="" data-title="Lanceiro"></a>
+    <input id="unit_input_spear_massa" name="spear" type="checkbox" data-all-count="0" readonly=""></td><td class="nowrap">
+    <a href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_sword.png" class="" data-title="Espadachim"></a>
+    <input id="unit_input_sword_massa" name="sword" type="checkbox" data-all-count="0" readonly="">                        </td>                        <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_axe.png" class="" data-title="Bárbaro"></a>
+    <input id="unit_input_axe_massa" name="axe" type="checkbox" data-all-count="0" readonly="">                        </td>				 <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="archer"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" class="" data-title="Arqueiro"></a>
+    <input id="unit_input_archer_massa" name="archer" type="checkbox" data-all-count="0" readonly="">				 </td>					 <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="spy"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_spy.png" class="" data-title="Explorador"></a>
+    <input id="unit_input_spy_massa" name="spy" type="checkbox" data-all-count="0" readonly="">					 </td>					 <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="light"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_light.png" class="" data-title="Cavalaria leve"></a>
+    <input id="unit_input_light_massa" name="light" type="checkbox" data-all-count="0" readonly="">					 </td>				 <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="marcher"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" class="" data-title="Arqueiro a Cavalo"></a>
+    <input id="unit_input_marcher_massa" name="marcher" type="checkbox" data-all-count="0" readonly="">                </td>                    <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="heavy"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_heavy.png" class="" data-title="Cavalaria pesada"></a>
+    <input id="unit_input_heavy_massa" name="heavy" type="checkbox" data-all-count="0" readonly="">                    </td>                    <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="ram"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_ram.png" class="" data-title="Aríete"></a>
+    <input id="unit_input_ram_massa" name="ram" type="checkbox" data-all-count="0" readonly="">                    </td>                    <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="catapult"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_catapult.png" class="" data-title="Catapulta"></a>
+    <input id="unit_input_catapult_massa" name="catapult" type="checkbox" data-all-count="0" readonly="">                    </td>                    <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="knight"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_knight.png" class="" data-title="Paladino"></a>
+    <input id="unit_input_knight_massa" name="knight" type="checkbox" data-all-count="0" readonly="">                    </td>                    <td class="nowrap">
+    <a href="#" class="unit_link" data-unit="snob"><img src="https://dsbr.innogamescdn.com/asset/fd86cac8/graphic/unit/unit_snob.png" class="" data-title="Nobre"></a>
+    <input id="unit_input_snob_massa" name="snob" type="checkbox" data-all-count="0" readonly=""></td></tr><tr><td class="nowrap">
+
+    <input id="unit_input_spear_massa_nro" name="spear" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_sword_massa_nro" name="sword" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_axe_massa_nro" name="axe" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_archer_massa_nro" name="archer" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_spy_massa_nro" name="spy" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_light_massa_nro" name="light" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_marcher_massa_nro" name="marcher" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_heavy_massa_nro" name="heavy" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_ram_massa_nro" name="ram" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_catapult_massa_nro" name="catapult" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_knight_massa_nro" name="knight" type="text" value="" data-all-count="0" style="width : 90%;"></td><td class="nowrap">
+    <input id="unit_input_snob_massa_nro" name="snob" type="text" value="" data-all-count="0" style="width : 90%;"></td></tr><tr><td colspan="2">
+
+    <span>Alvo das Catapultas: </span></td><td colspan="10"><select id="alvoCatapaMassa" style="font-size: 9pt;">
+    <option value="padrao">Padrão</option><option value="main">Edifício principal</option> <option value="barracks">Quartel</option>
+    <option value="stable">Estábulo</option><option value="garage">Oficina</option><option value="watchtower">Torre de vigia</option>
+    <option value="snob">Academia</option><option value="smith">Ferreiro</option><option value="place">Praça de reunião</option>
+    <option value="statue">Estátua</option><option value="market">Mercado</option><option value="wood">Bosque</option>
+    <option value="stone">Poço de argila</option><option value="iron">Mina de ferro</option>                           <option value="farm">Fazenda</option>
+    <option value="storage">Armazém</option><option value="wall">Muralha</option></select></td></tr></tbody></table>
+
+    </div><div class="vis" style="margin: 5px;"><div style="margin: 10px;">                 <br>
+    <span>Grupo de Origem</span><span id="group" style="font-size: 9pt;"></span><button type="button" id="botaoGrupoBuscaCoordenada" class="support btn btn-target-action">Importar Coordenadas</button><br><br>
+
+    <span>Coordenadas Origem</span>
+    <textarea id="CoordenadasOrigem" rows="6" style="width: 99%;"></textarea>                 <br>
+    <button type="button" id="botaoRemoveCoordenadaOrigemUtilizadas" class="support btn btn-target-action">Organizar e Remove Coordenadas Já Utilizadas</button><input id="NroOrigens" readonly="" style="float: right; width: 40px;">
+    <span style="float: right; margin-right: 5px;">Nro de Origem:</span><br><br><span>Nro de Origem por Destino:</span><input id="NroOrigensPorAlvo" style="width: 40px;">
+    <br><br><div style="margin-bottom: 5px;"><span>Definição de Origens por Destinos: </span><select id="defOrigemDestino" style="font-size: 9pt;">
+    <option value="P">Priorizar Mais Próximas</option><option value="D">Priorizar Mais Distantes</option></select></div><br>
+
+    <span>Coordenadas Destino</span>
+    <textarea id="CoordenadasDestino" rows="6" style="width: 99%;"></textarea>
+    <button type="button" id="botaoRemoveCoordenadaDestinoUtilizadas" class="support btn btn-target-action">Organizar e Remove Coordenadas Já Utilizadas</button>
+    <input id="NroDestinos" readonly="" style="float: right; width: 40px;"><span style="float: right; margin-right: 5px;">Nro de Destinos:</span><br><br>
+    <div style="margin-bottom: 5px;"><span>Modalidade de Cadastro: </span><select id="ModEnvioMassa" style="font-size: 9pt;">
+    <option value="0">Programado</option>
+    <option value="1">Programação Aleatória</option></select></div><div>
+    <span name="envioProgramado">Horario de Chegada</span><input name="envioProgramado" type="datetime-local" id="CStimeMassa" step=".001">
+    <span name="envioProgramadoAleatorio" style="display: none;">Até </span>
+    <input name="envioProgramadoAleatorio" style="display: none;" type="datetime-local" id="CStimeMassaAte" step=".001"></div>
+    <div>
+    <input type="checkbox" id="EnvioMesmoBN" name="EnvioMesmoBN"><label for="EnvioMesmoBN">Enviar Mesmo se Comando Bater no BN</label>                 </div>                 <div>
+    <input type="checkbox" id="EnvioMesmoSemTempo" name="EnvioMesmoSemTempo"><label for="EnvioMesmoSemTempo">Enviar Mesmo que Comando não chegue mais a Tempo</label>                 </div>                 <div>
+    <input type="checkbox" id="CadastroComErro" name="CadastroComErro"><label for="CadastroComErro">Agendar Comandos em Massa mesmo que algum Comando esteja com Problema</label>                 </div>
+    <br>
+    <button type="button" id="agendarEmMassaConfirmAtaque" class="attack btn btn-attack btn-target-action" style="margin-bottom:5px;">Confirmar Ataque Em Massa</button>
+    <button type="button" id="agendarEmMassaConfirmApoio" class="support btn btn-support btn-target-action" style="margin-bottom:5px;">Confirmar Apoio Em Massa</button>
+    <button type="button" id="simularEmMassaConfirm" class="support btn btn-target-action" style="margin-bottom:5px;">Simulação Em Massa</button></div></div></div>
+
+   <style>
+    .tooltipDiv .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+     .tooltipDiv:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }</style>`;
+    // Adiciona o HTML antes de cada elemento 'menu-item'
+    document.getElementById('contentContainer').insertAdjacentHTML('afterend', $Html10);
+
+        //organizando proprios grupos na area origem
+async function fetchVillageGroups() {
+    try {
+        const villageGroups = await jQuery.get(
+            game_data.link_base_pure +
+                'groups&mode=overview&ajax=load_group_menu'
+        );
+        return villageGroups;
+    } catch (error) {
+        UI.ErrorMessage('Error fetching village groups!');
+        return null; // Retorno padrão caso ocorra um erro
+    }
+}
+async function renderGroupsFilter() {
+    const groups = await fetchVillageGroups();
+    if (!groups || !groups.result) {
+        return ''; // Retornar uma string vazia se não houver grupos válidos
+    }
+
+    let selected_Group = localStorage.getItem('selected_groupoo') || 0;
+    selected_Group = parseInt(selected_Group); // Converter para número inteiro
+
+    let groupsFilter = `
+        <select id="raGroupsFilter1">`;
+
+    for (const [_, group] of Object.entries(groups.result)) {
+        const { group_id, name } = group;
+        const isSelected = parseInt(group_id) === selected_Group ? 'selected' : '';
+        if (name !== undefined) {
+            groupsFilter += `<option value="${group_id}" ${isSelected}>${name}</option>`;
+        }
+    }
+
+    groupsFilter += `</select>`;
+
+    return groupsFilter;
+}
+// Função para atualizar a div com id "group"
+async function updateGroupFilter() {
+    const groupDiv = document.getElementById('group');
+    if (!groupDiv) {
+        console.error('Div "group" não encontrada.');
+        return;
+    }
+
+    const groupsFilter = await renderGroupsFilter();
+    if (!groupsFilter) {
+        console.error('Erro ao renderizar o filtro de grupos.');
+        return;
+    }
+
+    groupDiv.innerHTML = groupsFilter;
+}
+    updateGroupFilter();
+     // carregar aldeias no textarea
+      function fetchAndSaveVillagesData(selected_Group) {
+    const url = game_data.link_base_pure + 'groups&ajax=load_villages_from_group';
+    const group_id = selected_Group;
+
+    return new Promise((resolve, reject) => {
+        jQuery.post({
+            url: url,
+            data: { group_id: group_id },
+            success: function(response) {
+                const parser = new DOMParser();
+                const htmlDoc = parser.parseFromString(response.html, 'text/html');
+                const tableRows = jQuery(htmlDoc).find('#group_table > tbody > tr').not(':eq(0)');
+
+                let villagesList = [];
+
+                tableRows.each(function (index) {
+                    const villageId = parseInt(jQuery(this).find('td:eq(0) a').attr('data-village-id') ?? jQuery(this).find('td:eq(0) a').attr('href').match(/\d+/)[0]);
+                    const villageName = jQuery(this).find('td:eq(0)').text().trim();
+                    const villageCoords = jQuery(this).find('td:eq(1)').text().trim();
+
+                    villagesList.push({ id: villageId, name: villageName, coords: villageCoords });
+                });
+
+                resolve(villagesList); // Resolve a promessa com a lista de aldeias
+            },
+            error: function(error) {
+                console.error('Erro ao buscar dados das aldeias:', error);
+                reject(error); // Rejeita a promessa em caso de erro
+            }
+        });
+    });
+}
+            document.getElementById('botaoGrupoBuscaCoordenada').addEventListener('click', function () {
+    const selectedGroupValue = document.getElementById('raGroupsFilter1').value;
+    fetchAndSaveVillagesData(selectedGroupValue)
+        .then(villages => {
+            const textarea = document.getElementById('CoordenadasOrigem');
+           // textarea.value = villages.map(v => `${v.coords}`).join(' ');
+            textarea.value = villages.map(v => v.coords).join(' ');
+            const totalC = villages.length;
+
+            document.getElementById('NroOrigens').value = totalC;
+        })
+        .catch(error => {
+            console.error('Erro ao processar as aldeias:', error);
+        });
+});
+    // organizando coordenadas coladas na area origem
+              document.getElementById('botaoRemoveCoordenadaOrigemUtilizadas').addEventListener('click', function() {
+    const inputText = document.getElementById('CoordenadasOrigem').value;
+    const savedModels = JSON.parse(localStorage.getItem('savedModels')) || []; // Recupera os modelos salvos do localStorage
+
+    // Regex para encontrar os pares no formato 123|456
+    const regex = /\b(\d{3})\|(\d{3})\b/g;
+    const matches = [];
+    let match;
+
+    // Loop para encontrar todas as coordenadas no input
+    while ((match = regex.exec(inputText)) !== null) {
+        matches.push(`${match[1]}|${match[2]}`);
+    }
+
+    // Extração das coordenadas em CTo e CFrom dos itens do localStorage
+    const savedCoordinates = [];
+    savedModels.forEach(model => {
+        if (model.CTo) {
+            savedCoordinates.push(model.CTo);
+        }
+        if (model.CFrom) {
+            savedCoordinates.push(model.CFrom);
+        }
+    });
+
+    // Filtrar coordenadas que não estão nas coordenadas salvas
+    const filteredMatches = matches.filter(coord => !savedCoordinates.includes(coord));
+
+    // Atualizar o campo de texto com as coordenadas restantes
+    const outputText = filteredMatches.join(' ');
+    document.getElementById('CoordenadasOrigem').value = outputText;
+
+    // Atualizar o total de coordenadas restantes
+    const totalC = filteredMatches.length;
+    document.getElementById('NroOrigens').value = totalC;
+});
+   // organizando coordenadas coladas na area destino
+            document.getElementById('botaoRemoveCoordenadaDestinoUtilizadas').addEventListener('click', function() {
+            const inputText = document.getElementById('CoordenadasDestino').value;
+             const savedModels = JSON.parse(localStorage.getItem('savedModels')) || []; // Recupera os modelos salvos do localStorage
+            // Regex para encontrar os pares no formato 593|309
+            const regex = /\b(\d{3})\|(\d{3})\b/g;
+            const matches = [];
+            let match;
+            // Loop para encontrar todas as correspondências
+            while ((match = regex.exec(inputText)) !== null) {
+                matches.push(`${match[1]}|${match[2]}`);
+            }
+                    // Extração das coordenadas em CTo e CFrom dos itens do localStorage
+            const savedCoordinates = [];
+                savedModels.forEach(model => {
+              if (model.CTo) {
+            savedCoordinates.push(model.CTo);
+        }
+        if (model.CFrom) {
+            savedCoordinates.push(model.CFrom);
+        }
+    });
+
+               // Filtrar coordenadas que não estão nas coordenadas salvas
+                   const filteredMatches = matches.filter(coord => !savedCoordinates.includes(coord));
+
+            // Juntar as correspondências em uma string separada por espaços
+            const outputText = filteredMatches.join(' ');
+            document.getElementById('CoordenadasDestino').value = outputText;
+            const totalC = filteredMatches.length;
+            document.getElementById('NroDestinos').value = totalC;
+        });
+        // displays nones
+        document.getElementById('ModEnvioMassa').addEventListener('change', function() {
+    const spanAleatorio = document.querySelector('span[name="envioProgramadoAleatorio"]');
+    const inputAleatorio = document.querySelector('input[name="envioProgramadoAleatorio"]');
+
+    if (this.value === '1') {
+        spanAleatorio.style.display = 'inline';
+        inputAleatorio.style.display = 'inline';
+    } else {
+        spanAleatorio.style.display = 'none';
+        inputAleatorio.style.display = 'none';
+    }
+});
+        // match calc
+function distanceM(coordinateOrigem, coordinatedestine) {
+    let [x1, y1] = coordinateOrigem.split('|').map(Number);
+    let [x2, y2] = coordinatedestine.split('|').map(Number);
+    const deltaX = Math.abs(x1 - x2);
+    const deltaY = Math.abs(y1 - y2);
+    return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+}
+function RequestUnitsM() {
+
+    const fromValues = document.getElementById("CoordenadasOrigem").value.trim().split(" ");
+    const toValues = document.getElementById("CoordenadasDestino").value.trim().split(" ");
+    const limit = parseInt(document.getElementById("NroOrigensPorAlvo").value) || 1;
+    let xx = 0;
+    function gerar(coordinateOrigem, coordinatedestine, distance){
+         const selectedUnits = [];
+ return $.get('/interface.php?func=get_unit_info').then(function ($xml) {
+            const units = {};
+            const unitsM = [
+                'unit_input_spear_massa_nro',
+                'unit_input_sword_massa_nro',
+                'unit_input_axe_massa_nro',
+                'unit_input_archer_massa_nro',
+                'unit_input_spy_massa_nro',
+                'unit_input_light_massa_nro',
+                'unit_input_marcher_massa_nro',
+                'unit_input_heavy_massa_nro',
+                'unit_input_ram_massa_nro',
+                'unit_input_catapult_massa_nro',
+                'unit_input_knight_massa_nro',
+                'unit_input_snob_massa_nro',
+            ];
+
+            for (let i = 0; i < unitsM.length; i++) {
+                const inputElement = document.getElementById(unitsM[i]);
+                const unitName = inputElement.name;
+                const inputValue = inputElement.value || 0;
+                const checkbox = document.getElementById(`unit_input_${unitName}_massa`);
+
+                if (!checkbox.checked) {
+                        selectedUnits.push({ unitName, inputValue });
+                } else {
+                    const inputValue = 'all';
+                    selectedUnits.push({ unitName, inputValue });
+                }
+            }
+
+            // Processa o XML e calcula unitTime para as unidades
+            $($xml).find('config').children().each(function () {
+                const unitName = this.tagName;
+                const speed = Number($(this).find('speed').text());
+                const unitTime = distance * speed * 60000;
+
+                // Armazena o unitTime e a unidade, se ela estiver selecionada
+                if (selectedUnits.some(unit => unit.unitName === unitName && unit.inputValue != 0)) {
+                    units[unitName] = {
+                        speed: speed,
+                        unitTime: unitTime
+                    };
+                }
+            });
+
+            // Encontra a unidade com o maior unitTime
+            let maxUnitTime = -1;
+            let maxUnitName = '';
+     function convertToInput(date) {
+    const ano = date.getFullYear();
+    const mes = String(date.getMonth() + 1).padStart(2, '0');
+    const dia = String(date.getDate()).padStart(2, '0');
+    const horas = String(date.getHours()).padStart(2, '0');
+    const minutos = String(date.getMinutes()).padStart(2, '0');
+    const segundos = String(date.getSeconds()).padStart(2, '0');
+    const milissegundos = String(date.getMilliseconds()).padStart(3, '0');
+    return `${ano}-${mes}-${dia}T${horas}:${minutos}:${segundos}.${milissegundos}`;
+}
+         function formatTime(unitTime) {
+    const totalSeconds = Math.floor(unitTime / 1000).toString().padStart(2, '0'); // Converte milissegundos para segundos
+    const hours = Math.floor(totalSeconds / 3600).toString().padStart(2, '0');
+    const minutes = Math.floor((totalSeconds % 3600) / 60).toString().padStart(2, '0');
+    const seconds = (totalSeconds % 60).toString().padStart(2, '0');
+
+    return `${hours}:${minutes}:${seconds}`; // Formata como string
+             }
+  function getLink() {
+    if ( coordinateOrigem in coordsToID && coordinatedestine in coordsToID) {
+       return `${activeWorldData['origin']}/game.php?village=${coordsToID[coordinateOrigem]}&screen=place&target=${coordsToID[coordinatedestine]}`;
+    }
+    return getLink;}
+          let link = getLink();
+            // Verifica as unidades selecionadas
+            for (const unit of selectedUnits) {
+                const unitData = units[unit.unitName];
+                if (unitData && unitData.unitTime > maxUnitTime) {
+                    maxUnitTime = unitData.unitTime;
+                    maxUnitName = unit.unitName;
+                }
+            }
+
+            let nome;
+                nome = localStorage.getItem('Nome');
+            let Dsaida;
+            let Dchegada = document.getElementById('CStimeMassa').value
+            let DchegadaF = document.getElementById('CStimeMassaAte').value;
+            let CFrom = coordinateOrigem;
+            let CTo = coordinatedestine;
+            let NtType = 0;
+            let AlvCat = document.getElementById('alvoCatapaMassa').value;
+               if(!NtType){NtType = 0;}
+               if(!AlvCat){AlvCat = 'padrao';}
+                  // Obtém a data inserida no input
+                      const inputDate = Dchegada;
+                              const arrivalTime = new Date(inputDate);
+                       const timeToSubtract = (maxUnitTime/1000); // tempo a ser subtraído em milissegundos
+                          // Subtraindo os milissegundos
+                           arrivalTime.setSeconds(arrivalTime.getSeconds() - timeToSubtract);
+                           // Convertendo a data formatada após a subtração
+                            const formattedDate = convertToInput(arrivalTime);
+                       // Subtrai o tempo formatado
+                             Dsaida = formattedDate;
+                      const CSaida = new Date(Dsaida)
+     console.log('DSaida: ', CSaida);
+if(CSaida > new Date()){
+     // Recupera os dados existentes do localStorage
+              let savedModels = JSON.parse(localStorage.getItem('savedModels')) || [];
+              let selectedData = { nome, CFrom, CTo,link, units: selectedUnits, Dsaida, Dchegada, NtType, AlvCat};
+                // Adiciona o novo modelo
+        // Salva de volta no localStorage
+                 savedModels.push(selectedData); // Adiciona apenas se o link for novo
+               localStorage.setItem('savedModels', JSON.stringify(savedModels));
+            // Ordena o array pela data de Dsaida
+         savedModels.sort((a, b) => new Date(a.Dsaida) - new Date(b.Dsaida));
+        console.log('Modelos organizados pela data de saída:', savedModels);
+               // console.log(`Modelo salvo: ${JSON.stringify(savedModels, null, 2)}` );
+}else{console.log('Não agendado, sem tempo para enviar')}
+            return units;
+        })
+        .catch(function (error) {
+            console.error('Erro ao obter informações das unidades:', error);
+        });
+}
+    for (let cf = 0; cf < toValues.length; cf++) {
+
+        let coordinatedestine = toValues[cf];
+
+        for (let ct = 0; ct < limit ; ct++) {
+            let coordinateOrigem = fromValues[xx];
+            const distance = distanceM(coordinateOrigem, coordinatedestine);
+            xx++;
+            gerar(coordinateOrigem, coordinatedestine, distance);
+        }
+    }
+
+}
+   document.getElementById('agendarEmMassaConfirmAtaque').addEventListener('click', function () {
+            localStorage.setItem('Nome', 'Atak');
+            RequestUnitsM();});
+    }
+}
+ if(confirm){
+    const rows = document.querySelectorAll('table.vis tr'); // Seleciona todas as linhas da tabela
+    const x = 6; // Número de linhas acima (nesse caso, queremos inserir após a terceira linha)
+        const targetRow = rows[x]; // Seleciona a linha desejada (3ª linha)
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = '<td>Chegada:</td><td colspan="10"><input type="datetime-local" id="CSchegada" step=".001"><button type="button" id="CSbuttonC" class="btn">Confirmar</button></td>'; // Adicione o conteúdo desejado
+        targetRow.insertAdjacentElement('afterend', newRow); // Insere a nova linha após a linha alvo
+
+if (window.opener && !window.opener.closed) {
+const savedModels = JSON.parse(localStorage.getItem('savedModels')) || [];
+        const now = new Date();
+    const ChegadaH = savedModels[0].Dchegada;
+    const targetCata = savedModels[0].AlvCat;
+    document.getElementById('CSchegada').value = ChegadaH;
+    if(targetCata != 'padrao'){document.getElementsByName("building")[0].value = targetCata;}
+ setTimeout(function(){document.getElementById('CSbuttonC').click();},3000);
+}
+  else{
+         function convertToInput(date) {
+    const ano = date.getFullYear();
+    const mes = String(date.getMonth() + 1).padStart(2, '0');
+    const dia = String(date.getDate()).padStart(2, '0');
+    const horas = String(date.getHours()).padStart(2, '0');
+    const minutos = String(date.getMinutes()).padStart(2, '0');
+    const segundos = String(date.getSeconds()).padStart(2, '0');
+    const milissegundos = String(date.getMilliseconds()).padStart(3, '0');
+    return `${ano}-${mes}-${dia}T${horas}:${minutos}:${segundos}.${milissegundos}`;
+}
+            let tt = new Date();
+               document.getElementById('CSchegada').value = convertToInput(tt);}
+
+
+     document.getElementById('CSbuttonC').addEventListener('click', function () {
+    // Seleciona o span que contém a informação da data
+    const spanElement = document.querySelector('.relative_time');
+    const relativeTime = spanElement.innerText.trim();
+    let arrivalDate;
+
+    if (relativeTime.startsWith("hoje")) {
+        const timePart = relativeTime.split(" às ")[1];
+        const [hours, minutes, seconds] = timePart.split(":").map(Number);
+        const now = new Date();
+        arrivalDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hours, minutes, seconds);
+    } else if (relativeTime.startsWith("amanhã")) {
+        const timePart = relativeTime.split(" às ")[1];
+        const [hours, minutes, seconds] = timePart.split(":").map(Number);
+        const now = new Date();
+        arrivalDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, hours, minutes, seconds);
+    } else {
+        const datePart = relativeTime.replace("em ", "").split(" às ")[0];
+        const timePart = relativeTime.split(" às ")[1];
+        const [day, month] = datePart.split(".").map(Number);
+        const [hours, minutes, seconds] = timePart.split(":").map(Number);
+        const now = new Date();
+        arrivalDate = new Date(now.getFullYear(), month - 1, day, hours, minutes, seconds);
+    }
+
+    const arrivalInput = document.getElementById('CSchegada').value;
+    const SFuture = new Date(arrivalInput);
+
+    // Calcula a diferença inicial em milissegundos
+    let msDiff = SFuture - arrivalDate;
+         msDiff = (msDiff - 1000);
+    console.log('Contagem inicial (ms):', msDiff);
+
+    // Função para calcular o ping (latência)
+    function measurePing(callback) {
+        const startTime = Date.now();
+        fetch(window.location.href) // Faz uma requisição simples à própria página
+            .then(() => {
+                const ping = Date.now() - startTime; // Calcula o tempo de resposta
+                callback(ping); // Chama o callback com o ping
+            })
+            .catch(() => {
+               return 0; // Se falhar, assume 0 de ping
+            });
+    }
+        if (msDiff > 0) {
+            // Desativa os botões enquanto aguarda
+            document.getElementById('CSbuttonC').disabled = true;
+            document.getElementById('troop_confirm_submit').disabled = true;
+            setTimeout(function () {
+                        document.getElementById('troop_confirm_submit').disabled = false;
+                        document.getElementById('troop_confirm_submit').click();
+                        console.log('foi');
+                return;},msDiff);
+
+           /* // Captura o tempo inicial de agendamento
+            const start = performance.now();
+
+            setTimeout(function () {
+                // Calcula o tempo decorrido e ajusta a execução
+                const elapsed = performance.now() - start;
+                const adjustedMsDiff = msDiff - elapsed;
+                console.log('Tempo decorrido no setTimeout (ms):', elapsed);
+                console.log('Ajuste final (ms):', adjustedMsDiff);
+
+                if (adjustedMsDiff > 0) {
+                    setTimeout(() => {
+                        document.getElementById('troop_confirm_submit').disabled = false;
+                        document.getElementById('troop_confirm_submit').click();
+                        console.log('Comando executado com ajuste fino!');
+                    }, adjustedMsDiff);
+                } else {
+                    document.getElementById('troop_confirm_submit').disabled = false;
+                    document.getElementById('troop_confirm_submit').click();
+                    console.error('Erro: Tempo insuficiente após ajuste!');
+                }
+            }, msDiff);*/
+        } else {
+            // Executa imediatamente caso o tempo já tenha passado
+            document.getElementById('troop_confirm_submit').disabled = false;
+            document.getElementById('troop_confirm_submit').click();
+        }
+});
+
+    }
+}
+//================================================== Script Cunhar ===============================================================================
+    var Checkss = parseInt($('#coin_cost_iron .value').text().replace(/\D/g, ''));
+    const CunhagemAtiva = localStorage.getItem('CunhagemAtiva');
+if(window.location.href.includes('screen=snob') && Checkss && CunhagemAtiva === 'S'){
+
+     let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td><h1 id="avisoScriptContent" style="text-align: center; margin-bottom: 0px;"></h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mp3">
+          Seu navegador não suporta o elemento de áudio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+        <small>
+        <strong id="movendoTexto">
+            Cunhando As Moedas v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="EXTRA"></span>
+        </strong>
+    </small>`;
+    var CTotal = localStorage.getItem('totalC');
+// Captura a referência para a tabela de destino
+let Inserir = document.getElementById('contentContainer');
+   // Adiciona a nova div antes da divBorda
+Inserir.insertAdjacentHTML('beforebegin', $html);
+    // Formata a string com o tempo restante
+    var avisoCunhar = document.getElementById('avisoScriptContent');
+    var avisoC = "SCRIPT - CUNHAR";
+    var horasElement = document.getElementById("horas")
+    var extraElement = document.getElementById("EXTRA")
+       avisoCunhar.textContent = avisoC;
+       function cunhar(){
+           extraElement.textContent = " ||Total Cunhado [ " + CTotal + " ]" ;
+         let MoedasCunhagem = localStorage.getItem('MoedasCunhagem');
+    let CunhagemRandomica = localStorage.getItem('CunhagemRandomica');
+
+    function Aleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+} var Randomic = Aleatorio(1, 3); // intervalo de att em minutos
+       if(CunhagemRandomica === 'R'){setTimeout(function() {
+        location.reload();}, Randomic*60*1000);}
+    if(CunhagemRandomica === 'F'){setTimeout(function() {
+        location.reload();}, 60000);}
+
+    var qtdFerroAldeia = parseInt($("#iron").text());
+    var qtdArgilaAldeia = parseInt($("#stone").text());
+    var qtdMadeiraAldeia = parseInt($("#wood").text());
+    var VArgSalvo = localStorage.getItem('qtdArgilaAldeia');
+    let CustoFer = parseInt($('#coin_cost_iron .value').text().replace(/\D/g, ''));
+    var CustoArg = parseInt($('#coin_cost_stone .value').text().replace(/\D/g, ''));
+    var CustoMad = parseInt($('#coin_cost_wood .value').text().replace(/\D/g, ''));
+    var cd = 13;
+    var moedas = [
+        qtdFerroAldeia / CustoFer,
+        qtdArgilaAldeia / CustoArg,
+        qtdMadeiraAldeia / CustoMad,
+    ];
+    var menorResultado = Math.min.apply(Math, moedas); // Obtém o menor valor entre os três resultados
+    // Se o menor resultado for menor que zero, define como zero, caso contrário, mantém o valor
+    var Mcunhar = menorResultado < 0 ? 0 : Math.floor(menorResultado); // quantidade de moedas q da pra cunhar
+    if (MoedasCunhagem <= Mcunhar){
+        var maximumAmount = document.getElementById("coin_mint_fill_max").text.match(/\(([^)]+)\)/)[1];
+        if (document.getElementById("coin_mint_count").value != maximumAmount) {
+            document.getElementById("coin_mint_count").value = maximumAmount;
+        }
+        var Horas = "Cunhando[ " + Mcunhar + " ]Moedas";
+       horasElement.textContent = Horas;
+         CTotal = (parseInt(Mcunhar) + parseInt(CTotal));
+        setTimeout(function(){localStorage.setItem('totalC', CTotal);
+            document.getElementsByClassName("btn btn-default")[0].click();},2000);
+    }else{
+        function Att() {
+        if (cd >= 0) {
+            horasElement.textContent = ":[ " + Mcunhar + " ]Esperando um total de[ " + MoedasCunhagem + " ]Moedas.Validando Recursos em[ " + cd + " ]Segundos.";
+            cd--;
+        } else if(cd <= 0){
+            setTimeout(function () {
+                if(VArgSalvo != qtdArgilaAldeia){
+                    clearInterval(intervalId); // Limpa o intervalo quando o contador chegar a 0
+                      cd = 13; // Reinicia o contador
+                    horasElement.textContent = "Validando Recursos";
+                    localStorage.setItem('qtdArgilaAldeia', qtdArgilaAldeia);
+                              cunhar();}else{
+                                  horasElement.textContent = "Relogando";
+                                  location.reload();}
+            }, 1000);
+        }
+    var intervalId = setTimeout(Att, 1000);
+}
+Att();
+ }}cunhar();
+    var url = window.location.href;
+    var subdominio = new URL(url).hostname.split('.')[0];
+    var novoTitulo = subdominio + " - CUNHANDO";
+    document.title = novoTitulo;
+}
+//=================================================== Script Puxar Rec ===========================================================================
+const PuxarRecursosAtiva = localStorage.getItem('PuxarRecursosAtiva');
+if(window.location.href.includes('screen=market&mode=call') && PuxarRecursosAtiva === 'S'){
+    var cordenada = localStorage.getItem('CoordenadaPuxarRecursos');
+    const PeriodoPuxarRecursos = parseInt(localStorage.getItem('PeriodoPuxarRecursos'));
+    var DistMax = localStorage.getItem('DistanciaPuxarRecursos');
+
+    // Cria um html
+  let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">PUXAR RECURSOS</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de áudio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+           <small>
+        <strong id="movendoTexto">
+            Puxando Us Rec v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="info"></span><span id="Inforot"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+var Inserir = document.getElementById('contentContainer');
+
+   // Adiciona a nova div antes da divBorda
+    Inserir.insertAdjacentHTML('beforebegin', $html);
+
+    function atualizarTempoRestante() {
+        // Obtém a referência para o elemento com o ID "horas"
+    var infopux = document.getElementById('horas');
+
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximoCarregamentoR = localStorage.getItem('proximoCarregamentoPuxRecs');
+    if (proximoCarregamentoR) {
+        proximoCarregamentoR = new Date(proximoCarregamentoR);
+    } else {
+        // Executa o script imediatamente
+        executarScript();
+
+        // Define a próxima hora de carregamento para 2 horas após a execução
+        proximoCarregamentoR = new Date();
+        proximoCarregamentoR.setMinutes(proximoCarregamentoR.getMinutes() + PeriodoPuxarRecursos);
+        // Salva a próxima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoPuxRecs', proximoCarregamentoR);
+    }
+
+    function executarScript() {
+        $.getScript('https://shinko-to-kuma.com/scripts/res-senderV2.js');
+
+    // Configura o valor do campo de entrada diretamente pela ID
+     setInterval(function cord() {
+            document.getElementById('coordinateTargetFirstTime').value = cordenada;
+            }, 10000);
+     setInterval(function save() {
+    document.getElementById('saveCoord').click();
+    }, 15000);
+    var t = 0;
+
+        setTimeout(function() {
+    var botoes = $('[class="btn evt-confirm-btn btn-confirm-yes"]');
+    var index = 0;
+      var limt = DistMax;
+      var n = 2;
+      var trs = $('tbody#appendHere tr'); // Selecionar todas as linhas da tabela com o ID 'appendHere'
+
+    function clickBotao() {
+        var trS = $(trs[n]).find('td:eq(2)').text();
+        var terceiroTd = parseInt(trS);
+
+        if (index < (botoes.length - 1) && terceiroTd < limt) {
+            $(botoes[index]).click();
+            index++;
+            n++;
+            setTimeout(clickBotao, 1000);
+        }
+    }
+
+    clickBotao();
+}, 60000);
+
+    }
+
+    function atualizarR() {
+        // Obtém a hora atual
+        var agora = new Date();
+
+        // Verifica se é hora de recarregar a página
+        if (agora >= proximoCarregamentoR) {
+            localStorage.removeItem('proximoCarregamentoPuxRecs');
+            // Recarrega a página
+            location.reload();
+        } else {
+            // Calcula o tempo restante até o próximo carregamento
+            var tempoRestante = proximoCarregamentoR - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = "Próxima atualização em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conteúdo do elemento com o tempo restante formatado
+            infopux.textContent = tempoRestanteFormatado;
+
+            // Chama a função novamente após 1 segundo
+            setTimeout(atualizarR, 1000);
+        }
+    }
+
+    // Chama a função pela primeira vez
+    atualizarR();
+}
+// Chama a função para iniciar o contador regressivo
+atualizarTempoRestante();
+
+
+    var v2 = 4;
+    var valor2 = localStorage.getItem('check' + v2);
+    var estado2 = valor2 === 'true';
+    if(estado2){ var conf2 = 'ok'}
+    if(conf2 === 'ok'){
+function redirecionar(){
+    var temp_farm = parseInt(localStorage.getItem('CPuxar'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_farm);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+            var redirecionamentos = [
+    { screen: "main", delay: 9000 },
+    { screen: "am_farm", delay: 11000 },
+    { screen: "place&mode=scavenge", delay: 13000 },
+    { screen: "place&mode=scavenge_mass", delay: 15000 },
+    { screen: "market&mode=call", delay: 20000 },
+    { screen: "market&mode=traders", delay: 1000 },
+    { screen: "statue&mode=overview", delay: 3000 },
+    { screen: "snob&mode=coin", delay: 5000 },
+    { screen: "train", delay: 7000 }
+];
+
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+}
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+    let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - Push";
+    document.title = novoTitulo;
+
+}
+//==================================================== Script coleta em massa ====================================================================
+const ColetaMassaAtiva = localStorage.getItem('ColetaMassaAtiva');
+if(window.location.href.includes('screen=place&mode=scavenge_mass') && ColetaMassaAtiva === 'S'){
+    const PeriodoColetaMassa = parseInt(localStorage.getItem('PeriodoColetaMassa'));
+       // Cria um html
+  let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">SCRIPT - MASS COLETA</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de áudio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+           <small>
+        <strong id="movendoTexto">
+            Coletando Us Rec v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="info"></span><span id="Inforot"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+let Inserir = document.getElementById('contentContainer');
+
+   // Adiciona a nova div antes da divBorda
+    Inserir.insertAdjacentHTML('beforebegin', $html);
+
+    function atualizarTempoRestante() {
+        // Obtém a referência para o elemento com o ID "horas"
+    var infopux = document.getElementById('horas');
+
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximoCarregamentoR = localStorage.getItem('proximoCarregamentoMcoleta');
+    if (proximoCarregamentoR) {
+        proximoCarregamentoR = new Date(proximoCarregamentoR);
+    } else {
+        // Executa o script imediatamente
+        executarScript();
+
+        // Define a próxima hora de carregamento para 2 horas após a execução
+        proximoCarregamentoR = new Date();
+        proximoCarregamentoR.setMinutes(proximoCarregamentoR.getMinutes() + (PeriodoColetaMassa + 3));
+        // Salva a próxima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoMcoleta', proximoCarregamentoR);
+    }
+
+    function executarScript() {
+    $.getScript('https://shinko-to-kuma.com/scripts/massScavenge.js');
+    setTimeout(function() {
+    document.getElementsByClassName('btn btnSophie')[1].click();
+    }, 15000);
+
+    setTimeout(function() {
+        var nb = 0;
+        var $botoes = $('.btnSophie');
+        function clickss() {
+            if ($botoes.length > nb) {
+                $botoes.eq(nb).click();
+                nb++;
+                setTimeout(clickss, 1000);
+            } else {
+                $('#x').click();
+            }
+        }
+        clickss();
+    }, 30000);
+    }
+
+    function atualizarR() {
+        // Obtém a hora atual
+        var agora = new Date();
+
+        // Verifica se é hora de recarregar a página
+        if (agora >= proximoCarregamentoR) {
+            localStorage.removeItem('proximoCarregamentoMcoleta');
+            // Recarrega a página
+            location.reload();
+        } else {
+            // Calcula o tempo restante até o próximo carregamento
+            var tempoRestante = proximoCarregamentoR - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = "Próxima atualização em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conteúdo do elemento com o tempo restante formatado
+            infopux.textContent = tempoRestanteFormatado;
+
+            // Chama a função novamente após 1 segundo
+            setTimeout(atualizarR, 1000);
+        }
+    }
+
+    // Chama a função pela primeira vez
+    atualizarR();
+}
+// Chama a função para iniciar o contador regressivo
+atualizarTempoRestante();
+    var v4 = 3;
+    var valor4 = localStorage.getItem('check' + v4);
+    var estado4 = valor4 === 'true';
+    if(estado4){ var conf4 = 'ok'}
+    if(conf4 === 'ok'){
+function redirecionar(){
+    var temp_farm = parseInt(localStorage.getItem('ColetaM'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_farm);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+            var redirecionamentos = [
+    { screen: "main", delay: 11000 },
+    { screen: "am_farm", delay: 13000 },
+    { screen: "place&mode=scavenge", delay: 15000 },
+    { screen: "place&mode=scavenge_mass", delay: 20000 },
+    { screen: "market&mode=call", delay: 1000 },
+    { screen: "market&mode=traders", delay: 3000 },
+    { screen: "statue&mode=overview", delay: 5000 },
+    { screen: "snob&mode=coin", delay: 7000 },
+    { screen: "train", delay: 9000 }
+];
+
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+    }
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+    let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - Coletao";
+    document.title = novoTitulo;
+
+}
+//==================================================== Script Balancear com Clusters =============================================================
+const BalanceamentoAtiva = localStorage.getItem('BalanceamentoAtiva');
+if(window.location.href.includes('screen=market&mode=traders') && BalanceamentoAtiva === 'S'){
+    const PeriodoBalanceamento = parseInt(localStorage.getItem('PeriodoBalanceamento'));
+    const QuantiClusters = localStorage.getItem('QuantiClusters');
+
+    // Cria um html
+  let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">BALANCEANDO REC</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de audio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+           <small>
+        <strong id="movendoTexto">
+            Balanceando Us rec v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="Inforot"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+let Inserir = document.getElementById('contentContainer');
+
+   // Adiciona a nova div antes da divBorda
+    Inserir.insertAdjacentHTML('beforebegin', $html);
+
+    function atualizarTempoRestante() {
+    // Obtém a referência para o elemento com o ID "horas"
+    var horasElement = document.getElementById('horas');
+
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximoCarregamento = localStorage.getItem('proximoCarregamentoBalanceC');
+    if (proximoCarregamento) {
+        proximoCarregamento = new Date(proximoCarregamento);
+    } else {
+        // Executa o script imediatamente
+        executarScript();
+
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximoCarregamento = new Date();
+        proximoCarregamento.setMinutes(proximoCarregamento.getMinutes() + PeriodoBalanceamento);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoBalanceC', proximoCarregamento);
+    }
+
+    function executarScript() {
+        // Coloque aqui o c digo que deseja executar quando a p gina for carregada
+        $.getScript('https://dl.dropboxusercontent.com/s/bytvle86lj6230c/resBalancer.js?dl=0');void(0)
+
+          // Configura o valor do campo de entrada diretamente pela ID
+     setTimeout(function() {
+            document.getElementById('nr_clusters').value = QuantiClusters;
+            }, 5000);
+
+    setTimeout(function() {
+    document.getElementsByClassName('btn evt-confirm-btn btn-confirm-yes')[2].click();
+    }, 7000);
+
+setInterval (function clicarEmCadaBotao() {
+    // Seleciona todos os bot es com a classe 'btn_send'
+    var botoes = document.querySelectorAll('.btn_send');
+    var index = 0;
+    // Fun  o para clicar em um bot o e avan ar para o pr ximo ap s 1 segundo
+    function clicarBotao() {
+        // Verifica se h  mais bot es para clicar
+        if (index < botoes.length) {
+            // Simula o clique no bot o atual
+            botoes[index].click();
+            index++; // Avan a para o pr ximo bot o
+            // Configura um timeout para clicar no pr ximo bot o ap s 1 segundo
+            setTimeout(clicarBotao, 1000);
+        }else {
+            function fecharContainer() {
+                      $('#div_container').remove();
+                    }
+            // Se todos os bot es foram clicados, fecha o cont iner
+            fecharContainer();
+        }
+
+    }
+
+    // Inicia o processo clicando no primeiro bot o
+    clicarBotao();
+}, 15000);
+    }
+
+    function atualizar() {
+        // Obt m a hora atual
+        var agora = new Date();
+
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximoCarregamento) {
+            localStorage.removeItem('proximoCarregamentoBalanceC');
+            // Recarrega a p gina
+            location.reload();
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximoCarregamento - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = "Próxima atualização em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            horasElement.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizar, 1000);
+        }
+    }
+    // Chama a fun  o pela primeira vez
+    atualizar();
+}
+// Chama a fun  o para iniciar o contador regressivo
+atualizarTempoRestante();
+    var v5 = 5;
+    var valor5 = localStorage.getItem('check' + v5);
+    var estado5 = valor5 === 'true';
+    if(estado5){ var conf5 = 'ok'}
+    if(conf5 === 'ok'){
+function redirecionar(){
+    var temp_farm = parseInt(localStorage.getItem('CBalance'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_farm);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+            var redirecionamentos = [
+    { screen: "main", delay: 7000 },
+    { screen: "am_farm", delay: 9000 },
+    { screen: "place&mode=scavenge", delay: 11000 },
+    { screen: "place&mode=scavenge_mass", delay: 13000 },
+    { screen: "market&mode=call", delay: 15000 },
+    { screen: "market&mode=traders", delay: 20000 },
+    { screen: "statue&mode=overview", delay: 1000 },
+    { screen: "snob&mode=coin", delay: 3000 },
+    { screen: "train", delay: 5000 }
+];
+
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+    }
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - Balanço";
+    document.title = novoTitulo;
+}
+//==================================================== Script Cunhar em Massa ====================================================================
+const CunhagemMassaAtiva = localStorage.getItem('CunhagemMassaAtiva');
+if (document.getElementById('coin_overview_table') && CunhagemMassaAtiva === 'S') {
+    const PeriodoCunhaMassa = parseInt(localStorage.getItem('PeriodoCunhaMassa'));
+// Cria um html
+  let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">CUNHAR EM MASSA</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="0.9" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+           <small>
+        <strong>
+            Cunhando muita Mueda v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="Inforot"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+   // <source src="https://cdn.freesound.org/previews/729/729393_8432823-lq.mp3" type="audio/mpeg">
+let Inserir = document.getElementById('contentContainer');
+
+   // Adiciona a nova div antes da divBorda
+    Inserir.insertAdjacentHTML('beforebegin', $html);
+
+function atualizarTempoRestante() {
+    // Obtém a referência para o elemento com o ID "horas"
+    var horasElement = document.getElementById('horas');
+
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximoCarregamento = localStorage.getItem('proximoCarregamentocoinss');
+    if (proximoCarregamento) {
+        proximoCarregamento = new Date(proximoCarregamento);
+    } else {
+        // Executa o script imediatamente
+        executarScript();
+        // Define a próxima hora de carregamento para 2 horas após a execução
+        proximoCarregamento = new Date();
+        proximoCarregamento.setMinutes(proximoCarregamento.getMinutes() + PeriodoCunhaMassa);
+        // Salva a próxima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentocoinss', proximoCarregamento);
+    }
+
+    function executarScript() {
+        // Coloque aqui o código que deseja executar quando a página for carregada
+        setTimeout(function() {
+           // Seleciona o botão "Selecionar" pelo ID
+                   const btnSelecionar = document.getElementById('select_anchor_top');
+           // Dispara um evento de clique no botão
+            setTimeout(function(){btnSelecionar.click();},1000);
+            setTimeout(function(){document.getElementsByClassName("mint_multi_button btn")[0].click();},3000);
+    },5000);}
+
+    function atualizar() {
+        // Obtém a hora atual
+        var agora = new Date();
+
+        // Verifica se é hora de recarregar a página
+        if (agora >= proximoCarregamento) {
+            localStorage.removeItem('proximoCarregamentocoinss');
+            // Recarrega a página
+                window.location.reload();
+        } else {
+            // Calcula o tempo restante até o próximo carregamento
+            var tempoRestante = proximoCarregamento - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = "Próxima Cunhagem em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conteúdo do elemento com o tempo restante formatado
+            horasElement.textContent = tempoRestanteFormatado;
+
+            // Chama a função novamente após 1 segundo
+            setTimeout(atualizar, 1000);
+        }
+    }
+
+    // Chama a função pela primeira vez
+    atualizar();
+}
+
+// Chama a função para iniciar o contador regressivo
+atualizarTempoRestante();
+    var v7 = 7;
+    var valor7 = localStorage.getItem('check' + v7);
+    var estado7 = valor7 === 'true';
+    if(estado7){ var conf7 = 'ok'}
+    if(conf7 === 'ok'){
+function redirecionar(){
+    var temp_farm = parseInt(localStorage.getItem('CCMass'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_farm);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+            var redirecionamentos = [
+    { screen: "main", delay: 3000 },
+    { screen: "am_farm", delay: 5000 },
+    { screen: "place&mode=scavenge", delay: 7000 },
+    { screen: "place&mode=scavenge_mass", delay: 9000 },
+    { screen: "market&mode=call", delay: 11000 },
+    { screen: "market&mode=traders", delay: 13000 },
+    { screen: "statue&mode=overview", delay: 15000 },
+    { screen: "snob&mode=coin", delay: 20000 },
+    { screen: "train", delay: 1000 }
+];
+
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+    }
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+    let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - CUNHANDO";
+    document.title = novoTitulo;
+}
+//==================================================== script Farm ===============================================================================
+ if(window.location.href.includes('&screen=am_farm')){
+
+    // Cria um html
+  let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">FARMANDO</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de audio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+           <small>
+        <strong id="movendoTexto">
+            Up D'a Vila v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="Inforot"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+let Inserir = document.getElementById('contentContainer');
+
+   // Adiciona a nova div antes da divBorda
+    Inserir.insertAdjacentHTML('beforebegin', $html);
+    var v1 = 1;
+    var valor1 = localStorage.getItem('check' + v1);
+    var estado1 = valor1 === 'true';
+    if(estado1){ var conf1 = 'ok'}
+    if(conf1 === 'ok'){
+function redirecionar(){
+    var temp_farm = parseInt(localStorage.getItem('Rfarm'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_farm);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+            var redirecionamentos = [
+    { screen: "main", delay: 15000 },
+    { screen: "am_farm", delay: 20000 },
+    { screen: "place&mode=scavenge", delay: 1000 },
+    { screen: "place&mode=scavenge_mass", delay: 3000 },
+    { screen: "market&mode=call", delay: 5000 },
+    { screen: "market&mode=traders", delay: 7000 },
+    { screen: "statue&mode=overview", delay: 9000 },
+    { screen: "snob&mode=coin", delay: 11000 },
+    { screen: "train", delay: 13000 }
+];
+
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+}
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - Farming";
+    document.title = novoTitulo;
+    }
+//==================================================== script Treinar Pala =======================================================================
+const UparPaladinoAtiva = localStorage.getItem('UparPaladinoAtiva');
+if(window.location.href.includes('screen=statue&mode=overview') && UparPaladinoAtiva === 'S'){
+    const PeriodoUparPaladino = parseInt(localStorage.getItem('PeriodoUparPaladino'));
+// Obtém a NodeList de elementos com a classe "name"
+var elementosName = document.getElementsByClassName("name");
+
+for (var i = 0; i < elementosName.length; i++) {
+    // Cria uma checkbox para cada elemento
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = "checkboxp_" + i; // Define um ID único para cada checkbox
+    checkbox.name = "checkbox_group"; // Define um nome comum para o grupo de checkboxes
+    checkbox.classList.add("Select_pala"); // Adiciona uma classe, se necessário
+
+    // Adiciona a checkbox antes do elemento com a classe "name"
+    elementosName[i].parentNode.insertBefore(checkbox, elementosName[i].nextSibling);
+
+    // Verifica se há um estado salvo para a checkbox
+    var checkboxpala = localStorage.getItem("checkboxp_" + i);
+    if (checkboxpala === "true") {
+        checkbox.checked = true;
+    }
+
+
+    // Adiciona um ouvinte de evento para salvar o estado da checkbox no localStorage
+    checkbox.addEventListener("change", function () {
+        localStorage.setItem(this.id, this.checked);
+    });
+}
+
+// Localize o elemento <div class="knight_card_container" style="width: 824px">
+const knightCardContainer = document.getElementById('contentContainer');
+
+// Verifique se o elemento foi encontrado
+    	let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">PALA TRAING</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de áudio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+        <table class="content-border" width="100%" style="margin-bottom: 5px;"><tbody><tr>`;
+var elementAction = document.getElementsByClassName("action");
+		BuildingStatue.knights[Object.keys(BuildingStatue.knights)[0]].usable_regimens.forEach(function (el, i) {
+
+        	$html += `
+                <td style="background-color: orange;">
+                    <div class="time">
+                        <input type="radio" name="train-knights" value="${i}">
+                        <span style="margin-bottom: 1px" class="icon header time"></span>${String(
+                            Math.floor(
+                                el.duration / 3600
+                            )
+                        ).padStart(2, '0')}:${String(
+                            Math.floor(
+                                (el.duration % 3600) / 60
+                            )
+                        ).padStart(2, '0')}:${String(
+                            Math.floor(el.duration % 60)
+                        ).padStart(2, '0')}
+                    </div>
+                </td>`;
+    	}
+	);
+
+	 $html += `</tr>
+        </tbody>
+    </table>
+    <style>
+    #start.hidden,
+    #save.hidden {
+        display: none;
+    }
+</style>
+    <div style="padding-top: 4px; text-align: right;">
+        <input type="button" id="start" class="btn hidden" value="Start Training">
+        <input type="button" id="save" class="btn hidden" value="Save Options">
+    </div>
+    <br>
+    <small>
+        <strong>
+            Treinando Us Pala v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="Inforot"></span>
+        </strong>
+    </small><style>
+    .ligarDesligar {
+            border: 1px solid #0080ff;
+            box-shadow: 0 0 20px 20px rgb(38 38 38) inset, inset 0px 0px 0 0 rgb(0, 255, 0);
+            -webkit-transition: all 150ms ease-in-out;
+            transition: all 150ms ease-in-out;
+            display: inline-block;
+            padding: 5px;
+            font-Size: 9px;
+            font-Weight: bolder;
+            cursor: pointer;
+            border-Radius: 5px;
+            margin: 3px;
+            line-Height: normal;
+        }
+        .ligarDesligar:hover{
+            box-shadow: 0 0 15px 0 #3498db inset, 0 0 15px 4px #3498db;
+        }
+        .ligarDesligar.on { /* Aplicando sombra quando o botão está ativado */
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+</style>`;
+    knightCardContainer.insertAdjacentHTML('beforebegin', $html);
+	let val = Number(localStorage.getItem('Statue'));
+
+	$(`input[value="${val === undefined ? 0 : val}"]`).prop('checked', true);
+
+	$('#save').on('click', function () {
+		localStorage.setItem('Statue', $('input[type="radio"]:checked').val());
+		UI.SuccessMessage(
+			'The settings have been saved successfully.'
+		);
+	});
+	$('#start').on('click', function (e) {
+		e.preventDefault();
+		val = Number($('input[type="radio"]:checked').val());
+        var checkpala = document.getElementsByClassName('Select_pala');
+        var x = 0;
+		Object.keys(BuildingStatue.knights).forEach((i, el) => {
+    const knightLevel = BuildingStatue.knights[i].level;
+    // Verifica se o nível do cavaleiro é menor que x
+        if (x < checkpala.length) {
+           if (!checkpala[x].checked) {
+              if (elementAction[x].textContent.includes("casa")) {
+                if (knightLevel < 30) {
+                    setTimeout(function () {
+                        TribalWars.post(
+                            game_data.link_base.replace('amp;screen=', '') +
+                            'screen=statue&ajaxaction=regimen',
+                            null, {
+                                knight: BuildingStatue.knights[i].id,
+                                regimen: BuildingStatue.knights[i].usable_regimens[val].id,
+                            },
+                            function () {
+                                UI.SuccessMessage(_('386e303de70e5a2ff1b5cabefb0666f5'));
+                            },
+                            function (r) {
+                                console.error(r);
+                            }
+                        );
+                    }, el * 250);
+                }
+            }
+        }
+    }x++;
+});
+	});
+
+    function atualizarTempoRestante() {
+    // Obtém a referência para o elemento com o ID "horas"
+    var horasElement = document.getElementById('horas');
+
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximoCarregamento = localStorage.getItem('proximoCarregamentoPtraing');
+    if (proximoCarregamento) {
+        proximoCarregamento = new Date(proximoCarregamento);
+    } else {
+        // Executa o script imediatamente
+        executarScript();
+
+        // Define a próxima hora de carregamento para 2 horas após a execução
+        proximoCarregamento = new Date();
+        proximoCarregamento.setMinutes(proximoCarregamento.getMinutes() + PeriodoUparPaladino);
+        // Salva a próxima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoPtraing', proximoCarregamento);
+    }
+
+    function executarScript() {
+
+        setTimeout(function() {
+            document.getElementById('start').click();
+        }, 15000); // Após a execução, espera 15s para clicar para treinar
+    }
+
+    function atualizar() {
+        // Obtém a hora atual
+        var agora = new Date();
+
+        // Verifica se é hora de recarregar a página
+        if (agora >= proximoCarregamento) {
+            localStorage.removeItem('proximoCarregamentoPtraing');
+            // Recarrega a página
+             window.location.reload();
+            //setTimeout(window.location.reload, 1000);
+        } else {
+            // Calcula o tempo restante até o próximo carregamento
+            var tempoRestante = proximoCarregamento - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = "Próximo Treinamento em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conteúdo do elemento com o tempo restante formatado
+            horasElement.textContent = tempoRestanteFormatado;
+
+            // Chama a função novamente após 1 segundo
+            setTimeout(atualizar, 1000);
+        }
+    }
+
+    // Chama a função pela primeira vez
+    atualizar();
+}
+
+// Chama a função para iniciar o contador regressivo
+atualizarTempoRestante();
+    var v6 = 6;
+    var valor6 = localStorage.getItem('check' + v6);
+    var estado6 = valor6 === 'true';
+    if(estado6){ var conf6 = 'ok'}
+    if(conf6 === 'ok'){
+function redirecionar(){
+    var temp_farm = parseInt(localStorage.getItem('CupPala'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_farm);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+            var redirecionamentos = [
+    { screen: "main", delay: 5000 },
+    { screen: "am_farm", delay: 7000 },
+    { screen: "place&mode=scavenge", delay: 9000 },
+    { screen: "place&mode=scavenge_mass", delay: 11000 },
+    { screen: "market&mode=call", delay: 13000 },
+    { screen: "market&mode=traders", delay: 15000 },
+    { screen: "statue&mode=overview", delay: 20000 },
+    { screen: "snob&mode=coin", delay: 1000 },
+    { screen: "train", delay: 3000 }
+];
+
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+    }
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+    let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - TREINANDO";
+    document.title = novoTitulo;
+}
+//==================================================== Script Etiquetador ========================================================================
+const EtiquetadorAtiva = localStorage.getItem('EtiquetadorAtiva');
+if(window.location.href.includes('mode=incomings') && EtiquetadorAtiva === 'S'){
+    const Alarmenobre = localStorage.getItem('Alarmenobre');
+    let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">ETIQUETANDO COMANDOS</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de áudio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+           <small>
+        <strong id="movendoTexto">
+            As Etiquetas v3.0 by<span style="color: red"> Zigaeezz </span><span id="extra"></span><span id="horas"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+let Inserir = document.getElementById('contentContainer');
+
+   // Adiciona a nova div antes da divBorda
+    Inserir.insertAdjacentHTML('beforebegin', $html);
+        function Aleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+    var cd = Aleatorio(7, 17); // intervalo de att em minutos
+    setTimeout(function(){location.reload();}, cd*60*1000);
+
+    // Obtém a referência para o elemento com o ID "horas"
+    let horasElement = document.getElementById('horas');
+    let extraElement = document.getElementById('extra');
+
+		var d = new Date(),
+		  h = String("0" + d.getHours()).slice(-2),
+		  m = String("0" + d.getMinutes()).slice(-2),
+		  s = String("0" + d.getSeconds()).slice(-2);
+		var t = h + ":" + m + ":" + s;
+		var seleciona = $("#select_all");
+		var etiqueta = $('input[value=Etiqueta]');
+
+	  function identificar(){
+		 var millis = 0;
+		 function setMillis()
+		 {
+			var tmp = millis;
+			millis += 100;
+			return tmp;
+		 }
+
+		 (function () {
+			function getOriginCoords(i, row) {
+			   var villName = $(row).children('td').eq(2).text();
+			   return villName.match(/\d{3}\|\d{3}/)[0];
+			}
+
+			function count(coords) {
+			   return coords.reduce(function (acc, coord) {
+				  if (acc[coord] == undefined) {
+					 acc[coord] = 1;}
+				  else {
+					 acc[coord]++; }
+
+				  return acc; }, {}); }
+
+			var $rows = $('#incomings_table tbody').children('.row_a, .row_b');
+			var coords = $rows.map(getOriginCoords).toArray();
+			var attackCount = count(coords);
+			$rows.each(function (i, row) {
+			   var coords = getOriginCoords(i, row);
+			   var count = attackCount[coords];
+			   $(row).children('td').eq(0).prepend(String("00" + count).slice(-3));
+
+			   var nome = $(row).find(".quickedit-label").text().replace(/\t/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace("                        ","").replace(" DESIGNORAR!","");
+			   var player = $(row).find("td a[href*='info_player&id']").text();
+			   var distancia = $(row).find("td:contains('.'):not(:contains('às'))").last().text();
+			  // alert(distancia);
+			   var hora = $(row).find("td:contains(s)").text().split("às")[1].split(":")[0];
+			   if(nome.match(/nobre/gi) && !nome.match(/morto/gi) && !nome.match(/ok/gi)){
+                  $(row).children('td').css({ "background-color" : "yellow" });
+				//  $(row).find(".rename-icon").click();
+				 // $(row).find(".quickedit-edit input[type='text']").val(nome.split(" ")[0] + " " + nome.split(" ")[1] + " " + nome.split(" ")[2] + " " + player + " ALFACE ?");
+                //  $(row).find(".quickedit-edit input[type='button']").click();
+			   }
+			   setTimeout(function()
+						  {
+				 if(!nome.match(/ataque/gi) && !nome.match(/nobre/gi) && !nome.match(/desv/gi) && !nome.match(/suporte/gi) && !nome.match(/apoio/gi) && !nome.match(/morto/gi) && !nome.match(/ok/gi) && !nome.match(/defendido/gi)){
+						 if (count == 1) {
+						$(row).children('td').css({ "background-color" : "violet" });
+						if(!nome.match(/full/gi) && !nome.match(/desvia/gi)){
+						   if(hora > 0 && hora < 7){
+							  $(row).children('td').css({ "background-color" : "aquamarine" });
+							  if(!nome.match(/bn/gi)){
+								// $(row).find(".rename-icon").click();
+								// $(row).find(".quickedit-edit input[type='text']").val(nome.split(" ")[0] + " " + nome.split(" ")[1] + " " + nome.split(" ")[2] + " " + player  + " FULL NO BN ?");
+								// $(row).find(".quickedit-edit input[type='button']").click();
+							  }
+						   }
+						   else{
+							 // $(row).find(".rename-icon").click();
+							 // $(row).find(".quickedit-edit input[type='text']").val(nome.split(" ")[0] + " " + nome.split(" ")[1] + " " + nome.split(" ")[2] + " " + player  + " FULL?");
+							 // $(row).find(".quickedit-edit input[type='button']").click();
+						   }
+						}
+					 }
+
+					 if (count > 1) {
+						$(row).children('td').css({ "background-color" : "white" });
+						/*  if(eh()){
+							  $(row).find(".rename-icon").click();
+									   $(row).find(".quickedit-edit input[type='text']").val(nome.split(" ")[0] + " " + nome.split(" ")[1] + " " + nome.split(" ")[2] + " " + player  + " checar se é Nobre!");
+						   }
+						   else{*/
+						if(!nome.match(/fake/gi)){
+						   if(hora > 0 && hora < 7){
+
+							  $(row).children('td').css({ "background-color" : "white" });
+							  if(!nome.match(/bn/gi)){
+								// $(row).find(".rename-icon").click();
+								// $(row).find(".quickedit-edit input[type='text']").val(nome.split(" ")[0] + " " + nome.split(" ")[1] + " " + nome.split(" ")[2] + " " + player  + " FAKE? BN ");
+								// $(row).find(".quickedit-edit input[type='button']").click();
+							  }
+						   }
+						   else{
+							//  $(row).find(".rename-icon").click();
+							//  $(row).find(".quickedit-edit input[type='text']").val(nome.split(" ")[0] + " " + nome.split(" ")[1] + " " + nome.split(" ")[2] + " " + player  + "  FAKE? ");
+							 // $(row).find(".quickedit-edit input[type='button']").click();
+						   }
+						}
+					 }
+				  }
+				  // }
+			   }, setMillis());
+			});
+		 })();
+	  } identificar();
+   function etiquetar(){
+			// seleciona.click();
+			etiqueta.click();
+		 }
+      var S_incoming = localStorage.getItem('valorSalvo');
+          if (S_incoming === null) {S_incoming = 0;}
+  function notific(){
+        var incoming = parseInt($("#incomings_amount").text());
+              if (incoming === null) {incoming = 0;}
+    if(incoming > 0){ var tempoRestanteFormatado = "Estamos em Guerra: " + incoming + " Ataques a caminho";
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            horasElement.textContent = tempoRestanteFormatado;}
+   else{ tempoRestanteFormatado = "Estamos em Paz";
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            horasElement.textContent = tempoRestanteFormatado;}
+    }
+    notific();
+
+function atualizar() {
+    var incoming = parseInt($("#incomings_amount").text());
+    var result = incoming - S_incoming;
+              if (incoming === null) {incoming = 0;}
+        if (result !== 0) {
+         localStorage.setItem('valorSalvo', incoming);
+            setTimeout(function () { location.reload(); }, 2000);
+        }
+    setTimeout(atualizar, 30*1000);
+}
+atualizar();
+
+            // Seleciona todos os elementos com a classe "quickedit-label"
+        var elements = document.querySelectorAll('.quickedit-label');
+         // Seleciona todas as checkboxes com nome começando por "id_"
+          const checkboxes = document.querySelectorAll('input[type="checkbox"][name^="id_"]');
+
+        var elementosAtuais = 0;
+        var elementosA = 0;
+for (let i = 0; i < elements.length; i++) {
+    const element = elements[i];
+    const text = element.innerText; // Obtém o texto dentro do elemento
+    if (text.includes('Nobre')) {
+                elementosAtuais++; }
+    else if(text.includes('Ataque')) {
+        const checkbox = checkboxes[i];
+        checkbox.checked = true;
+        elementosA++; }
+        }
+      if(elementosA > 0) { setTimeout(etiquetar, 29000); }
+        // Variável para armazenar o número de elementos "Nobre" na última verificação
+        var elementosAnteriores = localStorage.getItem('Nobres');
+        if (elementosAnteriores === null) { elementosAnteriores = 0; }
+
+        // Função para verificar e atualizar o número de elementos "Nobre"
+        function verificarElementos() {
+            // Verifica se o número de elementos "Nobre" mudou desde a última verificação
+            var diferenca = elementosAtuais - elementosAnteriores;
+            // Executa ação dependendo da diferença de elementos
+            if (diferenca > 0) {
+                var extraFormatado = "Mais Nobres a caminho, Fique em Alerta! || ";
+                // Atualiza o conteúdo do elemento com o tempo restante formatado
+                extraElement.textContent = extraFormatado;
+                if(Alarmenobre === 'S'){
+                funcaoParaMais();}
+            } else {
+                extraFormatado = "Comandos de Nobres identificados: " + elementosAtuais + " || ";
+                // Atualiza o conteúdo do elemento com o tempo restante formatado
+                extraElement.textContent = extraFormatado;
+            }
+        // Atualiza a variável com o número atual de elementos "Nobre"
+            elementosAnteriores = elementosAtuais;
+            localStorage.setItem('Nobres', elementosAnteriores);
+        }
+
+        // Chama a função verificarElementos inicialmente e a cada intervalo de tempo (por exemplo, a cada 2 segundos)
+        verificarElementos(); // Chamada inicial
+function funcaoParaMais() {
+// Cria o elemento de áudio com as configurações desejadas
+                            let $Html5 = `<tbody><tr><td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;">
+                                           <audio preload="auto" autoplay volume="0.9" loop>
+                                           <source src="https://cdn.freesound.org/previews/174/174021_3240885-lq.mp3" type="audio/mpeg">
+                                              Seu navegador não suporta o elemento de audio.
+                                                 </audio></div></td></tr></tbody>`;
+
+                                                   // Adiciona o elemento de áudio ao final do body
+                                                        document.body.insertAdjacentHTML('beforeend', $Html5);
+}
+    let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - ETIQUETANDO";
+    document.title = novoTitulo;
+}
+//=================================================== Script Recruit =============================================================================
+var train = document.getElementById('train_form'); const RecruitAtivo = localStorage.getItem('RecruitAtivo');
+if(train && RecruitAtivo === 'S'){
+
+    // Cria um html
+  let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">RECRUTANDO</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de audio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+           <small>
+        <strong id="movendoTexto">
+            Recrutando Us Brabo v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="Inforot"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+let Inserir = document.getElementById('contentContainer');
+   // Adiciona a nova div antes da divBorda
+Inserir.insertAdjacentHTML('beforebegin', $html);
+let $InfoTimeTrops = `<div id="Max_recruit" class="clearfix vis " style="width: 890px; border: 1px solid #7d510f; margin: 0px 5px 15px 5px;"><h4>Meta de recrutamento: <span id="nameModel">Padrão</span></h4>
+<div>
+ <table class="vis" style="border-collapse:separate; border-spacing: 3px; table-layout: fixed; width: 100%;"><tbody><tr><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="spear"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spear.png" data-title="Lanceiro"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="sword"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_sword.png" data-title="Espadachim"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="axe"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_axe.png" data-title="Bárbaro"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="archer"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="spy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spy.png" data-title="Explorador"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="light"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_light.png" data-title="Cavalaria leve"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="marcher"><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Arqueiro a Cavalo"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="heavy"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="ram"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_ram.png" data-title="Aríete"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="catapult"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_catapult.png" data-title="Catapulta"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="knight"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_knight.png" data-title="Paladino"></a></th><th style="width: 10px">
+  <a href="#" class="unit_link" data-unit="snob"><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_snob.png" data-title="Nobre"></a></th></tr><tr id="ModeloC" class="units-row">
+  <td style="width: 10px" id="spear" class="nowrap unit-item unit-item-spear"></td>
+  <td style="width: 10px" id="sword" class="nowrap unit-item unit-item-sword"></td>
+  <td style="width: 10px" id="axe" class="nowrap unit-item unit-item-axe"></td>
+  <td style="width: 10px" id="archer" class="nowrap unit-item unit-item-archer"></td>
+  <td style="width: 10px" id="spy" class="nowrap unit-item unit-item-spy"></td>
+  <td style="width: 10px" id="light" class="nowrap unit-item unit-item-light"></td>
+  <td style="width: 10px" id="marcher" class="nowrap unit-item unit-item-archer"></td>
+  <td style="width: 10px" id="heavy" class="nowrap unit-item unit-item-heavy"></td>
+  <td style="width: 10px" id="ram" class="nowrap unit-item unit-item-ram"></td>
+  <td style="width: 10px" id="catapult" class="nowrap unit-item unit-item-catapult"></td>
+  <td style="width: 10px" id="knight" class="nowrap unit-item unit-item-knight"></td>
+  <td style="width: 10px" id="snob" class="nowrap unit-item unit-item-snob"></td></tr>
+  </tbody></table></div></div>
+  <div style="font-size: 14px;" align="left"><table><tbody><tr><td>
+                            <label for="modelNamer">Quantidade de tropas a recrutar por vez:</label>
+                                <input type="number" value ="5" id="quantR" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></tr></td>
+                                <tr><td><label for="modelNamer">Defina o Máximo de Filas no Recrutamento:</label>
+                                <input type="number"  value="3" id="quantRF" class="unitsInput input-nicer" style="width: 40px; font-size: 14px;"></td><td></td><td></td><td align="right">
+                                <select id="chosen" style="width: 150px; font-size: 14px;">
+                                    <option value="xxx">Recrutamento ON</option>
+                                    <option value="edict">Criar modelo</option>
+                                    <option value="Load">Carregar modelo</option>
+                                    <option value="rotact">Rotacionar vilas</option>
+                                </select></td></tr></tbody></table>
+                            </div>
+  <div id="carregarM" style="font-size: 14px; display: none;">
+                                <label for="modelRSelect">Selecionar Modelo:</label>
+                                <select id="modelRSelect" class="unitsInput input-nicer" style="width: 210px; font-size: 14px;"><option value="">Selecione um Modelo</option></select>
+                                <button id="deleteModelR" type="button" class="btn-modify">
+                                    <i class="fas fa-trash-alt"></i> Excluir Modelo
+                                </button>
+                                <button id="setModelButtonR" type="button" class="btn-modify">
+                                    <i class="fas fa-cogs"></i> Definir Modelo
+                                </button>
+                            </div>
+ <div id="Rotacionarsss" style="font-size: 14px; display: none;">
+                                <label for="modelRSelects">Ativar rotação de Aldeias:</label>
+                                <select  id="Rotacionarss" class="unitsInput input-nicer" style="width: 70px; font-size: 14px;"><option value="Sim">Sim</option><option value="Nao">Não</option></select>
+                                <label for="modelRSelects">Ir á proxima vila em: </label>
+                                <select  id="TimeRotacionarss" style="width: 210px; font-size: 14px;"><option value="30">30 segundos</option><option value="60">1 minuto</option><option value="120">2 minutos</option></select>
+                            </div>
+  <div id="ModeloE"  class="clearfix vis " style="width: 890px; display: none; border: 1px solid #7d510f; margin: 0px 5px 15px 5px;"><h4>Salvar Modelo:</h4><div><table class="vis" style="border-collapse:separate; border-spacing: 3px; table-layout: fixed; width: 100%;"><tbody><tr>
+  <td><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spear.png" data-title="Lanceiro"><input type="number" value="0" style="width: 80px" id="spearc" class="nowrap unit-item unit-item-spear"/></td>
+  <td><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_sword.png" data-title="Espadachim"><input type="number" value="0" style="width: 80px" id="swordc" class="nowrap unit-item unit-item-sword"/></td>
+  <td><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_axe.png" data-title="Bárbaro"><input type="number" value="0" style="width: 80px" id="axec" class="nowrap unit-item unit-item-axe"/></td>
+  <td><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_archer.png" data-title="Arqueiro"><input type="number" value="0" style="width: 80px" id="archerc" class="nowrap unit-item unit-item-archer"></td>
+  </tr><tr>
+  <td><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_spy.png" data-title="Explorador"><input type="number" value="0" style="width: 80px" id="spyc" class="nowrap unit-item unit-item-spy"/></td>
+  <td><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_light.png" data-title="Cavalaria leve"><input type="number" value="0" style="width: 80px" id="lightc" class="nowrap unit-item unit-item-light"/></td>
+  <td><img src="https://dsbr.innogamescdn.com/asset/c1748d3c/graphic/unit/unit_marcher.png" data-title="Arqueiro a Cavalo"><input type="number" value="0" style="width: 80px" id="marcherc" class="nowrap unit-item unit-item-archer"/></td>
+  </tr><tr>
+  <td><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_heavy.png" data-title="Cavalaria pesada"><input type="number" value="0" style="width: 80px" id="heavyc" class="nowrap unit-item unit-item-heavy"/></td>
+  <td><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_ram.png" data-title="Aríete"><input type="number" value="0" style="width: 80px" id="ramc" class="nowrap unit-item unit-item-ram"/></td>
+  <td><img src="https://dsbr.innogamescdn.com/asset/0e187870/graphic/unit/unit_catapult.png" data-title="Catapulta"><input type="number" value="0" style="width: 80px" id="catapultc" class="nowrap unit-item unit-item-catapult"/>
+  </td></tr></tbody></table>
+  <div style="font-size: 14px;">
+                                <label for="modelNamer">Nome do Modelo:</label>
+                                <input type="text" placeholder="Defina um nome para o modelo de Recrutamento" id="modelNamer" class="unitsInput input-nicer" style="width: 300px; font-size: 14px;">
+                                <button id="saveButtonr" type="button" class="btn-modify">
+                                    <i class="fas fa-save"></i> Salvar Modelo
+                                </button>
+                            </div></div></div>
+
+  `;
+
+let Insert = document.getElementById('contentContainer');
+   // Adiciona a nova div antes da divBorda
+Insert.insertAdjacentHTML('afterend', $InfoTimeTrops);
+$('<style>').text(`
+    #Max_recruit .units-row td,
+    #Max_recruit th {
+        display: none;
+    }
+`).appendTo('head');
+function carregarM(){
+let unitsr = ['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy', 'ram', 'catapult'];
+// Definindo valores padrão
+let defaultQuantities = {
+    spear: localStorage.getItem('lancas'),
+    sword: localStorage.getItem('espadas'),
+    axe: localStorage.getItem('barbaros'),
+    archer: localStorage.getItem('arcos'),
+    spy: localStorage.getItem('espioes'),
+    marcher: localStorage.getItem('arqueirosmontados'),
+    light: localStorage.getItem('cavalosleves'),
+    heavy: localStorage.getItem('cavalospesados'),
+    ram: localStorage.getItem('arietes'),
+    catapult: localStorage.getItem('catapas')
+};
+let unitsWithQuantities = {};
+unitsr.forEach(function(unit) {
+    // Recupera o valor armazenado no localStorage para a unidade
+    let storedValue = localStorage.getItem(unit);
+    // Se não houver valor no localStorage, usa o valor padrão
+    if (storedValue === null) {
+        storedValue = defaultQuantities[unit];
+        localStorage.setItem(unit, storedValue);
+    } else {
+        // Converte para número caso tenha sido armazenado como string
+        storedValue = Number(storedValue);
+    }
+    // Armazena o valor para a unidade
+    unitsWithQuantities[unit] = storedValue;
+});
+}carregarM();
+function RequestUnits() {
+    return $.get('/interface.php?func=get_unit_info').then(function ($xml) {
+        var $units = {};
+        $($xml).find('config').children().each(function () {
+            const unitName = this.tagName;
+          if(unitName === 'snob' || unitName === 'knight' ){}else{
+            const formattedTime = localStorage.getItem(`${unitName}`) || 0;
+
+         //   $units[unitName] = { speed, unitTime };
+
+            // Exibe apenas os elementos correspondentes da unidade requisitada
+            $('#Max_recruit th a[data-unit="' + unitName + '"]').closest('th').css('display', 'table-cell');
+            $('#Max_recruit #' + unitName).text(formattedTime).css('display', 'table-cell');
+          }
+        });
+    let texts = localStorage.getItem('modeloSelect');
+    document.getElementById('nameModel').textContent = texts;
+        return $units;
+    });
+}
+RequestUnits();
+// Atualiza o select com os modelos salvos no localStorage
+function updateModelSelect() {
+    let select = document.getElementById('modelRSelect');
+    select.innerHTML = '<option value="">Selecione um Modelo</option>'; // Reseta as opções
+
+    Object.keys(localStorage).forEach(key => {
+        if (key.startsWith('Modelo_')) {
+            let modelName = key.replace('Modelo_', '');
+            let option = document.createElement('option');
+            option.value = key;
+            option.textContent = modelName;
+            select.appendChild(option);
+        }
+    });
+}updateModelSelect();
+// Escutando a mudança no select
+document.getElementById('chosen').addEventListener('change', function() {
+    // Pegando o valor selecionado
+    const selectedValue = this.value;
+    // Verificando o valor selecionado
+    switch (selectedValue) {
+        case 'xxx':
+            document.getElementById('ModeloE').style.display = 'none';
+            document.getElementById('carregarM').style.display = 'none';
+            document.getElementById('Rotacionarsss').style.display = 'none';
+            break;
+
+        case 'edict':
+            document.getElementById('ModeloE').style.display = 'inline';
+            document.getElementById('carregarM').style.display = 'none';
+            document.getElementById('Rotacionarsss').style.display = 'none';
+            //location.reload();
+            break;
+
+        case 'Load':
+            // Ação para "Carregar modelo"
+           document.getElementById('ModeloE').style.display = 'none';
+           document.getElementById('carregarM').style.display = 'inline';
+            document.getElementById('Rotacionarsss').style.display = 'none';
+            // Aqui você pode colocar o código para carregar o modelo
+            break;
+        case 'rotact':
+            // Ação para "Carregar modelo"
+           document.getElementById('ModeloE').style.display = 'none';
+           document.getElementById('carregarM').style.display = 'none';
+            document.getElementById('Rotacionarsss').style.display = 'inline';
+            // Aqui você pode colocar o código para carregar o modelo
+            break;
+        default:
+            break;
+    }
+});
+document.getElementById('saveButtonr').addEventListener('click', function () {
+    let modelName = document.getElementById('modelNamer').value.trim(); // Nome do modelo
+    if (!modelName) {
+        alert('Por favor, insira um nome para o modelo.');
+        return;
+    }
+
+    let unitsr = ['spear', 'sword', 'axe', 'archer', 'spy', 'light', 'marcher', 'heavy', 'ram', 'catapult'];
+    let recruitmentModel = {};
+
+    // Captura os valores das inputs
+    unitsr.forEach(unit => {
+        let input = document.getElementById(unit + 'c');
+        if (input) {
+            recruitmentModel[unit] = parseInt(input.value) || 0;
+        }
+    });
+
+    // Salva no localStorage com o nome do modelo
+    localStorage.setItem(`Modelo_${modelName}`, JSON.stringify(recruitmentModel));
+
+    alert(`Modelo "${modelName}" salvo com sucesso!`);
+    updateModelSelect();
+});
+// Excluir modelo do localStorage e atualizar o select
+document.getElementById('deleteModelR').addEventListener('click', function () {
+    let select = document.getElementById('modelRSelect');
+    let selectedKey = select.value;
+
+    if (!selectedKey) {
+        alert('Selecione um modelo para excluir.');
+        return;
+    }
+
+    localStorage.removeItem(selectedKey); // Remove do localStorage
+    alert(`Modelo "${selectedKey.replace('Modelo_', '')}" excluído com sucesso!`);
+    updateModelSelect(); // Atualiza o select
+});
+// Definir modelo carregando valores e salvando no localStorage das unidades
+document.getElementById('setModelButtonR').addEventListener('click', function () {
+    let select = document.getElementById('modelRSelect');
+    let selectedKey = select.value;
+
+    if (!selectedKey) {
+        alert('Selecione um modelo para definir.');
+        return;
+    }
+
+    let modelData = JSON.parse(localStorage.getItem(selectedKey));
+    if (!modelData) {
+        alert('Erro ao carregar o modelo.');
+        return;
+    }
+
+    // Percorre todas as unidades e define os valores salvos
+    Object.keys(modelData).forEach(unit => {
+            localStorage.setItem(unit, modelData[unit]); // Salva no localStorage individual da unidade
+    });
+   localStorage.setItem('modeloSelect', selectedKey);
+    RequestUnits();
+    alert(`Modelo "${selectedKey.replace('Modelo_', '')}" definido com sucesso!`);
+});
+    let inputIds = ["quantR", "quantRF"];
+    let selects = [
+        { id: "Rotacionarss", storageKey: "RotON" },
+        { id: "TimeRotacionarss", storageKey: "RotTime" }
+    ];
+    inputIds.forEach(id => {
+        let input = document.getElementById(id);
+        // Carrega o valor salvo no localStorage, se existir
+        if (localStorage.getItem(id)) {
+            input.value = localStorage.getItem(id);
+        }
+        // Adiciona o evento de change para salvar no localStorage
+        input.addEventListener("change", function () {
+            localStorage.setItem(id, this.value);
+            console.log(`📌 [${id}] atualizado para: ${this.value}`);
+        });
+    });
+    selects.forEach(({ id, storageKey }) => {
+        let select = document.getElementById(id);
+        let savedValue = localStorage.getItem(storageKey);
+
+        // Se houver valor salvo, selecionar no dropdown
+        if (savedValue) {
+            select.value = savedValue;
+        }
+
+        // Adiciona evento para salvar a opção selecionada
+        select.addEventListener("change", function () {
+            localStorage.setItem(storageKey, this.value);
+        });
+    });
+function getTroopCount(unitName) {
+        const troopCountElement = $(`a[data-unit="${unitName}"]`).closest('tr').find('td:eq(2)');
+        if (troopCountElement.length) {
+            const troopCountText = troopCountElement.text().split('/')[1].trim(); // Pega apenas a parte DEPOIS da barra
+            const count = parseInt(troopCountText);
+            return count;
+        } else {
+            return null;
+        }
+    }
+function getNumberFromElement(id) {
+    let element = document.getElementById(id);
+    if (element) {
+        let match = element.textContent.match(/\((\d+)\)/); // Captura o número dentro dos parênteses
+        if (match) {
+            return parseInt(match[1], 10); // Converte para número inteiro
+        }
+    }
+    return null; // Retorna null se não encontrar
+}
+function validarPreencher(unidade, maxsalvo, quantatual) {
+    let Qtpvez = localStorage.getItem('quantR') || 5;
+    let Aunit = unidade;
+    let inputUnit = document.querySelector(`input[name="${Aunit}"]`);
+    const recruitAmount = Math.min(maxsalvo - quantatual);
+    if (recruitAmount > 0) {
+        $(`input[name="${Aunit}"]`).val(Qtpvez);
+        setTimeout(() => {
+            let botao = document.querySelector('input.btn.btn-recruit');
+            if (inputUnit && inputUnit.value > 0 && botao) {
+                botao.click();
+                console.log(`✅ Botão de recrutamento clicado!`);
+            }
+        }, 300);
+    }
+}
+async function processUnitsWithDelay() {
+    let unitsr = ['spear', 'sword', 'axe', 'archer', 'spy', 'marcher', 'light', 'heavy', 'ram', 'catapult'];
+    let delay = 1000; // Tempo de espera (em ms) entre cada execução
+    let statusUnits = {}; // Objeto para armazenar o status de cada unidade
+
+    for (const unit of unitsr) {
+        let savedCount = parseInt(localStorage.getItem(unit), 10) || 0; // Obtém a quantidade salva ou 0 se não existir
+        let currentCount = getTroopCount(unit); // Obtém a quantidade atual da função
+        let unitmax = getNumberFromElement(unit + '_0_a');
+        let Qtpvez = localStorage.getItem('quantR') || 5;
+
+        if (savedCount > currentCount && currentCount != null && unitmax >= Qtpvez) {
+            console.log(`⚠️ Unidade ${unit}: Salvo (${savedCount}) > Atual (${currentCount}). Preenchendo...`);
+            validarPreencher(unit, savedCount, currentCount);
+            statusUnits[unit] = true; // Define como true pois foi processado
+        } else {
+            statusUnits[unit] = false; // Salva como false pois não atendeu à condição
+        }
+
+        await new Promise(resolve => setTimeout(resolve, delay)); // Aguarda antes de continuar
+    }
+
+    // Verifica se todas as unidades que têm algum valor salvo para análise estão como false
+    let unidadesSalvas = Object.keys(statusUnits).filter(unit => localStorage.getItem(unit) !== null);
+    let todasFalharam = unidadesSalvas.every(unit => statusUnits[unit] === false);
+
+    if (todasFalharam) {
+        console.log("🚨 Recrutamento Concluido!");
+        localStorage.setItem('check' + 8, 'false'); localStorage.setItem('box8', 'false');
+    }
+}
+let xist = localStorage.getItem('RotTime') || 120;
+function recruit(){
+ let Qtfila = localStorage.getItem('quantRF') || 3;
+ let Rotime = localStorage.getItem('RotTime');
+ let condR = localStorage.getItem('RotON') || 'N';
+ let linhas = document.getElementsByClassName('sortable_row'); // Seleciona todas as linhas com a classe
+    if (linhas.length < (Qtfila - 1)) {processUnitsWithDelay();}
+    if (condR === 'S'){
+        if(xist <= 0){
+        var vai = document.getElementById('village_switch_right'); console.log('mudando de vila!')
+        let vai2 = $('.groupRight');
+       setTimeout(function(){if(vai){ vai.click();}},1*1000);
+       setTimeout(function(){if(vai2){ vai2.click();}},2*1000);}
+     xist = parseInt(xist) - 10;
+    }
+setTimeout(() => {
+    recruit();
+}, 16*1000);}recruit();
+
+    var v8 = 8;
+    var valor8 = localStorage.getItem('check' + v8);
+    var estado8 = valor8 === 'true';
+    if(estado8){ var conf8 = 'ok'}
+    if(conf8 === 'ok'){
+function redirecionar(){
+    var temp_farm = parseInt(localStorage.getItem('Rrecruit'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_farm);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+    var redirecionamentos = [
+    { screen: "main", delay: 1000 },
+    { screen: "am_farm", delay: 3000 },
+    { screen: "place&mode=scavenge", delay: 5000 },
+    { screen: "place&mode=scavenge_mass", delay: 7000 },
+    { screen: "market&mode=call", delay: 9000 },
+    { screen: "market&mode=traders", delay: 11000 },
+    { screen: "statue&mode=overview", delay: 13000 },
+    { screen: "snob&mode=coin", delay: 15000 },
+    { screen: "train", delay: 5 * 60 * 1000 }
+];
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+    }
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - Recruit";
+    document.title = novoTitulo;
+}
+//==================================================== Coleta ====================================================================================
+var coleta = document.getElementById('scavenge_screen');
+const ColetaAtiva = localStorage.getItem('ColetaAtiva');
+ if(coleta && ColetaAtiva === 'S'){
+const PeriodoColeta = parseInt(localStorage.getItem('PeriodoColeta'));
+    // Cria um html
+  let $html = `<div id="divScriptRodando">
+        <table align="center" id="avisoScript" width="100%" style="margin-bottom: 5px;">
+        <tbody><tr><td><table class="content-border" width="100%" cellspacing="0">
+        <tbody><tr>
+        <td id="inner-border" style="background-color: rgb(193,162,100); background-image: url(https://dsbr.innogamescdn.com/asset/7fe7ab60/graphic/screen/tableheader_bg3.png); background-repeat: repeat-x;">
+        <table class="main" align="left"><tbody><tr><td id="avisoScriptContent"><h1 style="text-align: center; margin-bottom: 0px;">COLETANDO</h1></td>
+        <td><div style="background-color: white; height: 1.2em; width: 1.5em; padding: 2px;"><img id="tocaSom" style="cursor:pointer;" alt="loud_sound" class="emoji" src="https://media.innogamescdn.com/TribalWars/emoji/1f50a.png">
+        <audio id="audioElement" preload="auto" autoplay volume="1" loop>
+                 <source src="https://cdn.freesound.org/previews/448/448713_4473224-lq.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de audio.
+        </audio></div></td></tr></tbody></table></td></tr></tbody></table></tbody></table></div>
+           <small>
+        <strong id="movendoTexto">
+            Coletando Uns Rec v3.0 by<span style="color: red"> Zigaeezz </span><span id="horas"></span><span id="Inforot"></span>
+        </strong>
+    </small>`;
+// Captura a referência para a tabela de destino
+let Inserir = document.getElementById('contentContainer');
+
+   // Adiciona a nova div antes da divBorda
+    Inserir.insertAdjacentHTML('beforebegin', $html);
+    function atualizarTempoRestante() {
+        // Obtém a referência para o elemento com o ID "horas"
+    var infopux = document.getElementById('horas');
+
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximoCarregamentoRc = localStorage.getItem('proximoCarregamentoMcoletau');
+    if (proximoCarregamentoRc) {
+        proximoCarregamentoRc = new Date(proximoCarregamentoRc);
+    } else {
+        // Executa o script imediatamente
+        executarScript();
+        // Define a próxima hora de carregamento para 2 horas após a execução
+        proximoCarregamentoRc = new Date();
+        proximoCarregamentoRc.setMinutes(proximoCarregamentoRc.getMinutes() + (PeriodoColeta));
+        // Salva a próxima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoMcoletau', proximoCarregamentoRc);
+    }
+function executarScript() {
+  const Scavange = new function () {
+    const scavangesWeight = [15, 6, 3, 2];
+     let maxtrop = localStorage.getItem('MaxsendColeta');
+    const getBlockedScavanges = () => {
+      return document.getElementsByClassName("lock").length;
+    };
+
+    const getAvailableScavanges = () => {
+      return document.getElementsByClassName("free_send_button");
+    };
+
+    const getScavangeWeight = () => {
+      const blockedScavanges = getBlockedScavanges();
+
+      let weightArray = scavangesWeight;
+      if (blockedScavanges > 0) {
+        weightArray = weightArray.slice(0, blockedScavanges * -1);
+      }
+
+      return weightArray.reduce((item1, item2) => {
+        return item1 + item2;
+      });
+    };
+
+    const getAvailableTroops = () => {
+      // we want to avoid sendint the paladin in scavange
+      // we want to avoid sending CL in scavange
+      const unitsToAvoid = JSON.parse(localStorage.getItem("unitsToAvoid")) || ["spear"];
+      let responseTroops = [];
+      const troops = document.getElementsByClassName("units-entry-all");
+
+      for (const troop of troops) {
+        var unitType = troop.getAttribute("data-unit");
+
+        if (unitsToAvoid.includes(unitType)) {
+          responseTroops.push({
+            unit: troop.getAttribute("data-unit"),
+            quantity: parseInt(
+              troop.innerHTML.replace("(", "").replace(")", "")
+            ),
+          });
+        }
+      }
+      return responseTroops;
+    };
+
+    const calculateScavangeTroops = (scavangeWeight, troops) => {
+      const totalWeight = getScavangeWeight();
+
+      const result = [];
+      for (const troop of troops) {
+          console.log('Total:', troop.quantity)
+        if(troop.quantity > maxtrop){
+           const troopsToSend = Math.floor(
+          (maxtrop * scavangeWeight) / totalWeight
+        );
+        result.push({
+          unit: troop.unit,
+          quantityToSend: troopsToSend,
+        });
+          }else{
+          const troopsToSend = Math.floor(
+          (troop.quantity * scavangeWeight) / totalWeight
+        );
+        result.push({
+          unit: troop.unit,
+          quantityToSend: troopsToSend,
+        });
+          }
+      }
+
+      return result;
+    };
+
+    const sendScavange = (weight, troops, element) => {
+      const troopsToSend = calculateScavangeTroops(weight, troops);
+      for (const troopToSend of troopsToSend) {
+        if (troopToSend.quantityToSend) {
+          var inputs = $(`[name=${troopToSend.unit}]`);
+          inputs.val(troopToSend.quantityToSend.toString()).change();
+        }
+      }
+
+      element.click();
+    };
+
+    this.init = () => {
+      const troops = getAvailableTroops();
+      const availableScavanges = getAvailableScavanges();
+
+      const scavangesUnlocked = scavangesWeight.length - getBlockedScavanges();
+
+      // only run scavange if all unlocked are available
+      // to prevent from sending wrong number of troops
+      if (availableScavanges.length >= scavangesUnlocked) {
+        for (let index = 0; index < availableScavanges.length; index++) {
+          const weight = scavangesWeight[index];
+          const element = availableScavanges[index];
+
+          const delayTime = 3000 + 3000 * index;
+          setTimeout(() => sendScavange(weight, troops, element), delayTime);
+        }
+      }
+    };
+  };
+  $(document).ready(() => {
+    // wait 1 sec after page load to start script
+    setTimeout(() => {
+      Scavange.init();
+    }, 1000);
+  });
+    function verificarRecursos() {
+    const header = document.querySelector("h2.popup_box_header");
+    // Obtém os valores disponíveis na aldeia
+    var qtdFerroAldeia = parseInt($("#iron").text());
+    var qtdArgilaAldeia = parseInt($("#stone").text());
+    var qtdMadeiraAldeia = parseInt($("#wood").text());
+    let custoMadeira;
+    let custoArgila;
+    let custoFerro;
+if (header && header.innerText === "Desbloquear Pequena Coleta") {
+     custoMadeira = 25;
+     custoArgila = 30;
+     custoFerro = 25;
+}else if (header && header.innerText === "Desbloquear Média Coleta") {
+     custoMadeira = 250;
+     custoArgila = 300;
+     custoFerro = 250;
+}else if (header && header.innerText === "Desbloquear Grande Coleta") {
+     custoMadeira = 1000;
+     custoArgila = 1200;
+     custoFerro = 1000;
+}else if (header && header.innerText === "Desbloquear Extrema Coleta") {
+     custoMadeira = 10000;
+     custoArgila = 12000;
+     custoFerro = 10000;
+}
+    // Compara os recursos disponíveis com os necessários
+    let madeiraSuficiente = qtdMadeiraAldeia >= custoMadeira;
+    let argilaSuficiente = qtdArgilaAldeia >= custoArgila;
+    let ferroSuficiente = qtdFerroAldeia >= custoFerro;
+    return madeiraSuficiente && argilaSuficiente && ferroSuficiente;
+}
+    function clicarBotaoDesbloquear() {
+    let unlocks = localStorage.getItem('unlocks');
+    let botao = document.querySelector('.btn.btn-default.unlock-button');
+    if (unlocks === 'S') {
+    if (botao) {
+        botao.click();
+        console.log('Botão "Desbloquear" clicado.');
+       setTimeout(function(){ if (verificarRecursos()) {
+    console.log("Recursos suficientes para a construção!");
+    const desbloquearBotao = document.getElementsByClassName("btn btn-default");
+           desbloquearBotao[desbloquearBotao.length - 1].click();
+             }else {console.log("Recursos insuficientes.");
+                      const closepop = document.querySelector("a.popup_box_close"); closepop.click();
+                               }},2000);
+    } else {
+        console.log('Botão "Desbloquear" não encontrado.');
+    }}
+}
+      setTimeout(clicarBotaoDesbloquear, 2000);
+    }
+function atualizarR() {
+        // Obtém a hora atual
+        var agora = new Date();
+
+        // Verifica se é hora de recarregar a página
+        if (agora >= proximoCarregamentoRc) {
+            localStorage.removeItem('proximoCarregamentoMcoletau');
+            // Recarrega a página
+            location.reload();
+        } else {
+            // Calcula o tempo restante até o próximo carregamento
+            var tempoRestante = proximoCarregamentoRc - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = "Próxima atualização em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conteúdo do elemento com o tempo restante formatado
+            infopux.textContent = tempoRestanteFormatado;
+
+            // Chama a função novamente após 1 segundo
+            setTimeout(atualizarR, 1000);
+        }
+    }
+    // Chama a função pela primeira vez
+    atualizarR();
+}
+// Chama a função para iniciar o contador regressivo
+atualizarTempoRestante();
+    var v3 = 2;
+    var valor3 = localStorage.getItem('check' + v3);
+    var estado3 = valor3 === 'true';
+    if(estado3){ var conf3 = 'ok'}
+    if(conf3 === 'ok'){
+function redirecionar(){
+    var temp_Coleta = parseInt(localStorage.getItem('Coleta'));
+             var rotacion = document.getElementById('Inforot');
+    // Verifica se já existe uma próxima hora de carregamento no localStorage
+    var proximaRotacao = localStorage.getItem('proximoCarregamentoRot2');
+    if (proximaRotacao) {
+        proximaRotacao = new Date(proximaRotacao);
+    } else {
+        // Define a pr xima hora de carregamento para 2 horas ap s a execu  o
+        proximaRotacao = new Date();
+        proximaRotacao.setMinutes(proximaRotacao.getMinutes() + temp_Coleta);
+        // Salva a pr xima hora de carregamento no localStorage
+        localStorage.setItem('proximoCarregamentoRot2', proximaRotacao);
+    }
+function atualizares() {
+        // Obt m a hora atual
+        var agora = new Date();
+        // Verifica se   hora de recarregar a p gina
+        if (agora >= proximaRotacao) {
+         localStorage.removeItem('proximoCarregamentoRot2');
+            var redirecionamentos = [
+    { screen: "main", delay: 13000 },
+    { screen: "am_farm", delay: 15000 },
+    { screen: "place&mode=scavenge", delay: 5 * 60 * 1000 },
+    { screen: "place&mode=scavenge_mass", delay: 1000 },
+    { screen: "market&mode=call", delay: 3000 },
+    { screen: "market&mode=traders", delay: 5000 },
+    { screen: "statue&mode=overview", delay: 7000 },
+    { screen: "snob&mode=coin", delay: 9000 },
+    { screen: "train", delay: 11000 }
+];
+redirecionamentos.forEach((item, index) => {
+    let valorSalvo = localStorage.getItem('check' + index);
+    if (valorSalvo === 'true') {
+        setTimeout(() => {
+            UI.InfoMessage('Redirecting...');
+            window.location.href = game_data.link_base_pure + '&screen=' + item.screen;
+        }, item.delay);
+    }
+});
+        } else {
+            // Calcula o tempo restante at  o pr ximo carregamento
+            var tempoRestante = proximaRotacao - agora;
+            var horas = Math.floor(tempoRestante / 3600000); // 1 hora = 3600000 milissegundos
+            var minutos = Math.floor((tempoRestante % 3600000) / 60000); // 1 minuto = 60000 milissegundos
+            var segundos = Math.floor((tempoRestante % 60000) / 1000); // 1 segundo = 1000 milissegundos
+
+            // Formata a string com o tempo restante
+            var tempoRestanteFormatado = " || Rotacionando em: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+
+            // Atualiza o conte do do elemento com o tempo restante formatado
+            rotacion.textContent = tempoRestanteFormatado;
+
+            // Chama a fun  o novamente ap s 1 segundo
+            setTimeout(atualizares, 1000);
+        }
+}
+    // Chama a fun  o pela primeira vez
+    atualizares();}
+    redirecionar();}
+let url = window.location.href;
+    let subdominio = new URL(url).hostname.split('.')[0];
+    let novoTitulo = subdominio + " - Coleta";
+    document.title = novoTitulo;
+    }
+//==================================map info======================================================================================================
+if(window.location.href.includes('screen=map')){
+    let savedModels = JSON.parse(localStorage.getItem('savedModels')) || [];
+    if (savedModels.length > 0) {
+     let serverData = [];
+  savedModels.forEach((model) => {
+          let CFrom = model.CFrom; let CTo = model.CTo;
+      serverData.push([CFrom],[CTo]);
+});
+        let mapOverlay = TWMap;
+        if (!mapOverlay.mapHandler._spawnSector) {
+            mapOverlay.mapHandler._spawnSector = mapOverlay.mapHandler.spawnSector;
+        }
+
+        function drawMapTowers(canvas, sector) {
+    const ctx = canvas.getContext('2d');
+    ctx.lineWidth = 2;
+         serverData.forEach(([village]) => {
+
+        const [villageX, villageY] = village.split('|').map(Number); // Extrai as coordenadas do vilarejo
+        const wt_pixel = mapOverlay.map.pixelByCoord(villageX, villageY);
+        const st_pixel = mapOverlay.map.pixelByCoord(sector.x, sector.y);
+
+        const x = (wt_pixel[0] - st_pixel[0]) + mapOverlay.tileSize[0] / 2;
+        const y = (wt_pixel[1] - st_pixel[1]) + mapOverlay.tileSize[1] / 2;
+
+        // Desenha o quadrado
+        drawSquare(ctx, x, y, 0.17 * TWMap.map.scale[0] * 5, 'rgba(100, 0, 255, 0.3)');
+
+        // Adiciona os ícones e números
+        drawIconsAndNumbers(ctx,x,y,['Icon1', 'Icon2', 'Icon3'], [5, 10, 15], [
+        { backgroundColor: 'rgb(255, 0, 0)', backgroundImage: '/graphic/unit_map/axe.png' },
+        { backgroundColor: 'rgb(0, 255, 0)', backgroundImage: '/graphic/unit_map/spear.png' },
+        { backgroundColor: 'rgb(0, 254, 254)', backgroundImage: '/graphic/unit_map/snob.png' }
+    ]
+);
+    });
+}
+        function drawSquare(ctx, x, y, size, fillColor, strokeColor) {
+    const halfSize = size / 2; // Metade do tamanho do quadrado para centralizar
+
+    ctx.beginPath();
+    ctx.fillStyle = fillColor;
+    ctx.strokeStyle = strokeColor;
+    ctx.rect(x - halfSize, y - halfSize, size, size); // Desenha o quadrado
+    ctx.fill();
+    ctx.stroke();
+    ctx.closePath();
+}
+        function drawIconsAndNumbers(ctx, x, y, icons, numbers, styles) {
+    const iconSpacing = 20; // Espaçamento horizontal entre os ícones
+    const iconSize = 15; // Tamanho dos ícones
+    const textSize = 10; // Tamanho do texto do número abaixo
+
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    icons.forEach((icon, index) => {
+        const iconX = x - (icons.length - 1) * iconSpacing / 2 + index * iconSpacing;
+        const iconY = y + 20; // Ajuste vertical para ícones
+        const style = styles[index];
+
+        // Cor de fundo
+        if (style.backgroundColor) {
+            ctx.fillStyle = style.backgroundColor;
+            ctx.fillRect(iconX - iconSize / 2, iconY - iconSize / 2, iconSize, iconSize);
+        }
+
+        // Imagem de fundo
+        if (style.backgroundImage) {
+            const img = new Image();
+            img.onload = () => {
+                ctx.drawImage(img, iconX - iconSize / 2, iconY - iconSize / 2, iconSize, iconSize);
+            };
+            img.src = style.backgroundImage;
+        }
+
+        // Desenha o número abaixo do ícone
+        ctx.font = `${textSize}px Arial`;
+        ctx.fillStyle = '#FFFFFF'; // Cor do texto
+        ctx.fillText(numbers[index], iconX, iconY + iconSize);
+    });
+}
+
+        mapOverlay.mapHandler.spawnSector = function (data, sector) {
+            mapOverlay.mapHandler._spawnSector(data, sector);
+
+            const beginX = sector.x - data.x;
+            const endX = beginX + mapOverlay.mapSubSectorSize;
+            const beginY = sector.y - data.y;
+            const endY = beginY + mapOverlay.mapSubSectorSize;
+
+            Object.keys(data.tiles).forEach((x) => {
+                x = parseInt(x, 10);
+                if (x < beginX || x >= endX) return;
+
+                Object.keys(data.tiles[x]).forEach((y) => {
+                    y = parseInt(y, 10);
+                    if (y < beginY || y >= endY) return;
+
+                    const v = mapOverlay.villages[(data.x + x) * 1000 + (data.y + y)];
+                    if (v) {
+                        let el = document.getElementById(`mapOverlay_canvas_${sector.x}_${sector.y}`);
+                        if (!el) {
+                            const canvas = document.createElement('canvas');
+                            canvas.style.position = 'absolute';
+                            canvas.width = mapOverlay.map.scale[0] * mapOverlay.map.sectorSize;
+                            canvas.height = mapOverlay.map.scale[1] * mapOverlay.map.sectorSize;
+                            canvas.style.zIndex = 10;
+                            canvas.className = 'mapOverlay_map_canvas';
+                            canvas.id = `mapOverlay_canvas_${sector.x}_${sector.y}`;
+
+                            sector.appendElement(canvas, 0, 0);
+                            drawMapTowers(canvas, sector);
+                        }
+                    }
+                });
+            });
+        };
+        mapOverlay.reload();
+    }
+/*function map(){
+    var mapOverlay = TWMap;
+    if (mapOverlay.mapHandler._spawnSector) {
+        //exists already, don't recreate
+    }
+    else {
+        //doesn't exist yet
+        mapOverlay.mapHandler._spawnSector = mapOverlay.mapHandler.spawnSector;
+    }
+    let serverData = [["663|558"],["665|558"],];
+function drawMapTowers(canvas, sector) {
+    const ctx = canvas.getContext('2d');
+    ctx.lineWidth = 2;
+    serverData.forEach(([village]) => {
+
+        const [villageX, villageY] = village.split('|').map(Number); // Extrai as coordenadas do vilarejo
+        const wt_pixel = mapOverlay.map.pixelByCoord(villageX, villageY);
+        const st_pixel = mapOverlay.map.pixelByCoord(sector.x, sector.y);
+
+        const x = (wt_pixel[0] - st_pixel[0]) + mapOverlay.tileSize[0] / 2;
+        const y = (wt_pixel[1] - st_pixel[1]) + mapOverlay.tileSize[1] / 2;
+
+        // Desenha o quadrado
+        drawSquare(ctx, x, y, 0.17 * TWMap.map.scale[0] * 5, 'rgba(0, 100, 255, 0.3)');
+
+        // Adiciona os ícones e números
+        drawIconsAndNumbers(ctx,x,y,['Icon1', 'Icon2', 'Icon3'], [5, 10, 15], [
+        { backgroundColor: 'rgb(255, 0, 0)', backgroundImage: '/graphic/unit_map/axe.png' },
+        { backgroundColor: 'rgb(0, 255, 0)', backgroundImage: '/graphic/unit_map/spear.png' },
+        { backgroundColor: 'rgb(0, 254, 254)', backgroundImage: '/graphic/unit_map/snob.png' }
+    ]
+);
+    });
+}
+function drawSquare(ctx, x, y, size, fillColor, strokeColor) {
+    const halfSize = size / 2; // Metade do tamanho do quadrado para centralizar
+
+    ctx.beginPath();
+    ctx.fillStyle = fillColor;
+    ctx.strokeStyle = strokeColor;
+    ctx.rect(x - halfSize, y - halfSize, size, size); // Desenha o quadrado
+    ctx.fill();
+    ctx.stroke();
+    ctx.closePath();
+}
+function drawIconsAndNumbers(ctx, x, y, icons, numbers, styles) {
+    const iconSpacing = 20; // Espaçamento horizontal entre os ícones
+    const iconSize = 15; // Tamanho dos ícones
+    const textSize = 10; // Tamanho do texto do número abaixo
+
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    icons.forEach((icon, index) => {
+        const iconX = x - (icons.length - 1) * iconSpacing / 2 + index * iconSpacing;
+        const iconY = y + 20; // Ajuste vertical para ícones
+        const style = styles[index];
+
+        // Cor de fundo
+        if (style.backgroundColor) {
+            ctx.fillStyle = style.backgroundColor;
+            ctx.fillRect(iconX - iconSize / 2, iconY - iconSize / 2, iconSize, iconSize);
+        }
+
+        // Imagem de fundo
+        if (style.backgroundImage) {
+            const img = new Image();
+            img.onload = () => {
+                ctx.drawImage(img, iconX - iconSize / 2, iconY - iconSize / 2, iconSize, iconSize);
+            };
+            img.src = style.backgroundImage;
+        }
+
+        // Desenha o número abaixo do ícone
+        ctx.font = `${textSize}px Arial`;
+        ctx.fillStyle = '#FFFFFF'; // Cor do texto
+        ctx.fillText(numbers[index], iconX, iconY + iconSize);
+    });
+}
+
+    mapOverlay.mapHandler.spawnSector = function (data, sector) {
+     mapOverlay.mapHandler._spawnSector(data, sector);
+
+        // Main map canvas
+        var beginX = sector.x - data.x;
+        var endX = beginX + mapOverlay.mapSubSectorSize;
+        var beginY = sector.y - data.y;
+        var endY = beginY + mapOverlay.mapSubSectorSize;
+        for (let x in data.tiles) {
+             x = parseInt(x, 10);
+            if (x < beginX || x >= endX) {
+                continue;
+            }
+            for (let y in data.tiles[x]) {
+                 y = parseInt(y, 10);
+                if (y < beginY || y >= endY) {
+                    continue;
+                }
+                var v = mapOverlay.villages[(data.x + x) * 1000 + (data.y + y)];
+                if (v) {
+                    var el = $('#mapOverlay_canvas_' + sector.x + '_' + sector.y);
+                    if (!el.length) {
+                        var canvas = document.createElement('canvas');
+                        canvas.style.position = 'absolute';
+                        canvas.width = (mapOverlay.map.scale[0] * mapOverlay.map.sectorSize);
+                        canvas.height = (mapOverlay.map.scale[1] * mapOverlay.map.sectorSize);
+                        canvas.style.zIndex = 10;
+                        canvas.className = 'mapOverlay_map_canvas';
+                        canvas.id = 'mapOverlay_canvas_' + sector.x + '_' + sector.y;
+
+                        sector.appendElement(canvas, 0, 0);
+                        drawMapTowers(canvas, sector);
+                    }
+                }
+            }
+        }
+    }
+mapOverlay.reload();
+}map();*/
+}
+//==================================================== Script audio ==============================================================================
+ var audioElement = document.getElementById("audioElement");
+if(audioElement){
+    var tocaSom = document.getElementById("tocaSom");
+for (var j = 0; j < 9; j++) {
+    audioElement.volume = Math.max(0, audioElement.volume - 0.1); }
+    tocaSom.onclick = function () {
+        if (audioElement.paused) {
+            audioElement.play();
+        } else {
+            audioElement.pause();
+        }
+    }}
+}
+
+})();
