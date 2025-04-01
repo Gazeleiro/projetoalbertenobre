@@ -12,7 +12,8 @@
 (function() {
     'use strict';
 
-    setTimeout(() => {
-        location.reload();
-    }, 600000); // 600000 ms = 10 minutos
+    // Simular rolagem a cada 5 minutos
+    setInterval(() => {
+        window.scrollBy(0, 1);  // Rola a página para baixo
+    }, 300000); // 300000 ms = 5 minutos
 })();
