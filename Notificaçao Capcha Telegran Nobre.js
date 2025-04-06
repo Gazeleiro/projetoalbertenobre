@@ -126,52 +126,46 @@
     }
 
     function iniciarColetaBonusDiario() {
-        const url = new URL(window.location.href);
-        const estaNaPaginaBonus = url.searchParams.get("screen") === "info_player" && url.searchParams.get("mode") === "daily_bonus";
-        const villageId = getVillageId();
+    const url = new URL(window.location.href);
+    const estaNaPaginaBonus = url.searchParams.get("screen") === "info_player" && url.searchParams.get("mode") === "daily_bonus";
+    const villageId = getVillageId();
 
-        const temBonusDiario = document.querySelector('a[href*="mode=daily_bonus"]');
+    const temBonusDiario = document.querySelector('a[href*="mode=daily_bonus"]');
 
-        if (!temBonusDiario) {
-            console.log("🚫 Mundo sem bônus diário. Ignorando...");
-            return;
-        }
-
-        if (estaNaPaginaBonus) {
-            const botoes = document.querySelectorAll("#daily_bonus_content .btn.btn-default");
-
-            if (botoes.length > 0) {
-                console.log(`🎁 Coletando ${botoes.length} baús via requisições...`);
-
-                botoes.forEach((btn, i) => {
-                    const urlColeta = btn.getAttribute('href');
-                    if (!urlColeta || urlColeta === "#") return;
-
-                    setTimeout(() => {
-                        fetch(urlColeta, { credentials: 'include' })
-                            .then(() => console.log(`✅ Baú ${i + 1} coletado.`))
-                            .catch(err => console.error(`❌ Falha ao coletar baú ${i + 1}:`, err));
-                    }, i * 1000);
-                });
-
-                setTimeout(() => {
-                    setUltimaColetaTimestamp();
-                    window.location.href = `/game.php?village=${villageId}&screen=main`;
-                }, (botoes.length + 2) * 1000);
-
-            } else {
-                console.log("🎉 Nenhum baú disponível.");
-                setUltimaColetaTimestamp();
-                window.location.href = `/game.php?village=${villageId}&screen=main`;
-            }
-
-        } else if (precisaColetarBonusDiario()) {
-            console.log("⏰ Indo coletar bônus diário...");
-            window.location.href = `/game.php?village=${villageId}&screen=info_player&mode=daily_bonus`;
-        } else {
-            console.log("🕒 Aguardando 24h para próxima coleta.");
-        }
+    if (!temBonusDiario) {
+        console.log("🚫 Mundo sem bônus diário. Ignorando...");
+        return;
     }
+
+    if (estaNaPaginaBonus) {
+        console.log("🎁 Coletando baús automaticamente...");
+
+        function coletarProximoBau() {
+            const botao = document.querySelector("#daily_bonus_content .btn.btn-default");
+            if (botao) {
+                console.log("👉 Clicando em baú...");
+                botao.click();
+                setTimeout(coletarProximoBau, 1200); // espera 1.2s e tenta de novo
+            } else {
+                console.log("✅ Todos os baús coletados. Redirecionando...");
+                setUltimaColetaTimestamp();
+                setTimeout(() => {
+                    window.location.href = `/game.php?village=${villageId}&screen=main`;
+                }, 1500);
+            }
+        }
+
+        // Inicia a coleta
+        coletarProximoBau();
+
+    } else if (precisaColetarBonusDiario()) {
+        console.log("⏰ Hora de coletar bônus diário! Redirecionando...");
+        window.location.href = `/game.php?village=${villageId}&screen=info_player&mode=daily_bonus`;
+    } else {
+        console.log("🕒 Aguardando 24h para próxima coleta.");
+    }
+}
+
 
     // Observador de alterações na página
     new MutationObserver(() => {
