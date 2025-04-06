@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Notificação Captcha Telegram
+// @name         Notificação Captcha Telegram + Pagina Inicial
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -10,7 +10,7 @@
 // @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Notifica%C3%A7ao%20Capcha%20Telegran%20Nobre.js
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     let captchaAtivo = false;
@@ -24,56 +24,37 @@
         console.log("🔎 Verificando a presença do CAPTCHA...");
 
         let captchaPresente = document.body.innerHTML.toLowerCase().includes("proteção contra bots") ||
-                              document.querySelector('[id*="bot-protection"]') ||
-                              document.querySelector('[class*="bot-protection-row"]');
+            document.querySelector('[id*="bot-protection"]') ||
+            document.querySelector('[class*="bot-protection-row"]');
 
         if (captchaPresente && !captchaAtivo) {
             captchaAtivo = true;
             console.log("🚨 CAPTCHA detectado! Chamando atenção...");
-            piscarTitulo("⚠ CAPTCHA DETECTADO! ⚠");
-            tocarSom();
             enviarNotificacaoParaTelegram("⚠ CAPTCHA DETECTADO! ⚠");
             setTimeout(() => alert("⚠ CAPTCHA DETECTADO! Resolva para continuar."), 1000);
         }
     }
 
     function verificarExpiracaoPagina() {
-    console.log("🔎 Verificando erro de expiração...");
+        console.log("🔎 Verificando erro de expiração...");
 
-    let textoPagina = document.body.innerText.toLowerCase();
+        let textoPagina = document.body.innerText.toLowerCase();
 
-    let paginaExpirou = textoPagina.includes("não é possível acessar esse site") ||
-                        textoPagina.includes("err_connection_closed") ||
-                        textoPagina.includes("encerrou a conexão inesperadamente") ||
-                        textoPagina.includes("verificar a conexão") ||
-                        textoPagina.includes("verificar o proxy e o firewall");
+        let paginaExpirou = textoPagina.includes("não é possível acessar esse site") ||
+            textoPagina.includes("err_connection_closed") ||
+            textoPagina.includes("encerrou a conexão inesperadamente") ||
+            textoPagina.includes("verificar a conexão") ||
+            textoPagina.includes("verificar o proxy e o firewall");
 
-    if (paginaExpirou && !paginaExpirada) {
-        paginaExpirada = true;
-        console.log("❌ Página expirada detectada! Enviando alerta...");
-        piscarTitulo("❌ PÁGINA EXPIRADA! ❌");
-        tocarSom();
-        enviarNotificacaoParaTelegram("❌ PÁGINA EXPIRADA! ❌");
-        setTimeout(() => alert("❌ PÁGINA EXPIRADA! Atualize a página."), 1000);
-    }
-}
-        
-    function piscarTitulo(mensagem) {
-        let originalTitle = document.title;
-        let visivel = true;
-
-        setInterval(() => {
-            document.title = visivel ? mensagem : originalTitle;
-            visivel = !visivel;
-        }, 1000);
+        if (paginaExpirou && !paginaExpirada) {
+            paginaExpirada = true;
+            console.log("❌ Página expirada detectada! Enviando alerta...");
+            enviarNotificacaoParaTelegram("❌ PÁGINA EXPIRADA! ❌");
+            setTimeout(() => alert("❌ PÁGINA EXPIRADA! Atualize a página."), 1000);
+        }
     }
 
-    function tocarSom() {
-        let beep = new Audio("https://www.soundjay.com/button/beep-07.wav");
-        beep.loop = false;
-        beep.play().catch(e => console.log("🔇 Falha ao tocar som:", e));
-    }
-
+    // 🔔 Envia notificação para o Telegram
     function enviarNotificacaoParaTelegram(mensagemAlerta) {
         console.log("📤 Enviando notificação para Telegram...");
 
@@ -83,7 +64,7 @@
         const horarioNotificacao = new Date().toLocaleString();
 
         const titulo = mensagemAlerta;
-        const mensagem = `👤 CONTA: ${nomeJogador} (ID: ${idJogador})\n🕒 Horário: ${horarioNotificacao}`;
+        const mensagem = `👤 CONTA: ${nomeJogador} \n🕒 Horário: ${horarioNotificacao}`;
 
         const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(`${titulo}\n\n${mensagem}`)}`;
 
@@ -106,8 +87,32 @@
         verificarExpiracaoPagina();
     }).observe(document.body, { childList: true, subtree: true });
 
-    // Verifica CAPTCHA e erro de expiração assim que o script carregar
+    // Verifica CAPTCHA e erro de expiração ao carregar
     verificarCaptcha();
     verificarExpiracaoPagina();
+
+    // Verificação da permanência na página inicial
+    let tempoNaPaginaInicial = null;
+    const INTERVALO_VERIFICACAO = 10000; // 10 segundos
+    const TEMPO_MINIMO_EM_MS = 5 * 60 * 1000; // 5 minutos
+
+    function verificarPermanenciaNaPaginaInicial() {
+        const urlAtual = window.location.href;
+
+        if (urlAtual === "https://www.tribalwars.com.br/") {
+            if (!tempoNaPaginaInicial) {
+                tempoNaPaginaInicial = Date.now(); // Começa a contar o tempo
+                console.log("🕒 Página inicial detectada. Aguardando 5 minutos antes de notificar...");
+            } else if (Date.now() - tempoNaPaginaInicial >= TEMPO_MINIMO_EM_MS) {
+                console.log("⏰ Permanência de 5 minutos na página inicial detectada. Notificando...");
+                enviarNotificacaoParaTelegram("⚠ CONTA ESTÁ NA PÁGINA INICIAL HÁ 5 MINUTOS ⚠");
+                tempoNaPaginaInicial = null; // Reseta para evitar spam
+            }
+        } else {
+            tempoNaPaginaInicial = null; // Saiu da página inicial, reseta o contador
+        }
+    }
+
+    setInterval(verificarPermanenciaNaPaginaInicial, INTERVALO_VERIFICACAO);
 
 })();
