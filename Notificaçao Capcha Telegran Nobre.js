@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -127,33 +127,53 @@
 
     function iniciarColetaBonusDiario() {
         const url = new URL(window.location.href);
-        const estaNoBonus = url.searchParams.get("screen") === "info_player" && url.searchParams.get("mode") === "daily_bonus";
+        const estaNaPaginaBonus = url.searchParams.get("screen") === "info_player" && url.searchParams.get("mode") === "daily_bonus";
+        const villageId = getVillageId();
 
-        if (estaNoBonus) {
+        const temBonusDiario = document.querySelector('a[href*="mode=daily_bonus"]');
+
+        if (!temBonusDiario) {
+            console.log("🚫 Mundo sem bônus diário. Ignorando...");
+            return;
+        }
+
+        if (estaNaPaginaBonus) {
             const botoes = document.querySelectorAll("#daily_bonus_content .btn.btn-default");
+
             if (botoes.length > 0) {
-                console.log(`🎁 Coletando ${botoes.length} baús...`);
+                console.log(`🎁 Coletando ${botoes.length} baús via requisições...`);
+
                 botoes.forEach((btn, i) => {
-                    setTimeout(() => btn.click(), i * 1000);
+                    const urlColeta = btn.getAttribute('href');
+                    if (!urlColeta || urlColeta === "#") return;
+
+                    setTimeout(() => {
+                        fetch(urlColeta, { credentials: 'include' })
+                            .then(() => console.log(`✅ Baú ${i + 1} coletado.`))
+                            .catch(err => console.error(`❌ Falha ao coletar baú ${i + 1}:`, err));
+                    }, i * 1000);
                 });
+
                 setTimeout(() => {
                     setUltimaColetaTimestamp();
-                    window.location.href = `/game.php?village=${getVillageId()}&screen=main`;
-                }, (botoes.length + 1) * 1000);
+                    window.location.href = `/game.php?village=${villageId}&screen=main`;
+                }, (botoes.length + 2) * 1000);
+
             } else {
                 console.log("🎉 Nenhum baú disponível.");
                 setUltimaColetaTimestamp();
-                window.location.href = `/game.php?village=${getVillageId()}&screen=main`;
+                window.location.href = `/game.php?village=${villageId}&screen=main`;
             }
+
         } else if (precisaColetarBonusDiario()) {
             console.log("⏰ Indo coletar bônus diário...");
-            window.location.href = `/game.php?village=${getVillageId()}&screen=info_player&mode=daily_bonus`;
+            window.location.href = `/game.php?village=${villageId}&screen=info_player&mode=daily_bonus`;
         } else {
-            console.log("⏳ Coleta recente. Aguardando 24h...");
+            console.log("🕒 Aguardando 24h para próxima coleta.");
         }
     }
 
-    // Observador de mudanças
+    // Observador de alterações na página
     new MutationObserver(() => {
         verificarCaptcha();
         verificarExpiracaoPagina();
