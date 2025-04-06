@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Notificação Captcha Telegram + Pagina Inicial
+// @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
