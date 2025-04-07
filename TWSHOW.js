@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tw - Show
 // @namespace    http://tampermonkey.net/
-// @version      4.2
+// @version      5.0
 // @include      https://**game.php**
 // @description  Automação para TW
 // @icon         https://i.imgur.com/7WgHTT8.gif
@@ -1277,7 +1277,7 @@ localStorage.setItem("upFarm", 'true'); ////////////////// Ativa a prioridade da
 localStorage.setItem("upStorage", 'true'); ////////////// Ativa a prioridade do mercado
 localStorage.setItem("get_rewards", 'true'); /////////// Ativa a coletar as recompensas
 localStorage.setItem("value-priority-farm", 15); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
-localStorage.setItem("value-priority-storage", 80); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
+localStorage.setItem("value-priority-storage", 95); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
 localStorage.setItem("maxQueueSize", 5); //////////// maximo de filas para Ctt
 localStorage.setItem("get_rewards_temp", 10); /////// tempo para abrir e coletar as recompensas
 function carregarconfigCheckb() {
