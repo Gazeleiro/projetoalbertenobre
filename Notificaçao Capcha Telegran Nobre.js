@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      5.0
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -59,17 +59,23 @@
 
     let nomeJogador = "Desconhecido";
 
-    if (window.TribalWars?.getGameData()?.player?.name) {
-        nomeJogador = window.TribalWars.getGameData().player.name;
-    } else {
-        const h2 = document.querySelector("h2");
-        if (h2 && h2.innerText.toLowerCase().includes("bem-vindo")) {
+    // Tenta pegar o nome via TribalWars se já estiver logado dentro do jogo
+if (window.TribalWars?.getGameData()?.player?.name) {
+    nomeJogador = window.TribalWars.getGameData().player.name;
+} else {
+    // Tenta pegar da página inicial
+    const h2Elements = document.querySelectorAll("h2");
+    h2Elements.forEach(h2 => {
+        const texto = h2.innerText.toLowerCase();
+        if (texto.includes("bem-vindo") && texto.includes(",")) {
             const partes = h2.innerText.split(",");
             if (partes.length > 1) {
                 nomeJogador = partes[1].trim();
             }
         }
-    }
+    });
+}
+
 
     const horario = new Date().toLocaleString();
     const mensagem = `👤 CONTA: ${nomeJogador}\n🕒 Horário: ${horario}`;
