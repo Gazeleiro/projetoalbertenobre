@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      3.0
+// @version      4.0
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -55,30 +55,40 @@
     }
 
     function enviarNotificacaoParaTelegram(mensagemAlerta) {
-        console.log("📤 Enviando para Telegram...");
+    console.log("📤 Enviando para Telegram...");
 
-        const jogador = window.TribalWars?.getGameData()?.player || { name: "Desconhecido", id: "N/A" };
-        const nomeJogador = jogador.name;
-        const idJogador = jogador.id;
-        const horario = new Date().toLocaleString();
+    let nomeJogador = "Desconhecido";
 
-        const titulo = mensagemAlerta;
-        const mensagem = `👤 CONTA: ${nomeJogador}\n🕒 Horário: ${horario}`;
-
-        const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(`${titulo}\n\n${mensagem}`)}`;
-
-        fetch(url)
-            .then(response => {
-                if (response.ok) {
-                    console.log("✅ Notificação enviada.");
-                } else {
-                    console.error("❌ Falha ao enviar notificação.");
-                }
-            })
-            .catch(error => {
-                console.error("❌ Erro ao enviar para Telegram:", error);
-            });
+    if (window.TribalWars?.getGameData()?.player?.name) {
+        nomeJogador = window.TribalWars.getGameData().player.name;
+    } else {
+        const h2 = document.querySelector("h2");
+        if (h2 && h2.innerText.toLowerCase().includes("bem-vindo")) {
+            const partes = h2.innerText.split(",");
+            if (partes.length > 1) {
+                nomeJogador = partes[1].trim();
+            }
+        }
     }
+
+    const horario = new Date().toLocaleString();
+    const mensagem = `👤 CONTA: ${nomeJogador}\n🕒 Horário: ${horario}`;
+
+    const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(`${mensagemAlerta}\n\n${mensagem}`)}`;
+
+    fetch(url)
+        .then(response => {
+            if (response.ok) {
+                console.log("✅ Notificação enviada.");
+            } else {
+                console.error("❌ Falha ao enviar notificação.");
+            }
+        })
+        .catch(error => {
+            console.error("❌ Erro ao enviar para Telegram:", error);
+        });
+}
+
 
     // Página inicial: alerta após 5 minutos
     let tempoNaPaginaInicial = null;
