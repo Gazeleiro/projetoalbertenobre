@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      6.0
+// @version      6.5
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -60,10 +60,19 @@
     let nomeJogador = "Desconhecido";
     let mundo = "Desconhecido";
 
-    if (window.TribalWars?.getGameData()) {
+    // Tentativa 1: Via getGameData
+    if (window.TribalWars?.getGameData) {
         const data = window.TribalWars.getGameData();
         nomeJogador = data.player?.name || nomeJogador;
         mundo = data.world || mundo;
+    }
+
+    // Tentativa 2: Procurar por "Bem-vindo, <nome>" na página
+    if (nomeJogador === "Desconhecido") {
+        const match = document.body.innerText.match(/Bem-vindo,\s+([^\n]+)/i);
+        if (match && match[1]) {
+            nomeJogador = match[1].trim();
+        }
     }
 
     const horario = new Date().toLocaleString();
@@ -83,6 +92,7 @@
             console.error("❌ Erro ao enviar para Telegram:", error);
         });
 }
+
 
 
 
