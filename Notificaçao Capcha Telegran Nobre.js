@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      5.0
+// @version      6.0
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -54,31 +54,20 @@
         }
     }
 
-    function enviarNotificacaoParaTelegram(mensagemAlerta) {
+  function enviarNotificacaoParaTelegram(mensagemAlerta) {
     console.log("📤 Enviando para Telegram...");
 
     let nomeJogador = "Desconhecido";
+    let mundo = "Desconhecido";
 
-    // Tenta pegar o nome via TribalWars se já estiver logado dentro do jogo
-if (window.TribalWars?.getGameData()?.player?.name) {
-    nomeJogador = window.TribalWars.getGameData().player.name;
-} else {
-    // Tenta pegar da página inicial
-    const h2Elements = document.querySelectorAll("h2");
-    h2Elements.forEach(h2 => {
-        const texto = h2.innerText.toLowerCase();
-        if (texto.includes("bem-vindo") && texto.includes(",")) {
-            const partes = h2.innerText.split(",");
-            if (partes.length > 1) {
-                nomeJogador = partes[1].trim();
-            }
-        }
-    });
-}
-
+    if (window.TribalWars?.getGameData()) {
+        const data = window.TribalWars.getGameData();
+        nomeJogador = data.player?.name || nomeJogador;
+        mundo = data.world || mundo;
+    }
 
     const horario = new Date().toLocaleString();
-    const mensagem = `👤 CONTA: ${nomeJogador}\n🕒 Horário: ${horario}`;
+    const mensagem = `👤 CONTA: ${nomeJogador}\n🌍 Mundo: ${mundo}\n🕒 Horário: ${horario}`;
 
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(`${mensagemAlerta}\n\n${mensagem}`)}`;
 
@@ -94,6 +83,7 @@ if (window.TribalWars?.getGameData()?.player?.name) {
             console.error("❌ Erro ao enviar para Telegram:", error);
         });
 }
+
 
 
     // Página inicial: alerta após 5 minutos
@@ -142,16 +132,26 @@ if (window.TribalWars?.getGameData()?.player?.name) {
     }
 
     function iniciarColetaBonusDiario() {
+    const gameData = window.TribalWars?.getGameData?.();
+    const mundoAtual = gameData?.world || "";
+
+    // Ignorar mundos que começam com "brp"
+    if (mundoAtual.startsWith("brp")) {
+        console.log("🚫 Mundo brp detectado. Ignorando coleta de bônus diário.");
+        return;
+    }
+
     const url = new URL(window.location.href);
     const estaNaPaginaBonus = url.searchParams.get("screen") === "info_player" && url.searchParams.get("mode") === "daily_bonus";
-    const villageId = getVillageId();
-
     const temBonusDiario = document.querySelector('a[href*="mode=daily_bonus"]');
 
     if (!temBonusDiario) {
         console.log("🚫 Mundo sem bônus diário. Ignorando...");
         return;
     }
+
+    // Salva a URL atual antes de sair dela
+    const urlOriginal = localStorage.getItem("urlOriginalAntesDoBonus") || window.location.href;
 
     if (estaNaPaginaBonus) {
         console.log("🎁 Coletando baús automaticamente...");
@@ -161,26 +161,57 @@ if (window.TribalWars?.getGameData()?.player?.name) {
             if (botao) {
                 console.log("👉 Clicando em baú...");
                 botao.click();
-                setTimeout(coletarProximoBau, 1200); // espera 1.2s e tenta de novo
+                setTimeout(coletarProximoBau, 1200);
             } else {
-                console.log("✅ Todos os baús coletados. Redirecionando...");
+                console.log("✅ Todos os baús coletados. Retornando à página original...");
                 setUltimaColetaTimestamp();
                 setTimeout(() => {
-                    window.location.href = `/game.php?village=${villageId}&screen=main`;
+                    const voltarPara = localStorage.getItem("urlOriginalAntesDoBonus") || `/game.php?village=${getVillageId()}&screen=main`;
+                    localStorage.removeItem("urlOriginalAntesDoBonus");
+                    window.location.href = voltarPara;
                 }, 1500);
             }
         }
 
-        // Inicia a coleta
         coletarProximoBau();
 
     } else if (precisaColetarBonusDiario()) {
-        console.log("⏰ Hora de coletar bônus diário! Redirecionando...");
+        console.log("⏰ Hora de coletar bônus diário! Salvando URL e redirecionando...");
+        localStorage.setItem("urlOriginalAntesDoBonus", window.location.href);
+        const villageId = getVillageId();
         window.location.href = `/game.php?village=${villageId}&screen=info_player&mode=daily_bonus`;
     } else {
         console.log("🕒 Aguardando 24h para próxima coleta.");
     }
 }
+
+
+    function verificarOfertaPromocional() {
+    const todosOfertas = document.querySelectorAll('.box-item.firstcell.nowrap a');
+
+    const AGORA = Date.now();
+    const SEIS_HORAS_EM_MS = 6 * 60 * 60 * 1000;
+    const chaveUltimaNotificacao = "ultimaNotificacaoOferta";
+    const ultimaNotificacao = Number(localStorage.getItem(chaveUltimaNotificacao) || 0);
+
+    todosOfertas.forEach(oferta => {
+        const texto = oferta.textContent || "";
+        if (texto.includes("Oferta!") && (AGORA - ultimaNotificacao > SEIS_HORAS_EM_MS)) {
+            const tempo = oferta.querySelector("span:last-child")?.innerText.trim() || "Tempo desconhecido";
+            const mundo = window.TribalWars?.getGameData?.().world || "Mundo desconhecido";
+            const nomeJogador = window.TribalWars?.getGameData?.().player?.name || "Desconhecido";
+            const horario = new Date().toLocaleString();
+
+            const mensagem = `🔥 OFERTA DETECTADA!\n🕒 Duração: ${tempo}`;
+            enviarNotificacaoParaTelegram(mensagem);
+
+            localStorage.setItem(chaveUltimaNotificacao, AGORA.toString());
+        }
+    });
+}
+
+
+setInterval(verificarOfertaPromocional, 3000); // A cada 1 HORA
 
 
     // Observador de alterações na página
