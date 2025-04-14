@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      6.7
+// @version      7.0
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -9,7 +9,6 @@
 // @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Notifica%C3%A7ao%20Capcha%20Telegran%20Nobre.js
 // @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Notifica%C3%A7ao%20Capcha%20Telegran%20Nobre.js
 // ==/UserScript==
-
 (function () {
     'use strict';
 
@@ -19,12 +18,12 @@
     const BOT_TOKEN = '7362150939:AAHeetiLt3AJh0FMmp3auVULM0INJcNNDqA';
     const CHAT_ID = '-4736602903';
 
-    // ✅ Traz janela para frente (sem popup)
+    // ✅ Foco que funciona no Brave/Linux
     function trazerJanelaParaFrente() {
         try {
-            window.focus();
+            window.open('', '_self').focus();
         } catch (e) {
-            console.warn("⚠️ Não foi possível focar a janela:", e);
+            console.warn("⚠️ Não foi possível puxar a janela:", e);
         }
     }
 
@@ -39,7 +38,7 @@
             captchaAtivo = true;
             console.log("🚨 CAPTCHA detectado!");
             enviarNotificacaoParaTelegram("⚠ CAPTCHA DETECTADO! ⚠");
-            trazerJanelaParaFrente(); // ✅ chama foco
+            trazerJanelaParaFrente(); // ✅ aqui
         }
     }
 
@@ -96,7 +95,6 @@
             });
     }
 
-    // ⏰ Página inicial: alerta após 5 minutos
     let tempoNaPaginaInicial = null;
     const INTERVALO_VERIFICACAO = 10000;
     const TEMPO_MINIMO_EM_MS = 5 * 60 * 1000;
@@ -111,7 +109,7 @@
             } else if (Date.now() - tempoNaPaginaInicial >= TEMPO_MINIMO_EM_MS) {
                 console.log("⏰ Página inicial por 5 min. Enviando notificação...");
                 enviarNotificacaoParaTelegram("⚠ CONTA ESTÁ NA PÁGINA INICIAL HÁ 5 MINUTOS ⚠");
-                trazerJanelaParaFrente(); // ✅ chama foco
+                trazerJanelaParaFrente(); // ✅ aqui
                 tempoNaPaginaInicial = null;
             }
         } else {
