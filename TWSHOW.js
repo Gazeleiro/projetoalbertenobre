@@ -14,9 +14,9 @@
 (function() {
     'use strict';
 //================================================================= Config inicial newba Albert =================================================================//
-//localStorage.setItem('AbreCaptcha', 'S'); ///// Config Abrir captcha
-//localStorage.setItem('AlarmeCaptcha', 'N'); // Config Alarme
-//localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
+localStorage.setItem('AbreCaptcha', 'S'); ///// Config Abrir captcha
+localStorage.setItem('AlarmeCaptcha', 'N'); // Config Alarme
+localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
 
 
 //localStorage.setItem('Ctt', 'S'); ///////////// Script Construção para desativar altere para N e ativar alyere para S
@@ -40,10 +40,10 @@ const unidadesparacoleta = ["spear"]; // mode completo ['spear'], use para adici
 //localStorage.setItem('box6', 'true'); ////////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
 //localStorage.setItem('CupPala', 2); //////////// tempo em que ficará na aba Treino do pala >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
-//localStorage.setItem('RecruitAtivo', 'S'); //// Script recrutamento para desativar altere para N e ativar alyere para S
-//localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
-//localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
-//localStorage.setItem('Rrecruit', 5); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
+localStorage.setItem('RecruitAtivo', 'S'); //// Script recrutamento para desativar altere para N e ativar alyere para S
+localStorage.setItem('check' + 8, 'true'); // ativar rotação do Recrutamento, para ativar altere para true e desativar altere para false
+localStorage.setItem('box8', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
+localStorage.setItem('Rrecruit', 5); /////// tempo ativo no Recrutamento >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 ///////////// config recrute inicial ////////////////////
 // Array de objetos com as unidades e seus valores
@@ -1274,7 +1274,7 @@ const checksave = [
     ];
 localStorage.setItem("autoBuild", 'true'); /////////////// Ativa a Ctt automatica altere para false(desativado) e para true(ativado)
 localStorage.setItem("upFarm", 'true'); ////////////////// Ativa a prioridade da população
-localStorage.setItem("upStorage", 'true'); ////////////// Ativa a prioridade do mercado
+localStorage.setItem("upStorage", 'false'); ////////////// Ativa a prioridade do mercado
 localStorage.setItem("get_rewards", 'true'); /////////// Ativa a coletar as recompensas
 localStorage.setItem("value-priority-farm", 15); ////// valor em $ q prioriza o up da fazenda caso falte espaço de população
 localStorage.setItem("value-priority-storage", 95); // valor em % q prioriza o up do armazem caso tenha mais recursos q a %
