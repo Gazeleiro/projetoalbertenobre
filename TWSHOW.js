@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tw - Show
 // @namespace    http://tampermonkey.net/
-// @version      6.7
+// @version      7.0
 // @include      https://**game.php**
 // @description  Automação para TW
 // @icon         https://i.imgur.com/7WgHTT8.gif
@@ -1249,6 +1249,38 @@ let modeloCtt = [
   {
     "edificio": "barracks",
     "nivel": 25
+  },
+  {
+    "edificio": "farm",
+    "nivel": 23
+  },
+  {
+    "edificio": "farm",
+    "nivel": 24
+  },
+  {
+    "edificio": "farm",
+    "nivel": 25
+  },
+  {
+    "edificio": "farm",
+    "nivel": 26
+  },
+  {
+    "edificio": "farm",
+    "nivel": 27
+  },
+  {
+    "edificio": "farm",
+    "nivel": 28
+  },
+  {
+    "edificio": "farm",
+    "nivel": 29
+  },
+  {
+    "edificio": "farm",
+    "nivel": 30
   },
   {
     "edificio": "garage",
