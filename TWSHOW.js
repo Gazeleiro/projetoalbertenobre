@@ -14,7 +14,7 @@
 (function() {
     'use strict';
 //================================================================= Config inicial newba Albert =================================================================//
-localStorage.setItem('AbreCaptcha', 'S'); ///// Config Abrir captcha
+localStorage.setItem('AbreCaptcha', 'N'); ///// Config Abrir captcha
 localStorage.setItem('AlarmeCaptcha', 'N'); // Config Alarme
 localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
 
