@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha albert
 // @namespace    http://tampermonkey.net/
-// @version      6.0
+// @version      6.2
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -98,7 +98,7 @@
 
     let tempoNaPaginaInicial = null;
     const INTERVALO_VERIFICACAO = 10000;
-    const TEMPO_MINIMO_EM_MS = 1 * 60 * 1000;
+    const TEMPO_MINIMO_EM_MS = 60 * 60 * 1000;
 
     function verificarPermanenciaNaPaginaInicial() {
         const urlAtual = window.location.href;
