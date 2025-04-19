@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tw - Show
 // @namespace    http://tampermonkey.net/
-// @version      6.0
+// @version      6.2
 // @include      https://**game.php**
 // @description  Automação para TW
 // @icon         https://i.imgur.com/7WgHTT8.gif
@@ -48,8 +48,8 @@ localStorage.setItem('Rrecruit', 5); /////// tempo ativo no Recrutamento >. temp
 ///////////// config recrute inicial ////////////////////
 // Array de objetos com as unidades e seus valores
 const unitsWithValues = [
-    { name: 'lancas', value: 500 },
-    { name: 'espadas', value: 100 },
+    { name: 'lancas', value: 700 },
+    { name: 'espadas', value: 400 },
     { name: 'barbaros', value: 0 },
     { name: 'arcos', value: 0 },
     { name: 'espioes', value: 110 },
