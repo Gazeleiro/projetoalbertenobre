@@ -98,7 +98,7 @@
 
     let tempoNaPaginaInicial = null;
     const INTERVALO_VERIFICACAO = 10000;
-    const TEMPO_MINIMO_EM_MS = 5 * 60 * 1000;
+    const TEMPO_MINIMO_EM_MS = 1 * 60 * 1000;
 
     function verificarPermanenciaNaPaginaInicial() {
         const urlAtual = window.location.href;
