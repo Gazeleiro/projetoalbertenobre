@@ -131,7 +131,7 @@
     function precisaColetarBonusDiario() {
         const agora = Date.now();
         const ultimaColeta = getUltimaColetaTimestamp();
-        const INTERVALO_24H = 24 * 60 * 60 * 1000;
+        const INTERVALO_24H = 8 * 60 * 60 * 1000;
         return agora - ultimaColeta >= INTERVALO_24H;
     }
 
