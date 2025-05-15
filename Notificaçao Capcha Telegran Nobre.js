@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      7.1
+// @version      7.2
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -16,7 +16,7 @@
     let paginaExpirada = false;
 
     const BOT_TOKEN = '7362150939:AAHeetiLt3AJh0FMmp3auVULM0INJcNNDqA';
-    const CHAT_ID = '-5509307685';
+    const CHAT_ID = '-4747519721';
 
     // ✅ Foco que funciona no Brave/Linux
     function trazerJanelaParaFrente() {
