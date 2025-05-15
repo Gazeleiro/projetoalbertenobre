@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tw - Show
 // @namespace    http://tampermonkey.net/
-// @version      8.5
+// @version      9.0
 // @include      https://**game.php**
 // @description  Automação para TW
 // @icon         https://i.imgur.com/7WgHTT8.gif
@@ -52,7 +52,7 @@ const unitsWithValues = [
     { name: 'espadas', value: 400 },
     { name: 'barbaros', value: 0 },
     { name: 'arcos', value: 0 },
-    { name: 'espioes', value: 110 },
+    { name: 'espioes', value: 510 },
     { name: 'arqueirosmontados', value: 0 },
     { name: 'cavalosleves', value: 0 },
     { name: 'cavalospesados', value: 0 },
@@ -183,18 +183,6 @@ let modeloCtt = [
     "nivel": 3
   },
   {
-    "edificio": "main",
-    "nivel": 4
-  },
-  {
-    "edificio": "storage",
-    "nivel": 4
-  },
-  {
-    "edificio": "farm",
-    "nivel": 4
-  },
-  {
     "edificio": "wood",
     "nivel": 4
   },
@@ -204,6 +192,18 @@ let modeloCtt = [
   },
   {
     "edificio": "iron",
+    "nivel": 4
+  },
+  {
+    "edificio": "main",
+    "nivel": 4
+  },
+  {
+    "edificio": "storage",
+    "nivel": 4
+  },
+  {
+    "edificio": "farm",
     "nivel": 4
   },
   {
@@ -223,16 +223,12 @@ let modeloCtt = [
     "nivel": 5
   },
   {
-    "edificio": "wood",
-    "nivel": 6
-  },
-  {
     "edificio": "stone",
     "nivel": 5
   },
   {
     "edificio": "wood",
-    "nivel": 7
+    "nivel": 6
   },
   {
     "edificio": "stone",
@@ -244,7 +240,27 @@ let modeloCtt = [
   },
   {
     "edificio": "wood",
+    "nivel": 7
+  },
+  {
+    "edificio": "stone",
+    "nivel": 7
+  },
+  {
+    "edificio": "iron",
+    "nivel": 6
+  },
+  {
+    "edificio": "wood",
     "nivel": 8
+  },
+  {
+    "edificio": "stone",
+    "nivel": 8
+  },
+  {
+    "edificio": "iron",
+    "nivel": 7
   },
   {
     "edificio": "storage",
@@ -271,12 +287,12 @@ let modeloCtt = [
     "nivel": 9
   },
   {
-    "edificio": "iron",
-    "nivel": 6
+    "edificio": "stone",
+    "nivel": 9
   },
   {
-    "edificio": "stone",
-    "nivel": 7
+    "edificio": "iron",
+    "nivel": 8
   },
   {
     "edificio": "wood",
@@ -284,11 +300,7 @@ let modeloCtt = [
   },
   {
     "edificio": "stone",
-    "nivel": 8
-  },
-  {
-    "edificio": "iron",
-    "nivel": 7
+    "nivel": 10
   },
   {
     "edificio": "storage",
@@ -348,19 +360,11 @@ let modeloCtt = [
   },
   {
     "edificio": "stone",
-    "nivel": 9
-  },
-  {
-    "edificio": "stone",
-    "nivel": 10
-  },
-  {
-    "edificio": "stone",
     "nivel": 11
   },
   {
     "edificio": "iron",
-    "nivel": 8
+    "nivel": 9
   },
   {
     "edificio": "smith",
@@ -377,6 +381,10 @@ let modeloCtt = [
   {
     "edificio": "stone",
     "nivel": 12
+  },
+  {
+    "edificio": "iron",
+    "nivel": 10
   },
   {
     "edificio": "main",
@@ -433,14 +441,6 @@ let modeloCtt = [
   {
     "edificio": "stone",
     "nivel": 13
-  },
-  {
-    "edificio": "iron",
-    "nivel": 9
-  },
-  {
-    "edificio": "iron",
-    "nivel": 10
   },
   {
     "edificio": "wood",
