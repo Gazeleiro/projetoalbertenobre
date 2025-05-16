@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação de Ataques
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      2.0
 // @description  Notificacoes para telegran de comandos acaminho
 // @author       Você
 // @match        https://*.tribalwars.com.br/*
@@ -15,7 +15,7 @@
 
     // 🔹 CONFIGURAÇÕES - INSIRA SEUS DADOS DO TELEGRAM AQUI
     const BOT_TOKEN = '7362150939:AAHeetiLt3AJh0FMmp3auVULM0INJcNNDqA'; // Token do bot
-    const CHAT_ID = '-4747519721'; // ID do chat ou grupo
+    const CHAT_ID = '-4911225993'; // ID do chat ou grupo
 
     let ataquesAnteriores = 0;
 
