@@ -1,126 +1,184 @@
 // ==UserScript==
 // @name         Notificação Tribal Wars Avançada
 // @namespace    http://tampermonkey.net/
-// @version      8.4
+// @version      10.0
 // @description  Notifica CAPTCHA, promoções e páginas expiradas em grupos diferentes, com anti-spam e coleta segura de bônus diário.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
 // @grant        none
 // ==/UserScript==
+
 (function () {
     'use strict';
 
-    // Telegram
     const BOT_TOKEN = '7362150939:AAHeetiLt3AJh0FMmp3auVULM0INJcNNDqA';
-    const CHAT_ID_CAPTCHA   = '-4747519721';
-    const CHAT_ID_PROMOCAO  = '-4847613379';
-    const CHAT_ID_EXPIRACAO = '-4820917790';
+    const CHAT_ID_CAPTCHA = '-4747519721';
+    const CHAT_ID_PROMOCAO = '-4847613379';
+    const CHAT_ID_EXPIRACAO = '-4917296021';
 
-    // Controle de spam
+    const INTERVALO_CAPTCHA_MS = 30000;
+    const INTERVALO_EXPIRACAO_MS = 5 * 60 * 1000;
+    const TEMPO_MINIMO_PAGINA_INICIAL = 10000;
+
     let ultimaNotificacaoCaptcha = 0;
     let ultimaNotificacaoExpiracao = 0;
-    const INTERVALO_CAPTCHA_MS = 1 * 30 * 1000;
-    const INTERVALO_EXPIRACAO_MS = 5 * 60 * 1000;
+    let paginaExpirada = false;
 
-    // Controle de abas
-    const ID_UNICO_ABA = Date.now().toString();
-    sessionStorage.setItem("identificador_aba_tw", ID_UNICO_ABA);
+    const setCookie = (name, value) => {
+        document.cookie = `${name}=${value}; path=/; domain=.tribalwars.com.br`;
+    };
+    const getCookie = (name) => {
+        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        return match ? match[2] : null;
+    };
+    const deleteCookie = (name) => {
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.tribalwars.com.br`;
+    };
 
-    function estaNaAbaPrincipal() {
-        const chaves = Object.keys(sessionStorage).filter(k => k === "identificador_aba_tw");
-        return chaves.length === 1;
-    }
-
-    function trazerJanelaParaFrente() {
-        try {
-            window.open('', '_self').focus();
-        } catch (e) {
-            console.warn("⚠️ Não foi possível puxar a janela:", e);
-        }
-    }
-
-    function enviarNotificacaoParaTelegram(mensagemAlerta, chatId) {
-        if (!estaNaAbaPrincipal()) {
-            console.log("🔇 Notificação ignorada: aba secundária.");
-            return;
-        }
-
-        let nomeJogador = "Desconhecido";
-        let mundo = "Desconhecido";
-
+    function getNomeJogadorEMundo() {
+        let nomeJogador = "Desconhecido", mundo = "Desconhecido";
         if (window.TribalWars?.getGameData) {
             const data = window.TribalWars.getGameData();
             nomeJogador = data.player?.name || nomeJogador;
             mundo = data.world || mundo;
         }
-
-        const match = document.body.innerText.match(/Bem-vindo,\s+([^\n]+)/i);
-        if (match && match[1]) {
-            nomeJogador = match[1].trim();
-        }
-
-        const horario = new Date().toLocaleString();
-        const mensagem = `👤 CONTA: ${nomeJogador}\n🌍 Mundo: ${mundo}\n🕒 Horário: ${horario}`;
-
-        const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(`${mensagemAlerta}\n\n${mensagem}`)}`;
-
-        fetch(url)
-            .then(res => res.ok ? console.log("✅ Notificação enviada.") : console.error("❌ Erro ao enviar notificação."))
-            .catch(err => console.error("❌ Erro ao conectar ao Telegram:", err));
+        const h2 = [...document.querySelectorAll("h2")].find(h => h.textContent.includes("Bem-vindo"));
+        if (h2) nomeJogador = h2.textContent.replace("Bem-vindo,", "").trim();
+        return { nomeJogador, mundo };
     }
 
-    let captchaAtivo = false;
+    function enviarNotificacaoParaTelegram(mensagemAlerta, chatId, onSuccess = null) {
+        const { nomeJogador, mundo } = getNomeJogadorEMundo();
+        const horario = new Date().toLocaleString();
+        const textoFinal = `${mensagemAlerta}\n\n👤 CONTA: ${nomeJogador}\n🌍 Mundo: ${mundo}\n🕒 Horário: ${horario}`;
+
+        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ chat_id: chatId, text: textoFinal })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.ok && onSuccess) onSuccess(data.result.message_id);
+        })
+        .catch(console.error);
+    }
 
     function verificarCaptcha() {
-        let captchaPresente = document.body.innerHTML.toLowerCase().includes("proteção contra bots") ||
+        const captchaPresente =
+            document.body.innerText.toLowerCase().includes("proteção contra bots") ||
             document.querySelector('[id*="bot-protection"]') ||
             document.querySelector('[class*="bot-protection-row"]');
 
         const agora = Date.now();
+        const { nomeJogador, mundo } = getNomeJogadorEMundo();
+        const mensagens = JSON.parse(localStorage.getItem("captchaMensagens") || "[]");
+        const jaNotificado = mensagens.some(m => m.jogador === nomeJogador && m.mundo === mundo);
 
-        if (captchaPresente && !captchaAtivo) {
-            if (agora - ultimaNotificacaoCaptcha >= INTERVALO_CAPTCHA_MS) {
-                captchaAtivo = true;
-                ultimaNotificacaoCaptcha = agora;
-                console.log("🚨 CAPTCHA detectado!");
-                enviarNotificacaoParaTelegram("⚠ CAPTCHA DETECTADO! ⚠", CHAT_ID_CAPTCHA);
-                trazerJanelaParaFrente();
-            } else {
-                console.log("⏳ CAPTCHA detectado, mas já notificado recentemente.");
-            }
-        }
-
-        if (!captchaPresente) {
-            captchaAtivo = false;
+        if (captchaPresente && !jaNotificado && agora - ultimaNotificacaoCaptcha > INTERVALO_CAPTCHA_MS) {
+            ultimaNotificacaoCaptcha = agora;
+            enviarNotificacaoParaTelegram("⚠ CAPTCHA DETECTADO! ⚠", CHAT_ID_CAPTCHA, messageId => {
+                mensagens.push({ id: messageId, jogador: nomeJogador, mundo, chat_id: CHAT_ID_CAPTCHA });
+                localStorage.setItem("captchaMensagens", JSON.stringify(mensagens));
+            });
         }
     }
 
-    let paginaExpirada = false;
+    function verificarPaginaInicialComNotificacao() {
+        const url = window.location.href;
 
-    function verificarExpiracaoPagina() {
-        let texto = document.body.innerText.toLowerCase();
-        let expirou = texto.includes("não é possível acessar esse site") ||
-                      texto.includes("err_connection_closed") ||
-                      texto.includes("encerrou a conexão inesperadamente") ||
-                      texto.includes("verificar a conexão") ||
-                      texto.includes("verificar o proxy e o firewall");
-
+    // ✅ Só executa se for exatamente a página inicial
+    if (url !== "https://www.tribalwars.com.br/") return;;
         const agora = Date.now();
 
-        if (expirou && !paginaExpirada) {
-            if (agora - ultimaNotificacaoExpiracao >= INTERVALO_EXPIRACAO_MS) {
-                paginaExpirada = true;
-                ultimaNotificacaoExpiracao = agora;
-                console.log("❌ Página expirada detectada!");
-                enviarNotificacaoParaTelegram("❌ PÁGINA EXPIRADA! ❌", CHAT_ID_EXPIRACAO);
-            } else {
-                console.log("⏳ Página expirada, mas já notificada.");
-            }
-        }
+        const h2 = [...document.querySelectorAll("h2")].find(h => h.textContent.includes("Bem-vindo"));
+        const nomeJogador = h2?.textContent.replace("Bem-vindo,", "").trim();
+        if (!nomeJogador || !naPaginaInicial) return;
 
-        if (!expirou) {
-            paginaExpirada = false;
+        if (!window._tempoNaPaginaInicial) {
+            window._tempoNaPaginaInicial = agora;
+        } else if (agora - window._tempoNaPaginaInicial >= TEMPO_MINIMO_PAGINA_INICIAL) {
+            enviarNotificacaoParaTelegram("⚠ CONTA NA PÁGINA INICIAL ⚠", CHAT_ID_EXPIRACAO, id => {
+                const pendentes = getCookie("msg_pendentes")?.split(",").filter(Boolean) || [];
+                pendentes.push(id);
+                setCookie("msg_pendentes", pendentes.join(","));
+                setCookie(`msg_${id}_jogador`, nomeJogador);
+                setCookie(`msg_${id}_chat`, CHAT_ID_EXPIRACAO);
+                console.log(`✅ Notificação salva [${id}]`);
+            });
+            window._tempoNaPaginaInicial = agora;
         }
+    }
+
+    function verificarEMensagemApagarTelegram() {
+        const paginaAtual = window.location.href;
+
+    // Só executa se estiver na página correta
+    if (!paginaAtual.includes("screen=overview") || !paginaAtual.includes("intro")) {
+        console.log("⏭️ Página atual não é a overview com intro. Abortando limpeza.");
+        return;
+    }
+        setTimeout(() => {
+            const nomeAtual = window.TribalWars?.getGameData?.().player?.name;
+            if (!nomeAtual) {
+                console.warn("⏳ Aguardando nome do jogador TribalWars...");
+                return;
+            }
+
+            const normalizar = t => (t || "").trim().toLowerCase();
+            const pendentes = getCookie("msg_pendentes")?.split(",").filter(Boolean) || [];
+
+            console.log("📋 Mensagens pendentes:", pendentes);
+            console.log("🎯 Jogador atual:", nomeAtual);
+
+            pendentes.forEach(id => {
+                const jogadorSalvo = getCookie(`msg_${id}_jogador`);
+                const chatId = getCookie(`msg_${id}_chat`);
+
+                if (normalizar(jogadorSalvo) === normalizar(nomeAtual)) {
+                    console.log(`🚀 Apagando mensagem ${id}...`);
+                    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/deleteMessage`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            chat_id: chatId,
+                            message_id: Number(id)
+                        })
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.ok) {
+                            console.log(`✅ Mensagem ${id} apagada com sucesso!`);
+                            deleteCookie(`msg_${id}_jogador`);
+                            deleteCookie(`msg_${id}_chat`);
+                            const restantes = pendentes.filter(p => p !== id);
+                            if (restantes.length > 0) {
+                                setCookie("msg_pendentes", restantes.join(","));
+                            } else {
+                                deleteCookie("msg_pendentes");
+                            }
+                        } else {
+                            console.warn(`⚠ Falha ao apagar ${id}:`, data.description);
+                        }
+                    })
+                    .catch(err => console.error(`❌ Erro ao apagar ${id}`, err));
+                } else {
+                    console.warn(`❌ Nome não bate para msg ${id}: ${jogadorSalvo} vs ${nomeAtual}`);
+                }
+            });
+        }, 5000);
+    }
+
+    function verificarExpiracaoPagina() {
+        const texto = document.body.innerText.toLowerCase();
+        const expirou = texto.includes("não é possível acessar esse site") || texto.includes("verificar a conexão");
+        const agora = Date.now();
+        if (expirou && !paginaExpirada && agora - ultimaNotificacaoExpiracao > INTERVALO_EXPIRACAO_MS) {
+            paginaExpirada = true;
+            ultimaNotificacaoExpiracao = agora;
+            enviarNotificacaoParaTelegram("❌ PÁGINA EXPIRADA! ❌", CHAT_ID_EXPIRACAO);
+        }
+        if (!expirou) paginaExpirada = false;
     }
 
     function verificarOfertaPromocional() {
@@ -133,47 +191,23 @@
         ofertas.forEach(oferta => {
             if (oferta.textContent.includes("Oferta!") && (agora - ultima > INTERVALO_6H)) {
                 const tempo = oferta.querySelector("span:last-child")?.innerText.trim() || "Tempo desconhecido";
-                const msg = `🔥 OFERTA DETECTADA!\n🕒 Duração: ${tempo}`;
-                enviarNotificacaoParaTelegram(msg, CHAT_ID_PROMOCAO);
+                enviarNotificacaoParaTelegram(`🔥 OFERTA DETECTADA!\n🕒 Duração: ${tempo}`, CHAT_ID_PROMOCAO);
                 localStorage.setItem(chave, agora.toString());
             }
         });
     }
 
-    function getUltimaColetaTimestamp() {
-        return Number(localStorage.getItem("ultimaColetaBonusDiario") || 0);
-    }
-
-    function setUltimaColetaTimestamp() {
-        localStorage.setItem("ultimaColetaBonusDiario", Date.now());
-    }
-
-    function precisaColetarBonusDiario() {
-        return Date.now() - getUltimaColetaTimestamp() >= 24 * 60 * 60 * 1000;
-    }
-
-    function getVillageId() {
-        const url = new URL(window.location.href);
-        return url.searchParams.get("village") || "0";
-    }
-
     function iniciarColetaBonusDiario() {
         const gameData = window.TribalWars?.getGameData?.();
         const mundoAtual = gameData?.world || "";
-
-        if (mundoAtual.startsWith("brp")) {
-            console.log("🚫 Mundo brp detectado. Ignorando bônus diário.");
-            return;
-        }
+        if (mundoAtual.startsWith("brp")) return;
 
         const url = new URL(window.location.href);
         const estaNaPaginaBonus = url.searchParams.get("screen") === "info_player" && url.searchParams.get("mode") === "daily_bonus";
         const temBonusDiario = document.querySelector('a[href*="mode=daily_bonus"]');
+        if (!temBonusDiario) return;
 
-        if (!temBonusDiario) {
-            console.log("🚫 Mundo sem bônus diário.");
-            return;
-        }
+        const getVillageId = () => url.searchParams.get("village") || "0";
 
         if (estaNaPaginaBonus) {
             function coletarProximoBau() {
@@ -181,63 +215,59 @@
                 const botaoPremium = document.querySelector("#daily_bonus_content .btn.btn-premium");
                 const confirmBox = document.querySelector(".popup_box_close");
 
-                if (botaoPremium) {
-                    console.log("⚠️ Baú exige pontos premium. Ignorando...");
-                }
-
-                if (botoes.length > 0 && !botaoPremium) {
-                    console.log("👉 Clicando em baú gratuito...");
+                if (botaoPremium) return;
+                if (botoes.length > 0) {
                     botoes[0].click();
                     setTimeout(coletarProximoBau, 1500);
                 } else if (confirmBox && getComputedStyle(confirmBox).display !== "none") {
-                    console.log("🛑 Janela de confirmação visível. Aguardando...");
                     setTimeout(coletarProximoBau, 2000);
                 } else {
-                    console.log("✅ Coleta encerrada. Retornando à página anterior...");
-                    setUltimaColetaTimestamp();
+                    localStorage.setItem("ultimaColetaBonusDiario", Date.now());
                     const voltarPara = localStorage.getItem("urlOriginalAntesDoBonus") || `/game.php?village=${getVillageId()}&screen=main`;
                     localStorage.removeItem("urlOriginalAntesDoBonus");
                     setTimeout(() => window.location.href = voltarPara, 1500);
                 }
             }
-
             coletarProximoBau();
-        } else if (precisaColetarBonusDiario()) {
-            console.log("⏰ Redirecionando para coletar bônus...");
-            localStorage.setItem("urlOriginalAntesDoBonus", window.location.href);
-            window.location.href = `/game.php?village=${getVillageId()}&screen=info_player&mode=daily_bonus`;
         } else {
-            console.log("🕒 Aguardando 24h para nova coleta.");
+            const ultima = Number(localStorage.getItem("ultimaColetaBonusDiario") || 0);
+            if (Date.now() - ultima >= 24 * 60 * 60 * 1000) {
+                localStorage.setItem("urlOriginalAntesDoBonus", window.location.href);
+                window.location.href = `/game.php?village=${getVillageId()}&screen=info_player&mode=daily_bonus`;
+            }
         }
     }
 
-    // Detectar permanência na página inicial
-    let tempoNaPaginaInicial = null;
+    // ⏱️ Agendamentos
     setInterval(() => {
-        const urlAtual = window.location.href;
-        const tempoMinimo = 5 * 60 * 1000;
-
-        if (urlAtual === "https://www.tribalwars.com.br/") {
-            if (!tempoNaPaginaInicial) {
-                tempoNaPaginaInicial = Date.now();
-            } else if (Date.now() - tempoNaPaginaInicial >= tempoMinimo) {
-                enviarNotificacaoParaTelegram("⚠ CONTA NA PÁGINA INICIAL POR 5 MINUTOS ⚠", CHAT_ID_EXPIRACAO);
-                trazerJanelaParaFrente();
-                tempoNaPaginaInicial = null;
-            }
-        } else {
-            tempoNaPaginaInicial = null;
+        console.log("🟢 Verificação ativa");
+        try {
+            verificarPaginaInicialComNotificacao();
+        } catch (e) {
+            console.error("❌ Erro na verificação:", e);
         }
-    }, 10000);
+    }, 5000);
 
-    // Executores
+    setInterval(() => {
+        try {
+            verificarOfertaPromocional();
+        } catch (e) {
+            console.error("❌ Erro na oferta:", e);
+        }
+    }, 3000);
+
     new MutationObserver(() => {
-        verificarCaptcha();
-        verificarExpiracaoPagina();
+        try {
+            verificarCaptcha();
+            verificarExpiracaoPagina();
+        } catch (e) {
+            console.error("❌ Erro em observer:", e);
+        }
     }).observe(document.body, { childList: true, subtree: true });
 
-    setInterval(verificarOfertaPromocional, 3000);
     verificarCaptcha();
     verificarExpiracaoPagina();
     iniciarColetaBonusDiario();
+    verificarEMensagemApagarTelegram(); // 🚀 Apaga pendentes ao entrar no mundo
 })();
+
