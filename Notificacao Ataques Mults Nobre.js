@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação de Ataques Nobre
 // @namespace    http://tampermonkey.net/
-// @version      2.1.4
+// @version      3.0
 // @description  Notificacoes para telegran de comandos acaminho
 // @author       Você
 // @include      https://br*.tribalwars.com.br/*
@@ -10,82 +10,84 @@
 // @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Notificacao%20Ataques%20Mults%20Nobre.js
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
-    // 🔹 CONFIGURAÇÕES - INSIRA SEUS DADOS DO TELEGRAM AQUI
-    const BOT_TOKEN = '7362150939:AAHeetiLt3AJh0FMmp3auVULM0INJcNNDqA'; // Token do bot
-    const CHAT_ID = '-4807309639'; // ID do chat ou grupo
+    const BOT_TOKEN = '7362150939:AAHeetiLt3AJh0FMmp3auVULM0INJcNNDqA';
+    const CHAT_ID = '-4807309639';
+    const COOLDOWN_MS = 10 * 1000; // 3 minutos entre notificações da mesma leva
 
-    let ataquesAnteriores = 0;
+    function obterQuantidadeAtaques() {
+        const tabela = document.querySelectorAll('#incomings_table tr.command-row');
+        if (tabela.length > 0) return tabela.length;
 
-    function obterQuantidadeInicialAtaques() {
-        const elementoAtaques = document.querySelector('#incomings_amount');
-        if (elementoAtaques) {
-            const quantidade = parseInt(elementoAtaques.innerText.trim(), 10);
-            return isNaN(quantidade) ? 0 : quantidade;
+        const contagem = document.querySelector('#incomings_amount');
+        if (contagem) {
+            const val = parseInt(contagem.innerText.trim(), 10);
+            return isNaN(val) ? 0 : val;
         }
+
         return 0;
     }
 
     function obterDadosDoJogo() {
         try {
-            const jogador = TribalWars.getGameData().player; // Obtém dados do jogador
+            const jogador = TribalWars.getGameData().player;
             const nomeJogador = jogador.name;
-            const idJogador = jogador.id;
-
-            // Extrair o prefixo do mundo da URL
-            const urlPagina = window.location.href;
-            const mundoMatch = urlPagina.match(/https:\/\/(br\d+)\.tribalwars\.com\.br/);
-            const mundo = mundoMatch ? mundoMatch[1] : 'Desconhecido';
-
-            return { nomeJogador, idJogador, mundo };
-        } catch (error) {
-            console.error("Erro ao obter dados do jogador:", error);
-            return { nomeJogador: "Desconhecido", idJogador: "N/A", mundo: "Desconhecido" };
+            const mundo = location.hostname.match(/br\d+/)?.[0] || 'Desconhecido';
+            return { nomeJogador, mundo };
+        } catch {
+            return { nomeJogador: "Desconhecido", mundo: "Desconhecido" };
         }
     }
 
-    function enviarNotificacaoParaTelegram() {
+    function enviarNotificacao(qtd) {
         const { nomeJogador, mundo } = obterDadosDoJogo();
-        const horarioNotificacao = new Date().toLocaleString();
-        const mensagem = `⚠️ Novo ataque detectado! ⚠️\n\n👤 JOGADOR: ${nomeJogador}\n🌍 MUNDO: ${mundo}\n🕒 HORARIO: ${horarioNotificacao}`;
+        const horario = new Date().toLocaleString();
+        const mensagem = `⚠️ Novo ataque detectado! ⚠️\n\n👤 JOGADOR: ${nomeJogador}\n🌍 MUNDO: ${mundo}\n🕒 HORÁRIO: ${horario}\n🎯 Total de comandos: ${qtd}`;
 
-        const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(mensagem)}`;
-
-        fetch(url)
-            .then(response => response.json())
+        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(mensagem)}`)
+            .then(res => res.json())
             .then(data => {
                 if (data.ok) {
-                    console.log("✅ Notificação enviada para o Telegram!");
+                    console.log("✅ Notificação enviada.");
+                    localStorage.setItem("ultimaNotificacaoAtaque", Date.now().toString());
+                    localStorage.setItem("hashNotificada", `${qtd}`);
                 } else {
-                    console.error("❌ Erro ao enviar notificação:", data);
+                    console.warn("⚠️ Erro ao enviar:", data);
                 }
             })
-            .catch(error => {
-                console.error("❌ Erro ao conectar com o Telegram:", error);
-            });
+            .catch(console.error);
     }
 
     function verificarNovosAtaques() {
-        const elementoAtaques = document.querySelector('#incomings_amount');
-        if (elementoAtaques) {
-            const quantidadeAtaques = parseInt(elementoAtaques.innerText.trim(), 10);
-            if (!isNaN(quantidadeAtaques) && quantidadeAtaques > ataquesAnteriores) {
-                console.log(`🚨 Novo ataque detectado! (${quantidadeAtaques} ataques)`);
-                ataquesAnteriores = quantidadeAtaques;
-                enviarNotificacaoParaTelegram();
-            }
+        const qtdAtual = obterQuantidadeAtaques();
+        const hashAtual = `${qtdAtual}`;
+        const hashSalva = localStorage.getItem("hashNotificada") || "";
+        const ultimaNotificacao = parseInt(localStorage.getItem("ultimaNotificacaoAtaque") || "0", 10);
+        const agora = Date.now();
+
+        // Reset total
+        if (qtdAtual === 0 && hashSalva !== "") {
+            console.log("🔄 Ataques zerados. Resetando estado.");
+            localStorage.setItem("hashNotificada", "");
+            localStorage.setItem("ultimaNotificacaoAtaque", "0");
+            return;
+        }
+
+        // Se há novos ataques e é diferente do último hash, e passou tempo suficiente
+        if (qtdAtual > 0 && hashAtual !== hashSalva && (agora - ultimaNotificacao > COOLDOWN_MS)) {
+            enviarNotificacao(qtdAtual);
         }
     }
 
-    // 🔹 Obtém o número inicial de ataques ao carregar a página
-    ataquesAnteriores = obterQuantidadeInicialAtaques();
-
-    // Observador de mudanças na página para detectar ataques
-    new MutationObserver(() => {
+    // Verificação contínua a cada 5 segundos
+    setInterval(() => {
         verificarNovosAtaques();
-    }).observe(document.body, { childList: true, subtree: true });
+    }, 5000);
 
-    console.log("📢 Script de notificação de ataques ativado!");
+    // E inicial imediato
+    verificarNovosAtaques();
+
+    console.log("🛡️ Script de notificação de ataques (v2.4.0 estável) ativado.");
 })();
