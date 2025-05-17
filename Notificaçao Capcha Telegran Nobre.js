@@ -1,13 +1,14 @@
 // ==UserScript==
-// @name         Notificação Tribal Wars Avançada
+// @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      10.0
-// @description  Notifica CAPTCHA, promoções e páginas expiradas em grupos diferentes, com anti-spam e coleta segura de bônus diário.
+// @version      11.0
+// @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Notifica%C3%A7ao%20Capcha%20Telegran%20Nobre.js
+// @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Notifica%C3%A7ao%20Capcha%20Telegran%20Nobre.js
 // ==/UserScript==
-
 (function () {
     'use strict';
 
