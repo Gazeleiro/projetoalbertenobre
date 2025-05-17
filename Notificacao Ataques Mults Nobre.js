@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         Notificação de Ataques
+// @name         Notificação de Ataques Nobre
 // @namespace    http://tampermonkey.net/
-// @version      2.1.2
+// @version      2.1.3
 // @description  Notificacoes para telegran de comandos acaminho
 // @author       Você
-// @match        https://br*.tribalwars.com.br/*
+// @include      https://br*.tribalwars.com.br/*
 // @grant        Nobre
 // @updateURL    https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Notificacao%20Ataques%20Mults%20Nobre.js
 // @downloadURL  https://raw.githubusercontent.com/Gazeleiro/projetoalbertenobre/refs/heads/main/Notificacao%20Ataques%20Mults%20Nobre.js
