@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tw - Show
 // @namespace    http://tampermonkey.net/
-// @version      9.0
+// @version      9.1
 // @include      https://**game.php**
 // @description  Automação para TW
 // @icon         https://i.imgur.com/7WgHTT8.gif
@@ -22,7 +22,7 @@ localStorage.setItem('DeslogaConta', 'S'); // Config deslogar
 localStorage.setItem('Ctt', 'S'); ///////////// Script Construção para desativar altere para N e ativar alyere para S
 localStorage.setItem('check' + 0, 'true'); // ativar rotação do ed Principal, para ativar altere para true e desativar altere para false
 localStorage.setItem('box0', 'true'); ////// opção q mostra a checkbox marcada para desmarcar altere para false e para marcar altere para true
-localStorage.setItem('Redp', 30); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
+localStorage.setItem('Redp', 60); /////////// tempo ativo na Construção >. tempo referido em minutos, no caso q esta ficará 2 minutos
 
 localStorage.setItem('ColetaAtiva', 'S'); /////// Script Coleta para desativar altere para N e ativar alyere para S
 localStorage.setItem('PeriodoColeta', 5); ///// tempo q executará o script de Coleta novamente em minutos
