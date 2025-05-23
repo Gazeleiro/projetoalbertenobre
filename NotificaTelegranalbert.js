@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha albert
 // @namespace    http://tampermonkey.net/
-// @version      6.2
+// @version      6.3
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -164,21 +164,46 @@
             console.log("🎁 Coletando baús automaticamente...");
 
             function coletarProximoBau() {
-                const botao = document.querySelector("#daily_bonus_content .btn.btn-default");
-                if (botao) {
-                    console.log("👉 Clicando em baú...");
-                    botao.click();
-                    setTimeout(coletarProximoBau, 1200);
-                } else {
-                    console.log("✅ Todos os baús coletados. Retornando à página original...");
-                    setUltimaColetaTimestamp();
-                    setTimeout(() => {
-                        const voltarPara = localStorage.getItem("urlOriginalAntesDoBonus") || `/game.php?village=${getVillageId()}&screen=main`;
-                        localStorage.removeItem("urlOriginalAntesDoBonus");
-                        window.location.href = voltarPara;
-                    }, 1500);
-                }
-            }
+    const botoes = document.querySelectorAll("#daily_bonus_content .btn.btn-default");
+    const botaoPremium = document.querySelector("#daily_bonus_content .btn.btn-premium");
+    const confirmBox = document.querySelector(".popup_box_close");
+    const popupBonusPerdido = document.querySelector('.popup_box_content p.error');
+
+    // Se houver popup de bônus perdido ou botão premium, FECHA E VOLTA
+    if (
+        botaoPremium ||
+        (popupBonusPerdido && popupBonusPerdido.textContent.includes('Você não tem Pontos Premium suficientes'))
+    ) {
+        console.log("Ignorando bônus diário perdido - requer premium.");
+
+        // Marca como "coletado" para evitar loop
+        localStorage.setItem("ultimaColetaBonusDiario", Date.now());
+
+        // Fecha popup se possível
+        if (confirmBox && getComputedStyle(confirmBox).display !== "none") {
+            confirmBox.click();
+        }
+
+        // Volta para página original
+        const voltarPara = localStorage.getItem("urlOriginalAntesDoBonus") || `/game.php?village=${getVillageId()}&screen=main`;
+        localStorage.removeItem("urlOriginalAntesDoBonus");
+        setTimeout(() => window.location.href = voltarPara, 1200);
+
+        return;
+    }
+
+    if (botoes.length > 0) {
+        botoes[0].click();
+        setTimeout(coletarProximoBau, 1500);
+    } else if (confirmBox && getComputedStyle(confirmBox).display !== "none") {
+        setTimeout(coletarProximoBau, 2000);
+    } else {
+        localStorage.setItem("ultimaColetaBonusDiario", Date.now());
+        const voltarPara = localStorage.getItem("urlOriginalAntesDoBonus") || `/game.php?village=${getVillageId()}&screen=main`;
+        localStorage.removeItem("urlOriginalAntesDoBonus");
+        setTimeout(() => window.location.href = voltarPara, 1500);
+    }
+}
 
             coletarProximoBau();
 
