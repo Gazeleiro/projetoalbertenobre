@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      11.2
+// @version      11.2.1
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -13,7 +13,7 @@
     'use strict';
 
     // ==== CONFIGURAÇÃO DOS CHATS ====
-    const BOT_TOKEN = 'SEU_TOKEN_AQUI';
+    const BOT_TOKEN = '7362150939:AAHeetiLt3AJh0FMmp3auVULM0INJcNNDqA';
     const CHAT_ID_CAPTCHA      = '-4747519721'; // Grupo do CAPTCHA
     const CHAT_ID_PROMOCAO     = '-4847613379'; // Grupo das Promoções
     const CHAT_ID_PAGINAINICIAL = '-4917296021'; // Grupo da Página Inicial
