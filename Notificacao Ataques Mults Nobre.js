@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação de Ataques Nobre
 // @namespace    http://tampermonkey.net/
-// @version      3.0
+// @version      3.1
 // @description  Notificacoes para telegran de comandos acaminho
 // @author       Você
 // @include      https://br*.tribalwars.com.br/*
@@ -14,7 +14,7 @@
     'use strict';
 
     const BOT_TOKEN = '7362150939:AAHeetiLt3AJh0FMmp3auVULM0INJcNNDqA';
-    const CHAT_ID = '-4807309639';
+    const CHAT_ID = '-4943440311';
     const COOLDOWN_MS = 10 * 1000; // 3 minutos entre notificações da mesma leva
 
     function obterQuantidadeAtaques() {
