@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Script de Recrutamento de Tropas
 // @namespace    http://tampermonkey.net/
-// @version      3.6
+// @version      4.0
 // @description  Recruta tropas até um limite total definido pelo usuário.
 // @author       singularidade
 // @include       https://*.tribalwars.com.br/game.php?village=*&screen=barracks*
@@ -19,6 +19,135 @@
 
 (function () {
     'use strict';
+
+    // ==== ESTILO BONITO ====
+    GM_addStyle(`
+    #troopRecruiterConfig {
+        position: fixed !important;
+        top: 68px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        background: rgba(36,33,30,0.97) !important;
+        border: 2px solid #af8e58 !important;
+        padding: 22px 30px 20px 30px !important;
+        border-radius: 12px !important;
+        box-shadow: 0 0 18px 0 #000a, 0 1px 2px 0 #af8e5833;
+        font-family: 'Verdana', serif !important;
+        font-size: 15px !important;
+        color: #f2e7c9 !important;
+        min-width: 320px;
+        max-width: 390px;
+        z-index: 99999 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #troopRecruiterConfig h3 {
+        font-size: 19px !important;
+        color: #ffe8a0 !important;
+        margin-bottom: 16px !important;
+        font-weight: bold !important;
+        letter-spacing: .7px;
+    }
+    #troopRecruiterConfig label {
+        display: block;
+        margin-bottom: 7px !important;
+        color: #f2e7c9 !important;
+        font-size: 15px;
+    }
+    #troopRecruiterConfig input[type="number"] {
+        background: #403930;
+        color: #f2e7c9;
+        border: 1px solid #665c4a;
+        border-radius: 6px;
+        padding: 3px 8px;
+        width: 60px;
+        font-size: 15px;
+        margin: 0 6px 0 4px;
+    }
+    #troopRecruiterConfig input[type="checkbox"] {
+        accent-color: #af8e58;
+        width: 19px; height: 19px;
+        margin-right: 6px;
+    }
+    #troopRecruiterConfig button {
+        margin-top: 11px;
+        padding: 8px 20px;
+        border: none;
+        border-radius: 8px;
+        background: #af8e58;
+        color: #1e1400;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 0 0 7px #c8a97044;
+        transition: background 0.15s, color 0.13s;
+        margin-right: 7px;
+        margin-bottom: 3px;
+    }
+    #troopRecruiterConfig button:hover {
+        background: #ffe8a0;
+        color: #6b4e1e;
+    }
+    #troopRecruiterConfig #toggleTroopDefaults {
+        background: #37270b;
+        color: #ffe8a0;
+        border: 1px solid #af8e58;
+        font-size: 15px;
+        margin-top: 14px;
+    }
+    #troopRecruiterConfig #toggleTroopDefaults:hover {
+        background: #4d370d;
+        color: #ffdc89;
+    }
+    #troopRecruiterConfig #troopDefaults {
+        background: #29241b;
+        border-radius: 8px;
+        margin-top: 11px;
+        margin-bottom: 7px;
+        padding: 10px 15px;
+        width: 100%;
+        color: #e4c67d;
+        border: 1px solid #af8e5828;
+        box-shadow: 0 0 7px #40393033 inset;
+    }
+    #troopRecruiterConfig h4 {
+        color: #ffe8a0;
+        margin-bottom: 8px;
+        margin-top: 0px;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: .3px;
+    }
+    #troopRecruiterConfig .troopInputGroup {
+        margin-bottom: 7px;
+        display: flex;
+        align-items: center;
+    }
+    #troopRecruiterConfig .troopInputGroup input[type="number"] {
+        width: 55px;
+        margin-left: 4px;
+        margin-right: 9px;
+    }
+    #troopRecruiterConfig .troopInputGroup span {
+        min-width: 82px;
+        display: inline-block;
+        text-transform: capitalize;
+        color: #fffbe2;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: .5px;
+    }
+    `);
+
+    // Resto igual
+    function getWorldId() {
+        const match = window.location.hostname.match(/^(br\d+)\.tribalwars\.com\.br$/i);
+        return match ? match[1] : "default";
+    }
+    function getSettingsKey() {
+        return `troopRecruiterSettings_${getWorldId()}`;
+    }
 
     const classEnum = Object.freeze({
         lanca: ".unit_sprite_smaller.spear",
@@ -43,20 +172,20 @@
         moveVillage: true,
         currentVillageIndex: 0,
         troops: [
-            { unitName: "spear", recruitDef: 10, cssClassSelector: classEnum.lanca, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "sword", recruitDef: 5, cssClassSelector: classEnum.espada, maxDef: 0 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "axe", recruitDef: 0, cssClassSelector: classEnum.barbaro, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "archer", recruitDef: 0, cssClassSelector: classEnum.arqueiro, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "spy", recruitDef: 0, cssClassSelector: classEnum.explorador, maxDef: 120 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "light", recruitDef: 0, cssClassSelector: classEnum.cavalariaLeve, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "marcher", recruitDef: 0, cssClassSelector: classEnum.cavalariaArco, maxDef: 500 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "heavy", recruitDef: 0, cssClassSelector: classEnum.cavalariaPesada, maxDef: 1000 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "ram", recruitDef: 0, cssClassSelector: classEnum.ariete, maxDef: 100 }, // Removido recruitAtt, mantido apenas recruitDef
-            { unitName: "catapult", recruitDef: 0, cssClassSelector: classEnum.catapulta, maxDef: 50 } // Removido recruitAtt, mantido apenas recruitDef
+            { unitName: "spear", recruitDef: 10, cssClassSelector: classEnum.lanca, maxDef: 500 },
+            { unitName: "sword", recruitDef: 5, cssClassSelector: classEnum.espada, maxDef: 0 },
+            { unitName: "axe", recruitDef: 0, cssClassSelector: classEnum.barbaro, maxDef: 1000 },
+            { unitName: "archer", recruitDef: 0, cssClassSelector: classEnum.arqueiro, maxDef: 500 },
+            { unitName: "spy", recruitDef: 0, cssClassSelector: classEnum.explorador, maxDef: 120 },
+            { unitName: "light", recruitDef: 0, cssClassSelector: classEnum.cavalariaLeve, maxDef: 500 },
+            { unitName: "marcher", recruitDef: 0, cssClassSelector: classEnum.cavalariaArco, maxDef: 500 },
+            { unitName: "heavy", recruitDef: 0, cssClassSelector: classEnum.cavalariaPesada, maxDef: 1000 },
+            { unitName: "ram", recruitDef: 0, cssClassSelector: classEnum.ariete, maxDef: 100 },
+            { unitName: "catapult", recruitDef: 0, cssClassSelector: classEnum.catapulta, maxDef: 50 }
         ]
     };
 
-    let settings = GM_getValue("troopRecruiterSettings", defaultSettings);
+    let settings = GM_getValue(getSettingsKey(), defaultSettings);
 
     // Funções auxiliares
     function timeBetween(inferior, superior) {
@@ -66,35 +195,26 @@
     }
 
     function validarPreencher(singleObject, currentCount) {
-        let maxTroops = singleObject.maxDef; // Usar apenas maxDef
-        const recruitAmount = Math.min(maxTroops - currentCount, singleObject.recruitDef); // Usar apenas recruitDef
+        let maxTroops = singleObject.maxDef;
+        const recruitAmount = Math.min(maxTroops - currentCount, singleObject.recruitDef);
 
         if (recruitAmount > 0) {
-            console.log(`[validarPreencher] Recrutando ${recruitAmount} ${singleObject.unitName} (Total: ${currentCount}/${maxTroops})`);
             $(`input[name="${singleObject.unitName}"]`).val(recruitAmount);
             return true;
         }
-        console.log(`[validarPreencher] Não é necessário recrutar ${singleObject.unitName} (Total: ${currentCount}/${maxTroops})`);
         return false;
     }
-  function getTroopCount(unitName) {
+    function getTroopCount(unitName) {
         const troopCountElement = $(`a[data-unit="${unitName}"]`).closest('tr').find('td:eq(2)');
         if (troopCountElement.length) {
-            const troopCountText = troopCountElement.text().split('/')[1].trim(); // Pega apenas a parte DEPOIS da barra
+            const troopCountText = troopCountElement.text().split('/')[1].trim();
             const count = parseInt(troopCountText);
-            console.log(`[getTroopCount] Total de ${unitName}: ${count}`);
             return count;
         } else {
-            console.log(`[getTroopCount] Não foi possível obter o total de ${unitName}.`);
             return 0;
         }
     }
     function recruitTroops() {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const villageId = urlParams.get('village').replace(/\D/g, '');
-        console.log(`[recruitTroops] Verificando Tropas na aldeia ${villageId}`);
-
         let recruited = false;
         for (const troop of settings.troops) {
             const currentCount = getTroopCount(troop.unitName);
@@ -102,82 +222,84 @@
                 recruited = true;
             }
         }
-
         if (recruited) {
             const recruitButton = $(".btn-recruit");
-            if (recruitButton.length > 0) {
-                console.log(`[recruitTroops] Clicando no botão de recrutar.`);
-                recruitButton.click();
-            } else {
-                console.log("[recruitTroops] Botão de recrutar não encontrado!");
-            }
-        } else {
-            console.log("[recruitTroops] Nenhuma tropa para recrutar.");
+            if (recruitButton.length > 0) recruitButton.click();
         }
         return recruited;
     }
     function getNextVillageId() {
         let allVillages = [];
-      if (settings.attackVillages) {
+        if (settings.attackVillages) {
             allVillages = allVillages.concat(settings.attackVillages.split(",").map(v => v.trim()).filter(v => v !== ""));
-       }
-         if (settings.defenseVillages) {
+        }
+        if (settings.defenseVillages) {
             allVillages = allVillages.concat(settings.defenseVillages.split(",").map(v => v.trim()).filter(v => v !== ""));
         }
 
         if (allVillages.length === 0) {
-            console.log("[getNextVillageId] Nenhuma aldeia configurada.");
             return null;
         }
 
-       const nextVillageId = allVillages[settings.currentVillageIndex];
-        console.log(`[getNextVillageId] Próxima aldeia: ${nextVillageId}`);
+        const nextVillageId = allVillages[settings.currentVillageIndex];
         settings.currentVillageIndex = (settings.currentVillageIndex + 1) % allVillages.length;
-         GM_setValue("troopRecruiterSettings", settings);
+        GM_setValue(getSettingsKey(), settings);
         return nextVillageId;
     }
 
-   function navigateToNextVillage() {
-       const nextVillageId = getNextVillageId();
+    function navigateToNextVillage() {
+        const nextVillageId = getNextVillageId();
         if (nextVillageId && settings.moveVillage) {
             const nextUrl = `https://br134.tribalwars.com.br/game.php?village=${nextVillageId}&screen=train`;
-            console.log(`[navigateToNextVillage] Redirecionando para aldeia: ${nextVillageId}`);
             window.location.href = nextUrl;
-        } else if(!nextVillageId){
-            console.log("[navigateToNextVillage] Não há aldeias configuradas. O script não fará a troca.");
-       }
-        else {
-            console.log("[navigateToNextVillage] Troca automática de aldeia desabilitada. O script não fará a troca.");
         }
     }
 
-   // interface de configuração
+    // interface de configuração (PAINEL BONITO)
     function createConfigInterface() {
+        // remove anterior
+        $("#troopRecruiterConfig").remove();
+
         const configDiv = $(`
-            <div id="troopRecruiterConfig" style="position: fixed; top: 50px; left: 50px; background-color: #f0f0f0; padding: 10px; border: 1px solid #ccc; z-index: 1000; display: flex; flex-direction: column;">
-                <h3 style="margin-bottom: 10px;">Configurações de Recrutamento</h3>
-                <label>Tempo de Verificação (min - max): <input type="number" id="verifyMin" style="width: 50px;" value="${settings.verifyTroopsMin}"> - <input type="number" id="verifyMax" style="width: 50px;" value="${settings.verifyTroopsMax}"></label><br>
-                <label>Tempo de Recarga (min - max): <input type="number" id="reloadMin" style="width: 50px;" value="${settings.reloadPageMin}"> - <input type="number" id="reloadMax" style="width: 50px;" value="${settings.reloadPageMax}"></label><br>
-                <label>Tempo de Permanência (min - max): <input type="number" id="stayMin" style="width: 50px;" value="${settings.stayTimeMin}"> - <input type="number" id="stayMax" style="width: 50px;" value="${settings.stayTimeMax}"></label><br>
-                <label><input type="checkbox" id="moveVillage" ${settings.moveVillage ? 'checked' : ''}> Mover para Próxima Aldeia </label><br>
-                <button id="toggleTroopDefaults" style="margin-top: 10px;">Configurar Tropas Padrão</button>
+            <div id="troopRecruiterConfig">
+                <h3>Configurações de Recrutamento</h3>
+                <label>Tempo de Verificação (min - max):
+                    <input type="number" id="verifyMin" value="${settings.verifyTroopsMin}" step="0.01" min="0.01">
+                    -
+                    <input type="number" id="verifyMax" value="${settings.verifyTroopsMax}" step="0.01" min="0.01">
+                </label>
+                <label>Tempo de Recarga (min - max):
+                    <input type="number" id="reloadMin" value="${settings.reloadPageMin}" step="0.01" min="0.01">
+                    -
+                    <input type="number" id="reloadMax" value="${settings.reloadPageMax}" step="0.01" min="0.01">
+                </label>
+                <label>Tempo de Permanência (min - max):
+                    <input type="number" id="stayMin" value="${settings.stayTimeMin}" step="0.01" min="0.01">
+                    -
+                    <input type="number" id="stayMax" value="${settings.stayTimeMax}" step="0.01" min="0.01">
+                </label>
+                <label><input type="checkbox" id="moveVillage" ${settings.moveVillage ? 'checked' : ''}> Mover para Próxima Aldeia </label>
+                <button id="toggleTroopDefaults">Configurar Tropas Padrão</button>
                 <div id="troopDefaults" style="display: none;">
-                    <h4>Configurações de Tropas Padrão:</h4>
+                    <h4>Tropas Padrão:</h4>
                     <div id="troopsConfig"></div>
                 </div>
-                <button id="saveSettings" style="margin-top: 10px;">Salvar Configurações</button>
-                <button id="closeConfig" style="margin-top: 10px;">Fechar</button>
-           </div>
-       `);
+                <div style="display:flex;">
+                    <button id="saveSettings">Salvar Configurações</button>
+                    <button id="closeConfig">Fechar</button>
+                </div>
+            </div>
+        `);
         configDiv.appendTo('body');
-         // Criar campos de texto para cada tropa
+        // campos de texto para cada tropa
         const troopsConfigDiv = $("#troopsConfig");
         settings.troops.forEach(troop => {
             troopsConfigDiv.append(`
-                <label style="display: block; margin-bottom: 5px;">
-                   ${troop.unitName}: Padrão <input type="number" class="recruitDef" data-troop="${troop.unitName}" value="${troop.recruitDef}" style="width: 50px;">
-                    Max <input type="number" class="maxDef" data-troop="${troop.unitName}" value="${troop.maxDef}" style="width: 50px;">
-                </label>
+                <div class="troopInputGroup">
+                    <span>${troop.unitName}:</span>
+                    Padrão <input type="number" class="recruitDef" data-troop="${troop.unitName}" value="${troop.recruitDef}">
+                    Max <input type="number" class="maxDef" data-troop="${troop.unitName}" value="${troop.maxDef}">
+                </div>
             `);
         });
 
@@ -186,48 +308,47 @@
             settings.verifyTroopsMax = parseFloat(configDiv.find("#verifyMax").val());
             settings.reloadPageMin = parseFloat(configDiv.find("#reloadMin").val());
             settings.reloadPageMax = parseFloat(configDiv.find("#reloadMax").val());
-           settings.stayTimeMin = parseFloat(configDiv.find("#stayMin").val());
+            settings.stayTimeMin = parseFloat(configDiv.find("#stayMin").val());
             settings.stayTimeMax = parseFloat(configDiv.find("#stayMax").val());
             settings.moveVillage = configDiv.find("#moveVillage").is(":checked");
-            configDiv.find(".recruitDef").each(function() {
+            configDiv.find(".recruitDef").each(function () {
                 const troopName = $(this).data("troop");
                 const recruitDef = parseInt($(this).val());
-               const maxDef = parseInt($(`.maxDef[data-troop="${troopName}"]`).val());
+                const maxDef = parseInt($(`.maxDef[data-troop="${troopName}"]`).val());
                 const troop = settings.troops.find(t => t.unitName === troopName);
-                if(troop) {
+                if (troop) {
                     troop.recruitDef = recruitDef;
                     troop.maxDef = maxDef;
                 }
             });
-           GM_setValue("troopRecruiterSettings", settings);
-           alert("Configurações salvas com sucesso!");
-            configDiv.hide();
+            GM_setValue(getSettingsKey(), settings);
+            configDiv.find("#saveSettings").text("Salvo!").css("background","#ffe8a0").css("color","#36260b");
+            setTimeout(()=>configDiv.find("#saveSettings").text("Salvar Configurações").removeAttr("style"),1100);
+            configDiv.hide(400);
         });
 
-        configDiv.find("#toggleTroopDefaults").click(function() {
-            $("#troopDefaults").toggle();
+        configDiv.find("#toggleTroopDefaults").click(function () {
+            $("#troopDefaults").slideToggle();
         });
 
         configDiv.find("#closeConfig").click(() => {
-            configDiv.hide();
+            configDiv.hide(400);
         });
     }
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         // Adicionar botão para abrir configurações
-       const configButton = $('<button style="position: fixed; top: 50px; right: 10px; z-index: 10000;">Configurar Recrutamento</button>');
+        const configButton = $('<button style="position: fixed; top: 50px; right: 10px; z-index: 10000; background: #37270b; color: #ffe8a0; border: 2px solid #af8e58; border-radius: 10px; padding: 8px 16px; font-size: 15px; font-weight: bold; cursor: pointer; box-shadow: 0 0 6px #af8e5833;">Configurar Recrutamento</button>');
         configButton.appendTo('body').click(() => {
-            if($("#troopRecruiterConfig").length)
-            {
-               $("#troopRecruiterConfig").show();
+            if ($("#troopRecruiterConfig").length) {
+                $("#troopRecruiterConfig").show(200);
             }
-            else
-            {
+            else {
                 createConfigInterface();
-           }
-       });
+            }
+        });
 
-        const stayTime = timeBetween(settings.stayTimeMin, settings.stayTimeMax) * 60 * 1000 +  Math.round(Math.random() * 9800);
+        const stayTime = timeBetween(settings.stayTimeMin, settings.stayTimeMax) * 60 * 1000 + Math.round(Math.random() * 9800);
         const hasRecruited = recruitTroops();
 
         setTimeout(() => {
