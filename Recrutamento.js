@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Script de Recrutamento de Tropas
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      4.2
 // @description  Recruta tropas até um limite total definido pelo usuário.
 // @author       singularidade
 // @include       https://*.tribalwars.com.br/game.php?village=*&screen=barracks*
@@ -172,8 +172,8 @@
         moveVillage: true,
         currentVillageIndex: 0,
         troops: [
-            { unitName: "spear", recruitDef: 10, cssClassSelector: classEnum.lanca, maxDef: 500 },
-            { unitName: "sword", recruitDef: 5, cssClassSelector: classEnum.espada, maxDef: 0 },
+            { unitName: "spear", recruitDef: 10, cssClassSelector: classEnum.lanca, maxDef: 10000 },
+            { unitName: "sword", recruitDef: 10, cssClassSelector: classEnum.espada, maxDef: 10000 },
             { unitName: "axe", recruitDef: 0, cssClassSelector: classEnum.barbaro, maxDef: 1000 },
             { unitName: "archer", recruitDef: 0, cssClassSelector: classEnum.arqueiro, maxDef: 500 },
             { unitName: "spy", recruitDef: 0, cssClassSelector: classEnum.explorador, maxDef: 120 },
