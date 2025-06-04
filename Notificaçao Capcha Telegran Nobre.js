@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notificação Captcha Telegram
 // @namespace    http://tampermonkey.net/
-// @version      11.2.2
+// @version      11.2.3
 // @description  Sempre carrega a versão mais recente do script do Dropbox para notificações de CAPTCHA no Telegram.
 // @author       Nobre
 // @match        https://*.tribalwars.com.br/*
@@ -22,7 +22,7 @@
     let paginaExpirada = false;
     let tempoNaPaginaInicial = null;
     const INTERVALO_VERIFICACAO = 10000;
-    const TEMPO_MINIMO_EM_MS = 5 * 60 * 1000; // 5 minutos
+    const TEMPO_MINIMO_EM_MS = 10 * 60 * 1000; // 10 minutos
 
     // ==== FUNÇÃO CENTRAL PARA DADOS DO JOGADOR ====
     function obterDadosJogador() {
@@ -107,7 +107,7 @@
                 tempoNaPaginaInicial = Date.now();
                 console.log("🕒 Página inicial detectada. Contando 5 minutos...");
             } else if (Date.now() - tempoNaPaginaInicial >= TEMPO_MINIMO_EM_MS) {
-                console.log("⏰ Página inicial por 5 min. Enviando notificação...");
+                console.log("⏰ Página inicial por 10 min. Enviando notificação...");
                 enviarNotificacaoParaTelegram("⚠ CONTA ESTÁ NA PÁGINA INICIAL HÁ 5 MINUTOS ⚠", CHAT_ID_PAGINAINICIAL);
                 trazerJanelaParaFrente();
                 tempoNaPaginaInicial = null;
@@ -136,7 +136,7 @@
             }
         });
     }
-    setInterval(verificarOfertaPromocional, 3000);
+    setInterval(verificarOfertaPromocional, 30000);
 
     // ==== COLETA DE BÔNUS DIÁRIO AUTOMÁTICO ====
     function getUltimaColetaTimestamp() {
